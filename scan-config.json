@@ -1,0 +1,72 @@
+{
+  "_comment": "Add new skill collections here. No code changes needed.",
+  "version": 1,
+  "collections": [
+    {
+      "id": "gstack",
+      "label": "gstack",
+      "dir": "gstack",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#6366f1"
+    },
+    {
+      "id": "pua",
+      "label": "pua",
+      "dir": "pua",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#ec4899"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "label": "ui-ux-pro-max",
+      "dir": "ui-ux-pro-max-skill",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "harness",
+      "label": "harness",
+      "dir": "Harness_Engineering",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "tong-jincheng",
+      "label": "tong-jincheng",
+      "dir": "tong-jincheng-skill-main",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#a855f7"
+    },
+    {
+      "id": "agency-agents",
+      "label": "agency-agents",
+      "dir": "agency-agents",
+      "type": "agent",
+      "scanRule": "*.md",
+      "excludeFiles": [
+        "CONTRIBUTING.md", "CHANGELOG.md", "README.md",
+        "AGENTS_OVERVIEW.md", "update-log.md", "LICENSE", "ROADMAP.md"
+      ],
+      "color": "#22c55e"
+    },
+    {
+      "id": "awesome-design",
+      "label": "awesome-design",
+      "dir": "awesome-design-md/design-md",
+      "type": "design-doc",
+      "scanRule": "DESIGN.md",
+      "color": "#ef4444"
+    }
+  ],
+  "skipDirs": [
+    "node_modules", ".git", "dist", "__pycache__", "screenshots",
+    "skill-dashboard", "references", "assets", "bin", "extension",
+    "preview", "docs", "scripts", "tests", "test", "playbooks",
+    "examples", "fixtures", "vscode", "cursor", "kiro"
+  ]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────── -->
+<header id="header">
+  <span id="logo">⚡ Skill Dashboard</span>
+  <input id="search" type="search"
+    placeholder="Search… (press / to focus, Esc to clear)"
+    autocomplete="off" spellcheck="false">
+  <span id="stats"></span>
+  <button id="btn-favorites-toggle" title="Show favorites">★ Favorites</button>
+  <button id="btn-rescan" title="Rescan skill root">⟳ Rescan</button>
+</header>
+
+<!-- ── Layout ──────────────────────────────────────────────────────── -->
+<div id="layout">
+
+  <!-- Sidebar: all sections populated dynamically by app.js -->
+  <nav id="sidebar">
+    <div class="sb-section" id="section-collections"></div>
+    <div class="sb-divider"></div>
+    <div class="sb-section" id="section-types"></div>
+    <div class="sb-divider"></div>
+    <div class="sb-section" id="section-tags"></div>
+  </nav>
+
+  <!-- Main -->
+  <main id="main">
+    <div id="filter-bar">
+      <!-- active filter chips + result count, populated by app.js -->
+    </div>
+    <div id="loading">Loading skill index…</div>
+    <div id="cards" role="list"></div>
+    <div id="empty" aria-live="polite">
+      <h2>No skills found</h2>
+      <p>Try a different search or adjust the filters in the sidebar.</p>
+    </div>
+  </main>
+
+  <!-- Detail drawer -->
+  <aside id="drawer" role="complementary" aria-label="Skill detail">
+    <div id="drawer-header">
+      <span id="drawer-title"></span>
+      <div id="drawer-header-actions">
+        <button id="btn-drawer-fav" title="Add to favorites">☆</button>
+        <button id="drawer-close" title="Close (Esc)">✕</button>
+      </div>
+    </div>
+    <div id="drawer-meta"></div>
+    <div id="drawer-actions"></div>
+    <div id="drawer-body"></div>
+  </aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
