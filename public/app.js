@@ -276,10 +276,11 @@ function buildCollectionFilter() {
   for (const e of state.all) counts[e.collection] = (counts[e.collection] || 0) + 1;
   const allCols = Object.entries(counts).sort((a, b) => b[1] - a[1]);
 
+  const allColsSelected = state.hiddenCols.size === 0;
   sec.innerHTML = `
     <div class="sb-label-row">
       <span class="sb-label">Collections</span>
-      <button class="sb-selectall" id="btn-col-all" title="全选">全选</button>
+      <button class="sb-selectall" id="btn-col-all" title="${allColsSelected ? '取消全选' : '全选'}">${allColsSelected ? '取消全选' : '全选'}</button>
     </div>
     <div class="filter-rows" id="col-rows">
       ${allCols.map(([col, n]) => {
@@ -293,10 +294,27 @@ function buildCollectionFilter() {
       }).join('')}
     </div>`;
 
-  sec.querySelector('#btn-col-all').addEventListener('click', () => {
-    state.hiddenCols.clear();
-    // Re-check all checkboxes visually
-    sec.querySelectorAll('input[data-col]').forEach(cb => { cb.checked = true; });
+  const btnColAll = sec.querySelector('#btn-col-all');
+
+  const updateColAllBtn = () => {
+    const isAll = state.hiddenCols.size === 0;
+    btnColAll.textContent = isAll ? '取消全选' : '全选';
+    btnColAll.title       = isAll ? '取消全选' : '全选';
+  };
+
+  btnColAll.addEventListener('click', () => {
+    if (state.hiddenCols.size === 0) {
+      // 已全选 → 取消全选
+      sec.querySelectorAll('input[data-col]').forEach(cb => {
+        state.hiddenCols.add(cb.dataset.col);
+        cb.checked = false;
+      });
+    } else {
+      // 未全选 → 全选
+      state.hiddenCols.clear();
+      sec.querySelectorAll('input[data-col]').forEach(cb => { cb.checked = true; });
+    }
+    updateColAllBtn();
     stateToHash();
     applyFilters();
   });
@@ -306,6 +324,7 @@ function buildCollectionFilter() {
       const col = cb.dataset.col;
       if (cb.checked) state.hiddenCols.delete(col);
       else            state.hiddenCols.add(col);
+      updateColAllBtn();
       stateToHash();
       applyFilters();
     });
@@ -331,10 +350,11 @@ function renderTypeFilter(colVisible) {
     return;
   }
 
+  const allTypesSelected = state.hiddenTypes.size === 0;
   sec.innerHTML = `
     <div class="sb-label-row">
       <span class="sb-label">Type</span>
-      <button class="sb-selectall" id="btn-type-all" title="全选">全选</button>
+      <button class="sb-selectall" id="btn-type-all" title="${allTypesSelected ? '取消全选' : '全选'}">${allTypesSelected ? '取消全选' : '全选'}</button>
     </div>
     <div class="filter-rows">
       ${types.map(([type, n]) => {
@@ -347,9 +367,27 @@ function renderTypeFilter(colVisible) {
       }).join('')}
     </div>`;
 
-  sec.querySelector('#btn-type-all').addEventListener('click', () => {
-    state.hiddenTypes.clear();
-    sec.querySelectorAll('input[data-type]').forEach(cb => { cb.checked = true; });
+  const btnTypeAll = sec.querySelector('#btn-type-all');
+
+  const updateTypeAllBtn = () => {
+    const isAll = state.hiddenTypes.size === 0;
+    btnTypeAll.textContent = isAll ? '取消全选' : '全选';
+    btnTypeAll.title       = isAll ? '取消全选' : '全选';
+  };
+
+  btnTypeAll.addEventListener('click', () => {
+    if (state.hiddenTypes.size === 0) {
+      // 已全选 → 取消全选
+      sec.querySelectorAll('input[data-type]').forEach(cb => {
+        state.hiddenTypes.add(cb.dataset.type);
+        cb.checked = false;
+      });
+    } else {
+      // 未全选 → 全选
+      state.hiddenTypes.clear();
+      sec.querySelectorAll('input[data-type]').forEach(cb => { cb.checked = true; });
+    }
+    updateTypeAllBtn();
     stateToHash();
     applyFilters();
   });
