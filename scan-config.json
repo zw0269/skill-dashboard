@@ -55,6 +55,18 @@
       "color": "#22c55e"
     },
     {
+      "id": "agency-agents-zh",
+      "label": "agency-agents-zh",
+      "dir": "agency-agents-zh",
+      "type": "agent",
+      "scanRule": "*.md",
+      "excludeFiles": [
+        "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "README.zh-TW.md",
+        "AGENT-LIST.md", "CATALOG.md", "UPSTREAM.md", "LICENSE", "ROADMAP.md"
+      ],
+      "color": "#14b8a6"
+    },
+    {
       "id": "awesome-design",
       "label": "awesome-design",
       "dir": "awesome-design-md/design-md",
