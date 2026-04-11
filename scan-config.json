@@ -67,6 +67,17 @@
       "color": "#14b8a6"
     },
     {
+      "id": "ai-hedge-fund",
+      "label": "ai-hedge-fund",
+      "dir": "ai-hedge-fund",
+      "type": "agent",
+      "scanRule": "*.md",
+      "excludeFiles": [
+        "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "LICENSE", "ROADMAP.md"
+      ],
+      "color": "#0ea5e9"
+    },
+    {
       "id": "awesome-design",
       "label": "awesome-design",
       "dir": "awesome-design-md/design-md",
