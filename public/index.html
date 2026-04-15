@@ -17,7 +17,23 @@
   <span id="stats"></span>
   <button id="btn-favorites-toggle" title="Show favorites">★ Favorites</button>
   <button id="btn-rescan" title="Rescan skill root">⟳ Rescan</button>
+  <button id="btn-feedback" title="Send feedback">💬 Feedback</button>
 </header>
+
+<!-- ── Feedback modal ─────────────────────────────────────────────── -->
+<div id="fb-modal" class="fb-hidden" role="dialog" aria-label="Feedback">
+  <div id="fb-box">
+    <div id="fb-header">
+      <span>💬 Send feedback</span>
+      <button id="fb-close" title="Close (Esc)">✕</button>
+    </div>
+    <textarea id="fb-text" placeholder="写下你的意见或建议…" rows="6"></textarea>
+    <div id="fb-footer">
+      <span id="fb-status"></span>
+      <button id="fb-submit">Submit</button>
+    </div>
+  </div>
+</div>
 
 <!-- ── Layout ──────────────────────────────────────────────────────── -->
 <div id="layout">

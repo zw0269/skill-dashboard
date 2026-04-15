@@ -67,6 +67,14 @@
       "color": "#14b8a6"
     },
     {
+      "id": "custom-skills",
+      "label": "custom-skills",
+      "dir": "custom-skills",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#84cc16"
+    },
+    {
       "id": "ai-hedge-fund",
       "label": "ai-hedge-fund",
       "dir": "ai-hedge-fund",

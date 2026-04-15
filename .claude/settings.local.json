@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs -I {} bash -c 'echo \"=== {} ===\" && head -50 \"{}\"')",
+      "Bash(node -c server.mjs)",
+      "Bash(node -c scanner.mjs)",
+      "Bash(node -c public/app.js)"
+    ]
+  }
+}

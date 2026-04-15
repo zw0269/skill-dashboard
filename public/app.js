@@ -614,6 +614,7 @@ async function openDrawer(id) {
     <button class="action-btn" id="btn-copy-path" title="Copy file path">Copy path</button>
     <button class="action-btn" id="btn-copy-name" title="Copy skill name">Copy name</button>
     <button class="action-btn" id="btn-open-explorer" title="Reveal in Explorer">Show in Explorer</button>
+    <button class="action-btn" id="btn-copy-context" title="Copy full markdown content" disabled>Copy context</button>
   `;
   $('btn-copy-path')?.addEventListener('click', () =>
     copyAndFlash('btn-copy-path', entry.filePath));
@@ -631,6 +632,13 @@ async function openDrawer(id) {
     const res  = await fetch(`/api/raw?path=${encodeURIComponent(entry.filePath)}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
+
+    // Enable Copy context now that we have raw content
+    const ctxBtn = $('btn-copy-context');
+    if (ctxBtn) {
+      ctxBtn.disabled = false;
+      ctxBtn.addEventListener('click', () => copyAndFlash('btn-copy-context', json.content));
+    }
 
     let bodyHtml = `<div class="md">${renderMd(json.content)}</div>`;
 
@@ -722,6 +730,46 @@ $('btn-rescan').addEventListener('click', async () => {
   }
 });
 
+// ── Feedback modal ───────────────────────────────────────────────────────────
+
+const fbModal = $('fb-modal');
+const fbText  = $('fb-text');
+const fbStatus= $('fb-status');
+
+function openFeedback() {
+  fbModal.classList.remove('fb-hidden');
+  fbStatus.textContent = '';
+  setTimeout(() => fbText.focus(), 50);
+}
+function closeFeedback() { fbModal.classList.add('fb-hidden'); }
+
+$('btn-feedback').addEventListener('click', openFeedback);
+$('fb-close').addEventListener('click', closeFeedback);
+fbModal.addEventListener('click', e => { if (e.target === fbModal) closeFeedback(); });
+
+$('fb-submit').addEventListener('click', async () => {
+  const content = fbText.value.trim();
+  if (!content) { fbStatus.textContent = '内容不能为空'; return; }
+  const btn = $('fb-submit');
+  btn.disabled = true;
+  fbStatus.textContent = '提交中…';
+  try {
+    const res = await fetch('/api/feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    fbStatus.textContent = '✓ 已保存到 feedback.md';
+    fbText.value = '';
+    setTimeout(closeFeedback, 900);
+  } catch (e) {
+    fbStatus.textContent = '提交失败: ' + e.message;
+  } finally {
+    btn.disabled = false;
+  }
+});
+
 // ── Search input sync ─────────────────────────────────────────────────────────
 
 function syncSearchInput() {
@@ -746,6 +794,9 @@ document.addEventListener('keydown', e => {
   }
 
   if (e.key === 'Escape') {
+    if (!fbModal.classList.contains('fb-hidden')) {
+      closeFeedback(); return;
+    }
     if ($('drawer').classList.contains('open')) {
       closeDrawer(); return;
     }

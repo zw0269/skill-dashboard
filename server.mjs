@@ -1,36 +1,15 @@
-/**
- * server.mjs
- * Local HTTP server for skill-dashboard. Port: 10010
- * Zero external dependencies.
- *
- * Routes:
- *   GET  /              → public/index.html
- *   GET  /api/index     → data/index.json (scans if missing)
- *   GET  /api/raw?path= → raw markdown content for one file
- *   POST /api/rescan    → trigger rescan, returns { ok, total }
- *   POST /api/open      → open file in Windows Explorer
- *   GET  /api/health    → { ok: true, uptime, port }
- *   GET  /public/*      → static files
- *
- * Security:
- *   - /api/raw and /api/open verify the resolved path is within SKILL_ROOT
- *   - Request body is limited to 64 KB to prevent memory exhaustion
- *   - Directory traversal via static file path is blocked
- *
- * Extension:
- *   Add new routes in the ROUTES array. Each route is
- *   { method, path, handler(req, res, url) }.
- */
-
 import { createServer }                          from 'node:http';
-import { readFileSync, existsSync, statSync }    from 'node:fs';
+import { readFileSync, existsSync, statSync, appendFileSync } from 'node:fs';
 import { join, resolve, extname, normalize, sep } from 'node:path';
 import { fileURLToPath }                         from 'node:url';
 import { exec }                                  from 'node:child_process';
+import { platform }                               from 'node:os';
 import { SKILL_ROOT, INDEX_FILE, runScan }       from './scanner.mjs';
 
 const __dirname  = fileURLToPath(new URL('.', import.meta.url));
 const PUBLIC_DIR = resolve(join(__dirname, 'public'));
+const FEEDBACK_FILE = resolve(join(__dirname, 'feedback.md'));
+const MAX_FEEDBACK = 8 * 1024;
 const PORT       = 8082;
 const START_TIME = Date.now();
 const MAX_BODY   = 64 * 1024; // 64 KB request body limit
@@ -181,12 +160,46 @@ async function handleOpen(req, res) {
   const safe = safePath(body.path || '');
   if (!safe) { sendError(res, 'Invalid path', 403); return; }
 
-  // Windows: open Explorer and select the file
-  const cmd = `explorer /select,"${safe.replace(/\//g, '\\')}"`;
+  // Cross-platform: reveal file in OS file manager
+  const plat = platform();
+  let cmd;
+  if (plat === 'win32') {
+    cmd = `explorer /select,"${safe.replace(/\//g, '\\')}"`;
+  } else if (plat === 'darwin') {
+    cmd = `open -R "${safe}"`;
+  } else {
+    // Linux: open containing directory (xdg-open has no "select file" flag)
+    const dir = safe.replace(/[\/\\][^\/\\]*$/, '') || '/';
+    cmd = `xdg-open "${dir}"`;
+  }
   exec(cmd, (err) => {
-    if (err) console.warn('  explorer open failed:', err.message);
+    if (err) console.warn('  reveal failed:', err.message);
   });
   sendJson(res, { ok: true });
+}
+
+async function handleFeedback(req, res) {
+  let body;
+  try { body = await readBody(req); }
+  catch (e) { sendError(res, e.message); return; }
+
+  const content = typeof body.content === 'string' ? body.content.trim() : '';
+  if (!content) { sendError(res, 'Empty content'); return; }
+  if (content.length > MAX_FEEDBACK) { sendError(res, 'Content too large'); return; }
+
+  const ts    = new Date().toISOString();
+  const entry = `## ${ts}\n\n${content}\n\n---\n\n`;
+
+  try {
+    if (!existsSync(FEEDBACK_FILE)) {
+      appendFileSync(FEEDBACK_FILE, '# Feedback Log\n\n', 'utf-8');
+    }
+    appendFileSync(FEEDBACK_FILE, entry, 'utf-8');
+  } catch (e) {
+    sendError(res, 'Failed to write feedback: ' + e.message, 500);
+    return;
+  }
+  sendJson(res, { ok: true, savedAt: ts });
 }
 
 async function handleHealth(req, res) {
@@ -205,8 +218,9 @@ const ROUTES = [
   { method: 'GET',  path: '/api/index',  handler: handleIndex  },
   { method: 'GET',  path: '/api/raw',    handler: handleRaw    },
   { method: 'POST', path: '/api/rescan', handler: handleRescan },
-  { method: 'POST', path: '/api/open',   handler: handleOpen   },
-  { method: 'GET',  path: '/api/health', handler: handleHealth },
+  { method: 'POST', path: '/api/open',     handler: handleOpen     },
+  { method: 'POST', path: '/api/feedback', handler: handleFeedback },
+  { method: 'GET',  path: '/api/health',   handler: handleHealth   },
 ];
 
 // ── Request dispatcher ──────────────────────────────────────────────────────
@@ -286,6 +300,7 @@ if (!existsSync(INDEX_FILE)) {
   catch (e) { console.error('Initial scan failed:', e.message); }
 }
 
-server.listen(PORT, '127.0.0.1', () => {
+server.listen(PORT, '0.0.0.0', () => { 
   console.log(`\n  Skill Dashboard  →  http://localhost:${PORT}\n`);
+
 });

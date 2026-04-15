@@ -77,7 +77,8 @@ body {
 /* ── Header buttons ────────────────────────────────────────────────────── */
 .hdr-btn,
 #btn-rescan,
-#btn-favorites-toggle {
+#btn-favorites-toggle,
+#btn-feedback {
   background: var(--bg3);
   border: 1px solid var(--border);
   color: var(--text2);
@@ -90,7 +91,8 @@ body {
 }
 .hdr-btn:hover,
 #btn-rescan:hover,
-#btn-favorites-toggle:hover    { border-color: var(--accent); color: var(--text); }
+#btn-favorites-toggle:hover,
+#btn-feedback:hover            { border-color: var(--accent); color: var(--text); }
 #btn-rescan.loading            { opacity: .5; pointer-events: none; }
 #btn-favorites-toggle.active   { border-color: var(--yellow); color: var(--yellow); }
 
@@ -522,3 +524,61 @@ body {
 ::-webkit-scrollbar-track       { background: transparent; }
 ::-webkit-scrollbar-thumb       { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text2); }
+
+/* ── Feedback modal ─────────────────────────────────────────────── */
+#fb-modal {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 100;
+}
+#fb-modal.fb-hidden { display: none; }
+#fb-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 480px; max-width: 92vw;
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column;
+}
+#fb-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+#fb-close {
+  background: none; border: none; color: var(--text2);
+  cursor: pointer; font-size: 14px;
+}
+#fb-close:hover { color: var(--text); }
+#fb-text {
+  margin: 12px 14px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+}
+#fb-text:focus { border-color: var(--accent); }
+#fb-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0 14px 12px;
+  gap: 10px;
+}
+#fb-status { font-size: 11px; color: var(--text2); }
+#fb-submit {
+  background: var(--accent);
+  border: none;
+  color: white;
+  border-radius: var(--radius);
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#fb-submit:hover { background: var(--accent2); }
+#fb-submit:disabled { opacity: .5; cursor: not-allowed; }
