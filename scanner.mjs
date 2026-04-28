@@ -118,9 +118,10 @@ function inferNameFromPath(filePath) {
 }
 
 /**
- * Build a deduplicated tag array from path segments + frontmatter color.
- * Only intermediate path segments (not the filename or the collection root)
- * are used as tags.
+ * Build a deduplicated tag array from path segments + frontmatter
+ * (tags / category / color / preamble-tier). Only intermediate path
+ * segments (not the filename or the collection root) are used.
+ * Allows CJK characters so Chinese-language frontmatter tags survive.
  * @param {string} filePath
  * @param {Record<string,any>} data  - parsed frontmatter
  * @param {string[]} skipDirs
@@ -132,13 +133,32 @@ function buildTags(filePath, data, skipDirs) {
   const parts   = rel.split('/');
 
   const tags = new Set();
-  // Skip [0] = collection root dir, skip last = filename
+
+  // Path-derived tags (ASCII-only — directory names should be safe identifiers).
   for (const seg of parts.slice(1, -1)) {
     if (!seg || seg.startsWith('.') || skipSet.has(seg)) continue;
     const clean = seg.toLowerCase().replace(/[^a-z0-9\-]/g, '');
     if (clean.length > 1) tags.add(clean);
   }
-  if (data.color) tags.add(data.color.toLowerCase().replace(/[^a-z]/g, ''));
+
+  // Frontmatter-derived tags (CJK allowed for non-English collections).
+  const cjkClean = (raw) => String(raw)
+    .toLowerCase()
+    .replace(/[\s,\[\]'"`]+/g, '-')
+    .replace(/[^a-z0-9一-鿿\-]/g, '')
+    .replace(/^-+|-+$/g, '');
+
+  if (Array.isArray(data.tags)) {
+    for (const t of data.tags) {
+      const clean = cjkClean(t);
+      if (clean.length >= 2 && clean.length <= 30) tags.add(clean);
+    }
+  }
+  if (typeof data.category === 'string' && data.category.trim()) {
+    const clean = cjkClean(data.category);
+    if (clean.length >= 2) tags.add(clean);
+  }
+  if (data.color) tags.add(String(data.color).toLowerCase().replace(/[^a-z]/g, ''));
   if (data['preamble-tier']) tags.add(`tier-${data['preamble-tier']}`);
 
   return [...tags].slice(0, 8);
