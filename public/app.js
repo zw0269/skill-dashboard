@@ -610,19 +610,28 @@ async function openDrawer(id) {
   $('drawer-meta').innerHTML = metaHtml;
 
   // Actions
+  const isLocalHost = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
+  const explorerBtn = isLocalHost
+    ? `<button class="action-btn" id="btn-open-explorer" title="Reveal in Explorer">Show in Explorer</button>`
+    : `<button class="action-btn" id="btn-open-explorer" title="Remote mode: copies path instead">Copy path (remote)</button>`;
   $('drawer-actions').innerHTML = `
     <button class="action-btn" id="btn-copy-path" title="Copy file path">Copy path</button>
     <button class="action-btn" id="btn-copy-name" title="Copy skill name">Copy name</button>
-    <button class="action-btn" id="btn-open-explorer" title="Reveal in Explorer">Show in Explorer</button>
+    ${explorerBtn}
     <button class="action-btn" id="btn-copy-context" title="Copy full markdown content" disabled>Copy context</button>
   `;
   $('btn-copy-path')?.addEventListener('click', () =>
     copyAndFlash('btn-copy-path', entry.filePath));
   $('btn-copy-name')?.addEventListener('click', () =>
     copyAndFlash('btn-copy-name', entry.name));
-  $('btn-open-explorer')?.addEventListener('click', () =>
-    fetch('/api/open', { method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ path: entry.filePath }) }).catch(() => {}));
+  $('btn-open-explorer')?.addEventListener('click', () => {
+    if (isLocalHost) {
+      fetch('/api/open', { method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ path: entry.filePath }) }).catch(() => {});
+    } else {
+      copyAndFlash('btn-open-explorer', entry.filePath);
+    }
+  });
 
   // Load raw content
   const body = $('drawer-body');
@@ -683,15 +692,29 @@ function closeDrawer() {
 }
 
 async function copyAndFlash(btnId, text) {
+  const btn = $(btnId);
+  let ok = false;
   try {
-    await navigator.clipboard.writeText(text);
-    const btn = $(btnId);
-    if (!btn) return;
-    const orig = btn.textContent;
-    btn.textContent = 'Copied!';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
-  } catch {/* ignore clipboard errors */}
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none;';
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, text.length);
+      ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  } catch { ok = false; }
+  if (!btn) return;
+  const orig = btn.textContent;
+  btn.textContent = ok ? 'Copied!' : 'Copy failed';
+  btn.classList.add('copied');
+  setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
 }
 
 // ── Drawer events ─────────────────────────────────────────────────────────────
@@ -808,6 +831,60 @@ document.addEventListener('keydown', e => {
     }
   }
 });
+
+// ── Mobile sidebar / backdrop ────────────────────────────────────────────────
+// Sidebar slides off-canvas under 860px (see style.css media queries).
+// `#backdrop` covers the main area while sidebar OR drawer is open on small
+// screens; clicking it closes whichever is open.
+//
+// `openDrawer` and `closeDrawer` (declared above) call `syncBackdrop()` via
+// the global hook below — we attach a MutationObserver to the relevant
+// elements rather than monkey-patching the functions, to keep behavior
+// transparent to the rest of the app.
+
+const MOBILE_QUERY = window.matchMedia('(max-width: 860px)');
+const TABLET_QUERY = window.matchMedia('(max-width: 1024px)');
+
+function isMobile() { return MOBILE_QUERY.matches; }
+function isTablet() { return TABLET_QUERY.matches; }
+
+function syncBackdrop() {
+  const sidebarOpen = $('sidebar').classList.contains('open');
+  const drawerOpen  = $('drawer').classList.contains('open');
+  const need = (sidebarOpen && isMobile()) || (drawerOpen && isTablet());
+  $('backdrop').classList.toggle('visible', need);
+}
+
+function openSidebar()  { $('sidebar').classList.add('open');    syncBackdrop(); }
+function closeSidebar() { $('sidebar').classList.remove('open'); syncBackdrop(); }
+
+$('btn-menu').addEventListener('click', () => {
+  if ($('sidebar').classList.contains('open')) closeSidebar();
+  else openSidebar();
+});
+
+$('backdrop').addEventListener('click', () => {
+  if ($('sidebar').classList.contains('open')) closeSidebar();
+  if ($('drawer').classList.contains('open')  && isTablet()) closeDrawer();
+});
+
+// Watch for class changes on sidebar + drawer so that backdrop stays in
+// sync no matter who toggles them (drawer can be closed via Esc, drawer
+// close button, or auto-collapsed on hashchange / rescan).
+const _classObserver = new MutationObserver(() => {
+  syncBackdrop();
+  // Auto-close sidebar when a card is selected on mobile (drawer just opened)
+  if (isMobile() && $('drawer').classList.contains('open')) closeSidebar();
+});
+_classObserver.observe($('sidebar'), { attributes: true, attributeFilter: ['class'] });
+_classObserver.observe($('drawer'),  { attributes: true, attributeFilter: ['class'] });
+
+// Re-evaluate when viewport crosses breakpoints
+MOBILE_QUERY.addEventListener?.('change', () => {
+  if (!isMobile()) closeSidebar();
+  syncBackdrop();
+});
+TABLET_QUERY.addEventListener?.('change', syncBackdrop);
 
 // ── Render all (used after hash change) ──────────────────────────────────────
 

@@ -133,6 +133,14 @@
         "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "LICENSE", "ROADMAP.md"
       ],
       "color": "#f43f5e"
+    },
+    {
+      "id": "ielts-coach",
+      "label": "ielts-coach",
+      "dir": "ielts-coach",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#0891b2"
     }
   ],
   "skipDirs": [

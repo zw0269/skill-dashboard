@@ -4,7 +4,21 @@
       "Bash(xargs -I {} bash -c 'echo \"=== {} ===\" && head -50 \"{}\"')",
       "Bash(node -c server.mjs)",
       "Bash(node -c scanner.mjs)",
-      "Bash(node -c public/app.js)"
+      "Bash(node -c public/app.js)",
+      "Bash(git commit -m ' *)",
+      "Read(//Users/zw/work/project_test/superpowers/skills/**)",
+      "Read(//Users/zw/work/project_test/lobe-chat-agents/src/**)",
+      "Read(//Users/zw/work/project_test/superpowers/agents/**)",
+      "Read(//Users/zw/work/project_test/lobe-chat-agents/**)",
+      "Bash(grep -E '\\\\.\\(zh-CN|en-US|ja-JP|ko-KR|en-DK\\)\\\\.json$')",
+      "Bash(grep -vE '\\\\.\\(zh-CN|en-US|ja-JP|ko-KR|en-DK\\)\\\\.json$')",
+      "Bash(grep '\\\\.json$')",
+      "Bash(node -e ' *)",
+      "Bash([ -f \"$d/SKILL.md\" ])",
+      "Bash(node *)",
+      "Bash(xargs -I{} head -25 /Users/zw/work/project_test/Skill研究/lobe-chat-agents/{})",
+      "Bash(read f *)",
+      "Bash(git add *)"
     ]
   }
 }
