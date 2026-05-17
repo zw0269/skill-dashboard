@@ -141,6 +141,30 @@
       "type": "skill",
       "scanRule": "SKILL.md",
       "color": "#0891b2"
+    },
+    {
+      "id": "fs-vertical-plugins",
+      "label": "fs-vertical-plugins",
+      "dir": "financial-services/plugins/vertical-plugins",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#2563eb"
+    },
+    {
+      "id": "fs-partner-built",
+      "label": "fs-partner-built",
+      "dir": "financial-services/plugins/partner-built",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#ca8a04"
+    },
+    {
+      "id": "fs-agent-plugins",
+      "label": "fs-agent-plugins",
+      "dir": "financial-services/plugins/agent-plugins",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#6b7280"
     }
   ],
   "skipDirs": [
