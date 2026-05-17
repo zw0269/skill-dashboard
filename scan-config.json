@@ -148,6 +148,7 @@
       "dir": "financial-services/plugins/vertical-plugins",
       "type": "skill",
       "scanRule": "SKILL.md",
+      "nameStrategy": "plugin-prefix",
       "color": "#2563eb"
     },
     {
@@ -164,6 +165,7 @@
       "dir": "financial-services/plugins/agent-plugins",
       "type": "skill",
       "scanRule": "SKILL.md",
+      "nameStrategy": "plugin-prefix",
       "color": "#6b7280"
     }
   ],

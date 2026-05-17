@@ -167,14 +167,33 @@ function buildTags(filePath, data, skipDirs) {
 // ── Entry parser ───────────────────────────────────────────────────────────
 
 /**
+ * For collections whose upstream packs the same skill into multiple plugins
+ * (e.g. financial-services), prefix the display name with the parent plugin
+ * directory so cross-plugin duplicates are distinguishable.
+ *
+ * Activates only when col.nameStrategy === 'plugin-prefix' AND the file sits
+ * at `<...>/<plugin>/skills/<skill>/SKILL.md`. No-op otherwise.
+ */
+function applyNameStrategy(filePath, baseName, strategy) {
+  if (strategy !== 'plugin-prefix') return baseName;
+  const rel   = fwd(relative(SKILL_ROOT, filePath));
+  const parts = rel.split('/');
+  if (parts.length < 4) return baseName;
+  if (parts[parts.length - 3] !== 'skills') return baseName;
+  const plugin = parts[parts.length - 4];
+  if (!plugin) return baseName;
+  if (baseName === plugin || baseName.startsWith(`${plugin}/`)) return baseName;
+  return `${plugin}/${baseName}`;
+}
+
+/**
  * Parse a single markdown file into a SkillEntry (without duplicates field).
  * @param {string} filePath
- * @param {string} collectionId
- * @param {string} type
+ * @param {object} col          - collection config from scan-config.json
  * @param {string[]} skipDirs
  * @returns {object|null}
  */
-function parseEntry(filePath, collectionId, type, skipDirs) {
+function parseEntry(filePath, col, skipDirs) {
   let content;
   try {
     content = readFileSync(filePath, 'utf-8');
@@ -185,10 +204,11 @@ function parseEntry(filePath, collectionId, type, skipDirs) {
 
   const { data, body } = parseFrontmatter(content);
 
-  // Name: frontmatter.name (string only) or path-derived
-  const name = (typeof data.name === 'string' && data.name.trim())
+  // Name: frontmatter.name (string only) or path-derived, then apply strategy
+  const baseName = (typeof data.name === 'string' && data.name.trim())
     ? data.name.trim()
     : inferNameFromPath(filePath);
+  const name = applyNameStrategy(filePath, baseName, col.nameStrategy);
 
   if (!name) return null;
 
@@ -206,11 +226,11 @@ function parseEntry(filePath, collectionId, type, skipDirs) {
 
   return {
     id:              fwd(relative(SKILL_ROOT, filePath)),
-    collection:      collectionId,
+    collection:      col.id,
     name,
     description,
     filePath:        fwd(filePath),
-    type,
+    type:            col.type,
     tags,
     tools,
     triggerKeywords,
@@ -301,7 +321,7 @@ export function runScan(opts = {}) {
         return;
       }
 
-      const entry = parseEntry(filePath, col.id, col.type, config.skipDirs || []);
+      const entry = parseEntry(filePath, col, config.skipDirs || []);
       if (entry) entries.push(entry);
     });
   }
