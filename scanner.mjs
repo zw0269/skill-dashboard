@@ -39,6 +39,7 @@ import {
 } from 'node:fs';
 import { join, resolve, relative, extname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import {
   parseFrontmatter,
   extractFirstParagraph,
@@ -264,6 +265,72 @@ function walk(dir, skipSet, visitor) {
   }
 }
 
+// ── Cross-collection content dedupe ────────────────────────────────────────
+
+/**
+ * For each configured group, hash file contents of in-group entries and
+ * collapse identical-content clusters down to the single highest-priority
+ * copy (priority list defaults to the collections list order). Mutates
+ * `entries` in place.
+ *
+ * Config shape (scan-config.json):
+ *   "dedupeGroups": [
+ *     { "collections": ["a","b"], "priority": ["a","b"] }
+ *   ]
+ *
+ * @param {object[]} entries
+ * @param {Array<{collections:string[], priority?:string[]}>} groups
+ */
+function dedupeAcrossCollections(entries, groups) {
+  for (const group of groups) {
+    const collections = group.collections || [];
+    if (collections.length < 2) continue;
+    const priority = group.priority || collections;
+    const colSet   = new Set(collections);
+
+    const inGroup = entries.filter(e => colSet.has(e.collection));
+    if (inGroup.length < 2) continue;
+
+    // Content hash per entry (read fresh; entries restored from cache lack body).
+    const hashOf = new Map();
+    for (const e of inGroup) {
+      try {
+        hashOf.set(e.id, createHash('md5').update(readFileSync(e.filePath)).digest('hex'));
+      } catch {
+        hashOf.set(e.id, `__nohash__${e.id}`);
+      }
+    }
+
+    // Cluster by hash
+    const byHash = new Map();
+    for (const e of inGroup) {
+      const h = hashOf.get(e.id);
+      if (!byHash.has(h)) byHash.set(h, []);
+      byHash.get(h).push(e);
+    }
+
+    // Pick canonical per cluster; rest are dropped.
+    const toDrop = new Set();
+    for (const arr of byHash.values()) {
+      if (arr.length < 2) continue;
+      arr.sort((a, b) => {
+        const pa = priority.indexOf(a.collection);
+        const pb = priority.indexOf(b.collection);
+        const ra = pa === -1 ? 1e9 : pa;
+        const rb = pb === -1 ? 1e9 : pb;
+        if (ra !== rb) return ra - rb;
+        return a.id.localeCompare(b.id);
+      });
+      for (let i = 1; i < arr.length; i++) toDrop.add(arr[i].id);
+    }
+
+    if (toDrop.size === 0) continue;
+    for (let i = entries.length - 1; i >= 0; i--) {
+      if (toDrop.has(entries[i].id)) entries.splice(i, 1);
+    }
+  }
+}
+
 // ── Main scan logic ────────────────────────────────────────────────────────
 
 /**
@@ -345,6 +412,14 @@ export function runScan(opts = {}) {
       const { duplicates: _d, ...rest } = prev;
       entries.push(rest);
     }
+  }
+
+  // ── Cross-collection content dedupe (config-driven) ────────────────────
+  // For collection groups where the upstream repo packs the same SKILL.md
+  // into multiple sub-plugin folders (e.g. financial-services), keep only
+  // the highest-priority copy and drop the rest. See scan-config.dedupeGroups.
+  if (Array.isArray(config.dedupeGroups) && config.dedupeGroups.length) {
+    dedupeAcrossCollections(entries, config.dedupeGroups);
   }
 
   // ── Duplicate detection ────────────────────────────────────────────────

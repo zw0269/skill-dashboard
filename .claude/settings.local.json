@@ -18,7 +18,13 @@
       "Bash(node *)",
       "Bash(xargs -I{} head -25 /Users/zw/work/project_test/Skill研究/lobe-chat-agents/{})",
       "Bash(read f *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git push *)",
+      "Bash(md5 -q agent-plugins/earnings-reviewer/skills/audit-xls/SKILL.md)",
+      "Bash(md5 -q vertical-plugins/financial-analysis/skills/audit-xls/SKILL.md)",
+      "Bash(md5 -q agent-plugins/gl-reconciler/skills/audit-xls/SKILL.md)",
+      "Bash(md5 -q agent-plugins/earnings-reviewer/skills/xlsx-author/SKILL.md)",
+      "Bash(md5 -q vertical-plugins/financial-analysis/skills/xlsx-author/SKILL.md)"
     ]
   }
 }

@@ -174,5 +174,13 @@
     "skill-dashboard", "references", "assets", "bin", "extension",
     "preview", "docs", "scripts", "tests", "test", "playbooks",
     "examples", "fixtures", "vscode", "cursor", "kiro"
+  ],
+  "dedupeGroups": [
+    {
+      "_comment": "fs upstream packs the same SKILL.md across multiple plugin folders. Keep one copy; priority left→right.",
+      "label": "financial-services",
+      "collections": ["fs-vertical-plugins", "fs-agent-plugins", "fs-partner-built"],
+      "priority": ["fs-vertical-plugins", "fs-agent-plugins", "fs-partner-built"]
+    }
   ]
 }
