@@ -31,6 +31,11 @@
  *   version        - semver string or ""
  *   emoji          - single emoji char or ""
  *   duplicates     - id[] of same-named entries in OTHER collections
+ *   domain         - functional-domain id (scan-config.domains) or "other"
+ *   summaryZh      - short Chinese gloss for English entries, else ""
+ *
+ * domain + summaryZh come from data/classification.json (one-time LLM pass,
+ * merged in by id+content-hash). See applyClassification().
  */
 
 import {
@@ -54,6 +59,7 @@ export const SKILL_ROOT  = resolve(__dirname, '..');
 const DATA_DIR     = join(__dirname, 'data');
 export const INDEX_FILE  = join(DATA_DIR, 'index.json');
 const CACHE_FILE   = join(DATA_DIR, 'scan-cache.json');
+const CLASS_FILE   = join(DATA_DIR, 'classification.json');
 const CONFIG_FILE  = join(__dirname, 'scan-config.json');
 
 // ── Config loading ─────────────────────────────────────────────────────────
@@ -331,6 +337,44 @@ function dedupeAcrossCollections(entries, groups) {
   }
 }
 
+// ── Functional-domain classification merge ──────────────────────────────────
+
+/**
+ * Attach `domain` + `summaryZh` to every entry from data/classification.json
+ * (generated once by an LLM pass; see scan-config.domains + README).
+ *
+ * The classification is keyed by entry id and carries the content hash that
+ * was current when it was produced. If an entry's content changed (hash
+ * mismatch) or it has no record, it falls back to domain "other" so the panel
+ * still works — re-run the classification workflow to fill it in.
+ *
+ * @param {object[]} entries   - mutated in place
+ * @param {Set<string>} validDomains
+ */
+function applyClassification(entries, validDomains) {
+  let byId = {};
+  try {
+    byId = (JSON.parse(readFileSync(CLASS_FILE, 'utf-8')).byId) || {};
+  } catch {
+    console.warn('  [warn] no data/classification.json — all entries → domain "other". Run the classification workflow to populate it.');
+  }
+
+  let classified = 0, stale = 0, missing = 0;
+  for (const e of entries) {
+    const rec  = byId[e.id];
+    const hash = createHash('md5').update(`${e.name}\n${e.description}`).digest('hex');
+
+    if (!rec)                       { e.domain = 'other'; e.summaryZh = ''; missing++; continue; }
+    if (rec.hash && rec.hash !== hash) { e.domain = 'other'; e.summaryZh = ''; stale++;   continue; }
+
+    e.domain    = validDomains.has(rec.domain) ? rec.domain : 'other';
+    e.summaryZh = typeof rec.summaryZh === 'string' ? rec.summaryZh : '';
+    classified++;
+  }
+
+  console.log(`  classified: ${classified}  stale: ${stale}  unclassified: ${missing}`);
+}
+
 // ── Main scan logic ────────────────────────────────────────────────────────
 
 /**
@@ -439,6 +483,10 @@ export function runScan(opts = {}) {
     e.duplicates = siblings.filter(id => id !== e.id);
   }
 
+  // ── Functional-domain + Chinese-gloss merge (config-driven taxonomy) ────
+  const validDomains = new Set((config.domains || []).map(d => d.id));
+  applyClassification(entries, validDomains);
+
   // ── Sort ──────────────────────────────────────────────────────────────
   const typeOrder = { skill: 0, agent: 1, 'design-doc': 2 };
   entries.sort((a, b) => {
@@ -451,15 +499,25 @@ export function runScan(opts = {}) {
   if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
 
   const byCollection = {};
+  const byDomain = {};
   for (const e of entries) {
     byCollection[e.collection] = (byCollection[e.collection] || 0) + 1;
+    byDomain[e.domain] = (byDomain[e.domain] || 0) + 1;
   }
 
+  // Per-collection colors + domain taxonomy travel with the index so the
+  // client needs no extra config fetch.
+  const collectionColors = {};
+  for (const c of config.collections) if (c.color) collectionColors[c.id] = c.color;
+
   const output = {
-    version: 2,
+    version: 3,
     scannedAt: new Date().toISOString(),
     total: entries.length,
     byCollection,
+    byDomain,
+    domains: config.domains || [],
+    collectionColors,
     entries,
   };
 
@@ -470,6 +528,10 @@ export function runScan(opts = {}) {
   console.log(`\nScanned ${entries.length} entries → data/index.json`);
   for (const [col, count] of Object.entries(byCollection)) {
     console.log(`  ${col}: ${count}`);
+  }
+  console.log('  ── by domain ──');
+  for (const [dom, count] of Object.entries(byDomain).sort((a, b) => b[1] - a[1])) {
+    console.log(`  ${dom}: ${count}`);
   }
   console.log();
 

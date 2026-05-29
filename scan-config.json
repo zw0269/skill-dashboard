@@ -1,6 +1,23 @@
 {
   "_comment": "Add new skill collections here. No code changes needed.",
   "version": 1,
+  "_domains_comment": "功能域 taxonomy（按作用分组的主轴）。LLM 分类只能归入这里的固定 id，不得自创。新增/调整域后需重跑分类（见 data/classification.json）。",
+  "domains": [
+    { "id": "coding",         "label": "编码与工程",     "color": "#6366f1", "icon": "💻", "desc": "实现、重构、脚手架、构建与发布" },
+    { "id": "review",         "label": "代码审查与质量", "color": "#0ea5e9", "icon": "🔍", "desc": "代码审查、测试、QA、安全审计" },
+    { "id": "planning",       "label": "规划与项目管理", "color": "#8b5cf6", "icon": "🗺️", "desc": "需求拆解、计划、路线图、项目管理" },
+    { "id": "debugging",      "label": "调试与排错",     "color": "#f97316", "icon": "🐞", "desc": "调试、排障、根因分析" },
+    { "id": "research",       "label": "研究与分析",     "color": "#14b8a6", "icon": "🔬", "desc": "研究、信息检索、数据分析" },
+    { "id": "writing",        "label": "写作与内容",     "color": "#ec4899", "icon": "✍️", "desc": "文档、文案、内容创作" },
+    { "id": "design",         "label": "设计与界面",     "color": "#ef4444", "icon": "🎨", "desc": "设计系统、UI/UX、品牌与视觉" },
+    { "id": "data-finance",   "label": "数据与金融",     "color": "#ca8a04", "icon": "📊", "desc": "金融、投研、数据工程" },
+    { "id": "marketing",      "label": "市场与增长",     "color": "#f59e0b", "icon": "📈", "desc": "市场、增长、SEO、社媒、广告投放" },
+    { "id": "sales-support",  "label": "销售与客户",     "color": "#22c55e", "icon": "🤝", "desc": "销售、客户成功、客服、CRM" },
+    { "id": "operations",     "label": "运营与商业",     "color": "#64748b", "icon": "🏢", "desc": "运营、商业战略、法务、人力、财务" },
+    { "id": "education",      "label": "教育与辅导",     "color": "#0891b2", "icon": "📚", "desc": "教学、辅导、语言学习、培训" },
+    { "id": "agent-workflow", "label": "智能体与工作流", "color": "#a855f7", "icon": "🤖", "desc": "智能体编排、harness、元技能、流程自动化" },
+    { "id": "other",          "label": "其它 / 未分类",  "color": "#9ca3af", "icon": "📦", "desc": "暂未归类" }
+  ],
   "collections": [
     {
       "id": "gstack",

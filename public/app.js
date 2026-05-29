@@ -143,24 +143,52 @@ function renderMd(raw) {
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
-const TYPE_LABEL = { skill: 'SKILL', agent: 'AGENT', 'design-doc': 'DESIGN' };
+const TYPE_LABEL = { skill: '技能', agent: '智能体', 'design-doc': '设计' };
+const TYPE_LABEL_ICON = { skill: '🔧 技能', agent: '🤖 智能体', 'design-doc': '🎨 设计' };
 const TYPE_CLASS = { skill: 'badge-skill', agent: 'badge-agent', 'design-doc': 'badge-design' };
 const FAV_KEY    = 'skill-dashboard-favs';
+
+// 「我想…」意图入口 → 直达对应功能域。这是渐进披露里「给一个清晰的下一步」的落地。
+const INTENTS = [
+  { label: '写代码',     domain: 'coding' },
+  { label: '审查代码',   domain: 'review' },
+  { label: '调试排错',   domain: 'debugging' },
+  { label: '做规划',     domain: 'planning' },
+  { label: '做研究',     domain: 'research' },
+  { label: '写文档',     domain: 'writing' },
+  { label: '做设计',     domain: 'design' },
+  { label: '智能体/流程', domain: 'agent-workflow' },
+];
+
+const DOMAIN_FALLBACK = { id: 'other', label: '其它/未分类', color: '#9ca3af', icon: '📦', desc: '暂未归类' };
 
 // ── State ────────────────────────────────────────────────────────────────────
 
 const state = {
-  all:       [],        // full SkillEntry[]
-  filtered:  [],        // after filters
-  search:    '',
-  hiddenCols:new Set(), // collections to HIDE
-  hiddenTypes:new Set(),// types to HIDE
-  activeTag: '',        // tag filter (single tag from cloud)
-  favOnly:   false,     // show only favorites
-  selectedId:null,      // open drawer entry id
-  favorites: loadFavs(),// Set<id>
-  colors:    {},        // id → color, populated from index
+  all:        [],        // full SkillEntry[]
+  filtered:   [],        // after filters
+  search:     '',
+  activeDomain:'',       // '' = 概览;否则进入该功能域视图
+  hiddenCols: new Set(), // collections to HIDE (次级过滤)
+  hiddenTypes:new Set(), // types to HIDE
+  activeTag:  '',        // tag filter (single tag from cloud)
+  favOnly:    false,     // show only favorites
+  selectedId: null,      // open drawer entry id
+  favorites:  loadFavs(),// Set<id>
+  colors:     {},        // collection id → color, populated from index
+  domains:    [],        // functional-domain taxonomy from index.json
 };
+
+// 当前视图：搜索/收藏中 → 跨域结果;选中某域 → 该域卡片;否则 → 功能域概览。
+function currentView() {
+  if (state.search || state.favOnly) return 'list';
+  if (state.activeDomain)            return 'domain';
+  return 'overview';
+}
+
+function domainMeta(id) {
+  return state.domains.find(d => d.id === id) || DOMAIN_FALLBACK;
+}
 
 // ── Favorites persistence ────────────────────────────────────────────────────
 
@@ -180,14 +208,15 @@ function toggleFav(id) {
 }
 
 // ── URL hash state sync ──────────────────────────────────────────────────────
-// Format: #q=search&col=gstack,pua&type=skill&tag=design
+// Format: #domain=coding&q=search&col=gstack,pua&type=skill&tag=design
 // Only non-default values are written to keep URLs clean.
 
 function hashToState() {
   const params = new URLSearchParams(location.hash.slice(1));
-  state.search     = params.get('q')    || '';
-  state.activeTag  = params.get('tag')  || '';
-  state.favOnly    = params.get('fav')  === '1';
+  state.search       = params.get('q')      || '';
+  state.activeDomain = params.get('domain') || '';
+  state.activeTag    = params.get('tag')    || '';
+  state.favOnly      = params.get('fav')    === '1';
 
   const colStr  = params.get('col')  || '';
   const typeStr = params.get('type') || '';
@@ -197,6 +226,7 @@ function hashToState() {
 
 function stateToHash() {
   const p = new URLSearchParams();
+  if (state.activeDomain) p.set('domain', state.activeDomain);
   if (state.search)    p.set('q',    state.search);
   if (state.activeTag) p.set('tag',  state.activeTag);
   if (state.favOnly)   p.set('fav',  '1');
@@ -220,13 +250,14 @@ async function init() {
     const res  = await fetch('/api/index');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
-    state.all  = json.entries || [];
+    state.all     = json.entries || [];
+    state.domains = json.domains || [];
 
     // Build color map from index (server embeds collection colors via scan-config)
     // Fallback: derive from COLLECTION_COLORS map below
     state.colors = json.collectionColors || {};
 
-    $('stats').textContent = `${state.all.length} entries · scanned ${
+    $('stats').textContent = `${state.all.length} 条 · 扫描于 ${
       new Date(json.scannedAt).toLocaleString('zh-CN', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' })
     }`;
 
@@ -235,7 +266,7 @@ async function init() {
     applyFilters();
     syncSearchInput();
   } catch (e) {
-    $('loading').textContent = `Failed to load index: ${e.message}. Is the server running on port 10010?`;
+    $('loading').textContent = `加载索引失败：${e.message}。服务器是否在 10010 端口运行？`;
   }
 }
 
@@ -259,10 +290,74 @@ function colColor(id) { return state.colors[id] || COLORS[id] || '#64748b'; }
 // Changing collections re-renders type + tag sections to reflect available items.
 // Each section has a "全选" button.
 
-/** One-time build of the whole sidebar on init. */
+/** Build the stable sidebar sections. Domain + collection are rebuilt on each
+ *  applyFilters() so the active-domain highlight stays in sync; type + tag are
+ *  rendered reactively against the current scope. */
 function buildSidebar() {
+  buildDomainFilter();
   buildCollectionFilter();
-  // type and tag are rendered reactively in applyFilters()
+}
+
+// ── Navigation helpers (progressive disclosure) ───────────────────────────────
+
+/** Return to the functional-domain overview (clears drill-in + search + fav). */
+function goOverview() {
+  state.activeDomain = '';
+  state.search       = '';
+  state.favOnly      = false;
+  state.activeTag    = '';
+  $('search').value  = '';
+  syncFavBtn();
+  stateToHash();
+  applyFilters();
+}
+
+/** Drill into a single functional domain. */
+function enterDomain(id) {
+  state.activeDomain = id;
+  state.search       = '';
+  state.favOnly      = false;
+  state.activeTag    = '';
+  $('search').value  = '';
+  syncFavBtn();
+  stateToHash();
+  applyFilters();
+}
+
+/**
+ * Primary sidebar nav: functional domains (single-select). Rebuilt on every
+ * applyFilters() to keep the active highlight correct. Counts are over ALL
+ * entries (stable), shown in taxonomy order, hiding empty domains.
+ */
+function buildDomainFilter() {
+  const sec = $('section-domains');
+  if (!sec) return;
+
+  const counts = {};
+  for (const e of state.all) counts[e.domain] = (counts[e.domain] || 0) + 1;
+  const doms = state.domains.filter(d => counts[d.id]);
+
+  const onOverview = currentView() === 'overview';
+  const rows = doms.map(d => {
+    const active = !onOverview && !state.search && !state.favOnly && state.activeDomain === d.id;
+    return `<button class="domain-row${active ? ' active' : ''}" data-domain="${esc(d.id)}" title="${esc(d.desc || d.label)}">
+      <span class="dm-icon">${esc(d.icon || '•')}</span>
+      <span class="dm-label">${esc(d.label)}</span>
+      <span class="fr-count">${counts[d.id]}</span>
+    </button>`;
+  }).join('');
+
+  sec.innerHTML = `
+    <div class="sb-label-row">
+      <span class="sb-label">功能域</span>
+      <button class="sb-selectall" id="btn-domain-home" title="返回功能域概览">概览</button>
+    </div>
+    <div class="domain-rows">${rows}</div>`;
+
+  sec.querySelector('#btn-domain-home')?.addEventListener('click', goOverview);
+  sec.querySelectorAll('[data-domain]').forEach(btn => {
+    btn.addEventListener('click', () => enterDomain(btn.dataset.domain));
+  });
 }
 
 /**
@@ -279,7 +374,7 @@ function buildCollectionFilter() {
   const allColsSelected = state.hiddenCols.size === 0;
   sec.innerHTML = `
     <div class="sb-label-row">
-      <span class="sb-label">Collections</span>
+      <span class="sb-label">来源集合</span>
       <button class="sb-selectall" id="btn-col-all" title="${allColsSelected ? '取消全选' : '全选'}">${allColsSelected ? '取消全选' : '全选'}</button>
     </div>
     <div class="filter-rows" id="col-rows">
@@ -338,14 +433,14 @@ function buildCollectionFilter() {
  */
 function renderTypeFilter(colVisible) {
   const sec = $('section-types');
-  const TYPE_LABELS = { skill: '🔧 Skill', agent: '🤖 Agent', 'design-doc': '🎨 Design' };
+  const TYPE_LABELS = TYPE_LABEL_ICON;
 
   const counts = {};
   for (const e of colVisible) counts[e.type] = (counts[e.type] || 0) + 1;
   const types = Object.entries(counts).sort((a, b) => b[1] - a[1]);
 
   if (!types.length) {
-    sec.innerHTML = `<div class="sb-label-row"><span class="sb-label">Type</span></div>
+    sec.innerHTML = `<div class="sb-label-row"><span class="sb-label">类型</span></div>
       <div class="filter-rows"><span class="sb-empty">暂无</span></div>`;
     return;
   }
@@ -353,7 +448,7 @@ function renderTypeFilter(colVisible) {
   const allTypesSelected = state.hiddenTypes.size === 0;
   sec.innerHTML = `
     <div class="sb-label-row">
-      <span class="sb-label">Type</span>
+      <span class="sb-label">类型</span>
       <button class="sb-selectall" id="btn-type-all" title="${allTypesSelected ? '取消全选' : '全选'}">${allTypesSelected ? '取消全选' : '全选'}</button>
     </div>
     <div class="filter-rows">
@@ -430,7 +525,7 @@ function renderTagCloud(colVisible) {
 
   sec.innerHTML = `
     <div class="sb-label-row">
-      <span class="sb-label">Top Tags</span>
+      <span class="sb-label">常用标签</span>
       ${top.length ? '<button class="sb-selectall" id="btn-tag-all" title="清除标签过滤">全选</button>' : ''}
     </div>
     <div id="tag-cloud">${cloudHtml}</div>`;
@@ -453,32 +548,126 @@ function renderTagCloud(colVisible) {
 // ── Filtering ─────────────────────────────────────────────────────────────────
 
 function applyFilters() {
+  // Keep the domain nav highlight in sync with the current view.
+  buildDomainFilter();
+
+  const view = currentView();
+
+  // ── Overview (功能域着陆页) — progressive disclosure: no 705-card wall ────
+  if (view === 'overview') {
+    showOverview(true);
+    renderOverview();
+    return;
+  }
+  showOverview(false);
+
   const q = state.search.toLowerCase();
 
-  // Step 1: entries visible after collection filter only (used to drive type+tag sections)
-  const colVisible = state.all.filter(e => !state.hiddenCols.has(e.collection));
+  // Scope = collection filter + (functional domain, when drilled in).
+  // Drives the reactive Type / Tag sidebar sections too.
+  const scope = state.all.filter(e =>
+    !state.hiddenCols.has(e.collection) &&
+    (view !== 'domain' || e.domain === state.activeDomain)
+  );
 
-  // Step 2: fully filtered entries
-  state.filtered = colVisible.filter(e => {
+  state.filtered = scope.filter(e => {
     if (state.hiddenTypes.has(e.type))                        return false;
     if (state.activeTag && !e.tags.includes(state.activeTag)) return false;
     if (state.favOnly  && !state.favorites.has(e.id))         return false;
     if (!q) return true;
     return (
-      e.name.toLowerCase().includes(q)          ||
-      e.description.toLowerCase().includes(q)   ||
-      e.collection.toLowerCase().includes(q)    ||
-      e.tags.some(t => t.includes(q))            ||
+      e.name.toLowerCase().includes(q)                      ||
+      e.description.toLowerCase().includes(q)               ||
+      (e.summaryZh && e.summaryZh.toLowerCase().includes(q)) ||
+      e.collection.toLowerCase().includes(q)                ||
+      e.tags.some(t => t.includes(q))                        ||
       e.triggerKeywords.some(k => k.includes(q))
     );
   });
 
-  // Re-render reactive sidebar sections (linked to collection selection)
-  renderTypeFilter(colVisible);
-  renderTagCloud(colVisible);
+  // Reactive sidebar sections scoped to the current domain/collection view.
+  renderTypeFilter(scope);
+  renderTagCloud(scope);
 
+  renderBreadcrumb(view);
   renderCards();
   renderFilterBar();
+}
+
+// ── View switching (overview ⇄ card list) ─────────────────────────────────────
+
+function showOverview(on) {
+  $('overview').style.display   = on ? '' : 'none';
+  $('breadcrumb').style.display = on ? 'none' : '';
+  $('filter-bar').style.display = on ? 'none' : '';
+  $('cards').style.display      = on ? 'none' : '';  // empty grid would still grab flex:1 height
+  // 概览模式下隐藏次级过滤区（类型/集合/标签），侧栏只留功能域导航。
+  document.body.classList.toggle('overview-mode', on);
+  if (on) {
+    $('cards').innerHTML = '';
+    $('empty').classList.remove('visible');
+  }
+}
+
+/** Breadcrumb: 「← 功能域概览 / <当前位置>」 */
+function renderBreadcrumb(view) {
+  const bc = $('breadcrumb');
+  let label = '';
+  if (view === 'domain') {
+    const d = domainMeta(state.activeDomain);
+    label = `${d.icon || ''} ${d.label}`;
+  } else if (state.search) {
+    label = `搜索 “${state.search}”`;
+  } else if (state.favOnly) {
+    label = '★ 收藏';
+  }
+  bc.innerHTML =
+    `<button class="bc-home" id="bc-home">← 功能域概览</button>` +
+    (label ? `<span class="bc-sep">/</span><span class="bc-current">${esc(label)}</span>` : '');
+  $('bc-home')?.addEventListener('click', goOverview);
+}
+
+// ── Overview: intent bar + functional-domain tiles ────────────────────────────
+
+function renderOverview() {
+  const counts = {};
+  const examples = {};
+  for (const d of state.domains) examples[d.id] = [];
+  for (const e of state.all) {
+    counts[e.domain] = (counts[e.domain] || 0) + 1;
+    const arr = examples[e.domain];
+    if (arr && arr.length < 3) arr.push(e.name);
+  }
+
+  const intentHtml = INTENTS
+    .filter(it => counts[it.domain])
+    .map(it => `<button class="intent-btn" data-domain="${esc(it.domain)}">${esc(it.label)}</button>`)
+    .join('');
+
+  const tilesHtml = state.domains.filter(d => counts[d.id]).map(d => {
+    const ex = (examples[d.id] || []).map(esc).join(' · ');
+    return `<button class="domain-tile" data-domain="${esc(d.id)}" style="--tile-accent:${esc(d.color || '#888')}">
+      <div class="tile-top">
+        <span class="tile-icon">${esc(d.icon || '•')}</span>
+        <span class="tile-count">${counts[d.id]}</span>
+      </div>
+      <div class="tile-label">${esc(d.label)}</div>
+      <div class="tile-desc">${esc(d.desc || '')}</div>
+      ${ex ? `<div class="tile-examples">${ex}</div>` : ''}
+    </button>`;
+  }).join('');
+
+  $('overview').innerHTML = `
+    <div class="intent-bar">
+      <span class="intent-lead">我想…</span>
+      ${intentHtml}
+    </div>
+    <h2 class="overview-heading">按功能域浏览</h2>
+    <div class="overview-grid">${tilesHtml}</div>`;
+
+  $('overview').querySelectorAll('[data-domain]').forEach(el => {
+    el.addEventListener('click', () => enterDomain(el.dataset.domain));
+  });
 }
 
 // ── Filter bar ────────────────────────────────────────────────────────────────
@@ -486,20 +675,20 @@ function applyFilters() {
 function renderFilterBar() {
   let html = '';
   if (state.search)
-    html += `<span class="chip">search: "${esc(state.search)}" <span class="chip-remove" data-clear="search">×</span></span>`;
+    html += `<span class="chip">搜索：“${esc(state.search)}” <span class="chip-remove" data-clear="search">×</span></span>`;
   if (state.activeTag)
-    html += `<span class="chip">tag: ${esc(state.activeTag)} <span class="chip-remove" data-clear="tag">×</span></span>`;
+    html += `<span class="chip">标签：${esc(state.activeTag)} <span class="chip-remove" data-clear="tag">×</span></span>`;
   if (state.favOnly)
-    html += `<span class="chip">★ favorites <span class="chip-remove" data-clear="fav">×</span></span>`;
+    html += `<span class="chip">★ 收藏 <span class="chip-remove" data-clear="fav">×</span></span>`;
 
-  html += `<span id="result-count">${state.filtered.length} / ${state.all.length}</span>`;
+  html += `<span id="result-count">${state.filtered.length} 条</span>`;
   $('filter-bar').innerHTML = html;
 
   $('filter-bar').querySelectorAll('[data-clear]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.clear;
       if (k === 'search') { state.search = ''; $('search').value = ''; }
-      if (k === 'tag')    { state.activeTag = ''; buildTagCloud(); }
+      if (k === 'tag')    { state.activeTag = ''; }
       if (k === 'fav')    { state.favOnly = false; syncFavBtn(); }
       stateToHash();
       applyFilters();
@@ -523,16 +712,22 @@ function renderCards() {
   cards.innerHTML = state.filtered.map(e => {
     const isFav   = state.favorites.has(e.id);
     const isSel   = state.selectedId === e.id;
-    const tags    = e.tags.slice(0, 3).map(t => `<span class="tag">${esc(t)}</span>`).join('');
-    const tools   = e.tools?.length ? `<span class="tools-count">${e.tools.length} tools</span>` : '';
+    const dm      = domainMeta(e.domain);
+    const domChip = `<span class="domain-chip" style="--tile-accent:${esc(dm.color || '#888')}">${esc(dm.icon || '')} ${esc(dm.label)}</span>`;
+    const tools   = e.tools?.length ? `<span class="tools-count">${e.tools.length} 个工具</span>` : '';
     const dupBadge = e.duplicates?.length
-      ? `<span class="dup-badge" title="${e.duplicates.length + 1} entries with this name">⚠ ${e.duplicates.length + 1}</span>`
+      ? `<span class="dup-badge" title="同名条目，共 ${e.duplicates.length + 1} 个">⚠ ${e.duplicates.length + 1}</span>`
       : '';
     const dot = `<span class="col-dot" style="background:${colColor(e.collection)};display:inline-block"></span>`;
 
+    // 英文条目优先显示中文说明（summaryZh），原文作次要展示。
+    const descHtml = e.summaryZh
+      ? `<p class="card-desc card-desc-zh">${esc(e.summaryZh)}</p><p class="card-desc card-desc-en">${esc(e.description)}</p>`
+      : `<p class="card-desc">${esc(e.description)}</p>`;
+
     return `<article class="card${isSel ? ' selected' : ''}${isFav ? ' fav' : ''}"
         role="listitem" data-id="${esc(e.id)}" tabindex="0"
-        title="${esc(e.name)}${e.triggerKeywords.length ? '\n\nTriggers: ' + e.triggerKeywords.join(', ') : ''}">
+        title="${esc(e.name)}${e.triggerKeywords.length ? '\n\n触发词：' + e.triggerKeywords.join('、') : ''}">
       ${dupBadge}
       <div class="card-header">
         ${e.emoji ? `<span class="card-emoji">${esc(e.emoji)}</span>` : ''}
@@ -541,13 +736,13 @@ function renderCards() {
           <div class="card-collection">${dot}<span>${esc(e.collection)}</span>${e.version ? `<span>· v${esc(e.version)}</span>` : ''}</div>
         </div>
       </div>
-      <p class="card-desc">${esc(e.description)}</p>
+      ${descHtml}
       <div class="card-footer">
         <span class="badge ${TYPE_CLASS[e.type] || ''}">${TYPE_LABEL[e.type] || esc(e.type)}</span>
-        ${tags}
+        ${domChip}
         ${tools}
       </div>
-      <button class="card-fav-star${isFav ? ' on' : ''}" data-fav="${esc(e.id)}" title="${isFav ? 'Remove from favorites' : 'Add to favorites'}">★</button>
+      <button class="card-fav-star${isFav ? ' on' : ''}" data-fav="${esc(e.id)}" title="${isFav ? '取消收藏' : '加入收藏'}">★</button>
     </article>`;
   }).join('');
 
@@ -601,24 +796,26 @@ async function openDrawer(id) {
   syncDrawerFavBtn();
 
   // Meta
+  const dm = domainMeta(entry.domain);
   let metaHtml = `<span class="badge ${TYPE_CLASS[entry.type]}">${TYPE_LABEL[entry.type]}</span>`;
+  metaHtml += `<span class="domain-chip" style="--tile-accent:${esc(dm.color || '#888')}">${esc(dm.icon || '')} ${esc(dm.label)}</span>`;
   metaHtml += `<span class="tag" style="border-color:${colColor(entry.collection)};color:${colColor(entry.collection)}">${esc(entry.collection)}</span>`;
   if (entry.version) metaHtml += `<span class="tag">v${esc(entry.version)}</span>`;
   entry.tools?.slice(0, 4).forEach(t => { metaHtml += `<span class="tag">🔧 ${esc(t)}</span>`; });
-  if ((entry.tools?.length || 0) > 4) metaHtml += `<span class="tag">+${entry.tools.length - 4} more</span>`;
+  if ((entry.tools?.length || 0) > 4) metaHtml += `<span class="tag">+${entry.tools.length - 4} 个</span>`;
   entry.tags.forEach(t => { metaHtml += `<span class="tag">${esc(t)}</span>`; });
   $('drawer-meta').innerHTML = metaHtml;
 
   // Actions
   const isLocalHost = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
   const explorerBtn = isLocalHost
-    ? `<button class="action-btn" id="btn-open-explorer" title="Reveal in Explorer">Show in Explorer</button>`
-    : `<button class="action-btn" id="btn-open-explorer" title="Remote mode: copies path instead">Copy path (remote)</button>`;
+    ? `<button class="action-btn" id="btn-open-explorer" title="在文件管理器中显示">在文件管理器打开</button>`
+    : `<button class="action-btn" id="btn-open-explorer" title="远程模式：改为复制路径">复制路径（远程）</button>`;
   $('drawer-actions').innerHTML = `
-    <button class="action-btn" id="btn-copy-path" title="Copy file path">Copy path</button>
-    <button class="action-btn" id="btn-copy-name" title="Copy skill name">Copy name</button>
+    <button class="action-btn" id="btn-copy-path" title="复制文件路径">复制路径</button>
+    <button class="action-btn" id="btn-copy-name" title="复制名称">复制名称</button>
     ${explorerBtn}
-    <button class="action-btn" id="btn-copy-context" title="Copy full markdown content" disabled>Copy context</button>
+    <button class="action-btn" id="btn-copy-context" title="复制完整 Markdown 内容" disabled>复制全文</button>
   `;
   $('btn-copy-path')?.addEventListener('click', () =>
     copyAndFlash('btn-copy-path', entry.filePath));
@@ -635,7 +832,12 @@ async function openDrawer(id) {
 
   // Load raw content
   const body = $('drawer-body');
-  body.innerHTML = '<p style="color:var(--text2);font-size:12px">Loading…</p>';
+  body.innerHTML = '<p style="color:var(--text-2);font-size:12px">加载中…</p>';
+
+  // 英文条目的中文说明，置顶展示。
+  const glossHtml = entry.summaryZh
+    ? `<div class="drawer-gloss">${esc(entry.summaryZh)}</div>`
+    : '';
 
   try {
     const res  = await fetch(`/api/raw?path=${encodeURIComponent(entry.filePath)}`);
@@ -649,7 +851,7 @@ async function openDrawer(id) {
       ctxBtn.addEventListener('click', () => copyAndFlash('btn-copy-context', json.content));
     }
 
-    let bodyHtml = `<div class="md">${renderMd(json.content)}</div>`;
+    let bodyHtml = glossHtml + `<div class="md">${renderMd(json.content)}</div>`;
 
     // Similar / duplicate skills
     if (entry.duplicates?.length) {
@@ -661,7 +863,7 @@ async function openDrawer(id) {
       }).filter(Boolean).join('');
       if (links) {
         bodyHtml += `<div class="similar-section">
-          <div class="similar-title">⚠ Same name in other collections (${entry.duplicates.length})</div>
+          <div class="similar-title">⚠ 其它集合中的同名条目（${entry.duplicates.length}）</div>
           ${links}
         </div>`;
       }
@@ -672,7 +874,7 @@ async function openDrawer(id) {
       a.addEventListener('click', () => openDrawer(a.dataset.id));
     });
   } catch (e) {
-    body.innerHTML = `<p style="color:var(--red);font-size:12px">Failed to load content: ${esc(e.message)}</p>`;
+    body.innerHTML = glossHtml + `<p style="color:var(--danger);font-size:12px">加载内容失败：${esc(e.message)}</p>`;
   }
 }
 
@@ -681,7 +883,7 @@ function syncDrawerFavBtn() {
   if (!btn || !state.selectedId) return;
   const isFav = state.favorites.has(state.selectedId);
   btn.textContent = isFav ? '★' : '☆';
-  btn.title       = isFav ? 'Remove from favorites' : 'Add to favorites';
+  btn.title       = isFav ? '取消收藏' : '加入收藏';
   btn.classList.toggle('on', isFav);
 }
 
@@ -712,7 +914,7 @@ async function copyAndFlash(btnId, text) {
   } catch { ok = false; }
   if (!btn) return;
   const orig = btn.textContent;
-  btn.textContent = ok ? 'Copied!' : 'Copy failed';
+  btn.textContent = ok ? '已复制！' : '复制失败';
   btn.classList.add('copied');
   setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
 }
@@ -732,21 +934,22 @@ $('btn-drawer-fav').addEventListener('click', () => {
 
 $('btn-rescan').addEventListener('click', async () => {
   const btn = $('btn-rescan');
-  btn.textContent = 'Scanning…';
+  btn.textContent = '扫描中…';
   btn.classList.add('loading');
   try {
     await fetch('/api/rescan', { method: 'POST' });
     const res  = await fetch('/api/index');
     const json = await res.json();
-    state.all  = json.entries || [];
-    $('stats').textContent = `${state.all.length} entries · scanned just now`;
+    state.all     = json.entries || [];
+    state.domains = json.domains || state.domains;
+    $('stats').textContent = `${state.all.length} 条 · 刚刚扫描`;
     buildSidebar();
     applyFilters();
-    btn.textContent = '✓ Done';
-    setTimeout(() => { btn.textContent = '⟳ Rescan'; }, 2500);
+    btn.textContent = '✓ 完成';
+    setTimeout(() => { btn.textContent = '⟳ 重新扫描'; }, 2500);
   } catch (e) {
-    btn.textContent = 'Error';
-    setTimeout(() => { btn.textContent = '⟳ Rescan'; }, 2500);
+    btn.textContent = '出错';
+    setTimeout(() => { btn.textContent = '⟳ 重新扫描'; }, 2500);
     console.error('Rescan failed:', e);
   } finally {
     btn.classList.remove('loading');
