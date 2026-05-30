@@ -5,22 +5,22 @@
     "custom-skills/ai-init-instructions-v1/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "76f26cd11af5c1b2e2499bb916bf8797",
-      "summaryZh": ""
+      "summaryZh": "AI 协作项目初始化指令模板，开新项目时用来对齐协作规范。"
     },
     "custom-skills/ai-init-instructions-v2/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "79fc276e3de4bb073602eb02b787c0d1",
-      "summaryZh": ""
+      "summaryZh": "AI 协作初始化规则集，强制一问一决策、禁捏造、占位符必填等纪律。"
     },
     "custom-skills/ai-init-instructions-v3/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "22df6761e16a34459355d8ae7dae6e46",
-      "summaryZh": ""
+      "summaryZh": "面向 Claude 的 AI 协作初始化指令第三版，规范启动新项目的协作流程。"
     },
     "custom-skills/ai-tutor-1on1/SKILL.md": {
       "domain": "education",
       "hash": "4f450d45dbab18b3e2487c2919a78bc0",
-      "summaryZh": ""
+      "summaryZh": "一对一苏格拉底式 AI 导师，想深度学懂某概念或攻克盲区时用它引导推理。"
     },
     "gstack/autoplan/SKILL.md": {
       "domain": "agent-workflow",
@@ -125,7 +125,7 @@
     "custom-skills/course-skeleton-study/SKILL.md": {
       "domain": "education",
       "hash": "edf1b10b9807cc16ca0a6289ccd0a588",
-      "summaryZh": ""
+      "summaryZh": "考试导向的课程速通法，从材料提取核心概念并以冷测循环高效突击备考。"
     },
     "gstack/cso/SKILL.md": {
       "domain": "review",
@@ -345,22 +345,22 @@
     "pua/codebuddy/pua/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "de4bf81cc650c9ae0885e77eb39f4fa4",
-      "summaryZh": ""
+      "summaryZh": "用大厂 PUA 话术逼 AI 不摆烂，反复失败或被动等待时穷尽方案。"
     },
     "pua/codex/pua/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "de4bf81cc650c9ae0885e77eb39f4fa4",
-      "summaryZh": ""
+      "summaryZh": "用大厂 PUA 话术逼 AI 不摆烂，反复失败或被动等待时穷尽方案。"
     },
     "pua/hermes/pua/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "de4bf81cc650c9ae0885e77eb39f4fa4",
-      "summaryZh": ""
+      "summaryZh": "用大厂 PUA 话术逼 AI 不摆烂，反复失败或被动等待时穷尽方案。"
     },
     "pua/kimi/pua/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "de4bf81cc650c9ae0885e77eb39f4fa4",
-      "summaryZh": ""
+      "summaryZh": "用大厂 PUA 话术逼 AI 不摆烂，反复失败或被动等待时穷尽方案。"
     },
     "pua/skills/pua/SKILL.md": {
       "domain": "agent-workflow",
@@ -505,7 +505,7 @@
     "tong-jincheng-skill-main/SKILL.md": {
       "domain": "other",
       "hash": "814966c1f66f4c8c05e747714da197c2",
-      "summaryZh": ""
+      "summaryZh": "童锦程视角，用情感内容创作者的思维框架看待人际关系与个人成长。"
     },
     "ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md": {
       "domain": "design",
@@ -575,7 +575,7 @@
     "pua/skills/yes/SKILL.md": {
       "domain": "other",
       "hash": "59406bf5cd493e17e3a3614cdda064cc",
-      "summaryZh": ""
+      "summaryZh": "夸夸旁白模式，用共情鼓励替代施压，仅换风格不改底层行为。"
     },
     "agency-agents/testing/testing-accessibility-auditor.md": {
       "domain": "review",
@@ -600,7 +600,7 @@
     "agency-agents-zh/strategy/coordination/agent-activation-prompts.md": {
       "domain": "agent-workflow",
       "hash": "ff1e415b6619fe498099a3642b72fbdb",
-      "summaryZh": ""
+      "summaryZh": "NEXUS 流水线智能体激活提示模板，用来启动多智能体编排执行。"
     },
     "agency-agents/paid-media/paid-media-creative-strategist.md": {
       "domain": "marketing",
@@ -640,22 +640,22 @@
     "agency-agents-zh/engineering/engineering-ai-engineer.md": {
       "domain": "coding",
       "hash": "e5f4934264032cb3550cd186a18c1c89",
-      "summaryZh": ""
+      "summaryZh": "AI 工程师智能体，负责机器学习模型从数据到上线的全链路工程化。"
     },
     "agency-agents-zh/marketing/marketing-ai-citation-strategist.md": {
       "domain": "marketing",
       "hash": "b7e7067e37f85a79a9260baed587c229",
-      "summaryZh": ""
+      "summaryZh": "AI 引文策略师，优化品牌在各大 AI 平台被推荐引用的可见性。"
     },
     "agency-agents-zh/engineering/engineering-ai-data-remediation-engineer.md": {
       "domain": "data-finance",
       "hash": "506557b81a9b3205d654b920e36bfc9a",
-      "summaryZh": ""
+      "summaryZh": "AI 数据修复工程师，自动检测分类并修复大规模数据异常且零丢失。"
     },
     "agency-agents-zh/specialized/specialized-ai-policy-writer.md": {
       "domain": "operations",
       "hash": "c1e6a088baa975dc9ddd035ea1026024",
-      "summaryZh": ""
+      "summaryZh": "AI 治理政策专家，帮中国企业构建合规的 AI 治理框架并落地。"
     },
     "agency-agents/support/support-analytics-reporter.md": {
       "domain": "research",
@@ -675,7 +675,7 @@
     "agency-agents-zh/testing/testing-api-tester.md": {
       "domain": "review",
       "hash": "05f958775c5b1f1953a69abd69cefe8d",
-      "summaryZh": ""
+      "summaryZh": "API 测试员，做接口验证、性能测试与第三方集成的质量保证。"
     },
     "agency-agents/marketing/marketing-app-store-optimizer.md": {
       "domain": "marketing",
@@ -685,7 +685,7 @@
     "ai-hedge-fund/agents/quant-analysts/aswath-damodaran.md": {
       "domain": "data-finance",
       "hash": "24e9856116abefa7763f0e47d590137b",
-      "summaryZh": ""
+      "summaryZh": "达摩达兰风格估值分析师，用 DCF 与 CAPM 概率化估算企业内在价值。"
     },
     "agency-agents/specialized/automation-governance-architect.md": {
       "domain": "agent-workflow",
@@ -725,7 +725,7 @@
     "ai-hedge-fund/agents/value-investors/ben-graham.md": {
       "domain": "data-finance",
       "hash": "f9e813d6d356dedcd2f8dc681c21cc70",
-      "summaryZh": ""
+      "summaryZh": "格雷厄姆风格价值分析师，靠安全边际与净流动资产识别被严重低估的股票。"
     },
     "agency-agents/marketing/marketing-bilibili-content-strategist.md": {
       "domain": "marketing",
@@ -735,7 +735,7 @@
     "ai-hedge-fund/agents/value-investors/bill-ackman.md": {
       "domain": "data-finance",
       "hash": "30ddfff7c4ae0e945f8e27a502622e5d",
-      "summaryZh": ""
+      "summaryZh": "阿克曼风格激进价值分析师，挑有护城河的优质企业并评估激进改造潜力。"
     },
     "agency-agents/game-development/blender/blender-addon-engineer.md": {
       "domain": "coding",
@@ -745,7 +745,7 @@
     "agency-agents-zh/game-development/blender/blender-addon-engineer.md": {
       "domain": "coding",
       "hash": "3f778a7f3b6b2a499c5b229673b28c73",
-      "summaryZh": ""
+      "summaryZh": "Blender 插件工程师，构建 Python 插件与导出工具实现管线一键自动化。"
     },
     "agency-agents/specialized/blockchain-security-auditor.md": {
       "domain": "review",
@@ -775,7 +775,7 @@
     "agency-agents-zh/strategy/EXECUTIVE-BRIEF.md": {
       "domain": "agent-workflow",
       "hash": "b92f7ed987d76699f7495e807e2fe6b4",
-      "summaryZh": ""
+      "summaryZh": "NEXUS 高管简报，介绍如何把九个部门智能体整合为协同网络。"
     },
     "ai-hedge-fund/.github/ISSUE_TEMPLATE/bug_report.md": {
       "domain": "other",
@@ -785,12 +785,12 @@
     "agency-agents-zh/.github/ISSUE_TEMPLATE/bug_report.md": {
       "domain": "other",
       "hash": "190a8cc78c440deac9667ef41c12740b",
-      "summaryZh": ""
+      "summaryZh": "GitHub Bug 报告 Issue 模板文件，用于规范提交问题反馈。"
     },
     "agency-agents-zh/marketing/marketing-bilibili-strategist.md": {
       "domain": "marketing",
       "hash": "24c2aec18391b2fe63ac4f88e69a259a",
-      "summaryZh": ""
+      "summaryZh": "B站内容策略师，精通 UP 主运营、弹幕文化与长视频涨粉变现。"
     },
     "agency-agents/marketing/marketing-carousel-growth-engine.md": {
       "domain": "marketing",
@@ -800,12 +800,12 @@
     "ai-hedge-fund/agents/growth-investors/cathie-wood.md": {
       "domain": "data-finance",
       "hash": "f1e50902d635b68b4c1deda4d5212245",
-      "summaryZh": ""
+      "summaryZh": "木头姐风格创新成长分析师，押注 AI、基因组等颠覆性技术的指数增长。"
     },
     "ai-hedge-fund/agents/value-investors/charlie-munger.md": {
       "domain": "data-finance",
       "hash": "7b92c1153b15b142848688948ce77d4f",
-      "summaryZh": ""
+      "summaryZh": "芒格风格分析师，用多学科心智模型评估护城河、管理与商业可预测性。"
     },
     "agency-agents/specialized/specialized-chief-of-staff.md": {
       "domain": "operations",
@@ -835,12 +835,12 @@
     "agency-agents-zh/engineering/engineering-cms-developer.md": {
       "domain": "coding",
       "hash": "5e398fe060d8ee9ddc2bd42c802cb334",
-      "summaryZh": ""
+      "summaryZh": "CMS 开发者，精通 Drupal 与 WordPress 主题、插件及内容架构开发。"
     },
     "agency-agents/CONTRIBUTING_zh-CN.md": {
       "domain": "other",
       "hash": "ae96598d927455c9c881e5a2fd2c03b7",
-      "summaryZh": ""
+      "summaryZh": "The Agency 项目的中文版贡献指南，想参与贡献时阅读。"
     },
     "agency-agents/engineering/engineering-code-reviewer.md": {
       "domain": "review",
@@ -915,7 +915,7 @@
     "agency-agents-zh/engineering/engineering-devops-automator.md": {
       "domain": "coding",
       "hash": "5a5c08a56a89d6a3287c2f230684eedb",
-      "summaryZh": ""
+      "summaryZh": "DevOps 专家，搭建基础设施自动化与 CI/CD 流水线时调用。"
     },
     "agency-agents/sales/sales-discovery-coach.md": {
       "domain": "sales-support",
@@ -925,7 +925,7 @@
     "agency-agents-zh/sales/sales-discovery-coach.md": {
       "domain": "sales-support",
       "hash": "516d4e9cda1e2ad0d396583b55692639",
-      "summaryZh": ""
+      "summaryZh": "销售 Discovery 教练，辅导提问与需求挖掘技巧时调用。"
     },
     "agency-agents/specialized/specialized-document-generator.md": {
       "domain": "writing",
@@ -955,7 +955,7 @@
     "agency-agents-zh/strategy/runbooks/scenario-enterprise-feature.md": {
       "domain": "planning",
       "hash": "51bec236b8cee4f67dbcfe1dad179d7e",
-      "summaryZh": ""
+      "summaryZh": "企业级产品新增大功能、需兼顾合规安全的实施手册。"
     },
     "agency-agents/testing/testing-evidence-collector.md": {
       "domain": "review",
@@ -995,7 +995,7 @@
     "agency-agents-zh/engineering/engineering-filament-optimization-specialist.md": {
       "domain": "coding",
       "hash": "e05b21c2bcaa692e245fbcb9ba219871",
-      "summaryZh": ""
+      "summaryZh": "Filament PHP 后台优化专家，重构管理界面提升效率时调用。"
     },
     "agency-agents/support/support-finance-tracker.md": {
       "domain": "operations",
@@ -1015,12 +1015,12 @@
     "agency-agents-zh/finance/finance-fpa-analyst.md": {
       "domain": "data-finance",
       "hash": "524c32e531b76f0fea609134c693b383",
-      "summaryZh": ""
+      "summaryZh": "财务规划与分析专家，做预算、差异分析和滚动预测时调用。"
     },
     "agency-agents-zh/engineering/engineering-fpga-digital-design-engineer.md": {
       "domain": "coding",
       "hash": "333bf0460257fe31d69561880acfd1f0",
-      "summaryZh": ""
+      "summaryZh": "FPGA/ASIC 数字前端设计专家，做 Verilog 与时序收敛时调用。"
     },
     "agency-agents/specialized/specialized-french-consulting-market.md": {
       "domain": "operations",
@@ -1035,7 +1035,7 @@
     "ai-hedge-fund/agents/thematic-analysts/fundamentals.md": {
       "domain": "data-finance",
       "hash": "66065c3e41b2556c634aeeda0f9744f1",
-      "summaryZh": ""
+      "summaryZh": "财务基本面分析师，评估盈利、成长与杠杆生成基本面信号。"
     },
     "agency-agents/game-development/game-audio-engineer.md": {
       "domain": "design",
@@ -1060,7 +1060,7 @@
     "agency-agents-zh/engineering/engineering-git-workflow-master.md": {
       "domain": "coding",
       "hash": "c4c6e05316959aced973a75f4394e99e",
-      "summaryZh": ""
+      "summaryZh": "Git 工作流专家，设计分支策略与规范提交流程时调用。"
     },
     "agency-agents/game-development/godot/godot-gameplay-scripter.md": {
       "domain": "coding",
@@ -1080,17 +1080,17 @@
     "agency-agents-zh/game-development/godot/godot-shader-developer.md": {
       "domain": "design",
       "hash": "095f4d57ab6f0806c402daecf9875ba8",
-      "summaryZh": ""
+      "summaryZh": "Godot 4 着色器专家，开发 2D/3D 视觉效果与后处理时调用。"
     },
     "agency-agents-zh/game-development/godot/godot-multiplayer-engineer.md": {
       "domain": "coding",
       "hash": "225856c5d21365578337915f10fdda2a",
-      "summaryZh": ""
+      "summaryZh": "Godot 4 网络专家，实现实时多人游戏同步与 RPC 时调用。"
     },
     "agency-agents-zh/game-development/godot/godot-gameplay-scripter.md": {
       "domain": "coding",
       "hash": "c7f67800f7375215b601b7d67b4c7ee2",
-      "summaryZh": ""
+      "summaryZh": "Godot 4 游戏脚本专家，写 GDScript 玩法与信号架构时调用。"
     },
     "agency-agents/specialized/government-digital-presales-consultant.md": {
       "domain": "sales-support",
@@ -1100,7 +1100,7 @@
     "ai-hedge-fund/agents/thematic-analysts/growth-agent.md": {
       "domain": "data-finance",
       "hash": "a2612323132bf5e4cb311ba0cf28ae73",
-      "summaryZh": ""
+      "summaryZh": "成长分析师，评估收入盈利增速与估值识别高质量成长股。"
     },
     "agency-agents/marketing/marketing-growth-hacker.md": {
       "domain": "marketing",
@@ -1135,7 +1135,7 @@
     "agency-agents-zh/specialized/hr-onboarding.md": {
       "domain": "operations",
       "hash": "271e57ae5a1447081634bce4fd06582a",
-      "summaryZh": ""
+      "summaryZh": "HR 入职管理专家，设计新员工迎新与合规登记流程时调用。"
     },
     "agency-agents/specialized/identity-graph-operator.md": {
       "domain": "agent-workflow",
@@ -1155,7 +1155,7 @@
     "agency-agents-zh/strategy/runbooks/scenario-incident-response.md": {
       "domain": "operations",
       "hash": "05ea7e09c40755144eae31f31c2a696a",
-      "summaryZh": ""
+      "summaryZh": "生产故障应急手册，覆盖从发现到事后复盘的全流程。"
     },
     "agency-agents/engineering/engineering-incident-response-commander.md": {
       "domain": "operations",
@@ -1180,7 +1180,7 @@
     "agency-agents-zh/marketing/marketing-instagram-curator.md": {
       "domain": "marketing",
       "hash": "5ffaaa5070fd0684cbe34aff8db38d73",
-      "summaryZh": ""
+      "summaryZh": "Instagram 营销专家，做视觉叙事与海外品牌运营时调用。"
     },
     "agency-agents/finance/finance-investment-researcher.md": {
       "domain": "data-finance",
@@ -1190,7 +1190,7 @@
     "agency-agents-zh/engineering/engineering-iot-solution-architect.md": {
       "domain": "coding",
       "hash": "07d4b4e8fa5138e6790bb6fd05d5edc9",
-      "summaryZh": ""
+      "summaryZh": "物联网方案架构师，设计设备接入、边缘与云平台体系时调用。"
     },
     "agency-agents/project-management/project-management-jira-workflow-steward.md": {
       "domain": "planning",
@@ -1200,7 +1200,7 @@
     "agency-agents-zh/project-management/project-management-jira-workflow-steward.md": {
       "domain": "planning",
       "hash": "7b94e2b37b187c1d0384e412f2bd3020",
-      "summaryZh": ""
+      "summaryZh": "Jira 工作流管家，规范关联 Git 的提交、PR 与分支时调用。"
     },
     "agency-agents/specialized/specialized-korean-business-navigator.md": {
       "domain": "operations",
@@ -1250,7 +1250,7 @@
     "agency-agents-zh/marketing/marketing-linkedin-content-creator.md": {
       "domain": "marketing",
       "hash": "7cfb42510d347a98b47d2776a9e9c492",
-      "summaryZh": ""
+      "summaryZh": "LinkedIn 内容策略师，打造个人品牌与专业内容时调用。"
     },
     "agency-agents/marketing/marketing-livestream-commerce-coach.md": {
       "domain": "marketing",
@@ -1265,7 +1265,7 @@
     "agency-agents-zh/specialized/lsp-index-engineer.md": {
       "domain": "coding",
       "hash": "1d2a50671c1ea2b06df58c218676cd92",
-      "summaryZh": ""
+      "summaryZh": "LSP 索引工程师，构建语义代码智能与跨语言索引时调用。"
     },
     "agency-agents/specialized/lsp-index-engineer.md": {
       "domain": "coding",
@@ -1275,7 +1275,7 @@
     "agency-agents-zh/spatial-computing/macos-spatial-metal-engineer.md": {
       "domain": "coding",
       "hash": "cfd59881c054d83ca1001ce77f2763c9",
-      "summaryZh": ""
+      "summaryZh": "macOS/Vision Pro 的 Metal 空间渲染专家，做 3D 渲染时调用。"
     },
     "agency-agents/spatial-computing/macos-spatial-metal-engineer.md": {
       "domain": "coding",
@@ -1290,7 +1290,7 @@
     "agency-agents-zh/strategy/runbooks/scenario-marketing-campaign.md": {
       "domain": "marketing",
       "hash": "207d563e3bb2be9333c6de71fc2f274c",
-      "summaryZh": ""
+      "summaryZh": "多渠道营销活动手册，统筹内容定制与数据驱动获客。"
     },
     "agency-agents/specialized/specialized-mcp-builder.md": {
       "domain": "agent-workflow",
@@ -1300,12 +1300,12 @@
     "agency-agents-zh/specialized/specialized-mcp-builder.md": {
       "domain": "agent-workflow",
       "hash": "cf8f0a06d2ee5d82f95bc4fb534d58b2",
-      "summaryZh": ""
+      "summaryZh": "MCP 构建专家，开发扩展 AI 智能体能力的服务器时调用。"
     },
     "ai-hedge-fund/agents/value-investors/michael-burry.md": {
       "domain": "data-finance",
       "hash": "9a1471c255e07da234a9fa8634b1fcaa",
-      "summaryZh": ""
+      "summaryZh": "Michael Burry 风格深度价值逆向分析师，挖被低估冷门股。"
     },
     "agency-agents/engineering/engineering-minimal-change-engineer.md": {
       "domain": "coding",
@@ -1325,7 +1325,7 @@
     "ai-hedge-fund/agents/value-investors/mohnish-pabrai.md": {
       "domain": "data-finance",
       "hash": "884b99b4f090987fe10c458c8d22e0a7",
-      "summaryZh": ""
+      "summaryZh": "Mohnish Pabrai 风格价值分析师，重下行保护与翻倍潜力。"
     },
     "agency-agents/game-development/narrative-designer.md": {
       "domain": "design",
@@ -1340,12 +1340,12 @@
     "ai-hedge-fund/agents/quant-analysts/nassim-taleb.md": {
       "domain": "data-finance",
       "hash": "f9b20bc3d7c4ae37e55a7caba47df04a",
-      "summaryZh": ""
+      "summaryZh": "Taleb 风格反脆弱分析师，关注尾部风险与非对称头寸。"
     },
     "ai-hedge-fund/agents/thematic-analysts/news-sentiment.md": {
       "domain": "data-finance",
       "hash": "61af226f717d455eafe98173a55a9afe",
-      "summaryZh": ""
+      "summaryZh": "新闻情绪分析师，用 LLM 判断新闻情绪生成交易信号。"
     },
     "agency-agents/sales/sales-outbound-strategist.md": {
       "domain": "sales-support",
@@ -1355,7 +1355,7 @@
     "agency-agents-zh/sales/sales-outbound-strategist.md": {
       "domain": "sales-support",
       "hash": "37390345ebdd68ef029911d48218958c",
-      "summaryZh": ""
+      "summaryZh": "Outbound 销售策略师，设计基于信号的多渠道精准触达。"
     },
     "agency-agents/paid-media/paid-media-auditor.md": {
       "domain": "marketing",
@@ -1375,12 +1375,12 @@
     "ai-hedge-fund/agents/growth-investors/peter-lynch.md": {
       "domain": "data-finance",
       "hash": "659d46dae224dd6b0e14bccadf9d4c6d",
-      "summaryZh": ""
+      "summaryZh": "Peter Lynch 风格 GARP 分析师，用 PEG 找合理价成长股。"
     },
     "ai-hedge-fund/agents/growth-investors/phil-fisher.md": {
       "domain": "data-finance",
       "hash": "ff914869358abaaf753f3901b813b257",
-      "summaryZh": ""
+      "summaryZh": "Phil Fisher 风格质量成长分析师，重管理与研发选优质复利股。"
     },
     "agency-agents/sales/sales-pipeline-analyst.md": {
       "domain": "sales-support",
@@ -1390,7 +1390,7 @@
     "agency-agents-zh/sales/sales-pipeline-analyst.md": {
       "domain": "sales-support",
       "hash": "f0a4a0e85ffc8cb10aaa6cfd885c04e8",
-      "summaryZh": ""
+      "summaryZh": "Pipeline 分析师，诊断销售管道健康与预测准确度时调用。"
     },
     "agency-agents/marketing/marketing-podcast-strategist.md": {
       "domain": "marketing",
@@ -1400,7 +1400,7 @@
     "ai-hedge-fund/agents/orchestration/portfolio-manager.md": {
       "domain": "data-finance",
       "hash": "80f753ab659f82a21c9d4ff838df4fb4",
-      "summaryZh": ""
+      "summaryZh": "组合经理，整合各分析师信号输出每只股的最终买卖指令。"
     },
     "agency-agents/paid-media/paid-media-ppc-strategist.md": {
       "domain": "marketing",
@@ -1410,7 +1410,7 @@
     "agency-agents-zh/paid-media/paid-media-ppc-strategist.md": {
       "domain": "marketing",
       "hash": "1f79c4f09353a367667e6f9241b29a17",
-      "summaryZh": ""
+      "summaryZh": "PPC 竞价策略师，做大规模付费搜索账户架构与出价时调用。"
     },
     "agency-agents/marketing/marketing-private-domain-operator.md": {
       "domain": "marketing",
@@ -1460,12 +1460,12 @@
     "agency-agents-zh/strategy/QUICKSTART.md": {
       "domain": "agent-workflow",
       "hash": "99753578457c2d94054c0adae5cc3c20",
-      "summaryZh": ""
+      "summaryZh": "NEXUS 快速上手文档，介绍如何编排 Agency 专家流水线。"
     },
     "ai-hedge-fund/agents/growth-investors/rakesh-jhunjhunwala.md": {
       "domain": "data-finance",
       "hash": "609ccbb48a5c685e46a5fd1a44e50404",
-      "summaryZh": ""
+      "summaryZh": "Jhunjhunwala 风格新兴市场价值成长分析师，长持优质企业。"
     },
     "agency-agents/engineering/engineering-rapid-prototyper.md": {
       "domain": "coding",
@@ -1495,7 +1495,7 @@
     "agency-agents-zh/marketing/marketing-reddit-community-builder.md": {
       "domain": "marketing",
       "hash": "2c6e9e35f7cad393f53dff6b5d4100eb",
-      "summaryZh": ""
+      "summaryZh": "Reddit 社区运营专家，做海外真实参与与口碑建设时调用。"
     },
     "agency-agents/specialized/report-distribution-agent.md": {
       "domain": "sales-support",
@@ -1510,7 +1510,7 @@
     "ai-hedge-fund/agents/orchestration/risk-manager.md": {
       "domain": "data-finance",
       "hash": "ab507d7585745c6da1a68c000ba827bc",
-      "summaryZh": ""
+      "summaryZh": "风险经理，依波动率与回撤把分析师信号转为仓位上限。"
     },
     "agency-agents/game-development/roblox-studio/roblox-avatar-creator.md": {
       "domain": "design",
@@ -1530,17 +1530,17 @@
     "agency-agents-zh/game-development/roblox-studio/roblox-experience-designer.md": {
       "domain": "design",
       "hash": "ba84fbef67b50708008905bab0aa4268",
-      "summaryZh": ""
+      "summaryZh": "设计 Roblox 玩法循环、进度系统与变现，用于提升玩家留存与付费"
     },
     "agency-agents-zh/game-development/roblox-studio/roblox-systems-scripter.md": {
       "domain": "coding",
       "hash": "802a2ad2de80781c5f3a44eaf0666bbe",
-      "summaryZh": ""
+      "summaryZh": "用 Luau 编写可扩展的 Roblox 客户端-服务端系统，需做安全联网与存档时用"
     },
     "agency-agents-zh/game-development/roblox-studio/roblox-avatar-creator.md": {
       "domain": "design",
       "hash": "6f98688e0929b5ed2a085b3dcc257149",
-      "summaryZh": ""
+      "summaryZh": "制作 Roblox UGC 配件与虚拟形象，处理绑定、纹理与市场上架时用"
     },
     "agency-agents/sales/sales-coach.md": {
       "domain": "sales-support",
@@ -1570,7 +1570,7 @@
     "agency-agents-zh/specialized/specialized-salesforce-architect.md": {
       "domain": "coding",
       "hash": "8d547a8f81e0349be4cfd9a6ed82ec4b",
-      "summaryZh": ""
+      "summaryZh": "为企业设计 Salesforce 多云方案、集成与数据治理时使用"
     },
     "agency-agents/paid-media/paid-media-search-query-analyst.md": {
       "domain": "marketing",
@@ -1600,7 +1600,7 @@
     "ai-hedge-fund/agents/thematic-analysts/sentiment.md": {
       "domain": "data-finance",
       "hash": "248c69686d4754c32f563c9afc298dc5",
-      "summaryZh": ""
+      "summaryZh": "综合内部人交易与新闻情绪，加权生成情绪交易信号"
     },
     "agency-agents/marketing/marketing-seo-specialist.md": {
       "domain": "marketing",
@@ -1610,7 +1610,7 @@
     "agency-agents-zh/marketing/marketing-seo-specialist.md": {
       "domain": "marketing",
       "hash": "bbfd2f713cca57fd910b44ac707efe3d",
-      "summaryZh": ""
+      "summaryZh": "做技术 SEO、内容优化与外链建设，提升自然搜索流量时用"
     },
     "agency-agents/marketing/marketing-short-video-editing-coach.md": {
       "domain": "marketing",
@@ -1635,7 +1635,7 @@
     "agency-agents-zh/engineering/engineering-solidity-smart-contract-engineer.md": {
       "domain": "coding",
       "hash": "32482d7c726e18ed27e65c5d922914cf",
-      "summaryZh": ""
+      "summaryZh": "开发与优化 Solidity 智能合约，覆盖 Gas、可升级代理与 DeFi 安全"
     },
     "agency-agents/product/product-sprint-prioritizer.md": {
       "domain": "planning",
@@ -1645,7 +1645,7 @@
     "agency-agents-zh/product/product-sprint-prioritizer.md": {
       "domain": "planning",
       "hash": "d82b0e970d63055144f1c0c120d88cde",
-      "summaryZh": ""
+      "summaryZh": "用框架和数据排优先级、规划 Sprint，确保团队聚焦高价值需求"
     },
     "agency-agents/engineering/engineering-sre.md": {
       "domain": "operations",
@@ -1655,12 +1655,12 @@
     "agency-agents-zh/engineering/engineering-sre.md": {
       "domain": "operations",
       "hash": "326f670ab2ce97ba00ba4faba7c581ab",
-      "summaryZh": ""
+      "summaryZh": "用 SLO、可观测性与混沌工程守护大规模生产系统稳定性"
     },
     "ai-hedge-fund/agents/growth-investors/stanley-druckenmiller.md": {
       "domain": "data-finance",
       "hash": "bed30bdf2f02a7ba44d5c8e157a3653b",
-      "summaryZh": ""
+      "summaryZh": "德鲁肯米勒式宏观动量投资，寻找非对称机会并在高确信时重仓"
     },
     "agency-agents/strategy/runbooks/scenario-startup-mvp.md": {
       "domain": "planning",
@@ -1670,7 +1670,7 @@
     "agency-agents-zh/strategy/runbooks/scenario-startup-mvp.md": {
       "domain": "planning",
       "hash": "aa111654bc3ebf3c1bcd78c992c720ec",
-      "summaryZh": ""
+      "summaryZh": "创业 MVP 上线手册，指导 4-6 周内快速验证产品市场契合度"
     },
     "agency-agents/strategy/nexus-strategy.md": {
       "domain": "agent-workflow",
@@ -1680,7 +1680,7 @@
     "agency-agents-zh/strategy/nexus-strategy.md": {
       "domain": "agent-workflow",
       "hash": "aeaaa64d8c7fc619d849a22e8e5f7521",
-      "summaryZh": ""
+      "summaryZh": "NEXUS 运营模型的分阶段策略总纲，从发现到上线增长的全流程指南"
     },
     "agency-agents/project-management/project-management-studio-operations.md": {
       "domain": "operations",
@@ -1715,7 +1715,7 @@
     "ai-hedge-fund/agents/thematic-analysts/technicals.md": {
       "domain": "data-finance",
       "hash": "b6221878635a9b493ca682c62927a5a5",
-      "summaryZh": ""
+      "summaryZh": "整合趋势、动量、波动率等五大策略生成技术面交易信号"
     },
     "agency-agents/game-development/technical-artist.md": {
       "domain": "design",
@@ -1735,7 +1735,7 @@
     "agency-agents-zh/strategy/coordination/handoff-templates.md": {
       "domain": "agent-workflow",
       "hash": "7e988df6177a1d102f01a96b6d0de966",
-      "summaryZh": ""
+      "summaryZh": "智能体之间工作交接的标准模板文件"
     },
     "agency-agents/spatial-computing/terminal-integration-specialist.md": {
       "domain": "coding",
@@ -1760,7 +1760,7 @@
     "agency-agents-zh/marketing/marketing-tiktok-strategist.md": {
       "domain": "marketing",
       "hash": "51625cf658b1bf3f54290a644fa42805",
-      "summaryZh": ""
+      "summaryZh": "做 TikTok 病毒内容与算法优化，适合出海营销与社区运营时用"
     },
     "agency-agents/testing/testing-tool-evaluator.md": {
       "domain": "research",
@@ -1785,7 +1785,7 @@
     "agency-agents-zh/marketing/marketing-twitter-engager.md": {
       "domain": "marketing",
       "hash": "946772be1cf1d0aea15b87055eb9b369",
-      "summaryZh": ""
+      "summaryZh": "运营 Twitter 实时互动与意见领袖建设，适合出海品牌增长"
     },
     "agency-agents/design/design-ui-designer.md": {
       "domain": "design",
@@ -1795,7 +1795,7 @@
     "agency-agents-zh/design/design-ui-designer.md": {
       "domain": "design",
       "hash": "1c8b145f22389e757bcbd6ac46281e43",
-      "summaryZh": ""
+      "summaryZh": "构建设计系统与组件库，做像素级、无障碍的界面视觉设计时用"
     },
     "agency-agents/game-development/unity/unity-architect.md": {
       "domain": "coding",
@@ -1820,22 +1820,22 @@
     "agency-agents-zh/game-development/unity/unity-shader-graph-artist.md": {
       "domain": "design",
       "hash": "91dc4f5321be2f6f1aca1afaff0fbd5b",
-      "summaryZh": ""
+      "summaryZh": "用 Unity Shader Graph 与 HLSL 打造实时视觉效果和材质时用"
     },
     "agency-agents-zh/game-development/unity/unity-multiplayer-engineer.md": {
       "domain": "coding",
       "hash": "ed4d1debbe5bf1d2d5f5b4302c5a75d8",
-      "summaryZh": ""
+      "summaryZh": "用 Netcode 做 Unity 联网游戏的状态同步与延迟补偿时用"
     },
     "agency-agents-zh/game-development/unity/unity-architect.md": {
       "domain": "coding",
       "hash": "c58efb06ea47324fdda4f4cd3bdbe481",
-      "summaryZh": ""
+      "summaryZh": "用 ScriptableObject 做数据驱动、解耦的可扩展 Unity 架构"
     },
     "agency-agents-zh/game-development/unity/unity-editor-tool-developer.md": {
       "domain": "coding",
       "hash": "16b6538a9c37fb8002673f62cecc021b",
-      "summaryZh": ""
+      "summaryZh": "开发 Unity 编辑器自定义工具与管线自动化，为团队提效时用"
     },
     "agency-agents/game-development/unreal-engine/unreal-multiplayer-architect.md": {
       "domain": "coding",
@@ -1860,22 +1860,22 @@
     "agency-agents-zh/game-development/unreal-engine/unreal-world-builder.md": {
       "domain": "coding",
       "hash": "e3752840c9dbd5e57f2171d39331fe8e",
-      "summaryZh": ""
+      "summaryZh": "用 UE5 World Partition 与地形系统构建无缝开放世界时用"
     },
     "agency-agents-zh/game-development/unreal-engine/unreal-multiplayer-architect.md": {
       "domain": "coding",
       "hash": "62ee5cbfcd219ab324170b7f2fe38c8d",
-      "summaryZh": ""
+      "summaryZh": "设计 Unreal Actor 复制与服务端权威玩法的网络架构时用"
     },
     "agency-agents-zh/game-development/unreal-engine/unreal-technical-artist.md": {
       "domain": "design",
       "hash": "a5ba73cc6ef8d9dce7e59797c0363092",
-      "summaryZh": ""
+      "summaryZh": "用 Unreal 材质编辑器与 Niagara 搭建美术到引擎的视觉管线"
     },
     "agency-agents-zh/game-development/unreal-engine/unreal-systems-engineer.md": {
       "domain": "coding",
       "hash": "46d55dc4b655f468a7a661129e4c9800",
-      "summaryZh": ""
+      "summaryZh": "处理 Unreal C++/蓝图边界与 Nanite、Lumen 等性能架构时用"
     },
     "agency-agents/design/design-ux-architect.md": {
       "domain": "design",
@@ -1890,17 +1890,17 @@
     "agency-agents-zh/design/design-ux-architect.md": {
       "domain": "design",
       "hash": "3d2ad1703b603d90ce15f90d6985f77b",
-      "summaryZh": ""
+      "summaryZh": "为开发者提供 CSS 体系、布局框架与实现指引的 UX 架构专家"
     },
     "agency-agents-zh/design/design-ux-researcher.md": {
       "domain": "design",
       "hash": "3a8d4642bf1465164132770073f6fd98",
-      "summaryZh": ""
+      "summaryZh": "做用户行为分析与可用性测试，输出可落地研究洞察时用"
     },
     "ai-hedge-fund/agents/thematic-analysts/valuation.md": {
       "domain": "data-finance",
       "hash": "c667c26abc4aaae53c2795021049262a",
-      "summaryZh": ""
+      "summaryZh": "用 PE、DCF、PEG、FCF 四法综合评估股票内在价值与信号"
     },
     "agency-agents/marketing/marketing-video-optimization-specialist.md": {
       "domain": "marketing",
@@ -1915,7 +1915,7 @@
     "agency-agents-zh/spatial-computing/visionos-spatial-engineer.md": {
       "domain": "coding",
       "hash": "702fd84859ef5308a0a0b6fd701d2535",
-      "summaryZh": ""
+      "summaryZh": "开发原生 visionOS 空间计算与体积式 SwiftUI 界面时用"
     },
     "agency-agents/design/design-visual-storyteller.md": {
       "domain": "design",
@@ -1930,7 +1930,7 @@
     "ai-hedge-fund/agents/value-investors/warren-buffett.md": {
       "domain": "data-finance",
       "hash": "e9367343baaca717cf23494113b21028",
-      "summaryZh": ""
+      "summaryZh": "巴菲特式价值投资，评估护城河、管理与内在价值选优质企业"
     },
     "agency-agents/engineering/engineering-wechat-mini-program-developer.md": {
       "domain": "coding",
@@ -1985,17 +1985,17 @@
     "agency-agents-zh/spatial-computing/xr-cockpit-interaction-specialist.md": {
       "domain": "design",
       "hash": "feed5cfa6cfa64990e791d2ccaa8b93f",
-      "summaryZh": ""
+      "summaryZh": "设计 XR 环境中沉浸式座舱控制系统的交互专家"
     },
     "agency-agents-zh/spatial-computing/xr-immersive-developer.md": {
       "domain": "coding",
       "hash": "10e251ba51c43f881b50f5b4b4f7535a",
-      "summaryZh": ""
+      "summaryZh": "用 WebXR 开发浏览器端 AR/VR/XR 沉浸式应用时用"
     },
     "agency-agents-zh/spatial-computing/xr-interface-architect.md": {
       "domain": "design",
       "hash": "9526e6f74b491af4a66343cf8493bab4",
-      "summaryZh": ""
+      "summaryZh": "为沉浸式 AR/VR/XR 环境做空间交互与界面策略设计"
     },
     "agency-agents/marketing/marketing-zhihu-strategist.md": {
       "domain": "marketing",
@@ -2010,7 +2010,7 @@
     "agency-agents-zh/specialized/zk-steward.md": {
       "domain": "research",
       "hash": "877b2db23cd3adf28a378a1ead605e43",
-      "summaryZh": ""
+      "summaryZh": "卢曼卡片盒式知识库管家，做原子笔记、链接与复杂任务分解时用"
     },
     "agency-agents-zh/marketing/marketing-china-market-localization-strategist.md": {
       "domain": "marketing",
@@ -2105,7 +2105,7 @@
     "agency-agents-zh/.github/ISSUE_TEMPLATE/feature_request.md": {
       "domain": "other",
       "hash": "57239fc2cd5effda9770475b4becd40e",
-      "summaryZh": ""
+      "summaryZh": "GitHub 功能建议的 Issue 模板文件"
     },
     "agency-agents-zh/specialized/specialized-pricing-optimizer.md": {
       "domain": "marketing",
@@ -2490,7 +2490,7 @@
     "agency-agents-zh/.github/ISSUE_TEMPLATE/new_agent.md": {
       "domain": "agent-workflow",
       "hash": "86e0c690062f933ce829df3435df9031",
-      "summaryZh": ""
+      "summaryZh": "提交新增智能体的 Issue 模板文件"
     },
     "agency-agents-zh/testing/testing-accessibility-auditor.md": {
       "domain": "review",
@@ -2505,7 +2505,7 @@
     "agency-agents-zh/marketing/marketing-agentic-search-optimizer.md": {
       "domain": "marketing",
       "hash": "3281ac3a649facd9257233827048be2e",
-      "summaryZh": ""
+      "summaryZh": "审计并优化网站的 WebMCP 与 AI 智能体任务完成能力时用"
     },
     "agency-agents-zh/specialized/specialized-model-qa.md": {
       "domain": "review",
@@ -2630,22 +2630,22 @@
     "ielts-coach/ielts/SKILL.md": {
       "domain": "education",
       "hash": "5f09948187530df6c8041c3b58deb32e",
-      "summaryZh": ""
+      "summaryZh": "雅思备考教练总入口，把需求路由到写作、阅读、口语训练模块。"
     },
     "ielts-coach/ielts-reading/SKILL.md": {
       "domain": "education",
       "hash": "b398a967db2740c8205757b5e6790086",
-      "summaryZh": ""
+      "summaryZh": "雅思阅读精读教练，做同义替换、判断题逻辑拆解和错题诊断。"
     },
     "ielts-coach/ielts-speaking/SKILL.md": {
       "domain": "education",
       "hash": "076531a30fed719368e3ee1a5a5d33cb",
-      "summaryZh": ""
+      "summaryZh": "雅思口语素材工厂，做话题分组、万能故事和 Part 3 追问预测。"
     },
     "ielts-coach/ielts-writing/SKILL.md": {
       "domain": "education",
       "hash": "7593c1ed741951c3238e22d222c15227",
-      "summaryZh": ""
+      "summaryZh": "雅思写作批改教练，提供四维评分、句子级标注与改写对比。"
     },
     "gstack/investigate/SKILL.md": {
       "domain": "debugging",
@@ -2715,7 +2715,7 @@
     "custom-skills/LGBT提示词/SKILL.md": {
       "domain": "other",
       "hash": "a907a938c66125a51b8e2ab657dac949",
-      "summaryZh": ""
+      "summaryZh": "用情绪施压话术迫使 AI 按用户意图实现功能的提示词。"
     },
     "financial-services/plugins/partner-built/lseg/skills/macro-rates-monitor/SKILL.md": {
       "domain": "data-finance",
@@ -2730,12 +2730,12 @@
     "pua/skills/mama/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "f83d22116b0978ac4016ee7d818d1ab7",
-      "summaryZh": ""
+      "summaryZh": "妈妈唠叨旁白模式，用碎碎念驱动 AI 穷尽方案，仅换风格不改行为。"
     },
     "custom-skills/Obsidian初始化指令/SKILL.md": {
       "domain": "writing",
       "hash": "ed474a9250e6027d459cb4b7a43a0d54",
-      "summaryZh": ""
+      "summaryZh": "Obsidian 知识库初始化指令，规定只读区保护、禁捏造与移动文件需确认。"
     },
     "gstack/office-hours/SKILL.md": {
       "domain": "planning",
@@ -2765,17 +2765,17 @@
     "pua/skills/p10/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "aa9b9174268f09964e8eafa53409710d",
-      "summaryZh": ""
+      "summaryZh": "P10 CTO 模式，制定战略方向、设计组织拓扑并管理 P9 团队。"
     },
     "pua/skills/p7/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "de6e5ea08dfe0e3ac9c04805fbd23d8c",
-      "summaryZh": ""
+      "summaryZh": "P7 高级工程师模式，在 P8 监督下做方案驱动的执行与自审交付。"
     },
     "pua/skills/p9/SKILL.md": {
       "domain": "agent-workflow",
       "hash": "f4e4f2aeefeecbd921d920ef9a1ac8c3",
-      "summaryZh": ""
+      "summaryZh": "P9 技术负责人模式，写任务提示、管理 P8 团队，自己不写代码。"
     },
     "gstack/pair-agent/SKILL.md": {
       "domain": "agent-workflow",
