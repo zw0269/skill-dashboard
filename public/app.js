@@ -823,15 +823,15 @@ async function openDrawer(id) {
     <button class="action-btn" id="btn-copy-context" title="复制完整 Markdown 内容" disabled>复制全文</button>
   `;
   $('btn-copy-path')?.addEventListener('click', () =>
-    copyAndFlash('btn-copy-path', entry.filePath));
+    copyAndFlash('btn-copy-path', entry.id));
   $('btn-copy-name')?.addEventListener('click', () =>
     copyAndFlash('btn-copy-name', entry.name));
   $('btn-open-explorer')?.addEventListener('click', () => {
     if (isLocalHost) {
       fetch('/api/open', { method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ path: entry.filePath }) }).catch(() => {});
+        body: JSON.stringify({ path: entry.id }) }).catch(() => {});
     } else {
-      copyAndFlash('btn-open-explorer', entry.filePath);
+      copyAndFlash('btn-open-explorer', entry.id);
     }
   });
 
@@ -845,7 +845,7 @@ async function openDrawer(id) {
     : '';
 
   try {
-    const res  = await fetch(`/api/raw?path=${encodeURIComponent(entry.filePath)}`);
+    const res  = await fetch(`/api/raw?path=${encodeURIComponent(entry.id)}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
 

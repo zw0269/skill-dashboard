@@ -71,8 +71,13 @@ function safePath(raw) {
   try {
     const decoded = decodeURIComponent(raw);
     if (decoded.includes('\0')) return null;
-    const abs  = resolve(decoded);
     const root = resolve(SKILL_ROOT);
+    // Resolve relative to SKILL_ROOT so the committed index — which addresses
+    // files by root-relative `id` — is portable across machines (e.g. scanned
+    // on macOS under /Users/…, served on Linux under /var/www/…). Inputs that
+    // are already absolute-under-root still pass; foreign-absolute paths and
+    // ../ traversal resolve outside root and are rejected by the check below.
+    const abs  = resolve(root, decoded);
     // Use path.sep (platform-native separator) to avoid Windows backslash vs '/' mismatch.
     // On Windows: sep = '\', so "E:\root\file".startsWith("E:\root\") works correctly.
     if (!abs.startsWith(root + sep) && abs !== root) return null;
