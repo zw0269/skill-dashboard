@@ -791,6 +791,11 @@ async function openDrawer(id) {
 
   const drawer = $('drawer');
   drawer.classList.add('open');
+  pushDrawerHistory();           // 手机：Back/返回手势可关闭抽屉
+  if (isTablet()) {              // 抽屉浮层化时把焦点移入抽屉（a11y）
+    _drawerReturnFocusId = id;
+    requestAnimationFrame(() => $('drawer-close').focus({ preventScroll: true }));
+  }
 
   $('drawer-title').textContent = (entry.emoji ? entry.emoji + ' ' : '') + entry.name;
   syncDrawerFavBtn();
@@ -890,8 +895,49 @@ function syncDrawerFavBtn() {
 function closeDrawer() {
   $('drawer').classList.remove('open');
   state.selectedId = null;
+  consumeDrawerHistory();
   renderCards();
+  // 抽屉浮层模式下，关闭后把焦点交还触发的卡片（renderCards 重建了 DOM，按 id 重新定位）
+  if (_drawerReturnFocusId) {
+    const card = $('cards').querySelector(`.card[data-id="${CSS.escape(_drawerReturnFocusId)}"]`);
+    card?.focus({ preventScroll: true });
+    _drawerReturnFocusId = null;
+  }
 }
+
+// ── 手机：返回键/返回手势关闭抽屉 ───────────────────────────────────────────────
+// 抽屉在手机上是全屏浮层，系统 Back 应关闭它而非离开页面。开启时压入一个哨兵
+// history 条目，关闭时弹出。仅作用于「抽屉」「手机断点」：
+//   · 侧栏是筛选面板，其选择会调用 history.replaceState(stateToHash)，会冲掉哨兵
+//     条目 → 故不对侧栏启用，与筛选 hash 完全隔离；
+//   · 手机断点下抽屉打开会自动收起侧栏（见下方 observer），二者不会并存，
+//     因此抽屉打开期间不会有 replaceState 冲突。
+let _drawerHistoryActive = false;   // 已为打开的抽屉压入哨兵
+let _drawerPopClosing    = false;   // 当前正因 Back 导航而关闭
+let _drawerReturnFocusId = null;    // 关闭后需归还焦点的卡片 id
+
+function pushDrawerHistory() {
+  if (_drawerHistoryActive || !isMobile()) return;
+  history.pushState({ skillDrawer: true }, '');   // 空 URL → 不改 hash，不触发 hashchange
+  _drawerHistoryActive = true;
+}
+function consumeDrawerHistory() {
+  if (!_drawerHistoryActive) return;
+  _drawerHistoryActive = false;
+  // 若是 UI（X/Esc/backdrop）关闭，弹掉我们压入的哨兵以保持历史栈干净；
+  // 若是 Back 触发的关闭，哨兵已被系统弹出，无需再 back。
+  if (!_drawerPopClosing) history.back();
+}
+
+window.addEventListener('popstate', () => {
+  if (!_drawerHistoryActive) return;   // 不是我们的哨兵 → 放行正常导航
+  _drawerHistoryActive = false;
+  if ($('drawer').classList.contains('open')) {
+    _drawerPopClosing = true;
+    closeDrawer();
+    _drawerPopClosing = false;
+  }
+});
 
 async function copyAndFlash(btnId, text) {
   const btn = $(btnId);
