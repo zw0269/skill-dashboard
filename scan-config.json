@@ -67,6 +67,7 @@
       "scanRule": "*.md",
       "excludeFiles": [
         "CONTRIBUTING.md", "CHANGELOG.md", "README.md",
+        "CONTRIBUTING_zh-CN.md", "SECURITY.md",
         "AGENTS_OVERVIEW.md", "update-log.md", "LICENSE", "ROADMAP.md"
       ],
       "color": "#22c55e"
@@ -203,7 +204,7 @@
     }
   ],
   "skipDirs": [
-    "node_modules", ".git", "dist", "__pycache__", "screenshots",
+    "node_modules", ".git", ".github", "dist", "__pycache__", "screenshots",
     "skill-dashboard", "references", "assets", "bin", "extension",
     "preview", "docs", "scripts", "tests", "test", "playbooks",
     "examples", "fixtures", "vscode", "cursor", "kiro"

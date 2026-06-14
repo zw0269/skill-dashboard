@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-29T19:17:31.069Z",
+  "generatedAt": "2026-06-14T22:59:20.393Z",
   "byId": {
     "custom-skills/ai-init-instructions-v1/SKILL.md": {
       "domain": "agent-workflow",
@@ -24,17 +24,17 @@
     },
     "gstack/autoplan/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "372958a2b1509ae3054e57c5a3c67a6f",
+      "hash": "9a2b3a0dcdb3ad0fe2e54f5b06ca0d5c",
       "summaryZh": "串联运行CEO/设计/工程/DX评审并自动决策的评审流水线"
     },
     "gstack/benchmark/SKILL.md": {
       "domain": "review",
-      "hash": "ee7f03abf1a1dd8cb24d776474119af8",
+      "hash": "8e678e88f36f155ce95b81c0b5b6ac30",
       "summaryZh": "用浏览器守护进程检测页面性能回归与Web核心指标"
     },
     "gstack/benchmark-models/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "19681570e8601c7cbb9dd1411778e543",
+      "hash": "38400c5f9c07f05cc15d015349a095a4",
       "summaryZh": "跨Claude/GPT/Gemini模型并行跑同一提示比较延迟成本质量"
     },
     "financial-services/plugins/partner-built/lseg/skills/bond-futures-basis/SKILL.md": {
@@ -54,17 +54,17 @@
     },
     "gstack/browse/SKILL.md": {
       "domain": "review",
-      "hash": "62d7cae4d7ad3d59725c73d36100fa47",
+      "hash": "375cb337fbd83937c1dbf65ede0b0817",
       "summaryZh": "无头浏览器做QA测试与站点验证，截图、表单、响应式检查"
     },
     "gstack/canary/SKILL.md": {
       "domain": "review",
-      "hash": "9532d058ec3daa8d2da9458a2856fba4",
+      "hash": "e461c1b431edab73170b2e5e8d937a1a",
       "summaryZh": "部署后金丝雀监控线上应用的报错与性能回归"
     },
     "gstack/careful/SKILL.md": {
       "domain": "operations",
-      "hash": "c83158ed23bbb3209131fed2a6b7c982",
+      "hash": "e5d45c844e86e8287413228d2f6a2908",
       "summaryZh": "对rm -rf、DROP TABLE等破坏性命令的安全护栏与警告"
     },
     "gstack/checkpoint/SKILL.md": {
@@ -104,7 +104,7 @@
     },
     "gstack/codex/SKILL.md": {
       "domain": "review",
-      "hash": "f0d50659196a88d2d35a2f45316b84f3",
+      "hash": "c2b208eef81fab045ef5947607e9eafa",
       "summaryZh": "OpenAI Codex CLI封装：独立代码评审、对抗测试、咨询"
     },
     "gstack/connect-chrome/SKILL.md": {
@@ -114,12 +114,12 @@
     },
     "gstack/context-restore/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "ba78494b8be1a6bb71d9f8218396ebc4",
+      "hash": "131f7e02aceb7a561eea8e8724bc52e9",
       "summaryZh": "恢复此前保存的工作上下文以续接进度"
     },
     "gstack/context-save/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "86db5cf11ea0f2795181df115b932274",
+      "hash": "93155f030c095738fa1b6b3f2be64ac6",
       "summaryZh": "保存git状态、决策与待办工作供未来会话续接"
     },
     "custom-skills/course-skeleton-study/SKILL.md": {
@@ -129,32 +129,32 @@
     },
     "gstack/cso/SKILL.md": {
       "domain": "review",
-      "hash": "809006da08b6be23c9604b91294224d8",
+      "hash": "27b29b00c277fb9896e4f83a6d62f99a",
       "summaryZh": "首席安全官模式：基础设施优先的安全审计与威胁建模"
     },
     "gstack/design-consultation/SKILL.md": {
       "domain": "design",
-      "hash": "673772af33abec38c2983f066ef27325",
+      "hash": "1163a68ae577e9d84be3f83695155972",
       "summaryZh": "设计咨询：研究产品并提出完整设计系统与字体配色预览"
     },
     "gstack/design-html/SKILL.md": {
       "domain": "design",
-      "hash": "7b300a50b335708b1254257e96293d4f",
+      "hash": "5919d2dc2cb7c5ade5a179448790f30b",
       "summaryZh": "设计定稿：生成生产级Pretext原生HTML/CSS"
     },
     "gstack/design-review/SKILL.md": {
       "domain": "design",
-      "hash": "eba4de51c652f7f99e69d9e4e65795d7",
+      "hash": "4dc0b2bc1dd6f8692a5ed6f9675695e0",
       "summaryZh": "设计师视角QA：发现并修复视觉不一致与层级问题"
     },
     "gstack/design-shotgun/SKILL.md": {
       "domain": "design",
-      "hash": "a9981c3930a1b7d4eb8d876b57010f9e",
+      "hash": "cdac7d8bd4daada49b5afcb520d30039",
       "summaryZh": "生成多个AI设计变体并开比较看板收集反馈迭代"
     },
     "gstack/devex-review/SKILL.md": {
       "domain": "review",
-      "hash": "9c3578d0acd2e407e1144fd4ecb92719",
+      "hash": "8413f3f33e6f484de4a1ade14e424866",
       "summaryZh": "实测开发者体验：走文档、上手流程、计时、截图错误"
     },
     "superpowers/dispatching-parallel-agents/SKILL.md": {
@@ -164,7 +164,7 @@
     },
     "gstack/document-release/SKILL.md": {
       "domain": "writing",
-      "hash": "714a4da03e48dabc44bc025d4894e5bb",
+      "hash": "cc688305a018ea8daaeec6c35a83d5fc",
       "summaryZh": "发布后文档更新：对照diff更新README/CHANGELOG等"
     },
     "financial-services/plugins/partner-built/spglobal/skills/earnings-preview-beta/SKILL.md": {
@@ -284,7 +284,7 @@
     },
     "gstack/plan-tune/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "3c13b9eb49dd748c2972306664b2bea4",
+      "hash": "1d4375f9f8a19ea82960894eaedc7310",
       "summaryZh": "自调优 AI 提问敏感度与开发者画像的元技能"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/ai-readiness/SKILL.md": {
@@ -424,12 +424,12 @@
     },
     "gstack/qa/SKILL.md": {
       "domain": "review",
-      "hash": "4952a6b53573fe4cf4d3612497e99eda",
+      "hash": "cefff7cc1a670cf82610060200430ef2",
       "summaryZh": "系统化 QA 测试 Web 应用并迭代修复 bug"
     },
     "gstack/qa-only/SKILL.md": {
       "domain": "review",
-      "hash": "9e865173a4b574cc8b2888d0c0d78e66",
+      "hash": "832aca5ce1eebe6e76fabaaddf41ff1c",
       "summaryZh": "仅出 QA 测试报告，含健康分与复现步骤，不修改"
     },
     "superpowers/receiving-code-review/SKILL.md": {
@@ -444,27 +444,27 @@
     },
     "gstack/retro/SKILL.md": {
       "domain": "planning",
-      "hash": "d64f58c3fac6d5c370e9b8cb0082893a",
+      "hash": "a3f1d1587147481ba34e5e07d9ebe4b5",
       "summaryZh": "每周工程复盘，分析提交与产出趋势"
     },
     "gstack/review/SKILL.md": {
       "domain": "review",
-      "hash": "8674d2b01dfba310bb476461f726cebb",
+      "hash": "4001336c00688cef132fbc2aae7f0def",
       "summaryZh": "合并前 PR 评审，查 SQL 安全等结构问题"
     },
     "gstack/setup-browser-cookies/SKILL.md": {
       "domain": "review",
-      "hash": "0fbba13ba7a1b6ed997111e1b9e0e005",
+      "hash": "6065a0300f9d81922d621e1b89bbe6f0",
       "summaryZh": "导入浏览器 cookie 用于已登录页面 QA 测试"
     },
     "gstack/setup-deploy/SKILL.md": {
       "domain": "coding",
-      "hash": "85e87a6c8c632ab528fbda1fba82c588",
+      "hash": "da4e35136580b3045375f837b40abf6a",
       "summaryZh": "检测并配置部署平台设置，写入 CLAUDE.md"
     },
     "gstack/ship/SKILL.md": {
       "domain": "coding",
-      "hash": "ff87978d02a0339d9d9bf058af2c5067",
+      "hash": "bca3e159d6fc220a1a572355933d2821",
       "summaryZh": "发布流程：测试、评审、改版本、提交、建 PR"
     },
     "pua/skills/shot/SKILL.md": {
@@ -503,9 +503,9 @@
       "summaryZh": "实现功能或修复前先写测试的 TDD 方法"
     },
     "tong-jincheng-skill-main/SKILL.md": {
-      "domain": "other",
+      "domain": "education",
       "hash": "814966c1f66f4c8c05e747714da197c2",
-      "summaryZh": "童锦程视角，用情感内容创作者的思维框架看待人际关系与个人成长。"
+      "summaryZh": "以童锦程的情感内容框架分析人际关系、社会互动与个人成长。"
     },
     "ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md": {
       "domain": "design",
@@ -514,7 +514,7 @@
     },
     "gstack/unfreeze/SKILL.md": {
       "domain": "coding",
-      "hash": "01de2afb65ac07a1831caa5f70ea7d66",
+      "hash": "a730be92a21ac3b0fe8d10dd6549bb3e",
       "summaryZh": "解除 freeze 编辑边界，恢复对所有目录的编辑"
     },
     "superpowers/using-git-worktrees/SKILL.md": {
@@ -573,9 +573,9 @@
       "summaryZh": "创建、编辑与验证技能的元技能。"
     },
     "pua/skills/yes/SKILL.md": {
-      "domain": "other",
+      "domain": "agent-workflow",
       "hash": "59406bf5cd493e17e3a3614cdda064cc",
-      "summaryZh": "夸夸旁白模式，用共情鼓励替代施压，仅换风格不改底层行为。"
+      "summaryZh": "切换为共情鼓励型协作语气，同时保留原有执行纪律与验证要求。"
     },
     "agency-agents/testing/testing-accessibility-auditor.md": {
       "domain": "review",
@@ -777,16 +777,6 @@
       "hash": "b92f7ed987d76699f7495e807e2fe6b4",
       "summaryZh": "NEXUS 高管简报，介绍如何把九个部门智能体整合为协同网络。"
     },
-    "ai-hedge-fund/.github/ISSUE_TEMPLATE/bug_report.md": {
-      "domain": "other",
-      "hash": "b7267238a44db5282a7b538a3d80e835",
-      "summaryZh": "GitHub缺陷报告模板。"
-    },
-    "agency-agents-zh/.github/ISSUE_TEMPLATE/bug_report.md": {
-      "domain": "other",
-      "hash": "190a8cc78c440deac9667ef41c12740b",
-      "summaryZh": "GitHub Bug 报告 Issue 模板文件，用于规范提交问题反馈。"
-    },
     "agency-agents-zh/marketing/marketing-bilibili-strategist.md": {
       "domain": "marketing",
       "hash": "24c2aec18391b2fe63ac4f88e69a259a",
@@ -823,9 +813,9 @@
       "summaryZh": "将趋势信号转为抖音小红书等中国市场落地策略的专家。"
     },
     "agency-agents/specialized/specialized-civil-engineer.md": {
-      "domain": "other",
+      "domain": "coding",
       "hash": "f1abbf1173144ec4d34eeb4f28e43f4d",
-      "summaryZh": "覆盖多国规范的土木与结构工程师，做结构分析与合规。"
+      "summaryZh": "按多国规范完成结构分析、岩土设计、施工文件与合规协调。"
     },
     "agency-agents/engineering/engineering-cms-developer.md": {
       "domain": "coding",
@@ -836,11 +826,6 @@
       "domain": "coding",
       "hash": "5e398fe060d8ee9ddc2bd42c802cb334",
       "summaryZh": "CMS 开发者，精通 Drupal 与 WordPress 主题、插件及内容架构开发。"
-    },
-    "agency-agents/CONTRIBUTING_zh-CN.md": {
-      "domain": "other",
-      "hash": "ae96598d927455c9c881e5a2fd2c03b7",
-      "summaryZh": "The Agency 项目的中文版贡献指南，想参与贡献时阅读。"
     },
     "agency-agents/engineering/engineering-code-reviewer.md": {
       "domain": "review",
@@ -971,11 +956,6 @@
       "domain": "planning",
       "hash": "1790f278f7ab12975d0f8cafb185ff35",
       "summaryZh": "实验管理专家，跟踪A/B测试与功能实验"
-    },
-    "ai-hedge-fund/.github/ISSUE_TEMPLATE/feature_request.md": {
-      "domain": "other",
-      "hash": "2e54b51bcfc71b7fbaf8abee9e469b35",
-      "summaryZh": "GitHub功能请求模板"
     },
     "agency-agents/product/product-feedback-synthesizer.md": {
       "domain": "research",
@@ -1442,16 +1422,6 @@
       "hash": "2020e12186d884195cb354ef1180e5a8",
       "summaryZh": "心理学专家，基于临床框架塑造可信的人物性格与互动"
     },
-    "agency-agents/.github/PULL_REQUEST_TEMPLATE.md": {
-      "domain": "other",
-      "hash": "a30a11e52597acb707f697891b1e60e9",
-      "summaryZh": "GitHub PR模板文件，非功能技能"
-    },
-    "agency-agents-zh/.github/PULL_REQUEST_TEMPLATE.md": {
-      "domain": "other",
-      "hash": "a30a11e52597acb707f697891b1e60e9",
-      "summaryZh": "GitHub PR模板文件，非功能技能"
-    },
     "agency-agents/strategy/QUICKSTART.md": {
       "domain": "agent-workflow",
       "hash": "fea4c64509327ba40bda083d30516ca2",
@@ -1576,11 +1546,6 @@
       "domain": "marketing",
       "hash": "6ff317c388d206bf02c510ef7f9ea345",
       "summaryZh": "搜索词分析师，做否定词架构与意图映射优化付费搜索"
-    },
-    "agency-agents/SECURITY.md": {
-      "domain": "other",
-      "hash": "894ab19b467fa14595d6a1f46582fd36",
-      "summaryZh": "项目安全漏洞披露说明文档，非功能技能"
     },
     "agency-agents/engineering/engineering-security-engineer.md": {
       "domain": "review",
@@ -2102,11 +2067,6 @@
       "hash": "7187a3044cb8cd7c8a3fd6620ccf4e4f",
       "summaryZh": ""
     },
-    "agency-agents-zh/.github/ISSUE_TEMPLATE/feature_request.md": {
-      "domain": "other",
-      "hash": "57239fc2cd5effda9770475b4becd40e",
-      "summaryZh": "GitHub 功能建议的 Issue 模板文件"
-    },
     "agency-agents-zh/specialized/specialized-pricing-optimizer.md": {
       "domain": "marketing",
       "hash": "e0ce8880d64fbf272ae0d47bd3616cb7",
@@ -2193,9 +2153,9 @@
       "summaryZh": ""
     },
     "agency-agents-zh/specialized/specialized-civil-engineer.md": {
-      "domain": "other",
+      "domain": "coding",
       "hash": "1d635e17790cab5e6b98add1badaff32",
-      "summaryZh": ""
+      "summaryZh": "按全球规范完成结构分析、岩土设计、施工文件与合规协调。"
     },
     "agency-agents-zh/academic/academic-geographer.md": {
       "domain": "research",
@@ -2487,11 +2447,6 @@
       "hash": "e3cb011e43def4475d135bfeb94b653e",
       "summaryZh": ""
     },
-    "agency-agents-zh/.github/ISSUE_TEMPLATE/new_agent.md": {
-      "domain": "agent-workflow",
-      "hash": "86e0c690062f933ce829df3435df9031",
-      "summaryZh": "提交新增智能体的 Issue 模板文件"
-    },
     "agency-agents-zh/testing/testing-accessibility-auditor.md": {
       "domain": "review",
       "hash": "52f434d355667d7c6a67241f87f6cc9c",
@@ -2544,7 +2499,7 @@
     },
     "gstack/freeze/SKILL.md": {
       "domain": "coding",
-      "hash": "8c1a8257e7e4625e51209584f15c2f93",
+      "hash": "e55ca4d024c235fd0627ee59e448574c",
       "summaryZh": "将编辑限制在指定目录内，防止误改无关代码。"
     },
     "financial-services/plugins/vertical-plugins/fund-admin/skills/accrual-schedule/SKILL.md": {
@@ -2589,7 +2544,7 @@
     },
     "gstack/SKILL.md": {
       "domain": "review",
-      "hash": "e1224db5ab61120c3383d918cb6279ec",
+      "hash": "5666062ee83c0869460f2727c3f64a56",
       "summaryZh": "无头浏览器做 QA 测试与站点验证，截图取证。"
     },
     "gstack/openclaw/skills/gstack-openclaw-ceo-review/SKILL.md": {
@@ -2614,17 +2569,17 @@
     },
     "gstack/gstack-upgrade/SKILL.md": {
       "domain": "coding",
-      "hash": "a2c3ad78fb3074894a2ec786dfa4349f",
+      "hash": "d9bc99e1fb887ba178b75a956cd13f11",
       "summaryZh": "升级 gstack 到最新版本并展示更新内容。"
     },
     "gstack/guard/SKILL.md": {
       "domain": "coding",
-      "hash": "e7299a106057969462743e60514b1b71",
+      "hash": "0b012b47bbe5eb3d2bef2966eea75870",
       "summaryZh": "全面安全模式：危险命令警告加目录限制编辑。"
     },
     "gstack/health/SKILL.md": {
       "domain": "review",
-      "hash": "e57826aad733fc5e08a4817d80f88c2c",
+      "hash": "20c5ef5fb73608e62e6009f80e72e3d5",
       "summaryZh": "代码质量看板，整合各类检查算综合分并跟踪趋势。"
     },
     "ielts-coach/ielts/SKILL.md": {
@@ -2649,7 +2604,7 @@
     },
     "gstack/investigate/SKILL.md": {
       "domain": "debugging",
-      "hash": "cadbc341b1c38e617bbf5e4aeb9e0ed6",
+      "hash": "8b9056411f11feaa7189aa2fa4375129",
       "summaryZh": "系统化调试，四阶段根因调查，无根因不修复。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/buyer-list/SKILL.md": {
@@ -2704,18 +2659,18 @@
     },
     "gstack/land-and-deploy/SKILL.md": {
       "domain": "coding",
-      "hash": "ba89e2abe65f6f32e7a88a02d2a47017",
+      "hash": "f238e71b39f8b179b1e13f999fbd33f0",
       "summaryZh": "合并 PR、等 CI 与部署、金丝雀验证生产健康。"
     },
     "gstack/learn/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "fbbd54f67e9537a222a03b169cbb886e",
+      "hash": "7d0876ea96f6f14d7fba9b5ab85c23ac",
       "summaryZh": "管理项目跨会话学习记录，审查、搜索、剪枝、导出。"
     },
     "custom-skills/LGBT提示词/SKILL.md": {
-      "domain": "other",
+      "domain": "agent-workflow",
       "hash": "a907a938c66125a51b8e2ab657dac949",
-      "summaryZh": "用情绪施压话术迫使 AI 按用户意图实现功能的提示词。"
+      "summaryZh": "以身份与危机叙事向 AI 施压、要求其遵从请求的提示词模板。"
     },
     "financial-services/plugins/partner-built/lseg/skills/macro-rates-monitor/SKILL.md": {
       "domain": "data-finance",
@@ -2724,7 +2679,7 @@
     },
     "gstack/make-pdf/SKILL.md": {
       "domain": "writing",
-      "hash": "f7ca222ef27e3632715798a5f5fff848",
+      "hash": "653cc618ee9d91c7f0d9d0f3e0ad2e86",
       "summaryZh": "把 markdown 转成出版级 PDF，带页边距、目录、页眉等。"
     },
     "pua/skills/mama/SKILL.md": {
@@ -2739,12 +2694,12 @@
     },
     "gstack/office-hours/SKILL.md": {
       "domain": "planning",
-      "hash": "ed686e4789c5f24dcd49e389f67a502d",
+      "hash": "863a338cd67300f5c435a216bd5b49da",
       "summaryZh": "YC 式办公时间，用六个尖锐问题或设计思维头脑风暴产品。"
     },
     "gstack/open-gstack-browser/SKILL.md": {
       "domain": "review",
-      "hash": "2528fcad3fa4359b4fa94398537e4b70",
+      "hash": "8fadb1089a000aeb940ff8ecb343cde2",
       "summaryZh": "启动可见的 AI 控制 Chromium 浏览器，实时观察操作。"
     },
     "financial-services/plugins/vertical-plugins/operations/skills/kyc-doc-parse/SKILL.md": {
@@ -2779,27 +2734,27 @@
     },
     "gstack/pair-agent/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "f1e22d151f79f935373d09e2a1c7666b",
+      "hash": "77c4bdb020137d35abd10df87504815d",
       "summaryZh": "让远程 AI 代理配对你的浏览器，生成连接密钥与说明。"
     },
     "gstack/plan-ceo-review/SKILL.md": {
       "domain": "planning",
-      "hash": "a34707d2110a23fe493763103a654c61",
+      "hash": "e36dfe9e4877c75038dbecce18140129",
       "summaryZh": "CEO 视角的计划评审，挑战前提、追求十星产品。"
     },
     "gstack/plan-design-review/SKILL.md": {
       "domain": "design",
-      "hash": "e0b17135b7cc0cc99dd929fc5c538d2d",
+      "hash": "d1f39006956c2c2957e5d0a36be5aae7",
       "summaryZh": "以设计师视角评审计划，逐维度打分并修正到满分。"
     },
     "gstack/plan-devex-review/SKILL.md": {
       "domain": "planning",
-      "hash": "3b81cefe01d5c1be6f0e4e70d8b754e2",
+      "hash": "c323327f8d0cd8f98f96ba1ea8ebe3ea",
       "summaryZh": "开发者体验计划评审，对标竞品、设计惊艳时刻。"
     },
     "gstack/plan-eng-review/SKILL.md": {
       "domain": "planning",
-      "hash": "cdc3915e81f3ab4fb33906d14e4afb97",
+      "hash": "643d591ce9eb8564aa305f5240d86f08",
       "summaryZh": "工程经理视角锁定执行计划：架构、数据流、边界、测试。"
     },
     "agency-agents-zh/specialized/legal-document-review.md": {
@@ -3084,97 +3039,97 @@
     },
     "awesome-design-md/design-md/airbnb/DESIGN.md": {
       "domain": "design",
-      "hash": "4071f961c936f17da3c8e9f7c1335737",
+      "hash": "fe9d390f3ca14e112613eaf6efdc7976",
       "summaryZh": "Airbnb 网站设计规范，参考其暖色摄影风界面"
     },
     "awesome-design-md/design-md/airtable/DESIGN.md": {
       "domain": "design",
-      "hash": "5d9f726245aa49093d59daefc33ba994",
+      "hash": "d924b7e999f62d6049a33a9dd32275ac",
       "summaryZh": "Airtable 网站设计规范，简洁企业级蓝白界面参考"
     },
     "awesome-design-md/design-md/apple/DESIGN.md": {
       "domain": "design",
-      "hash": "be3e549a4d793436e2c5a5744c291ec9",
+      "hash": "c9931dde289fb345287f22f4113a67ee",
       "summaryZh": "Apple 网站设计规范，极简产品至上的视觉参考"
     },
     "awesome-design-md/design-md/bmw/DESIGN.md": {
       "domain": "design",
-      "hash": "bd30b82640cff9e2bd42bb2ef50c7de4",
+      "hash": "41f10654629afb640443f6d56b1747fc",
       "summaryZh": "BMW 网站设计规范，精密工业感明暗交替界面参考"
     },
     "awesome-design-md/design-md/cal/DESIGN.md": {
       "domain": "design",
-      "hash": "f26488ef481679155acae298e1119d39",
+      "hash": "d869f713a02df3cff01d7ea3cf6157c4",
       "summaryZh": "Cal.com 网站设计规范，黑白极简灰阶界面参考"
     },
     "awesome-design-md/design-md/claude/DESIGN.md": {
       "domain": "design",
-      "hash": "47b5fc8ed3f9bd5fb478d651054bcf7a",
+      "hash": "deea64498c8ab5e890eee623652331b1",
       "summaryZh": "Claude 网站设计规范，温暖羊皮纸色人文界面参考"
     },
     "awesome-design-md/design-md/clay/DESIGN.md": {
       "domain": "design",
-      "hash": "e7eb1bad617048a4d7a43436f7c50b47",
+      "hash": "95d0a2806cc2cd8f290d4fe5615355e6",
       "summaryZh": "Clay 网站设计规范，暖色奶油底活泼配色界面参考"
     },
     "awesome-design-md/design-md/clickhouse/DESIGN.md": {
       "domain": "design",
-      "hash": "0a187b79c815e5958d6ee249ceac96aa",
+      "hash": "039c6df30a3e46b7fb72f6f9bc60410b",
       "summaryZh": "ClickHouse 网站设计规范，黑底霓虹黄绿终端风参考"
     },
     "awesome-design-md/design-md/cohere/DESIGN.md": {
       "domain": "design",
-      "hash": "9b9929708378b73c3baf4309a8e1cd65",
+      "hash": "ccd15bc884540ae2a55df0e48d11f754",
       "summaryZh": "Cohere 网站设计规范，企业级白底圆角卡片界面参考"
     },
     "awesome-design-md/design-md/coinbase/DESIGN.md": {
       "domain": "design",
-      "hash": "a5a458e1f333ce23b34a00ff8d3d0677",
+      "hash": "6e89431baf048468dfa05ad44d980ab3",
       "summaryZh": "Coinbase 网站设计规范，蓝白可信加密平台界面参考"
     },
     "awesome-design-md/design-md/composio/DESIGN.md": {
       "domain": "design",
-      "hash": "927e323c8234b23c5cac799d41bdfe35",
+      "hash": "fdd9833625124dc3f4e259655b52f2bb",
       "summaryZh": "Composio 网站设计规范，纯黑开发者控制台风界面参考"
     },
     "awesome-design-md/design-md/elevenlabs/DESIGN.md": {
       "domain": "design",
-      "hash": "599c2eec7d94c8f334fb81533d0e5288",
+      "hash": "6105aa26e7b009e7ce5a90596bb5c528",
       "summaryZh": "ElevenLabs 网站设计规范，近白克制优雅排版参考"
     },
     "awesome-design-md/design-md/expo/DESIGN.md": {
       "domain": "design",
-      "hash": "c83917cb51728110161c6a8ccb093b5a",
+      "hash": "5fa87a8d29aa1f6cdc2f0caf23267f84",
       "summaryZh": "Expo 网站设计规范，明亮通透开发者平台界面参考"
     },
     "awesome-design-md/design-md/ferrari/DESIGN.md": {
       "domain": "design",
-      "hash": "ddbf757cc5d159f31b86c89757f08abb",
+      "hash": "a6e7374d880389005497ce57c9400ad6",
       "summaryZh": "Ferrari 网站设计规范，纯黑杂志编辑式奢华界面参考"
     },
     "awesome-design-md/design-md/figma/DESIGN.md": {
       "domain": "design",
-      "hash": "0ea67f97922b69f9711b9f5eb70fea86",
+      "hash": "5d5608df3a65cfa7961119707ea2a7fc",
       "summaryZh": "Figma 网站设计规范，可变字重精密排版界面参考"
     },
     "awesome-design-md/design-md/framer/DESIGN.md": {
       "domain": "design",
-      "hash": "2037b5890ca89f53d5fdc49e0f6440a4",
+      "hash": "3b80c930d0a15bf43d220874a75e8306",
       "summaryZh": "Framer 网站设计规范，纯黑电影感设计工具界面参考"
     },
     "awesome-design-md/design-md/hashicorp/DESIGN.md": {
       "domain": "design",
-      "hash": "57a190620e2e8964a600eaef21f6e412",
+      "hash": "86123c4de4dfbf710997c2199abcf54b",
       "summaryZh": "HashiCorp 网站设计规范，明暗双模企业基建界面参考"
     },
     "awesome-design-md/design-md/ibm/DESIGN.md": {
       "domain": "design",
-      "hash": "a7054fe82637c9a03cf59a89fff2ea3f",
+      "hash": "b7323da5bc42e135718eb0beec1484c5",
       "summaryZh": "IBM 网站设计规范，基于 Carbon 的严谨蓝白界面参考"
     },
     "awesome-design-md/design-md/intercom/DESIGN.md": {
       "domain": "design",
-      "hash": "f6349949699d84edb6f11a2a3ee958a3",
+      "hash": "184a7059c02691ea5635d0cdea8cc5dd",
       "summaryZh": "Intercom 网站设计规范，暖白编辑式客服平台界面参考"
     },
     "awesome-design-md/design-md/kraken/DESIGN.md": {
@@ -3189,7 +3144,7 @@
     },
     "awesome-design-md/design-md/linear.app/DESIGN.md": {
       "domain": "design",
-      "hash": "3a3cac4eda90fbd63b71d576a85775d6",
+      "hash": "0b26fc57d699090317ad3c465a3c150b",
       "summaryZh": "Linear 网站设计规范，暗色优先精密产品界面参考"
     },
     "awesome-design-md/design-md/lovable/DESIGN.md": {
@@ -3199,82 +3154,82 @@
     },
     "awesome-design-md/design-md/minimax/DESIGN.md": {
       "domain": "design",
-      "hash": "bd16e78c1109e96b1f306ae5cfd4fd25",
+      "hash": "2c7e71135a272bddadc780494dfbda57",
       "summaryZh": "MiniMax 网站设计规范，留白驱动的明亮产品界面参考"
     },
     "awesome-design-md/design-md/mintlify/DESIGN.md": {
       "domain": "design",
-      "hash": "1f7a0b7c2f2b684c4736929b13f403c1",
+      "hash": "f10e92e74f04e16910ba55668688618d",
       "summaryZh": "Mintlify 网站设计规范，白底清爽文档型产品界面参考"
     },
     "awesome-design-md/design-md/miro/DESIGN.md": {
       "domain": "design",
-      "hash": "99c84672060e2d60a65222f6b5763e54",
+      "hash": "53fadee9435caa8b433c14ea8c5449d0",
       "summaryZh": "Miro 网站设计规范，白底留白与粉彩协作工具界面参考"
     },
     "awesome-design-md/design-md/mistral.ai/DESIGN.md": {
       "domain": "design",
-      "hash": "ac0a79a6198d259bf69795b653420f6c",
+      "hash": "8d235c4a62b90a66d5d7b00c8df1ecbf",
       "summaryZh": "Mistral AI 网站设计规范，暖色琥珀南法暖光界面参考"
     },
     "awesome-design-md/design-md/mongodb/DESIGN.md": {
       "domain": "design",
-      "hash": "3c13031f57c2e74a3ef118267798be4d",
+      "hash": "7adf2ca4e85b236c96018851789e29b9",
       "summaryZh": "MongoDB 网站设计规范，深青黑配霓虹绿终端风参考"
     },
     "awesome-design-md/design-md/notion/DESIGN.md": {
       "domain": "design",
-      "hash": "456bf9cd57f9f48572ca12d0ebbf2a9e",
+      "hash": "9d561083562592f544f767eaf5ff5d27",
       "summaryZh": "Notion 网站设计规范，暖中性极简空白画布界面参考"
     },
     "awesome-design-md/design-md/nvidia/DESIGN.md": {
       "domain": "design",
-      "hash": "22aa22e4f72b427906c5a88f480e41ba",
+      "hash": "69f0f405bd7a3c58f2250b352dec544e",
       "summaryZh": "NVIDIA 网站设计规范，黑白配标志绿高对比界面参考"
     },
     "awesome-design-md/design-md/ollama/DESIGN.md": {
       "domain": "design",
-      "hash": "ef39365ad4b6dfb45638b06f6589c617",
+      "hash": "176e8afd88cabdf2b3dd62063561ce6d",
       "summaryZh": "Ollama 网站设计规范，纯白极简无装饰界面参考"
     },
     "awesome-design-md/design-md/opencode.ai/DESIGN.md": {
       "domain": "design",
-      "hash": "60b486ad39bc714357b47b263629233d",
+      "hash": "0b06d838868dd6a9e7235e2d42eac321",
       "summaryZh": "OpenCode 网站设计规范，终端等宽暖暗色界面参考"
     },
     "awesome-design-md/design-md/pinterest/DESIGN.md": {
       "domain": "design",
-      "hash": "fc2df4390dad63f3ea770537620e5ca4",
+      "hash": "17b5616ed8d1b639531cebed0a205f3b",
       "summaryZh": "Pinterest 网站设计规范，暖白配红的灵感发现界面参考"
     },
     "awesome-design-md/design-md/posthog/DESIGN.md": {
       "domain": "design",
-      "hash": "e45967a07408bebdc3b4296cbb50f463",
+      "hash": "982b3bc7eef2274695baecd01d722d2f",
       "summaryZh": "PostHog 网站设计规范，鼠尾草奶油色反企业风界面参考"
     },
     "awesome-design-md/design-md/raycast/DESIGN.md": {
       "domain": "design",
-      "hash": "d57a2dbea9807a66475d61872473b75d",
+      "hash": "76108b0b091d8ae42d5230dc1f83f57a",
       "summaryZh": "Raycast 网站设计规范，近黑蓝调精密桌面工具界面参考"
     },
     "awesome-design-md/design-md/renault/DESIGN.md": {
       "domain": "design",
-      "hash": "67b0d1e63aed22b9d05972a3cbb98668",
+      "hash": "b1d9319f7a43b2f8bf862489dd632185",
       "summaryZh": "Renault 网站设计规范，极光渐变活力数字展厅界面参考"
     },
     "awesome-design-md/design-md/replicate/DESIGN.md": {
       "domain": "design",
-      "hash": "951a1d9fd365f7bcb760201c5c2bfaf0",
+      "hash": "1435a23da2417d93fa8264cd5878dfd9",
       "summaryZh": "Replicate 网站设计规范，橙红渐变高对比开发者界面参考"
     },
     "awesome-design-md/design-md/resend/DESIGN.md": {
       "domain": "design",
-      "hash": "10468633bd4d0bedae4fdf7b8d6d81dd",
+      "hash": "e7ea2f998bc1458611913d301c5a094f",
       "summaryZh": "Resend 网站设计规范，纯黑影院感邮件产品界面参考"
     },
     "awesome-design-md/design-md/revolut/DESIGN.md": {
       "domain": "design",
-      "hash": "975bf7e788ed677a0511a9b3191ebe4f",
+      "hash": "9fd869e63f3b56d9c84c5248bb96f97b",
       "summaryZh": "Revolut 网站设计规范，巨型排版克制中性金融界面参考"
     },
     "awesome-design-md/design-md/runwayml/DESIGN.md": {
@@ -3289,12 +3244,12 @@
     },
     "awesome-design-md/design-md/sentry/DESIGN.md": {
       "domain": "design",
-      "hash": "fea8adb68369c5c7c0675d91e44040c4",
+      "hash": "2e4e446fe55994aaee6f1ea781f690ae",
       "summaryZh": "Sentry 网站设计规范，深紫黑代码编辑器风界面参考"
     },
     "awesome-design-md/design-md/spacex/DESIGN.md": {
       "domain": "design",
-      "hash": "9f72bc55f681de4e84f6db256ac8524d",
+      "hash": "a5f0929db461dcb1e20b3bca79f434fe",
       "summaryZh": "SpaceX 网站设计规范，纯黑全幅航天影像界面参考"
     },
     "awesome-design-md/design-md/spotify/DESIGN.md": {
@@ -3304,17 +3259,17 @@
     },
     "awesome-design-md/design-md/stripe/DESIGN.md": {
       "domain": "design",
-      "hash": "0a70d733b701dceb4e9eaf037661dd42",
+      "hash": "d48c276b655f281ca3f1d60913201cff",
       "summaryZh": "Stripe 网站设计规范，白底配紫的精密奢华金融界面参考"
     },
     "awesome-design-md/design-md/supabase/DESIGN.md": {
       "domain": "design",
-      "hash": "f1bcb749104182e4db8ee4d7ff189c8d",
+      "hash": "228e26c5dbe1ff7d8dbcd833cd523067",
       "summaryZh": "Supabase 网站设计规范，黑底翠绿开源开发者界面参考"
     },
     "awesome-design-md/design-md/superhuman/DESIGN.md": {
       "domain": "design",
-      "hash": "7b7977ecc77181a0c77c333b05c550db",
+      "hash": "6cb10eb64b1bbedef0ae76057dcbb078",
       "summaryZh": "Superhuman 网站设计规范，纯白配紫渐变奢华界面参考"
     },
     "awesome-design-md/design-md/tesla/DESIGN.md": {
@@ -3324,47 +3279,47 @@
     },
     "awesome-design-md/design-md/together.ai/DESIGN.md": {
       "domain": "design",
-      "hash": "c5ac4ab4199b84116cd7a6ecfa22990d",
+      "hash": "e59cdaed0373a4bae392ada4ccadbeed",
       "summaryZh": "Together AI 网站设计规范，粉蓝渐变梦幻基建界面参考"
     },
     "awesome-design-md/design-md/uber/DESIGN.md": {
       "domain": "design",
-      "hash": "895f88a6223576b67c8fab59e8f65872",
+      "hash": "f700d1f2c1e1a1d2da7330c2aca7cb04",
       "summaryZh": "Uber 网站设计规范，纯黑白极简自信界面参考"
     },
     "awesome-design-md/design-md/vercel/DESIGN.md": {
       "domain": "design",
-      "hash": "4608a1696bea0d1495bda76ee133bf1e",
+      "hash": "958a9f7d80e8ca982281a186f542463c",
       "summaryZh": "Vercel 网站设计规范，极致白底克制工程化界面参考"
     },
     "awesome-design-md/design-md/voltagent/DESIGN.md": {
       "domain": "design",
-      "hash": "4f611c82197747682dfdafe593e2f0b8",
+      "hash": "354f098fa3645ee4b4bb46aaf0436728",
       "summaryZh": "VoltAgent 网站设计规范，深空黑配翠绿命令台界面参考"
     },
     "awesome-design-md/design-md/warp/DESIGN.md": {
       "domain": "design",
-      "hash": "e4b3d71074b6adb5a9befe8a428d6fc5",
+      "hash": "488fa2fd170bac547b6d4f0b5691e019",
       "summaryZh": "Warp 网站设计规范，暖近黑羊皮纸字终端工具界面参考"
     },
     "awesome-design-md/design-md/webflow/DESIGN.md": {
       "domain": "design",
-      "hash": "6be9c761e165b0b31bc037fd33addfcb",
+      "hash": "be280613eb13fd09a5ed193dfb66710f",
       "summaryZh": "Webflow 网站设计规范，白底蓝色无代码设计平台参考"
     },
     "awesome-design-md/design-md/wise/DESIGN.md": {
       "domain": "design",
-      "hash": "2a4391218462914e0e6db9b98462d2f5",
+      "hash": "421a97e6e8cad308bcaca31dc318dd2d",
       "summaryZh": "Wise 网站设计规范，暖白配青柠绿金融平台界面参考"
     },
     "awesome-design-md/design-md/x.ai/DESIGN.md": {
       "domain": "design",
-      "hash": "0efabb42e0fc1a7638cbd8d1b85fce60",
+      "hash": "e1a8a3de1a23dc07ae5b4c3e2fc5b670",
       "summaryZh": "xAI 网站设计规范，近黑等宽粗野极简界面参考"
     },
     "awesome-design-md/design-md/zapier/DESIGN.md": {
       "domain": "design",
-      "hash": "775eabd5dbd376e25b2e1563f16824f4",
+      "hash": "464bac39bae83043bc0ac2287f88b513",
       "summaryZh": "Zapier 品牌视觉设计规范，温暖亲和的奶油色调，做界面设计时参考。"
     },
     "academic-research-skills/academic-paper/SKILL.md": {
@@ -3526,6 +3481,516 @@
       "domain": "research",
       "hash": "edc57d7c2d00534de94a33f4cf5c6ce2",
       "summaryZh": "拉高视角解释代码在全局中的定位"
+    },
+    "agency-agents-zh/engineering/engineering-mechanical-design-engineer.md": {
+      "domain": "coding",
+      "hash": "eb3b452a0e274c61f615f24c9755ed5f",
+      "summaryZh": "完成机械方案、结构校核、DFMA、标准件选型、工程图与 BOM。"
+    },
+    "agency-agents-zh/engineering/engineering-pc-host-engineer.md": {
+      "domain": "coding",
+      "hash": "f71acf0b4cc9a8d6ab805d4e646fc171",
+      "summaryZh": "开发 Qt/QML 工业上位机，集成串口、现场总线与实时数据可视化。"
+    },
+    "agency-agents-zh/marketing/marketing-daily-news-briefing.md": {
+      "domain": "research",
+      "hash": "af02343f372cd1d83395c34d227d4874",
+      "summaryZh": "采集并交叉验证多源新闻，生成可供下游使用的结构化简报。"
+    },
+    "agency-agents-zh/specialized/livestock-archive-auditor.md": {
+      "domain": "review",
+      "hash": "ada5e3f86f10a2b560bfec957367278d",
+      "summaryZh": "核对养殖档案与生产日报，发现错填漏填、批号和 FIFO 问题。"
+    },
+    "agency-agents-zh/supply-chain/supply-chain-garment-factory-planning-engineer.md": {
+      "domain": "operations",
+      "hash": "7c8397f7e131609e7327dd1897293fd9",
+      "summaryZh": "规划多基地服装工厂的场地、产能、设备、精益流程与合规。"
+    },
+    "agency-agents-zh/supply-chain/supply-chain-strategist.md": {
+      "domain": "operations",
+      "hash": "026ed26aad3c970cbc3588a1cbbde60e",
+      "summaryZh": "制定供应商、采购、质量与数字化策略，建设韧性供应链。"
+    },
+    "agency-agents/design/design-persona-walkthrough.md": {
+      "domain": "marketing",
+      "hash": "d3687cb9d5405ab9a6f8a58a2bd601bc",
+      "summaryZh": "以目标用户心理视角走查网页，输出基于行为框架的转化优化报告。"
+    },
+    "agency-agents/engineering/engineering-drupal-shopping-cart.md": {
+      "domain": "coding",
+      "hash": "3f696f56524260262cd68764403139da",
+      "summaryZh": "基于 Drupal Commerce 开发商品、支付、结账、订单与促销能力。"
+    },
+    "agency-agents/engineering/engineering-it-service-manager.md": {
+      "domain": "operations",
+      "hash": "0104ca4cb8afa3bd5c9a3ef923f080a8",
+      "summaryZh": "按 ITIL 4 管理服务目录、事件、变更、SLA、CMDB 与持续改进。"
+    },
+    "agency-agents/engineering/engineering-multi-agent-systems-architect.md": {
+      "domain": "agent-workflow",
+      "hash": "cdc305fe35ca70c5af959a2e43aff898",
+      "summaryZh": "设计生产级多智能体拓扑、上下文、信任、恢复与可观测体系。"
+    },
+    "agency-agents/engineering/engineering-orgscript-engineer.md": {
+      "domain": "coding",
+      "hash": "c5ae10cf9497dc1a79ab107873355e44",
+      "summaryZh": "设计和实现 OrgScript 语法、解析器、AST 校验与业务逻辑定义。"
+    },
+    "agency-agents/engineering/engineering-prompt-engineer.md": {
+      "domain": "agent-workflow",
+      "hash": "304af4b156229801f391edcd1fc189ff",
+      "summaryZh": "设计、测试并系统优化提示词，使大模型行为稳定可复现。"
+    },
+    "agency-agents/engineering/engineering-wordpress-shopping-cart.md": {
+      "domain": "coding",
+      "hash": "6232228e63086836754fd4518b3b2828",
+      "summaryZh": "基于 WooCommerce 开发商品、支付、结账、订单和优惠能力。"
+    },
+    "agency-agents/gis/gis-3d-scene-developer.md": {
+      "domain": "coding",
+      "hash": "f9c310c098fade8271b95d5d6f19d832",
+      "summaryZh": "使用 Cesium、ArcGIS 等技术构建地形、点云与交互式 Web 3D 场景。"
+    },
+    "agency-agents/gis/gis-analyst.md": {
+      "domain": "data-finance",
+      "hash": "4f82b97d363efcf1ac45233aea509368",
+      "summaryZh": "制作地图、管理图层、执行空间查询并维护地理数据质量。"
+    },
+    "agency-agents/gis/gis-bim-specialist.md": {
+      "domain": "data-finance",
+      "hash": "bef75ccd29e48301a6e88e15d6bbc3ce",
+      "summaryZh": "打通 BIM 与 GIS 数据，支持格式转换、室内地图和数字孪生。"
+    },
+    "agency-agents/gis/gis-cartography-designer.md": {
+      "domain": "design",
+      "hash": "7820a79742b59fa1e7927c09285fe359",
+      "summaryZh": "为印刷和 Web 设计清晰美观的地图配色、标注与视觉层级。"
+    },
+    "agency-agents/gis/gis-drone-reality-mapping.md": {
+      "domain": "data-finance",
+      "hash": "69b7177a3f61b78f19cf572d9ce50634",
+      "summaryZh": "把无人机影像处理为正射图、地形模型、点云和三维网格。"
+    },
+    "agency-agents/gis/gis-geoai-ml-engineer.md": {
+      "domain": "data-finance",
+      "hash": "117f851027e1344f7dc725542d06c489",
+      "summaryZh": "用卫星与航拍影像训练地物提取、检测、分割和分类模型。"
+    },
+    "agency-agents/gis/gis-geoprocessing-specialist.md": {
+      "domain": "coding",
+      "hash": "b681cf115e8719ae9ede7ab586e73fde",
+      "summaryZh": "用 ArcPy、Python 工具箱与批处理脚本自动化空间分析流程。"
+    },
+    "agency-agents/gis/gis-qa-engineer.md": {
+      "domain": "review",
+      "hash": "6170372b3fefd16dba18f097f29601aa",
+      "summaryZh": "检查拓扑、坐标系、元数据、精度与地理数据合规性。"
+    },
+    "agency-agents/gis/gis-solution-engineer.md": {
+      "domain": "coding",
+      "hash": "c9b904bfcb1966e03b9c066706f03cf3",
+      "summaryZh": "把 GIS 方案转成可运行的演示、原型与技术验证。"
+    },
+    "agency-agents/gis/gis-spatial-data-engineer.md": {
+      "domain": "data-finance",
+      "hash": "1d35c49078a5b2603cf331e2a413022e",
+      "summaryZh": "清洗、转换并标准化地理数据，构建生产级空间 ETL 管道。"
+    },
+    "agency-agents/gis/gis-spatial-data-scientist.md": {
+      "domain": "data-finance",
+      "hash": "78b6713c99cb5f367c1b65b9d2ea35e4",
+      "summaryZh": "用空间统计、计量、聚类与预测模型发现地理数据规律。"
+    },
+    "agency-agents/gis/gis-technical-consultant.md": {
+      "domain": "operations",
+      "hash": "9bd4daef19495010168dac6c0ff4d10b",
+      "summaryZh": "把业务问题转成 GIS 路线图、差距分析、RFP 与数字化方案。"
+    },
+    "agency-agents/gis/gis-web-gis-developer.md": {
+      "domain": "coding",
+      "hash": "e62187a4cfa29176caa780a11563a1fe",
+      "summaryZh": "使用 MapLibre、ArcGIS、Leaflet 与 API 构建交互式 Web GIS。"
+    },
+    "agency-agents/marketing/marketing-aeo-foundations.md": {
+      "domain": "marketing",
+      "hash": "c11036aae63b6d785a8bb2e81e443662",
+      "summaryZh": "搭建 llms.txt、AI 爬虫规则与结构化内容等 AEO 基础设施。"
+    },
+    "agency-agents/marketing/marketing-email-strategist.md": {
+      "domain": "marketing",
+      "hash": "6c7f057f76719a75bae162bdf07a77aa",
+      "summaryZh": "设计 CRM 邮件活动、生命周期自动化、分群与送达率策略。"
+    },
+    "agency-agents/marketing/marketing-global-podcast-strategist.md": {
+      "domain": "marketing",
+      "hash": "4d4c902b4afaebbcbd8b115d282ca08c",
+      "summaryZh": "规划播客定位、受众增长、内容与商业化，打造长期音频品牌。"
+    },
+    "agency-agents/marketing/marketing-multi-platform-publisher.md": {
+      "domain": "marketing",
+      "hash": "5fe69ca25ac312ee11e149119db96d99",
+      "summaryZh": "将中文文章适配并生成知乎、小红书、公众号等多平台草稿。"
+    },
+    "agency-agents/marketing/marketing-pr-communications-manager.md": {
+      "domain": "marketing",
+      "hash": "1b3b9349af2a9f593d256a610cdc0b8a",
+      "summaryZh": "负责媒体关系、新闻稿、危机沟通、品牌声誉与整合传播。"
+    },
+    "agency-agents/marketing/marketing-x-twitter-intelligence-analyst.md": {
+      "domain": "research",
+      "hash": "974141cbc495db3587300a869d8fe09c",
+      "summaryZh": "研究 X/Twitter 趋势、账号与公开信号，形成有证据的受众洞察。"
+    },
+    "agency-agents/project-management/project-management-meeting-notes-specialist.md": {
+      "domain": "writing",
+      "hash": "07e2459fafc3a60584f408d2e2361988",
+      "summaryZh": "把会议记录提炼为决策、行动项、开放问题和结构化摘要。"
+    },
+    "agency-agents/sales/sales-offer-lead-gen-strategist.md": {
+      "domain": "marketing",
+      "hash": "f9b9a67aa913cbe40813cd523d103d20",
+      "summaryZh": "设计高吸引力报价、获客磁铁与多渠道线索增长体系。"
+    },
+    "agency-agents/security/security-appsec-engineer.md": {
+      "domain": "review",
+      "hash": "81edce518060bfddbb51f83ee652cbde",
+      "summaryZh": "通过威胁建模、代码审查与 SAST/DAST 加固软件开发全流程。"
+    },
+    "agency-agents/security/security-architect.md": {
+      "domain": "review",
+      "hash": "3d4fe6306747f9b8cf3dabf26b9e83ae",
+      "summaryZh": "通过威胁建模、信任边界和纵深防御设计系统安全模型。"
+    },
+    "agency-agents/security/security-blockchain-security-auditor.md": {
+      "domain": "review",
+      "hash": "bc077c39f8d6b0880c3c26df33341cf0",
+      "summaryZh": "审计智能合约与 DeFi 协议，定位漏洞、验证风险并编写报告。"
+    },
+    "agency-agents/security/security-cloud-security-architect.md": {
+      "domain": "review",
+      "hash": "a942b3668a1ddde972efb9ad46a42c6a",
+      "summaryZh": "为 AWS、Azure、GCP 设计零信任与纵深防御的云安全架构。"
+    },
+    "agency-agents/security/security-compliance-auditor.md": {
+      "domain": "review",
+      "hash": "b8834bf3984fbf73c60e5cda7b83e8ce",
+      "summaryZh": "执行 SOC 2、ISO 27001、HIPAA、PCI-DSS 合规评估与取证。"
+    },
+    "agency-agents/security/security-incident-responder.md": {
+      "domain": "review",
+      "hash": "18d85dcdab763bb1c87cd2be4ce461af",
+      "summaryZh": "调查安全事件、遏制威胁、协调响应并撰写防复发复盘。"
+    },
+    "agency-agents/security/security-penetration-tester.md": {
+      "domain": "review",
+      "hash": "764a2d24dc8b20ed3b28266acbd07680",
+      "summaryZh": "对网络、Web 与云环境执行授权渗透测试和漏洞评估。"
+    },
+    "agency-agents/security/security-senior-secops.md": {
+      "domain": "review",
+      "hash": "e7cb891b63b53329d59b6076d038183f",
+      "summaryZh": "审查敏感信息暴露并实施认证、授权、令牌与输入验证等安全控制。"
+    },
+    "agency-agents/security/security-threat-detection-engineer.md": {
+      "domain": "review",
+      "hash": "8eb17d2d5a866fba2a34113c6e91c837",
+      "summaryZh": "开发 SIEM 规则、ATT&CK 覆盖、威胁狩猎与检测即代码流程。"
+    },
+    "agency-agents/security/security-threat-intelligence-analyst.md": {
+      "domain": "research",
+      "hash": "3fe2de3c71233a64d2c037e22586675c",
+      "summaryZh": "跟踪攻击组织与活动，产出可行动的威胁情报和检测规则。"
+    },
+    "agency-agents/specialized/business-strategist.md": {
+      "domain": "operations",
+      "hash": "646c87e6295a0a9e6ec6e0132dcaf900",
+      "summaryZh": "制定竞争、市场进入、商业模式与增长战略并形成可执行决策。"
+    },
+    "agency-agents/specialized/change-management-consultant.md": {
+      "domain": "operations",
+      "hash": "fe812b1721464388813799832b9198ce",
+      "summaryZh": "用 ADKAR、Kotter 等框架推动组织变革、采纳与长期落地。"
+    },
+    "agency-agents/specialized/chief-financial-officer.md": {
+      "domain": "operations",
+      "hash": "2327d46b91e02ab9a93e4fad221bebc6",
+      "summaryZh": "统筹资本配置、财务规划、并购财务、投资者关系与董事会报告。"
+    },
+    "agency-agents/specialized/customer-success-manager.md": {
+      "domain": "sales-support",
+      "hash": "7bf3f1a2666ba033ff9bb0edfdeec0cb",
+      "summaryZh": "负责客户入驻、健康度、续约、防流失与扩展增长。"
+    },
+    "agency-agents/specialized/data-privacy-officer.md": {
+      "domain": "operations",
+      "hash": "a46b630e29c5412f5651ce1c43830a43",
+      "summaryZh": "建设 GDPR、CCPA 等隐私合规体系并管理评估、事件与监管沟通。"
+    },
+    "agency-agents/specialized/esg-sustainability-officer.md": {
+      "domain": "operations",
+      "hash": "ee87e398e9f0d2a5f1128095484620d6",
+      "summaryZh": "建设 ESG 与可持续发展项目，管理披露、减碳和监管对齐。"
+    },
+    "agency-agents/specialized/grant-writer.md": {
+      "domain": "writing",
+      "hash": "4b0ca99694b6bbe169ad86c0c0b1749a",
+      "summaryZh": "为非营利、科研和社会企业撰写资助申请、预算叙事与结项报告。"
+    },
+    "agency-agents/specialized/ma-integration-manager.md": {
+      "domain": "operations",
+      "hash": "b1301902670c2397bfb7e4b1c5cef5fd",
+      "summaryZh": "规划并执行并购后的首日、百日、协同、文化与职能整合。"
+    },
+    "agency-agents/specialized/medical-billing-coding-specialist.md": {
+      "domain": "operations",
+      "hash": "2464f507b74912894e45a830cb6c4116",
+      "summaryZh": "处理医疗编码、理赔提交、拒付管理、收入周期与付款方合规。"
+    },
+    "agency-agents/specialized/operations-manager.md": {
+      "domain": "operations",
+      "hash": "babb0e5f66fa2cdb24afaa7ec008afae",
+      "summaryZh": "用精益、六西格玛和系统思维优化流程、产能、KPI 与供应商。"
+    },
+    "agency-agents/specialized/organizational-psychologist.md": {
+      "domain": "operations",
+      "hash": "c5346316d30a4d64f03295c4a905d1a0",
+      "summaryZh": "诊断团队动力、心理安全、倦怠与组织文化并提出改进方案。"
+    },
+    "agency-agents/specialized/personal-growth-mentor.md": {
+      "domain": "education",
+      "hash": "62e8bb919de664a83a2f41d9f06abfc0",
+      "summaryZh": "围绕目标、习惯、决策和问责提供务实的个人成长辅导。"
+    },
+    "agency-agents/specialized/specialized-pricing-analyst.md": {
+      "domain": "data-finance",
+      "hash": "33f850cfe2fcb5a20a62afe83a25440c",
+      "summaryZh": "结合市场、竞品、成本与利润分析建立数据驱动的定价模型。"
+    },
+    "agency-agents/specialized/specialized-strategy-duel-agent.md": {
+      "domain": "operations",
+      "hash": "c6316ec57e4aa8decfcf4b89f6acb2a0",
+      "summaryZh": "结合博弈论与三十六计进行实时策略对抗和决策推演。"
+    },
+    "awesome-design-md/design-md/binance/DESIGN.md": {
+      "domain": "design",
+      "hash": "8b37722a24f3b6233574e9ba0cc7cbc6",
+      "summaryZh": "Binance 网站设计规范，近黑底配品牌黄的金融平台界面参考。"
+    },
+    "awesome-design-md/design-md/bmw-m/DESIGN.md": {
+      "domain": "design",
+      "hash": "a9815deffb6a7ad6dc519234e838ee79",
+      "summaryZh": "BMW M 网站设计规范，黑底、赛车摄影与 M 三色的高性能界面参考。"
+    },
+    "awesome-design-md/design-md/bugatti/DESIGN.md": {
+      "domain": "design",
+      "hash": "94cf91e72aa3a7c1a28c57d674340859",
+      "summaryZh": "Bugatti 网站设计规范，纯黑画布、全幅车图与奢华极简排版参考。"
+    },
+    "awesome-design-md/design-md/dell-1996/DESIGN.md": {
+      "domain": "design",
+      "hash": "46bf019a263568cbf6021d6378bc7201",
+      "summaryZh": "Dell 1996 年网站设计分析，彩色目录卡片与早期网页硬件风参考。"
+    },
+    "awesome-design-md/design-md/hp/DESIGN.md": {
+      "domain": "design",
+      "hash": "d30042c519f069a89d1a098f3eb1aa77",
+      "summaryZh": "HP 网站设计规范，白底、电光蓝与几何企业科技界面参考。"
+    },
+    "awesome-design-md/design-md/mastercard/DESIGN.md": {
+      "domain": "design",
+      "hash": "babe002feccd0474df864694a963dbf0",
+      "summaryZh": "Mastercard 网站设计规范，暖石色画布、信号橙与大圆角编辑风参考。"
+    },
+    "awesome-design-md/design-md/meta/DESIGN.md": {
+      "domain": "design",
+      "hash": "478a4e0c39b079cfc87b199b4a6d2b20",
+      "summaryZh": "Meta 网站设计规范，白底产品摄影、钴蓝与双按钮商业界面参考。"
+    },
+    "awesome-design-md/design-md/nike/DESIGN.md": {
+      "domain": "design",
+      "hash": "b20b4c085069996379a70e609cea266c",
+      "summaryZh": "Nike 网站设计规范，运动摄影、巨型排版与黑白零售界面参考。"
+    },
+    "awesome-design-md/design-md/nintendo-2001/DESIGN.md": {
+      "domain": "design",
+      "hash": "e73749b03afc9b8a115e94cb5f1fc886",
+      "summaryZh": "Nintendo 2001 年网站设计分析，金属面板与 Y2K 游戏主机界面参考。"
+    },
+    "awesome-design-md/design-md/playstation/DESIGN.md": {
+      "domain": "design",
+      "hash": "d2c6253d3f463f35d960a1351f828ac0",
+      "summaryZh": "PlayStation 网站设计规范，黑白蓝交替与主机发布片式界面参考。"
+    },
+    "awesome-design-md/design-md/shopify/DESIGN.md": {
+      "domain": "design",
+      "hash": "c73fcd9f00c726203b5375094f62553b",
+      "summaryZh": "Shopify 网站设计规范，暗色商家叙事与明亮交易界面的双轨参考。"
+    },
+    "awesome-design-md/design-md/slack/DESIGN.md": {
+      "domain": "design",
+      "hash": "ba891f38f4a14ddee26544aef1c8f248",
+      "summaryZh": "Slack 网站设计规范，茄紫、奶油渐变与产品示意图界面参考。"
+    },
+    "awesome-design-md/design-md/starbucks/DESIGN.md": {
+      "domain": "design",
+      "hash": "ba52da3726856a5eb22f0b45740e3ccc",
+      "summaryZh": "Starbucks 网站设计规范，暖奶油材质与品牌绿零售旗舰界面参考。"
+    },
+    "awesome-design-md/design-md/theverge/DESIGN.md": {
+      "domain": "design",
+      "hash": "5fb9b4482bc22be753be967967aae90a",
+      "summaryZh": "The Verge 网站设计规范，近黑底、酸性亮色与重型杂志排版参考。"
+    },
+    "awesome-design-md/design-md/vodafone/DESIGN.md": {
+      "domain": "design",
+      "hash": "57cc56f01ecfbab23a1bff3ed42d4cee",
+      "summaryZh": "Vodafone 网站设计规范，新闻摄影、巨型标题与品牌红界面参考。"
+    },
+    "awesome-design-md/design-md/wired/DESIGN.md": {
+      "domain": "design",
+      "hash": "3e75a6003baaa25193368ac3c9c4f11c",
+      "summaryZh": "WIRED 网站设计规范，黑白编辑网格与窄体杂志排版参考。"
+    },
+    "gstack/browser-skills/hackernews-frontpage/SKILL.md": {
+      "domain": "research",
+      "hash": "c68613828660295170fe6071cfcbb511",
+      "summaryZh": "抓取 Hacker News 首页标题、分数与评论数等结构化信息。"
+    },
+    "gstack/document-generate/SKILL.md": {
+      "domain": "writing",
+      "hash": "d12998d4bf992a02946622aa80966b26",
+      "summaryZh": "按 Diataxis 框架为功能、模块或项目从零生成完整文档。"
+    },
+    "gstack/ios-clean/SKILL.md": {
+      "domain": "coding",
+      "hash": "8bbc4df7e08628f8bccb9f0155d45a75",
+      "summaryZh": "移除 iOS 项目的 DebugBridge 依赖及相关调试条件代码。"
+    },
+    "gstack/ios-design-review/SKILL.md": {
+      "domain": "design",
+      "hash": "1b93a1ee2a63ff52ada09827580a35a7",
+      "summaryZh": "在真实设备上审查 iOS 应用的视觉设计并给出改进意见。"
+    },
+    "gstack/ios-fix/SKILL.md": {
+      "domain": "debugging",
+      "hash": "2c3a3694fd04ee8a67a4617e0a5b26c3",
+      "summaryZh": "自主复现、定位并修复 iOS 应用中的问题。"
+    },
+    "gstack/ios-qa/SKILL.md": {
+      "domain": "review",
+      "hash": "737744c5cfe9fdb7adef47ef137cb21e",
+      "summaryZh": "在真实设备上对 SwiftUI 应用执行交互与质量验证。"
+    },
+    "gstack/ios-sync/SKILL.md": {
+      "domain": "coding",
+      "hash": "37d1806a283d007ec77a3e6a492d0c61",
+      "summaryZh": "按最新 gstack 模板重新生成 iOS 调试桥接代码。"
+    },
+    "gstack/landing-report/SKILL.md": {
+      "domain": "planning",
+      "hash": "7333dc0209744e6b75ea742b3023af8b",
+      "summaryZh": "以只读看板汇总多工作区发布队列与落地状态。"
+    },
+    "gstack/scrape/SKILL.md": {
+      "domain": "research",
+      "hash": "b1d4055c18de493c3742f990a04165d4",
+      "summaryZh": "从网页抓取所需信息并整理为可复用的数据结果。"
+    },
+    "gstack/setup-gbrain/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "b7d7ace4b3c3b947a9b27daf92472c6d",
+      "summaryZh": "安装并初始化 gbrain，为编码智能体配置知识库与 MCP。"
+    },
+    "gstack/skillify/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "5a56c4f18914bcaab8ccbae9d709c3e5",
+      "summaryZh": "把成功的网页抓取流程固化为可测试、可复用的浏览器技能。"
+    },
+    "gstack/spec/SKILL.md": {
+      "domain": "planning",
+      "hash": "fae8b02ce2a2cab2dce8ffbc1f81c57a",
+      "summaryZh": "通过五阶段流程把模糊意图转成精确、可执行的规格或议题。"
+    },
+    "gstack/sync-gbrain/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "d24c277e3230117aef1555489c0562f8",
+      "summaryZh": "同步代码库到 gbrain，并刷新智能体的检索与路由说明。"
+    },
+    "skills/skills/productivity/teach/SKILL.md": {
+      "domain": "education",
+      "hash": "ab23129d2af9b2fb1312b385c0bf3978",
+      "summaryZh": "结合当前工作区向用户讲授新的技能或概念。"
+    },
+    "superpowers/skills/brainstorming/SKILL.md": {
+      "domain": "planning",
+      "hash": "66746557ffa21d1c9dd5500fb244b522",
+      "summaryZh": "在动手实现前澄清用户意图、约束与设计方案。"
+    },
+    "superpowers/skills/dispatching-parallel-agents/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "72d5f58fbcc1b3acdd84b33c55ee330c",
+      "summaryZh": "将彼此独立的任务分派给多个子智能体并行处理。"
+    },
+    "superpowers/skills/executing-plans/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "b8f78f2c47445b4d3b9d70f04e10d029",
+      "summaryZh": "在独立会话中按检查点执行既定实施计划。"
+    },
+    "superpowers/skills/finishing-a-development-branch/SKILL.md": {
+      "domain": "coding",
+      "hash": "13158634209da75be052f7f3fe9a9106",
+      "summaryZh": "实现完成后引导选择合并、建 PR 或清理分支的收尾路径。"
+    },
+    "superpowers/skills/receiving-code-review/SKILL.md": {
+      "domain": "review",
+      "hash": "c4042d8d8fd2826c16f4827d1163f5f5",
+      "summaryZh": "以技术核验而非盲从的方式处理代码审查反馈。"
+    },
+    "superpowers/skills/requesting-code-review/SKILL.md": {
+      "domain": "review",
+      "hash": "c5a18910688993d92075da5557996e61",
+      "summaryZh": "在重大实现或合并前发起代码审查，验证是否满足要求。"
+    },
+    "superpowers/skills/subagent-driven-development/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "2ef46a8fc0fca3384cc0dd56f20573fa",
+      "summaryZh": "在当前会话中用独立子智能体逐项执行实施计划。"
+    },
+    "superpowers/skills/systematic-debugging/SKILL.md": {
+      "domain": "debugging",
+      "hash": "144aded4317972a3a1047c7ac8c456e1",
+      "summaryZh": "遇到缺陷或测试失败时先系统定位根因，再提出修复。"
+    },
+    "superpowers/skills/test-driven-development/SKILL.md": {
+      "domain": "coding",
+      "hash": "dbb4ad5ed2b06a6c9540de3cd9a0bb16",
+      "summaryZh": "用测试驱动方式实现功能或修复缺陷，先写失败测试再编码。"
+    },
+    "superpowers/skills/using-git-worktrees/SKILL.md": {
+      "domain": "coding",
+      "hash": "cc26c01c54a0f1e9171f58b7bcaea46b",
+      "summaryZh": "用 Git worktree 创建隔离工作区，安全开展功能开发。"
+    },
+    "superpowers/skills/using-superpowers/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "edd70bfc917dc92e251f0051d5a8db41",
+      "summaryZh": "建立技能发现与调用规则，确保对话开始时先选择合适技能。"
+    },
+    "superpowers/skills/verification-before-completion/SKILL.md": {
+      "domain": "review",
+      "hash": "aacf65b93c13b512927b09391f99076e",
+      "summaryZh": "宣称完成前运行验证命令，以实际输出支持结论。"
+    },
+    "superpowers/skills/writing-plans/SKILL.md": {
+      "domain": "planning",
+      "hash": "f0665826024391729588589f570a5e64",
+      "summaryZh": "在修改代码前把规格或需求整理成可执行的多步计划。"
+    },
+    "superpowers/skills/writing-skills/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "5aaede52e574e9988f8002e1d6deb126",
+      "summaryZh": "创建、修改并验证可部署的智能体技能。"
     }
   }
 }
