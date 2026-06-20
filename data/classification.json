@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-14T22:59:20.393Z",
+  "generatedAt": "2026-06-20T06:14:26.178Z",
   "byId": {
     "custom-skills/ai-init-instructions-v1/SKILL.md": {
       "domain": "agent-workflow",
@@ -3324,7 +3324,7 @@
     },
     "academic-research-skills/academic-paper/SKILL.md": {
       "domain": "research",
-      "hash": "cdda0cea7ba946164f60176acffeb48d",
+      "hash": "0e7c79caba66e22a1538b9d40d36cffc",
       "summaryZh": "学术论文写作流水线，需撰写或修订论文时用"
     },
     "academic-research-skills/academic-paper-reviewer/SKILL.md": {
@@ -3337,25 +3337,15 @@
       "hash": "746def11ad69881618f604b9f539288e",
       "summaryZh": "学术研究全流程编排，从研究到发表一体化"
     },
-    "skills/skills/productivity/caveman/SKILL.md": {
-      "domain": "agent-workflow",
-      "hash": "3ae4c6e500dd231b4b6fcfae647281c7",
-      "summaryZh": "超压缩通信模式，省约75%token时用"
-    },
     "academic-research-skills/deep-research/SKILL.md": {
       "domain": "research",
-      "hash": "17b203cf3c0c8e56f20a4b8c6ca378fe",
+      "hash": "0aa7c2345a90c126a00cf92b8e1ca9f8",
       "summaryZh": "通用深度研究智能体团队，做严谨课题研究"
     },
     "skills/skills/deprecated/design-an-interface/SKILL.md": {
       "domain": "design",
       "hash": "850acb7da8acb5a1c2cfe3e92c385148",
       "summaryZh": "并行生成多套差异化接口设计方案，探索模块形态"
-    },
-    "skills/skills/engineering/diagnose/SKILL.md": {
-      "domain": "debugging",
-      "hash": "642fc1d3db7090ff63bba0f032d6e435",
-      "summaryZh": "硬性bug与性能退化的纪律化诊断循环"
     },
     "skills/skills/personal/edit-article/SKILL.md": {
       "domain": "writing",
@@ -3369,12 +3359,12 @@
     },
     "skills/skills/productivity/grill-me/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "add990dae08a494e2c119d458ee30bd8",
+      "hash": "9f81d43276f7d9a9fb29caae42fc52b1",
       "summaryZh": "反复追问拷打计划或设计直至达成共识"
     },
     "skills/skills/engineering/grill-with-docs/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "2eef05f5f15f16e8c8c0059dcd67ecdd",
+      "hash": "1265c2903c73539f09297fc929936664",
       "summaryZh": "对照领域模型拷打计划并同步更新文档"
     },
     "skills/skills/productivity/handoff/SKILL.md": {
@@ -3384,7 +3374,7 @@
     },
     "skills/skills/engineering/improve-codebase-architecture/SKILL.md": {
       "domain": "coding",
-      "hash": "ef420bed4ce2b021f700c0c2cd215862",
+      "hash": "945a5e0b1ffe381cbde2ee03625e9be3",
       "summaryZh": "挖掘重构机会，改进代码架构与可测性"
     },
     "skills/skills/misc/migrate-to-shoehorn/SKILL.md": {
@@ -3399,7 +3389,7 @@
     },
     "skills/skills/engineering/prototype/SKILL.md": {
       "domain": "coding",
-      "hash": "409ad7d787394bf44b3bb958b8631dea",
+      "hash": "27213ee061bddd18b0c59334476a5e2c",
       "summaryZh": "搭建一次性原型，定型前验证设计或UI"
     },
     "skills/skills/deprecated/qa/SKILL.md": {
@@ -3424,7 +3414,7 @@
     },
     "skills/skills/engineering/setup-matt-pocock-skills/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "3c3a835b5523e8bb8e4d2df1642653c6",
+      "hash": "72e0fa085c8dff1aaa44fc9734ac7cae",
       "summaryZh": "为仓库配置技能上下文，首次用工程技能前跑"
     },
     "skills/skills/misc/setup-pre-commit/SKILL.md": {
@@ -3434,33 +3424,28 @@
     },
     "skills/skills/engineering/tdd/SKILL.md": {
       "domain": "coding",
-      "hash": "00c4f01b4963cdfb3975346e35b78450",
+      "hash": "00515128b5fa4a62a54558eb10de2ebc",
       "summaryZh": "红绿重构的测试驱动开发，先写测试"
     },
     "skills/skills/engineering/to-issues/SKILL.md": {
       "domain": "planning",
-      "hash": "78e2212389d3d281786abfc183baca74",
+      "hash": "fc958a307c279e45e4b37135c84f1cf3",
       "summaryZh": "把计划或PRD拆成可独立认领的issue"
     },
     "skills/skills/engineering/to-prd/SKILL.md": {
       "domain": "planning",
-      "hash": "d730bea9a41bb905667cec871bb12176",
+      "hash": "624d1dbc5ea65f44c137ae2d34982f6b",
       "summaryZh": "把当前对话整理成PRD并发到issue追踪器"
     },
     "skills/skills/engineering/triage/SKILL.md": {
       "domain": "planning",
-      "hash": "32bc1eb24819e157965b5d7e13a238c4",
+      "hash": "8bee559d1c3670ed5a74f683248513bf",
       "summaryZh": "用状态机分诊issue，管理工单流转"
     },
     "skills/skills/deprecated/ubiquitous-language/SKILL.md": {
       "domain": "coding",
       "hash": "640626355d16879078492af83d9c27f0",
       "summaryZh": "从对话提取DDD统一语言术语表"
-    },
-    "skills/skills/productivity/write-a-skill/SKILL.md": {
-      "domain": "agent-workflow",
-      "hash": "52598961bb870d1d7d20786bd1e39aaf",
-      "summaryZh": "创建结构规范的新智能体技能时用"
     },
     "skills/skills/in-progress/writing-beats/SKILL.md": {
       "domain": "writing",
@@ -3476,11 +3461,6 @@
       "domain": "writing",
       "hash": "fd87c4e98cb904966b43e87cb1ae11bd",
       "summaryZh": "把零散笔记对话式塑形成可发表文章"
-    },
-    "skills/skills/engineering/zoom-out/SKILL.md": {
-      "domain": "research",
-      "hash": "edc57d7c2d00534de94a33f4cf5c6ce2",
-      "summaryZh": "拉高视角解释代码在全局中的定位"
     },
     "agency-agents-zh/engineering/engineering-mechanical-design-engineer.md": {
       "domain": "coding",
@@ -3974,7 +3954,7 @@
     },
     "superpowers/skills/using-superpowers/SKILL.md": {
       "domain": "agent-workflow",
-      "hash": "edd70bfc917dc92e251f0051d5a8db41",
+      "hash": "93b249340e0c330a697f0d214edc9338",
       "summaryZh": "建立技能发现与调用规则，确保对话开始时先选择合适技能。"
     },
     "superpowers/skills/verification-before-completion/SKILL.md": {
@@ -3991,6 +3971,316 @@
       "domain": "agent-workflow",
       "hash": "5aaede52e574e9988f8002e1d6deb126",
       "summaryZh": "创建、修改并验证可部署的智能体技能。"
+    },
+    "gstack/diagram/SKILL.md": {
+      "domain": "design",
+      "hash": "058a720850518c422a97060991709a3b",
+      "summaryZh": "把文字描述或 Mermaid 源码生成可编辑 Excalidraw 及 SVG、PNG 图表。"
+    },
+    "agency-agents-zh/marketing/marketing-aeo-foundations.md": {
+      "domain": "marketing",
+      "hash": "cbcfc4c4e7cd88675ac8bee95f8b80bc",
+      "summaryZh": "搭建 llms.txt、AI 爬虫规则与结构化内容等 AEO 基础设施。"
+    },
+    "agency-agents-zh/gis/gis-bim-specialist.md": {
+      "domain": "data-finance",
+      "hash": "0939310a5b731bdd1ea66d606f16d548",
+      "summaryZh": "打通 BIM 与 GIS 数据，支持格式转换、室内地图和数字孪生。"
+    },
+    "agency-agents-zh/engineering/engineering-drupal-shopping-cart.md": {
+      "domain": "coding",
+      "hash": "6da2b6247a8e4e8a8ee6f944e8624405",
+      "summaryZh": "基于 Drupal Commerce 开发商品、支付、结账、订单与促销能力。"
+    },
+    "agency-agents-zh/specialized/esg-sustainability-officer.md": {
+      "domain": "operations",
+      "hash": "57c8f15e667da268c4ca1888f0e4d6b5",
+      "summaryZh": "建设 ESG 与可持续发展项目，管理披露、减碳和监管对齐。"
+    },
+    "agency-agents-zh/gis/gis-geoai-ml-engineer.md": {
+      "domain": "data-finance",
+      "hash": "23d52b83ced18d1e95c8712fcccdc224",
+      "summaryZh": "用卫星与航拍影像训练地物提取、检测、分割和分类模型。"
+    },
+    "agency-agents-zh/gis/gis-analyst.md": {
+      "domain": "data-finance",
+      "hash": "8c65c16ffdb918f3c06165dbc51a5534",
+      "summaryZh": "制作地图、管理图层、执行空间查询并维护地理数据质量。"
+    },
+    "agency-agents-zh/gis/gis-qa-engineer.md": {
+      "domain": "review",
+      "hash": "9855b98a507485377f1cdbf16d3862f6",
+      "summaryZh": "检查拓扑、坐标系、元数据、精度与地理数据合规性。"
+    },
+    "agency-agents-zh/engineering/engineering-it-service-manager.md": {
+      "domain": "operations",
+      "hash": "61dd62cb7793cc13c19a816c2d440974",
+      "summaryZh": "按 ITIL 4 管理服务目录、事件、变更、SLA、CMDB 与持续改进。"
+    },
+    "agency-agents-zh/specialized/ma-integration-manager.md": {
+      "domain": "operations",
+      "hash": "6852eb5c47770cc7835a5f72953c023d",
+      "summaryZh": "规划并执行并购后的首日、百日、协同、文化与职能整合。"
+    },
+    "agency-agents-zh/sales/sales-offer-lead-gen-strategist.md": {
+      "domain": "marketing",
+      "hash": "c63e646b721f13e712945718539f1c2f",
+      "summaryZh": "设计高吸引力报价、获客磁铁与多渠道线索增长体系。"
+    },
+    "agency-agents-zh/engineering/engineering-orgscript-engineer.md": {
+      "domain": "coding",
+      "hash": "b9f177edc2279bfa69be3e1fa4ee8a8d",
+      "summaryZh": "设计和实现 OrgScript 语法、解析器、AST 校验与业务逻辑定义。"
+    },
+    "agency-agents-zh/design/design-persona-walkthrough.md": {
+      "domain": "marketing",
+      "hash": "4867aad22de0d830e16677180d9ae5b8",
+      "summaryZh": "以目标用户心理视角走查网页，输出基于行为框架的转化优化报告。"
+    },
+    "agency-agents-zh/marketing/marketing-pr-communications-manager.md": {
+      "domain": "marketing",
+      "hash": "db02a1e29ea87276cd999db416d86b0f",
+      "summaryZh": "负责媒体关系、新闻稿、危机沟通、品牌声誉与整合传播。"
+    },
+    "agency-agents-zh/engineering/engineering-prompt-engineer.md": {
+      "domain": "agent-workflow",
+      "hash": "7684503d954a2b4993529dc8797e032d",
+      "summaryZh": "设计、测试并系统优化提示词，使大模型行为稳定可复现。"
+    },
+    "agency-agents-zh/gis/gis-web-gis-developer.md": {
+      "domain": "coding",
+      "hash": "25e88bec291ea3fcb33a378caf4461aa",
+      "summaryZh": "使用 MapLibre、ArcGIS、Leaflet 与 API 构建交互式 Web GIS。"
+    },
+    "agency-agents-zh/engineering/engineering-wordpress-shopping-cart.md": {
+      "domain": "coding",
+      "hash": "11c8a433a9d1d5b8701ac580bed42ff3",
+      "summaryZh": "基于 WooCommerce 开发商品、支付、结账、订单和优惠能力。"
+    },
+    "agency-agents-zh/marketing/marketing-x-twitter-intelligence-analyst.md": {
+      "domain": "research",
+      "hash": "cb68b549d2447f3e25df700879c69ef5",
+      "summaryZh": "研究 X/Twitter 趋势、账号与公开信号，形成有证据的受众洞察。"
+    },
+    "agency-agents-zh/gis/gis-3d-scene-developer.md": {
+      "domain": "coding",
+      "hash": "9f8ad5b4847f6b8a8005810d22cffec2",
+      "summaryZh": "使用 Cesium、ArcGIS 等技术构建地形、点云与交互式 Web 3D 场景。"
+    },
+    "agency-agents-zh/specialized/personal-growth-mentor.md": {
+      "domain": "education",
+      "hash": "0c2a7ba154ec070a9424a2b6ad1f5bea",
+      "summaryZh": "围绕目标、习惯、决策和问责提供务实的个人成长辅导。"
+    },
+    "agency-agents-zh/security/security-incident-responder.md": {
+      "domain": "review",
+      "hash": "c3e2ea28210020e8259ab08cfb56980a",
+      "summaryZh": "调查安全事件、遏制威胁、协调响应并撰写防复发复盘。"
+    },
+    "agency-agents-zh/security/security-cloud-security-architect.md": {
+      "domain": "review",
+      "hash": "3b86c6f4cca01b8ae4a292490f553e0b",
+      "summaryZh": "为 AWS、Azure、GCP 设计零信任与纵深防御的云安全架构。"
+    },
+    "agency-agents-zh/project-management/project-management-meeting-notes-specialist.md": {
+      "domain": "writing",
+      "hash": "221baf5451f88e1cc1cac492c696ddd3",
+      "summaryZh": "把会议记录提炼为决策、行动项、开放问题和结构化摘要。"
+    },
+    "agency-agents-zh/marketing/marketing-global-podcast-strategist.md": {
+      "domain": "marketing",
+      "hash": "5af316fbd9a9408ef9b7ac8df72afdfe",
+      "summaryZh": "规划播客定位、受众增长、内容与商业化，打造长期音频品牌。"
+    },
+    "agency-agents-zh/security/security-blockchain-security-auditor.md": {
+      "domain": "review",
+      "hash": "188292c80552f4b87ecf7cd2691554ec",
+      "summaryZh": "审计智能合约与 DeFi 协议，定位漏洞、验证风险并编写报告。"
+    },
+    "agency-agents-zh/specialized/medical-billing-coding-specialist.md": {
+      "domain": "operations",
+      "hash": "55524eb7dd7dd85d73a67603992e707c",
+      "summaryZh": "处理医疗编码、理赔提交、拒付管理、收入周期与付款方合规。"
+    },
+    "agency-agents-zh/specialized/change-management-consultant.md": {
+      "domain": "operations",
+      "hash": "90284b561d456be2e02459ef00146e98",
+      "summaryZh": "用 ADKAR、Kotter 等框架推动组织变革、采纳与长期落地。"
+    },
+    "agency-agents-zh/security/security-compliance-auditor.md": {
+      "domain": "review",
+      "hash": "2834d03fc3f2796ba024570bc23c1620",
+      "summaryZh": "执行 SOC 2、ISO 27001、HIPAA、PCI-DSS 合规评估与取证。"
+    },
+    "agency-agents-zh/specialized/business-strategist.md": {
+      "domain": "operations",
+      "hash": "ab471f4158526a3c8ad20676a49bc6cd",
+      "summaryZh": "制定竞争、市场进入、商业模式与增长战略并形成可执行决策。"
+    },
+    "agency-agents-zh/gis/gis-cartography-designer.md": {
+      "domain": "design",
+      "hash": "ecfd008b71a70a5df12c33716b96c9b9",
+      "summaryZh": "为印刷和 Web 设计清晰美观的地图配色、标注与视觉层级。"
+    },
+    "agency-agents-zh/gis/gis-geoprocessing-specialist.md": {
+      "domain": "coding",
+      "hash": "a1a9d385dd28c8ae1cc9b6820d76be51",
+      "summaryZh": "用 ArcPy、Python 工具箱与批处理脚本自动化空间分析流程。"
+    },
+    "agency-agents-zh/marketing/marketing-multi-platform-publisher.md": {
+      "domain": "marketing",
+      "hash": "e54ec3e28254d50370f33631926fc839",
+      "summaryZh": "将中文文章适配并生成知乎、小红书、公众号等多平台草稿。"
+    },
+    "agency-agents-zh/engineering/engineering-multi-agent-systems-architect.md": {
+      "domain": "agent-workflow",
+      "hash": "14cd4abf238130bfdc69e3bacfa91f37",
+      "summaryZh": "设计生产级多智能体拓扑、上下文、信任、恢复与可观测体系。"
+    },
+    "agency-agents-zh/security/security-threat-intelligence-analyst.md": {
+      "domain": "research",
+      "hash": "0f16344c1065e64c7864d5c956ba896e",
+      "summaryZh": "跟踪攻击组织与活动，产出可行动的威胁情报和检测规则。"
+    },
+    "agency-agents-zh/security/security-threat-detection-engineer.md": {
+      "domain": "review",
+      "hash": "ce6fc9ee11ec9a7df99f744d14de4343",
+      "summaryZh": "开发 SIEM 规则、ATT&CK 覆盖、威胁狩猎与检测即代码流程。"
+    },
+    "agency-agents-zh/security/security-architect.md": {
+      "domain": "review",
+      "hash": "4fa135baf7f7d083fe76027db664af0b",
+      "summaryZh": "通过威胁建模、信任边界和纵深防御设计系统安全模型。"
+    },
+    "agency-agents-zh/specialized/specialized-pricing-analyst.md": {
+      "domain": "data-finance",
+      "hash": "fbbb3a71586410812a71653ca5d01cb1",
+      "summaryZh": "结合市场、竞品、成本与利润分析建立数据驱动的定价模型。"
+    },
+    "agency-agents-zh/specialized/customer-success-manager.md": {
+      "domain": "sales-support",
+      "hash": "b68bfa83d9f5ece98b03b45e66427ac1",
+      "summaryZh": "负责客户入驻、健康度、续约、防流失与扩展增长。"
+    },
+    "agency-agents-zh/security/security-appsec-engineer.md": {
+      "domain": "review",
+      "hash": "fae008e4864536351598dfac911df68c",
+      "summaryZh": "通过威胁建模、代码审查与 SAST/DAST 加固软件开发全流程。"
+    },
+    "agency-agents-zh/gis/gis-technical-consultant.md": {
+      "domain": "operations",
+      "hash": "83d935b1cf3a32d9c492b999a2acd557",
+      "summaryZh": "把业务问题转成 GIS 路线图、差距分析、RFP 与数字化方案。"
+    },
+    "agency-agents-zh/specialized/data-privacy-officer.md": {
+      "domain": "operations",
+      "hash": "442ee5f621f50ca38d3bb93307287f88",
+      "summaryZh": "建设 GDPR、CCPA 等隐私合规体系并管理评估、事件与监管沟通。"
+    },
+    "agency-agents-zh/gis/gis-drone-reality-mapping.md": {
+      "domain": "data-finance",
+      "hash": "25bb674d11ea53bc426d27debca1e557",
+      "summaryZh": "把无人机影像处理为正射图、地形模型、点云和三维网格。"
+    },
+    "agency-agents-zh/security/security-penetration-tester.md": {
+      "domain": "review",
+      "hash": "510f46d36d88b24b228265db0cda49eb",
+      "summaryZh": "对网络、Web 与云环境执行授权渗透测试和漏洞评估。"
+    },
+    "agency-agents-zh/gis/gis-spatial-data-engineer.md": {
+      "domain": "data-finance",
+      "hash": "144688a7a5a7568ee8273228a7a37e1b",
+      "summaryZh": "清洗、转换并标准化地理数据，构建生产级空间 ETL 管道。"
+    },
+    "agency-agents-zh/gis/gis-spatial-data-scientist.md": {
+      "domain": "data-finance",
+      "hash": "a31fb3331d5fcbc296dd2bb353945c47",
+      "summaryZh": "用空间统计、计量、聚类与预测模型发现地理数据规律。"
+    },
+    "agency-agents-zh/specialized/specialized-strategy-duel-agent.md": {
+      "domain": "operations",
+      "hash": "c9ff1ce56b903e22c5d3a4d736d90700",
+      "summaryZh": "结合博弈论与三十六计进行实时策略对抗和决策推演。"
+    },
+    "agency-agents-zh/specialized/organizational-psychologist.md": {
+      "domain": "operations",
+      "hash": "6a91ae440509eacd427f5d9a7437c5e3",
+      "summaryZh": "诊断团队动力、心理安全、倦怠与组织文化并提出改进方案。"
+    },
+    "agency-agents-zh/gis/gis-solution-engineer.md": {
+      "domain": "coding",
+      "hash": "3cafa2ddcb2415c568f2193a37fa1d87",
+      "summaryZh": "把 GIS 方案转成可运行的演示、原型与技术验证。"
+    },
+    "agency-agents-zh/specialized/grant-writer.md": {
+      "domain": "writing",
+      "hash": "653d94badbb228823f6e7c710c1c461f",
+      "summaryZh": "为非营利、科研和社会企业撰写资助申请、预算叙事与结项报告。"
+    },
+    "agency-agents-zh/specialized/operations-manager.md": {
+      "domain": "operations",
+      "hash": "0a366fcadad523d5e49778827504c819",
+      "summaryZh": "用精益、六西格玛和系统思维优化流程、产能、KPI 与供应商。"
+    },
+    "agency-agents-zh/marketing/marketing-email-strategist.md": {
+      "domain": "marketing",
+      "hash": "f2d2114d4c88b1be69f60fcf0759fb80",
+      "summaryZh": "设计 CRM 邮件活动、生命周期自动化、分群与送达率策略。"
+    },
+    "agency-agents-zh/specialized/chief-financial-officer.md": {
+      "domain": "operations",
+      "hash": "726cbf9d4a942c708467c95cf009a3ee",
+      "summaryZh": "统筹资本配置、财务规划、并购财务、投资者关系与董事会报告。"
+    },
+    "agency-agents-zh/security/security-senior-secops.md": {
+      "domain": "review",
+      "hash": "5aff0212cccdd3a93d7365b721a024f7",
+      "summaryZh": "审查敏感信息暴露并实施认证、授权、令牌与输入验证等安全控制。"
+    },
+    "skills/skills/engineering/ask-matt/SKILL.md": {
+      "domain": "agent-workflow",
+      "summaryZh": "根据当前情境路由到合适的 Matt Pocock 技能或工作流。",
+      "hash": "d4e952097de0d27181583d9684d92538"
+    },
+    "skills/skills/engineering/codebase-design/SKILL.md": {
+      "domain": "coding",
+      "summaryZh": "用深模块、接口与接缝词汇设计可测试、易维护的代码结构。",
+      "hash": "2d7d0ead42e213fb71a6ba1428d6280b"
+    },
+    "skills/skills/in-progress/decision-mapping/SKILL.md": {
+      "domain": "planning",
+      "summaryZh": "把模糊想法拆成有依赖顺序的调查票据，并逐项推进决策。",
+      "hash": "22642f26d0906443904c39d560586d9a"
+    },
+    "skills/skills/engineering/diagnosing-bugs/SKILL.md": {
+      "domain": "debugging",
+      "summaryZh": "为复杂缺陷和性能回归建立可复现反馈闭环，定位根因后修复。",
+      "hash": "7189f0185a4fee7db9c8de448d207e06"
+    },
+    "skills/skills/engineering/domain-modeling/SKILL.md": {
+      "domain": "coding",
+      "summaryZh": "维护项目领域模型、统一术语表与关键架构决策记录。",
+      "hash": "4fc3ca547d67094f5271d7ca0d12a9d1"
+    },
+    "skills/skills/productivity/grilling/SKILL.md": {
+      "domain": "agent-workflow",
+      "summaryZh": "逐问压力测试计划或设计，直到关键决策达成共识。",
+      "hash": "663946c16de9285f030de83d733254cf"
+    },
+    "skills/skills/engineering/implement/SKILL.md": {
+      "domain": "coding",
+      "summaryZh": "根据 PRD 或工单实现功能，并完成测试、评审与提交。",
+      "hash": "5f4818f35131d9d5ff0957272b8b07d7"
+    },
+    "skills/skills/engineering/resolving-merge-conflicts/SKILL.md": {
+      "domain": "coding",
+      "summaryZh": "调查双方变更意图，解决 Git 合并或变基冲突并验证结果。",
+      "hash": "c7db3016890c02c78a831b7748ef5e45"
+    },
+    "skills/skills/productivity/writing-great-skills/SKILL.md": {
+      "domain": "agent-workflow",
+      "summaryZh": "提供技能调用、信息层级、拆分与精简原则，提升执行可预测性。",
+      "hash": "64156a93ca08ff4ac29357ee3742eec6"
     }
   }
 }

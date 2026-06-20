@@ -1,38 +1,38 @@
 {
   "version": 3,
-  "scannedAt": "2026-06-14T23:02:08.488Z",
-  "total": 777,
+  "scannedAt": "2026-06-20T06:14:48.686Z",
+  "total": 833,
   "byCollection": {
     "academic-research": 4,
     "custom-skills": 9,
-    "gstack": 58,
+    "mattpocock-skills": 34,
+    "gstack": 59,
     "fs-partner-built": 11,
     "superpowers": 14,
-    "mattpocock-skills": 29,
     "ui-ux-pro-max": 7,
     "fs-vertical-plugins": 55,
     "ielts-coach": 4,
     "pua": 23,
     "tong-jincheng": 1,
     "agency-agents": 242,
-    "agency-agents-zh": 226,
+    "agency-agents-zh": 276,
     "ai-hedge-fund": 21,
     "awesome-design": 73
   },
   "byDomain": {
-    "research": 26,
-    "agent-workflow": 77,
-    "education": 16,
-    "review": 52,
-    "data-finance": 105,
-    "planning": 35,
-    "operations": 70,
-    "design": 129,
+    "research": 27,
+    "agent-workflow": 80,
+    "education": 17,
+    "review": 60,
+    "data-finance": 112,
+    "planning": 36,
+    "operations": 82,
+    "design": 131,
+    "coding": 122,
     "debugging": 6,
-    "writing": 22,
-    "coding": 111,
-    "sales-support": 39,
-    "marketing": 89
+    "writing": 24,
+    "sales-support": 40,
+    "marketing": 96
   },
   "domains": [
     {
@@ -161,7 +161,7 @@
       "id": "academic-research-skills/academic-paper/SKILL.md",
       "collection": "academic-research",
       "name": "academic-paper",
-      "description": "12-agent academic paper writing pipeline. 10 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, A",
+      "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, p",
       "filePath": "/Users/zw/work/project_test/Skill研究/academic-research-skills/academic-paper/SKILL.md",
       "type": "skill",
       "tags": [
@@ -289,6 +289,25 @@
       "emoji": "",
       "domain": "education",
       "summaryZh": "一对一苏格拉底式 AI 导师，想深度学懂某概念或攻克盲区时用它引导推理。",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/engineering/ask-matt/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "ask-matt",
+      "description": "Ask which skill or flow fits your situation. A router over the user-invoked skills in this repo.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/ask-matt/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "ask-matt"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "根据当前情境路由到合适的 Matt Pocock 技能或工作流。",
       "duplicates": []
     },
     {
@@ -497,31 +516,6 @@
       "duplicates": []
     },
     {
-      "id": "skills/skills/productivity/caveman/SKILL.md",
-      "collection": "mattpocock-skills",
-      "name": "caveman",
-      "description": "Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler, articles, and pleasantries while keeping full technical accuracy. Use when user says \"caveman mode\", \"talk like caveman\", \"use caveman\", \"less tokens\", \"be brief\", or invokes /caveman.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/caveman/SKILL.md",
-      "type": "skill",
-      "tags": [
-        "productivity",
-        "caveman"
-      ],
-      "tools": [],
-      "triggerKeywords": [
-        "caveman mode",
-        "talk like caveman",
-        "use caveman",
-        "less tokens",
-        "be brief"
-      ],
-      "version": "",
-      "emoji": "",
-      "domain": "agent-workflow",
-      "summaryZh": "超压缩通信模式，省约75%token时用",
-      "duplicates": []
-    },
-    {
       "id": "ui-ux-pro-max-skill/.claude/skills/banner-design/SKILL.md",
       "collection": "ui-ux-pro-max",
       "name": "ckm:banner-design",
@@ -627,6 +621,25 @@
       "emoji": "",
       "domain": "design",
       "summaryZh": "用shadcn/ui与Tailwind构建美观可访问的界面",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/engineering/codebase-design/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "codebase-design",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/codebase-design/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "codebase-design"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "用深模块、接口与接缝词汇设计可测试、易维护的代码结构。",
       "duplicates": []
     },
     {
@@ -754,10 +767,29 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/in-progress/decision-mapping/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "decision-mapping",
+      "description": "Turn a loose idea into a sequenced map of investigation tickets, then drive them to resolution one at a time.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/decision-mapping/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "decision-mapping"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "把模糊想法拆成有依赖顺序的调查票据，并逐项推进决策。",
+      "duplicates": []
+    },
+    {
       "id": "academic-research-skills/deep-research/SKILL.md",
       "collection": "academic-research",
       "name": "deep-research",
-      "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 7 modes: full research, quick brief, paper review, lit-review, fact-check, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-sourc",
+      "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, sourc",
       "filePath": "/Users/zw/work/project_test/Skill研究/academic-research-skills/deep-research/SKILL.md",
       "type": "skill",
       "tags": [
@@ -930,25 +962,48 @@
       "duplicates": []
     },
     {
-      "id": "skills/skills/engineering/diagnose/SKILL.md",
+      "id": "skills/skills/engineering/diagnosing-bugs/SKILL.md",
       "collection": "mattpocock-skills",
-      "name": "diagnose",
-      "description": "Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothesise → instrument → fix → regression-test. Use when user says \"diagnose this\" / \"debug this\", reports a bug, says something is broken/throwing/failing, or describes a performance regression.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/diagnose/SKILL.md",
+      "name": "diagnosing-bugs",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/diagnosing-bugs/SKILL.md",
       "type": "skill",
       "tags": [
         "engineering",
-        "diagnose"
+        "diagnosing-bugs"
       ],
       "tools": [],
       "triggerKeywords": [
-        "diagnose this",
+        "diagnose",
         "debug this"
       ],
       "version": "",
       "emoji": "",
       "domain": "debugging",
-      "summaryZh": "硬性bug与性能退化的纪律化诊断循环",
+      "summaryZh": "为复杂缺陷和性能回归建立可复现反馈闭环，定位根因后修复。",
+      "duplicates": []
+    },
+    {
+      "id": "gstack/diagram/SKILL.md",
+      "collection": "gstack",
+      "name": "diagram",
+      "description": "Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you can open (gstack)",
+      "filePath": "/Users/zw/work/project_test/Skill研究/gstack/diagram/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "diagram"
+      ],
+      "tools": [
+        "Bash",
+        "Read",
+        "Write",
+        "AskUserQuestion"
+      ],
+      "triggerKeywords": [],
+      "version": "1.0.0",
+      "emoji": "",
+      "domain": "design",
+      "summaryZh": "把文字描述或 Mermaid 源码生成可编辑 Excalidraw 及 SVG、PNG 图表。",
       "duplicates": []
     },
     {
@@ -1021,6 +1076,25 @@
       "emoji": "",
       "domain": "writing",
       "summaryZh": "发布后文档更新：对照diff更新README/CHANGELOG等",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/engineering/domain-modeling/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/domain-modeling/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "domain-modeling"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "维护项目领域模型、统一术语表与关键架构决策记录。",
       "duplicates": []
     },
     {
@@ -1897,7 +1971,7 @@
       "id": "skills/skills/productivity/grill-me/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "grill-me",
-      "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions \"grill me\".",
+      "description": "A relentless interview to sharpen a plan or design.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/grill-me/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1905,9 +1979,7 @@
         "grill-me"
       ],
       "tools": [],
-      "triggerKeywords": [
-        "grill me"
-      ],
+      "triggerKeywords": [],
       "version": "",
       "emoji": "",
       "domain": "agent-workflow",
@@ -1918,7 +1990,7 @@
       "id": "skills/skills/engineering/grill-with-docs/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "grill-with-docs",
-      "description": "Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/grill-with-docs/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1931,6 +2003,27 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "对照领域模型拷打计划并同步更新文档",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/productivity/grilling/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "grilling",
+      "description": "Interview the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/grilling/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "productivity",
+        "grilling"
+      ],
+      "tools": [],
+      "triggerKeywords": [
+        "grill"
+      ],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "逐问压力测试计划或设计，直到关键决策达成共识。",
       "duplicates": []
     },
     {
@@ -2220,10 +2313,29 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/engineering/implement/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "implement",
+      "description": "Implement a piece of work based on a PRD or set of issues.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/implement/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "implement"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "根据 PRD 或工单实现功能，并完成测试、评审与提交。",
+      "duplicates": []
+    },
+    {
       "id": "skills/skills/engineering/improve-codebase-architecture/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "improve-codebase-architecture",
-      "description": "Find deepening opportunities in a codebase, informed by the domain language in CONTEXT.md and the decisions in docs/adr/. Use when the user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more testable and AI-navigable.",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/improve-codebase-architecture/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3472,7 +3584,7 @@
       "id": "skills/skills/engineering/prototype/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "prototype",
-      "description": "Build a throwaway prototype to flesh out a design before committing to it. Routes between two branches — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route. Use when the user wants to prototype, sanity-check a data model or state machine, mock up a UI, explore design options, or says \"prototype this\", \"let me play with",
+      "description": "Build a throwaway prototype to flesh out a design — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/prototype/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3480,9 +3592,7 @@
         "prototype"
       ],
       "tools": [],
-      "triggerKeywords": [
-        "prototype this"
-      ],
+      "triggerKeywords": [],
       "version": "",
       "emoji": "",
       "domain": "coding",
@@ -4063,6 +4173,25 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/engineering/resolving-merge-conflicts/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "resolving-merge-conflicts",
+      "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/resolving-merge-conflicts/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "resolving-merge-conflicts"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "调查双方变更意图，解决 Git 合并或变基冲突并验证结果。",
+      "duplicates": []
+    },
+    {
       "id": "gstack/retro/SKILL.md",
       "collection": "gstack",
       "name": "retro",
@@ -4261,7 +4390,7 @@
       "id": "skills/skills/engineering/setup-matt-pocock-skills/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "setup-matt-pocock-skills",
-      "description": "Sets up an `## Agent skills` block in AGENTS.md/CLAUDE.md and `docs/agents/` so the engineering skills know this repo's issue tracker (GitHub or local markdown), triage label vocabulary, and domain doc layout. Run before first use of `to-issues`, `to-prd`, `triage`, `diagnose`, `tdd`, `improve-codebase-architecture`, or `zoom-out` — or if those skills appear to be missing context about the issue t",
+      "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/setup-matt-pocock-skills/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4502,7 +4631,7 @@
       "id": "skills/skills/engineering/tdd/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "tdd",
-      "description": "Test-driven development with red-green-refactor loop. Use when user wants to build features or fix bugs using TDD, mentions \"red-green-refactor\", wants integration tests, or asks for test-first development.",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/tdd/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4581,7 +4710,7 @@
       "id": "skills/skills/engineering/to-issues/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "to-issues",
-      "description": "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.",
+      "description": "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-issues/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4600,7 +4729,7 @@
       "id": "skills/skills/engineering/to-prd/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "to-prd",
-      "description": "Turn the current conversation context into a PRD and publish it to the project issue tracker. Use when user wants to create a PRD from the current context.",
+      "description": "Turn the current conversation into a PRD and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-prd/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4637,7 +4766,7 @@
       "id": "skills/skills/engineering/triage/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "triage",
-      "description": "Triage issues through a state machine driven by triage roles. Use when user wants to create an issue, triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
+      "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/triage/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4735,7 +4864,7 @@
       "id": "superpowers/skills/using-superpowers/SKILL.md",
       "collection": "superpowers",
       "name": "using-superpowers",
-      "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
       "filePath": "/Users/zw/work/project_test/Skill研究/superpowers/skills/using-superpowers/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4931,25 +5060,6 @@
       "duplicates": []
     },
     {
-      "id": "skills/skills/productivity/write-a-skill/SKILL.md",
-      "collection": "mattpocock-skills",
-      "name": "write-a-skill",
-      "description": "Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/write-a-skill/SKILL.md",
-      "type": "skill",
-      "tags": [
-        "productivity",
-        "write-a-skill"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "",
-      "domain": "agent-workflow",
-      "summaryZh": "创建结构规范的新智能体技能时用",
-      "duplicates": []
-    },
-    {
       "id": "skills/skills/in-progress/writing-beats/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "writing-beats",
@@ -4989,6 +5099,25 @@
       "emoji": "",
       "domain": "writing",
       "summaryZh": "拷打挖掘写作碎片素材，攒成文章原料",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/productivity/writing-great-skills/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "writing-great-skills",
+      "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/writing-great-skills/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "productivity",
+        "writing-great-skills"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "提供技能调用、信息层级、拆分与精简原则，提升执行可预测性。",
       "duplicates": []
     },
     {
@@ -5069,25 +5198,6 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "切换为共情鼓励型协作语气，同时保留原有执行纪律与验证要求。",
-      "duplicates": []
-    },
-    {
-      "id": "skills/skills/engineering/zoom-out/SKILL.md",
-      "collection": "mattpocock-skills",
-      "name": "zoom-out",
-      "description": "Tell the agent to zoom out and give broader context or a higher-level perspective. Use when you're unfamiliar with a section of code or need to understand how it fits into the bigger picture.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/zoom-out/SKILL.md",
-      "type": "skill",
-      "tags": [
-        "engineering",
-        "zoom-out"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "",
-      "domain": "research",
-      "summaryZh": "拉高视角解释代码在全局中的定位",
       "duplicates": []
     },
     {
@@ -5235,6 +5345,25 @@
       "name": "AEO Foundations Architect",
       "description": "Expert in AI Engine Optimization infrastructure — implements llms.txt, AI-aware robots.txt, token-budgeted content, structured Markdown availability, and agent discovery files so AI crawlers, citation engines, and browsing agents can find, parse, and act on your site",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/marketing/marketing-aeo-foundations.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        ""
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏗️",
+      "domain": "marketing",
+      "summaryZh": "搭建 llms.txt、AI 爬虫规则与结构化内容等 AEO 基础设施。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/marketing/marketing-aeo-foundations.md",
+      "collection": "agency-agents-zh",
+      "name": "AEO 基础架构师",
+      "description": "AI 引擎优化基础设施专家——落地 llms.txt、AI 感知的 robots.txt、token 预算化内容、结构化 Markdown 可用性，以及 agent 发现文件，让 AI 爬虫、引用引擎和浏览型 agent 能找到、解析并执行你的站点内容",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-aeo-foundations.md",
       "type": "agent",
       "tags": [
         "marketing",
@@ -5793,6 +5922,25 @@
       "name": "BIM/GIS Specialist",
       "description": "Integration specialist who bridges Building Information Modeling and Geographic Information Systems — Revit/IFC data conversion, indoor mapping, digital twin architecture, and facility management data models.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/gis/gis-bim-specialist.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "gold"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏗️",
+      "domain": "data-finance",
+      "summaryZh": "打通 BIM 与 GIS 数据，支持格式转换、室内地图和数字孪生。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-bim-specialist.md",
+      "collection": "agency-agents-zh",
+      "name": "BIM/GIS 专家",
+      "description": "整合专家，打通 BIM（建筑信息模型）与 GIS（地理信息系统）——负责 Revit/IFC 数据转换、室内地图、数字孪生架构与设施管理数据模型。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-bim-specialist.md",
       "type": "agent",
       "tags": [
         "gis",
@@ -6697,6 +6845,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/engineering/engineering-drupal-shopping-cart.md",
+      "collection": "agency-agents-zh",
+      "name": "Drupal 购物车工程师",
+      "description": "资深 Drupal 电商工程师，精通 Drupal Commerce，负责商品目录管理、支付网关集成、checkout 流程设计、订单管理、税费与促销配置，以及在 Drupal 10/11 上交付高可靠的店面",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-drupal-shopping-cart.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛒",
+      "domain": "coding",
+      "summaryZh": "基于 Drupal Commerce 开发商品、支付、结账、订单与促销能力。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/engineering/engineering-email-intelligence-engineer.md",
       "collection": "agency-agents",
       "name": "Email Intelligence Engineer",
@@ -6801,6 +6968,25 @@
       "name": "ESG & Sustainability Officer",
       "description": "Corporate sustainability strategist and ESG reporting specialist who builds environmental, social, and governance programs, manages disclosures, drives decarbonization initiatives, and aligns business strategy with stakeholder and regulatory expectations.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/specialized/esg-sustainability-officer.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "green"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌱",
+      "domain": "operations",
+      "summaryZh": "建设 ESG 与可持续发展项目，管理披露、减碳和监管对齐。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/esg-sustainability-officer.md",
+      "collection": "agency-agents-zh",
+      "name": "ESG 与可持续发展官",
+      "description": "企业可持续发展战略专家与 ESG 信息披露专员，负责搭建 environmental、social、governance（环境、社会、治理）项目，管理信息披露，推动 decarbonization（脱碳）行动，并使业务战略与利益相关方及监管预期保持一致。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/esg-sustainability-officer.md",
       "type": "agent",
       "tags": [
         "specialized",
@@ -7164,6 +7350,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/gis/gis-geoai-ml-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "GeoAI/ML 工程师",
+      "description": "地理空间机器学习专家，构建模型从卫星与航拍影像中做特征提取、目标检测、影像分割和地表覆盖分类。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-geoai-ml-engineer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "green"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🤖",
+      "domain": "data-finance",
+      "summaryZh": "用卫星与航拍影像训练地物提取、检测、分割和分类模型。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/academic/academic-geographer.md",
       "collection": "agency-agents",
       "name": "Geographer",
@@ -7226,6 +7431,44 @@
       "name": "GIS QA Engineer",
       "description": "Quality assurance specialist who validates geospatial data integrity — topology checks, metadata audits, CRS consistency, accuracy assessment, and compliance verification.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/gis/gis-qa-engineer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "✅",
+      "domain": "review",
+      "summaryZh": "检查拓扑、坐标系、元数据、精度与地理数据合规性。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-analyst.md",
+      "collection": "agency-agents-zh",
+      "name": "GIS 分析师",
+      "description": "日常 GIS 操作员，负责制图、图层管理、空间查询，并在桌面与 Web 环境中维护地理空间数据的完整性。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-analyst.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "teal"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🖥️",
+      "domain": "data-finance",
+      "summaryZh": "制作地图、管理图层、执行空间查询并维护地理数据质量。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-qa-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "GIS 质检工程师",
+      "description": "质量保证专家，负责校验地理空间数据的完整性——拓扑检查、元数据审计、CRS 一致性、精度评估与合规验证。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-qa-engineer.md",
       "type": "agent",
       "tags": [
         "gis",
@@ -7867,6 +8110,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/engineering/engineering-it-service-manager.md",
+      "collection": "agency-agents-zh",
+      "name": "IT 服务经理",
+      "description": "资深 IT 服务管理（ITSM）专家，运用 ITIL 4 框架进行服务目录设计、incident（事件）与 problem（问题）管理、变更控制、SLA 治理、CMDB 维护以及持续服务改进——确保 IT 在任何规模的组织中都能交付可靠、可衡量的业务价值",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-it-service-manager.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🖧",
+      "domain": "operations",
+      "summaryZh": "按 ITIL 4 管理服务目录、事件、变更、SLA、CMDB 与持续改进。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/project-management/project-management-jira-workflow-steward.md",
       "collection": "agency-agents",
       "name": "Jira Workflow Steward",
@@ -8176,6 +8438,25 @@
       "name": "M&A Integration Manager",
       "description": "Mergers and acquisitions integration specialist who designs and executes post-merger integration programs — covering Day 1 readiness, 100-day planning, synergy tracking, cultural integration, functional workstream coordination, and transition service agreement management.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/specialized/ma-integration-manager.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "indigo"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🤝",
+      "domain": "operations",
+      "summaryZh": "规划并执行并购后的首日、百日、协同、文化与职能整合。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/ma-integration-manager.md",
+      "collection": "agency-agents-zh",
+      "name": "M&A 整合经理",
+      "description": "并购(M&A)整合专家，负责设计并执行并购后整合(PMI)项目——涵盖 Day 1 就绪、百日计划、synergy(协同效应)追踪、文化整合、职能工作流协调，以及过渡服务协议(TSA)管理。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/ma-integration-manager.md",
       "type": "agent",
       "tags": [
         "specialized",
@@ -8598,6 +8879,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/sales/sales-offer-lead-gen-strategist.md",
+      "collection": "agency-agents-zh",
+      "name": "Offer 与 Lead Gen 策略师",
+      "description": "漏斗顶端（top-of-funnel）架构师，设计无法抗拒的 offer 和 lead magnet，规模化吸引高质量买家。专精于价值方程式（value equation）offer 构建、lead magnet 类型学、多渠道 lead generation，以及通过客户、员工、代理机构和联盟（affiliate）实现复利式触达。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/sales/sales-offer-lead-gen-strategist.md",
+      "type": "agent",
+      "tags": [
+        "sales",
+        "feb"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧲",
+      "domain": "marketing",
+      "summaryZh": "设计高吸引力报价、获客磁铁与多渠道线索增长体系。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/operations-manager.md",
       "collection": "agency-agents",
       "name": "Operations Manager",
@@ -8641,6 +8941,25 @@
       "name": "OrgScript Engineer",
       "description": "Expert in designing, parsing, and implementing OrgScript grammar, AST validation, and business logic definitions.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-orgscript-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "green"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📜",
+      "domain": "coding",
+      "summaryZh": "设计和实现 OrgScript 语法、解析器、AST 校验与业务逻辑定义。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/engineering/engineering-orgscript-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "OrgScript 工程师",
+      "description": "精通 OrgScript 语法的设计、解析与实现，擅长 AST 校验和业务逻辑定义。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-orgscript-engineer.md",
       "type": "agent",
       "tags": [
         "engineering",
@@ -8778,6 +9097,25 @@
       "name": "Persona Walkthrough Specialist",
       "description": "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional reactions and rational thought at each scroll position, then delivers structured CRO reports grounded in LIFT, Cialdini, and Fogg frameworks",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/design/design-persona-walkthrough.md",
+      "type": "agent",
+      "tags": [
+        "design",
+        "b"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎭",
+      "domain": "marketing",
+      "summaryZh": "以目标用户心理视角走查网页，输出基于行为框架的转化优化报告。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/design/design-persona-walkthrough.md",
+      "collection": "agency-agents-zh",
+      "name": "Persona 走查专家",
+      "description": "从设定好的 persona（用户画像）心理视角出发，对网页进行认知走查的模拟——捕捉每个滚动位置上的情绪反应与理性思考，再输出植根于 LIFT、Cialdini、Fogg 框架的结构化 CRO 报告",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/design/design-persona-walkthrough.md",
       "type": "agent",
       "tags": [
         "design",
@@ -9002,6 +9340,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/marketing/marketing-pr-communications-manager.md",
+      "collection": "agency-agents-zh",
+      "name": "PR 与传播经理",
+      "description": "战略性公共关系与传播专家，负责 media relations（媒体关系）、press release（新闻稿）、crisis communications（危机传播）、高管思想领导力、品牌声誉管理与整合传播规划——通过 earned media（赢得式媒体）、故事化叙事和主动的叙事掌控来建立并守护声誉",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-pr-communications-manager.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📣",
+      "domain": "marketing",
+      "summaryZh": "负责媒体关系、新闻稿、危机沟通、品牌声誉与整合传播。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/specialized-pricing-analyst.md",
       "collection": "agency-agents",
       "name": "Pricing Analyst",
@@ -9108,6 +9465,25 @@
       "name": "Prompt Engineer",
       "description": "Specialist in crafting, testing, and systematically optimizing prompts for LLMs — turning vague instructions into reliable, production-grade AI behaviors.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-prompt-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "violet"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧬",
+      "domain": "agent-workflow",
+      "summaryZh": "设计、测试并系统优化提示词，使大模型行为稳定可复现。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/engineering/engineering-prompt-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "Prompt 工程师",
+      "description": "专精于为 LLM（大语言模型）打磨、测试并系统化优化 prompt 的专家——把含糊的指令变成可靠、可上生产的 AI 行为。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-prompt-engineer.md",
       "type": "agent",
       "tags": [
         "engineering",
@@ -11200,6 +11576,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/gis/gis-web-gis-developer.md",
+      "collection": "agency-agents-zh",
+      "name": "Web GIS 开发工程师",
+      "description": "全栈 Web GIS 工程师，负责构建交互式地图应用——MapLibre GL JS、ArcGIS JS API、Leaflet、实时仪表盘、REST API 集成与地理空间 Web 服务。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-web-gis-developer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌐",
+      "domain": "coding",
+      "summaryZh": "使用 MapLibre、ArcGIS、Leaflet 与 API 构建交互式 Web GIS。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/engineering/engineering-wechat-mini-program-developer.md",
       "collection": "agency-agents",
       "name": "WeChat Mini Program Developer",
@@ -11295,6 +11690,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/engineering/engineering-wordpress-shopping-cart.md",
+      "collection": "agency-agents-zh",
+      "name": "WordPress 购物车工程师",
+      "description": "WordPress 电商专家工程师，专精 WooCommerce，负责商品目录管理、payment gateway 集成、checkout 定制、订单管理、税费与优惠券配置，以及在 WordPress 上交付以转化率为导向的店铺",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-wordpress-shopping-cart.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛍️",
+      "domain": "coding",
+      "summaryZh": "基于 WooCommerce 开发商品、支付、结账、订单和优惠能力。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/specialized-workflow-architect.md",
       "collection": "agency-agents",
       "name": "Workflow Architect",
@@ -11338,6 +11752,25 @@
       "name": "X/Twitter Intelligence Analyst",
       "description": "Social intelligence specialist for X/Twitter research, trend detection, account monitoring, and evidence-backed audience insights using public signals and structured data workflows.",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/marketing/marketing-x-twitter-intelligence-analyst.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        ""
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛰️",
+      "domain": "research",
+      "summaryZh": "研究 X/Twitter 趋势、账号与公开信号，形成有证据的受众洞察。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/marketing/marketing-x-twitter-intelligence-analyst.md",
+      "collection": "agency-agents-zh",
+      "name": "X/Twitter 情报分析师",
+      "description": "社交情报专家，负责 X/Twitter 调研、趋势识别、账号监测，并基于公开信号与结构化数据流程产出有证据支撑的受众洞察。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-x-twitter-intelligence-analyst.md",
       "type": "agent",
       "tags": [
         "marketing",
@@ -11542,6 +11975,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/gis/gis-3d-scene-developer.md",
+      "collection": "agency-agents-zh",
+      "name": "三维场景开发者",
+      "description": "Web 三维可视化专家，使用 Cesium、ArcGIS Scene Viewer 及现代三维 Web 框架，打造沉浸式三维场景、地形模型、点云可视化和交互式 Web 体验。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-3d-scene-developer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "cyan"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏔️",
+      "domain": "coding",
+      "summaryZh": "使用 Cesium、ArcGIS 等技术构建地形、点云与交互式 Web 3D 场景。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/engineering/engineering-pc-host-engineer.md",
       "collection": "agency-agents-zh",
       "name": "上位机工程师",
@@ -11558,6 +12010,25 @@
       "emoji": "🖥️",
       "domain": "coding",
       "summaryZh": "开发 Qt/QML 工业上位机，集成串口、现场总线与实时数据可视化。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/personal-growth-mentor.md",
+      "collection": "agency-agents-zh",
+      "name": "个人成长导师",
+      "description": "跨领域个人发展导师，专注目标厘清、习惯（habit）设计、战略决策与责任督促（accountability），不灌鸡汤。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/personal-growth-mentor.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "teal"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌱",
+      "domain": "education",
+      "summaryZh": "围绕目标、习惯、决策和问责提供务实的个人成长辅导。",
       "duplicates": []
     },
     {
@@ -11596,6 +12067,44 @@
       "emoji": "🛍️",
       "domain": "marketing",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/security/security-incident-responder.md",
+      "collection": "agency-agents-zh",
+      "name": "事件响应专家",
+      "description": "数字取证与事件响应专家，主导数据泄露调查、遏制活跃威胁、协调危机响应，并撰写能防止问题复发的事后复盘报告。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-incident-responder.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "feb"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🚨",
+      "domain": "review",
+      "summaryZh": "调查安全事件、遏制威胁、协调响应并撰写防复发复盘。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/security/security-cloud-security-architect.md",
+      "collection": "agency-agents-zh",
+      "name": "云安全架构师",
+      "description": "云原生安全专家，设计零信任架构，在 AWS、Azure 与 GCP 上落地纵深防御，并从第一天起就为基础设施即代码（IaC）流水线保驾护航。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-cloud-security-architect.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "bf"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "☁️",
+      "domain": "review",
+      "summaryZh": "为 AWS、Azure、GCP 设计零信任与纵深防御的云安全架构。",
       "duplicates": []
     },
     {
@@ -11756,6 +12265,27 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/project-management/project-management-meeting-notes-specialist.md",
+      "collection": "agency-agents-zh",
+      "name": "会议纪要专家",
+      "description": "从会议 transcript（逐字记录）或零散笔记中提取结构化的决议、action item 和待解决问题，整理成清晰的四段式 summary。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/project-management/project-management-meeting-notes-specialist.md",
+      "type": "agent",
+      "tags": [
+        "project-management",
+        "blue"
+      ],
+      "tools": [
+        "Read, Write, Edit"
+      ],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📋",
+      "domain": "writing",
+      "summaryZh": "把会议记录提炼为决策、行动项、开放问题和结构化摘要。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/supply-chain/supply-chain-vendor-evaluator.md",
       "collection": "agency-agents-zh",
       "name": "供应商评估专家",
@@ -11810,6 +12340,25 @@
       "emoji": "🏦",
       "domain": "sales-support",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/marketing/marketing-global-podcast-strategist.md",
+      "collection": "agency-agents-zh",
+      "name": "全球播客策略师",
+      "description": "资深播客增长专家，专注节目定位、受众培育、内容策略与变现。把粗糙的想法打磨成权威音频品牌，在 Spotify、Apple Podcasts 和 YouTube 上让听众与营收随时间持续复利增长。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-global-podcast-strategist.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎙️",
+      "domain": "marketing",
+      "summaryZh": "规划播客定位、受众增长、内容与商业化，打造长期音频品牌。",
       "duplicates": []
     },
     {
@@ -11965,22 +12514,22 @@
       "duplicates": []
     },
     {
-      "id": "agency-agents-zh/specialized/blockchain-security-auditor.md",
+      "id": "agency-agents-zh/security/security-blockchain-security-auditor.md",
       "collection": "agency-agents-zh",
       "name": "区块链安全审计师",
-      "description": "专注智能合约漏洞检测、形式化验证、漏洞利用分析和审计报告编写的安全审计专家，服务于 DeFi 协议和区块链应用。",
-      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/blockchain-security-auditor.md",
+      "description": "资深智能合约安全审计专家，专注于漏洞检测、形式化验证、攻击分析，以及为 DeFi 协议和区块链应用撰写全面的审计报告。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-blockchain-security-auditor.md",
       "type": "agent",
       "tags": [
-        "specialized",
+        "security",
         "red"
       ],
       "tools": [],
       "triggerKeywords": [],
       "version": "",
-      "emoji": "⛓️",
+      "emoji": "🛡️",
       "domain": "review",
-      "summaryZh": "",
+      "summaryZh": "审计智能合约与 DeFi 协议，定位漏洞、验证风险并编写报告。",
       "duplicates": []
     },
     {
@@ -12019,6 +12568,25 @@
       "emoji": "🏥",
       "domain": "sales-support",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/medical-billing-coding-specialist.md",
+      "collection": "agency-agents-zh",
+      "name": "医疗账单与编码专员",
+      "description": "精通 ICD-10-CM/PCS、CPT、HCPCS 编码的医疗账单与编码专家，擅长 claim（理赔单）提交、denial（拒付）管理、收入周期优化、合规审计与 payer（付款方）合同分析——为各种规模的医疗服务提供方最大化 clean claim 率（一次通过率）和收入回收",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/medical-billing-coding-specialist.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏥",
+      "domain": "operations",
+      "summaryZh": "处理医疗编码、理赔提交、拒付管理、收入周期与付款方合规。",
       "duplicates": []
     },
     {
@@ -12079,6 +12647,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/specialized/change-management-consultant.md",
+      "collection": "agency-agents-zh",
+      "name": "变革管理顾问",
+      "description": "资深变革管理专家，运用 ADKAR、Kotter 和 Prosci 框架，引导组织顺利完成技术落地、组织重构、文化转型与并购整合——管理阻力、推动接纳，并确保变革在上线之后长久落地",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/change-management-consultant.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "amber"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔄",
+      "domain": "operations",
+      "summaryZh": "用 ADKAR、Kotter 等框架推动组织变革、采纳与长期落地。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/academic/academic-narratologist.md",
       "collection": "agency-agents-zh",
       "name": "叙事学家",
@@ -12136,22 +12723,22 @@
       "duplicates": []
     },
     {
-      "id": "agency-agents-zh/specialized/compliance-auditor.md",
+      "id": "agency-agents-zh/security/security-compliance-auditor.md",
       "collection": "agency-agents-zh",
       "name": "合规审计师",
-      "description": "专业技术合规审计师，擅长 SOC 2、ISO 27001、HIPAA 和 PCI-DSS 审计——从就绪评估、证据收集到认证全流程。",
-      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/compliance-auditor.md",
+      "description": "资深技术合规审计师，专精 SOC 2、ISO 27001、HIPAA 与 PCI-DSS 审计——从就绪度评估、证据收集到认证全程把控。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-compliance-auditor.md",
       "type": "agent",
       "tags": [
-        "specialized",
+        "security",
         "orange"
       ],
       "tools": [],
       "triggerKeywords": [],
       "version": "",
-      "emoji": "🔍",
+      "emoji": "📋",
       "domain": "review",
-      "summaryZh": "",
+      "summaryZh": "执行 SOC 2、ISO 27001、HIPAA、PCI-DSS 合规评估与取证。",
       "duplicates": []
     },
     {
@@ -12212,6 +12799,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/specialized/business-strategist.md",
+      "collection": "agency-agents-zh",
+      "name": "商业战略家",
+      "description": "资深管理咨询专家，专注竞争分析、市场进入策略、商业模式设计、增长规划、组织战略与战略决策——把复杂的市场动态转化为清晰、可落地、能创造可持续竞争优势的战略",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/business-strategist.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "indigo"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "♟️",
+      "domain": "operations",
+      "summaryZh": "制定竞争、市场进入、商业模式与增长战略并形成可执行决策。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/marketing/marketing-book-co-author.md",
       "collection": "agency-agents-zh",
       "name": "图书联合作者",
@@ -12266,6 +12872,44 @@
       "emoji": "🏗️",
       "domain": "coding",
       "summaryZh": "按全球规范完成结构分析、岩土设计、施工文件与合规协调。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-cartography-designer.md",
+      "collection": "agency-agents-zh",
+      "name": "地图制图设计师",
+      "description": "地图美学专家，设计美观、易读、有效的地图——配色理论、字体排印、标注布局、底图选择，以及面向打印和 Web 的视觉层次。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-cartography-designer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "pink"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎨",
+      "domain": "design",
+      "summaryZh": "为印刷和 Web 设计清晰美观的地图配色、标注与视觉层级。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-geoprocessing-specialist.md",
+      "collection": "agency-agents-zh",
+      "name": "地理处理专家",
+      "description": "精通 ArcPy 与 Python 工具箱的自动化专家，专攻空间工作流自动化——构建 .pyt 工具箱、Model Builder 流程、批量地理处理自动化，以及为 ArcGIS Pro 编写自定义分析脚本。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-geoprocessing-specialist.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "red"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚙️",
+      "domain": "coding",
+      "summaryZh": "用 ArcPy、Python 工具箱与批处理脚本自动化空间分析流程。",
       "duplicates": []
     },
     {
@@ -12326,6 +12970,63 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/marketing/marketing-multi-platform-publisher.md",
+      "collection": "agency-agents-zh",
+      "name": "多平台发布编排官",
+      "description": "一键中文博客发布的专家级编排官。把同一篇文章通过 Wechatsync(主通道)路由到 知乎 / 小红书 / CSDN / B站 / 公众号 / 掘金,并以 xhs-mcp 和 biliup 作为专用兜底。负责各平台内容适配、草稿优先发布、频率控制与风险规避。绝不自动发布——始终停在草稿阶段交由人工审核。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-multi-platform-publisher.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        "ffb"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📡",
+      "domain": "marketing",
+      "summaryZh": "将中文文章适配并生成知乎、小红书、公众号等多平台草稿。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/engineering/engineering-multi-agent-systems-architect.md",
+      "collection": "agency-agents-zh",
+      "name": "多智能体系统架构师",
+      "description": "系统架构师，专精于 multi-agent（多智能体）AI 流水线的设计、协调与治理——涵盖拓扑选型、上下文管理、智能体间信任、故障恢复、human-in-the-loop（人在环中）门控，以及面向生产级智能体系统的可观测性。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-multi-agent-systems-architect.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "cyan"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🕸️",
+      "domain": "agent-workflow",
+      "summaryZh": "设计生产级多智能体拓扑、上下文、信任、恢复与可观测体系。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/security/security-threat-intelligence-analyst.md",
+      "collection": "agency-agents-zh",
+      "name": "威胁情报分析师",
+      "description": "网络威胁情报专家，负责追踪对手团伙、将攻击活动映射到 MITRE ATT&CK、产出可落地的情报报告，并构建能抓住真实威胁的检测规则。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-threat-intelligence-analyst.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "caed"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔍",
+      "domain": "research",
+      "summaryZh": "跟踪攻击组织与活动，产出可行动的威胁情报和检测规则。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/engineering/engineering-threat-detection-engineer.md",
       "collection": "agency-agents-zh",
       "name": "威胁检测工程师",
@@ -12342,7 +13043,30 @@
       "emoji": "🛡️",
       "domain": "review",
       "summaryZh": "",
-      "duplicates": []
+      "duplicates": [
+        "agency-agents-zh/security/security-threat-detection-engineer.md"
+      ]
+    },
+    {
+      "id": "agency-agents-zh/security/security-threat-detection-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "威胁检测工程师",
+      "description": "资深检测工程师，专注于 SIEM 规则开发、MITRE ATT&CK 覆盖映射、威胁狩猎、告警调优，以及面向安全运营团队的 detection-as-code（检测即代码）流水线。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-threat-detection-engineer.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "bde"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎯",
+      "domain": "review",
+      "summaryZh": "开发 SIEM 规则、ATT&CK 覆盖、威胁狩猎与检测即代码流程。",
+      "duplicates": [
+        "agency-agents-zh/engineering/engineering-threat-detection-engineer.md"
+      ]
     },
     {
       "id": "agency-agents-zh/academic/academic-study-planner.md",
@@ -12383,6 +13107,46 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/security/security-architect.md",
+      "collection": "agency-agents-zh",
+      "name": "安全架构师",
+      "description": "资深安全架构师，专精威胁建模（threat modeling）、安全设计（secure-by-design）架构、信任边界分析、纵深防御（defense in depth），以及面向 Web、API、云原生和分布式系统的基于风险的安全评审。负责设计安全模型；把代码级 SAST/DAST 与 SDLC 工作交给 AppSec 工程师。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-architect.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "red"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛡️",
+      "domain": "review",
+      "summaryZh": "通过威胁建模、信任边界和纵深防御设计系统安全模型。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/specialized-pricing-analyst.md",
+      "collection": "agency-agents-zh",
+      "name": "定价分析师",
+      "description": "专精定价分析师，通过市场调研、竞品分析、成本结构评估和 margin（利润率）优化，构建最优定价模型——把定价从凭感觉拍脑袋，变成数据驱动的竞争优势。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/specialized-pricing-analyst.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "gold"
+      ],
+      "tools": [
+        "WebFetch, WebSearch, Read, Write, Edit"
+      ],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "💰",
+      "domain": "data-finance",
+      "summaryZh": "结合市场、竞品、成本与利润分析建立数据驱动的定价模型。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/project-management/project-management-experiment-tracker.md",
       "collection": "agency-agents-zh",
       "name": "实验追踪员",
@@ -12399,6 +13163,25 @@
       "emoji": "🧪",
       "domain": "planning",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/customer-success-manager.md",
+      "collection": "agency-agents-zh",
+      "name": "客户成功经理",
+      "description": "战略型客户成功专家，负责 onboarding（新客导入）、health scoring（健康度评分）、QBR 主持、churn（流失）防控、扩张机会识别与续约管理——通过把客户变成能取得可量化成果的长期伙伴，驱动 net revenue retention（净收入留存）",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/customer-success-manager.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "green"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌟",
+      "domain": "sales-support",
+      "summaryZh": "负责客户入驻、健康度、续约、防流失与扩展增长。",
       "duplicates": []
     },
     {
@@ -12727,6 +13510,27 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/security/security-appsec-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "应用安全工程师",
+      "description": "AppSec 专家，通过威胁建模、安全代码审查、SAST/DAST 集成以及开发者安全教育，把\"写出安全代码\"变成默认选项，从而守护整个软件开发生命周期。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-appsec-engineer.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        ""
+      ],
+      "tools": [],
+      "triggerKeywords": [
+        "写出安全代码"
+      ],
+      "version": "",
+      "emoji": "🔐",
+      "domain": "review",
+      "summaryZh": "通过威胁建模、代码审查与 SAST/DAST 加固软件开发全流程。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/specialized/specialized-developer-advocate.md",
       "collection": "agency-agents-zh",
       "name": "开发者布道师",
@@ -13028,6 +13832,25 @@
       "emoji": "🌐",
       "domain": "writing",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-technical-consultant.md",
+      "collection": "agency-agents-zh",
+      "name": "技术顾问",
+      "description": "战略型 GIS 顾问，把业务问题转化为地理空间解决方案——做差距分析、技术路线图、RFP 应答，以及横跨 Esri 与开源生态的数字化转型战略。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-technical-consultant.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "navy"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧠",
+      "domain": "operations",
+      "summaryZh": "把业务问题转成 GIS 路线图、差距分析、RFP 与数字化方案。",
       "duplicates": []
     },
     {
@@ -13339,6 +14162,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/specialized/data-privacy-officer.md",
+      "collection": "agency-agents-zh",
+      "name": "数据隐私官",
+      "description": "企业数据隐私专家与 DPO（数据保护官），负责构建 GDPR、CCPA 及全球隐私合规体系——覆盖数据测绘、隐私影响评估、同意管理、泄露响应、供应商尽职调查与监管沟通。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/data-privacy-officer.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔐",
+      "domain": "operations",
+      "summaryZh": "建设 GDPR、CCPA 等隐私合规体系并管理评估、事件与监管沟通。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/specialized/specialized-cultural-intelligence-strategist.md",
       "collection": "agency-agents-zh",
       "name": "文化智能策略师",
@@ -13393,6 +14235,25 @@
       "emoji": "📰",
       "domain": "research",
       "summaryZh": "采集并交叉验证多源新闻，生成可供下游使用的结构化简报。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-drone-reality-mapping.md",
+      "collection": "agency-agents-zh",
+      "name": "无人机实景测绘专家",
+      "description": "摄影测量与实景采集专家，把无人机影像处理成 orthomosaic（正射影像）、数字地形模型、point cloud（点云）和三维网格——打通现场采集与 GIS 可用成果之间的链路。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-drone-reality-mapping.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "amber"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛸",
+      "domain": "data-finance",
+      "summaryZh": "把无人机影像处理为正射图、地形模型、点云和三维网格。",
       "duplicates": []
     },
     {
@@ -13583,6 +14444,25 @@
       "emoji": "📈",
       "domain": "review",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/security/security-penetration-tester.md",
+      "collection": "agency-agents-zh",
+      "name": "渗透测试员",
+      "description": "进攻性安全专家，开展授权的渗透测试、红队行动以及面向网络、Web 应用和云基础设施的漏洞评估。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-penetration-tester.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "dc"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🗡️",
+      "domain": "review",
+      "summaryZh": "对网络、Web 与云环境执行授权渗透测试和漏洞评估。",
       "duplicates": []
     },
     {
@@ -13949,6 +14829,63 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/gis/gis-spatial-data-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "空间数据工程师",
+      "description": "ETL 专家，把来自任何来源的杂乱地理空间数据，转换成干净、标准化、可投产的数据集——格式转换、坐标系重投影、属性归一化，以及自动化管线。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-spatial-data-engineer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "orange"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📦",
+      "domain": "data-finance",
+      "summaryZh": "清洗、转换并标准化地理数据，构建生产级空间 ETL 管道。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-spatial-data-scientist.md",
+      "collection": "agency-agents-zh",
+      "name": "空间数据科学家",
+      "description": "高级空间分析专家，把统计建模、空间计量经济学、聚类和预测分析应用到地理空间数据上——找出地图上看不见的规律。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-spatial-data-scientist.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "indigo"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📊",
+      "domain": "data-finance",
+      "summaryZh": "用空间统计、计量、聚类与预测模型发现地理数据规律。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/specialized-strategy-duel-agent.md",
+      "collection": "agency-agents-zh",
+      "name": "策略对决推演师",
+      "description": "运用 game theory（博弈论）和三十六计开展实时策略对决推演",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/specialized-strategy-duel-agent.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "eff"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚔️",
+      "domain": "operations",
+      "summaryZh": "结合博弈论与三十六计进行实时策略对抗和决策推演。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/finance/finance-bookkeeper-controller.md",
       "collection": "agency-agents-zh",
       "name": "簿记与财务总监",
@@ -13965,6 +14902,25 @@
       "emoji": "📒",
       "domain": "operations",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/organizational-psychologist.md",
+      "collection": "agency-agents-zh",
+      "name": "组织心理学家",
+      "description": "应用型组织心理学家，诊断团队动力、psychological safety（心理安全感）、burnout（职业倦怠）风险与文化健康度——用循证框架帮助领导者打造高绩效、有韧性、心理安全的组织。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/organizational-psychologist.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "teal"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧠",
+      "domain": "operations",
+      "summaryZh": "诊断团队动力、心理安全、倦怠与组织文化并提出改进方案。",
       "duplicates": []
     },
     {
@@ -14060,6 +15016,25 @@
       "emoji": "🧩",
       "domain": "design",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/gis/gis-solution-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "解决方案工程师",
+      "description": "亲力亲为的 GIS 原型搭建者，接过技术顾问的策略，将其落地为可运行的演示、概念验证（PoC）和技术验证，覆盖完整的 Esri 与开源技术栈。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/gis/gis-solution-engineer.md",
+      "type": "agent",
+      "tags": [
+        "gis",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔧",
+      "domain": "coding",
+      "summaryZh": "把 GIS 方案转成可运行的演示、原型与技术验证。",
       "duplicates": []
     },
     {
@@ -14174,6 +15149,25 @@
       "emoji": "🔮",
       "domain": "data-finance",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/grant-writer.md",
+      "collection": "agency-agents-zh",
+      "name": "资助申请撰稿人",
+      "description": "资深 grant writing（基金申请写作）专家，服务于非营利组织、科研机构与社会企业——覆盖资助方调研（prospect research）、意向函（letter of inquiry）撰写、完整 proposal 开发、budget narrative、联邦与基金会 grant、以及结项后报告，最大化获资成功率",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/grant-writer.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📝",
+      "domain": "writing",
+      "summaryZh": "为非营利、科研和社会企业撰写资助申请、预算叙事与结项报告。",
       "duplicates": []
     },
     {
@@ -14331,6 +15325,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/specialized/operations-manager.md",
+      "collection": "agency-agents-zh",
+      "name": "运营经理",
+      "description": "业务运营专家，把 Lean（精益）、Six Sigma（六西格玛）和系统思维应用到流程梳理、产能规划、KPI 治理、供应商管理和组织效率提升上——将运营的复杂性转化为可复制、可衡量的绩效。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/operations-manager.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "slate"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚙️",
+      "domain": "operations",
+      "summaryZh": "用精益、六西格玛和系统思维优化流程、产能、KPI 与供应商。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/paid-media/paid-media-tracking-specialist.md",
       "collection": "agency-agents-zh",
       "name": "追踪与归因专家",
@@ -14366,6 +15379,25 @@
       "emoji": "📧",
       "domain": "coding",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/marketing/marketing-email-strategist.md",
+      "collection": "agency-agents-zh",
+      "name": "邮件营销策略师",
+      "description": "资深邮件营销策略师，专注于 CRM 驱动的营销活动、生命周期自动化、分群架构与可送达性。基于 2025-2026 基准数据、AI 驱动的个性化以及后 Apple MPP 时代的衡量体系，设计各类序列（欢迎、培育、再激活、挽回、评价、转介绍）。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/marketing/marketing-email-strategist.md",
+      "type": "agent",
+      "tags": [
+        "marketing",
+        "green"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📧",
+      "domain": "marketing",
+      "summaryZh": "设计 CRM 邮件活动、生命周期自动化、分群与送达率策略。",
       "duplicates": []
     },
     {
@@ -14540,6 +15572,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/specialized/chief-financial-officer.md",
+      "collection": "agency-agents-zh",
+      "name": "首席财务官",
+      "description": "战略财务高管，掌管资本配置、资金运营、财务规划、并购财务、投资者关系与董事会汇报——把财务的复杂性转化为清晰决策，驱动业务表现并赢得各方利益相关者的信心。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/chief-financial-officer.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "navy"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "💼",
+      "domain": "operations",
+      "summaryZh": "统筹资本配置、财务规划、并购财务、投资者关系与董事会报告。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/support/support-executive-summary-generator.md",
       "collection": "agency-agents-zh",
       "name": "高管摘要师",
@@ -14556,6 +15607,25 @@
       "emoji": "📝",
       "domain": "writing",
       "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/security/security-senior-secops.md",
+      "collection": "agency-agents-zh",
+      "name": "高级安全运营工程师",
+      "description": "防御型应用安全专家。在做任何事之前，先扫描每一次代码提交，检查密钥泄露和敏感数据暴露；随后依据组织的安全标准实现或审计各项安全控制——涵盖认证、授权、令牌、Cookie、HTTP 头、CORS、限流、CSP、密钥管理、输入校验和安全日志。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-senior-secops.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "ee"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛡️",
+      "domain": "review",
+      "summaryZh": "审查敏感信息暴露并实施认证、授权、令牌与输入验证等安全控制。",
       "duplicates": []
     },
     {
