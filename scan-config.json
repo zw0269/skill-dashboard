@@ -44,14 +44,6 @@
       "color": "#f59e0b"
     },
     {
-      "id": "harness",
-      "label": "harness",
-      "dir": "Harness_Engineering",
-      "type": "skill",
-      "scanRule": "SKILL.md",
-      "color": "#06b6d4"
-    },
-    {
       "id": "tong-jincheng",
       "label": "tong-jincheng",
       "dir": "tong-jincheng-skill-main",
@@ -93,6 +85,22 @@
       "color": "#84cc16"
     },
     {
+      "id": "best-minds",
+      "label": "best-minds",
+      "dir": "best-minds",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "qiushi-skill",
+      "label": "qiushi-skill",
+      "dir": "awesome-design-md/qiushi-skill/skills",
+      "type": "skill",
+      "scanRule": "SKILL.md",
+      "color": "#06b6d4"
+    },
+    {
       "id": "ai-hedge-fund",
       "label": "ai-hedge-fund",
       "dir": "ai-hedge-fund",
@@ -118,39 +126,6 @@
       "type": "skill",
       "scanRule": "SKILL.md",
       "color": "#7c3aed"
-    },
-    {
-      "id": "superpowers-agents",
-      "label": "superpowers-agents",
-      "dir": "superpowers-agents",
-      "type": "agent",
-      "scanRule": "*.md",
-      "excludeFiles": [
-        "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "LICENSE", "ROADMAP.md"
-      ],
-      "color": "#9333ea"
-    },
-    {
-      "id": "superpowers-commands",
-      "label": "superpowers-commands",
-      "dir": "superpowers-commands",
-      "type": "agent",
-      "scanRule": "*.md",
-      "excludeFiles": [
-        "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "LICENSE", "ROADMAP.md"
-      ],
-      "color": "#c026d3"
-    },
-    {
-      "id": "lobe-chat-agents",
-      "label": "lobe-chat-agents",
-      "dir": "lobe-chat-agents",
-      "type": "agent",
-      "scanRule": "*.md",
-      "excludeFiles": [
-        "CONTRIBUTING.md", "CHANGELOG.md", "README.md", "LICENSE", "ROADMAP.md"
-      ],
-      "color": "#f43f5e"
     },
     {
       "id": "ielts-coach",
@@ -201,6 +176,14 @@
       "type": "skill",
       "scanRule": "SKILL.md",
       "color": "#1e40af"
+    },
+    {
+      "id": "edict",
+      "label": "edict",
+      "dir": "edict/agents",
+      "type": "agent",
+      "scanRule": "SOUL.md",
+      "color": "#f97316"
     }
   ],
   "skipDirs": [

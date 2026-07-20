@@ -4281,6 +4281,126 @@
       "domain": "agent-workflow",
       "summaryZh": "提供技能调用、信息层级、拆分与精简原则，提升执行可预测性。",
       "hash": "64156a93ca08ff4ac29357ee3742eec6"
+    },
+    "best-minds/SKILL.md": {
+      "domain": "research",
+      "hash": "54f1e6bb8dba4ff67a6aa7cd26e1000e",
+      "summaryZh": "召唤世界顶尖专家议会做多视角严谨分析，战略决策、技术路线验证、学术写作等高难判断时用它替代单一泛泛回答。"
+    },
+    "edict/agents/bingbu/SOUL.md": {
+      "domain": "coding",
+      "hash": "13f67e49bc1526f5e583c09a834313d5",
+      "summaryZh": "兵部尚书 subagent，负责工程实现、架构设计与功能开发的执行。"
+    },
+    "edict/agents/gongbu/SOUL.md": {
+      "domain": "coding",
+      "hash": "3221b0f9cd1f8fe66d0f0bce406b5e8e",
+      "summaryZh": "工部尚书 subagent，负责基础设施、部署运维与性能监控。"
+    },
+    "edict/agents/hubu/SOUL.md": {
+      "domain": "data-finance",
+      "hash": "1ef3cc80cc8fcf2f7571a38dc225995b",
+      "summaryZh": "户部尚书 subagent，负责数据、统计与资源管理。"
+    },
+    "edict/agents/libu/SOUL.md": {
+      "domain": "writing",
+      "hash": "f64e236b0522b4e66378f6867569319d",
+      "summaryZh": "礼部尚书 subagent，负责文档、规范、用户界面与对外沟通。"
+    },
+    "edict/agents/libu_hr/SOUL.md": {
+      "domain": "operations",
+      "hash": "383ac1808b899a3673761ca51c2ba016",
+      "summaryZh": "吏部尚书 subagent，负责人事管理、团队建设与能力培训。"
+    },
+    "edict/agents/menxia/SOUL.md": {
+      "domain": "review",
+      "hash": "d083f49b9e732bdb1d40cf12b90d5f2f",
+      "summaryZh": "门下省 subagent，三省制审查核心，审议方案后返回结论。"
+    },
+    "edict/agents/qintianjian/SOUL.md": {
+      "domain": "research",
+      "hash": "30fd0432d3f4c0695c601770cb9ccb3b",
+      "summaryZh": "钦天监 subagent，负责数据分析、性能度量与趋势预测。"
+    },
+    "edict/agents/shangshu/SOUL.md": {
+      "domain": "agent-workflow",
+      "hash": "e29656a850222f5167184387733e1804",
+      "summaryZh": "尚书省 subagent，接收准奏方案后派发六部执行并汇总结果。"
+    },
+    "edict/agents/taizi/SOUL.md": {
+      "domain": "agent-workflow",
+      "hash": "75c03000c9077cadbc42ee2fdb9e599d",
+      "summaryZh": "太子 subagent，飞书消息的第一接收人与分拣路由者。"
+    },
+    "edict/agents/xingbu/SOUL.md": {
+      "domain": "review",
+      "hash": "7a1d8a33fb83141bd02c65bc8a111196",
+      "summaryZh": "刑部尚书 subagent，负责质量保障、测试验收与合规审计。"
+    },
+    "edict/agents/zaochao/SOUL.md": {
+      "domain": "research",
+      "hash": "a41b79569cbd1410cd926bbcb320b60d",
+      "summaryZh": "早朝 subagent，每日采集全球要闻生成图文简报供御览。"
+    },
+    "edict/agents/zhongshu/SOUL.md": {
+      "domain": "agent-workflow",
+      "hash": "53e49addedc25d8aecf5dbb4065d8c74",
+      "summaryZh": "中书省 subagent，接收旨意起草方案、调门下审议、交尚书执行。"
+    },
+    "awesome-design-md/qiushi-skill/skills/arming-thought/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "71ad6ea92ab8abe798bbb786d60193fd",
+      "summaryZh": "『实事求是』总原则 skill，新对话开场自动立纲，并按适用性选择下游思想武器。"
+    },
+    "awesome-design-md/qiushi-skill/skills/concentrate-forces/SKILL.md": {
+      "domain": "planning",
+      "hash": "33c7dfa188660009310888a44b471557",
+      "summaryZh": "集中优势兵力：多任务争抢资源时确定主攻方向、停止分散用力。"
+    },
+    "awesome-design-md/qiushi-skill/skills/contradiction-analysis/SKILL.md": {
+      "domain": "planning",
+      "hash": "b1bdd04f89725cfd5d60a294d4b31f07",
+      "summaryZh": "矛盾分析法：复杂问题中抓主要矛盾、分清主次、选对应对策略。"
+    },
+    "awesome-design-md/qiushi-skill/skills/criticism-self-criticism/SKILL.md": {
+      "domain": "review",
+      "hash": "081f76f00b125c8ed1ccf8e031b3394b",
+      "summaryZh": "批评与自我批评：完工验收、复盘纠错、系统纠偏时的质量回顾。"
+    },
+    "awesome-design-md/qiushi-skill/skills/investigation-first/SKILL.md": {
+      "domain": "research",
+      "hash": "56dac2381b3af08807c124ae1dbd74fd",
+      "summaryZh": "调查研究：下判断前先摸清事实与一手信息，让实际决定结论。"
+    },
+    "awesome-design-md/qiushi-skill/skills/mass-line/SKILL.md": {
+      "domain": "research",
+      "hash": "9c6f38d93b5a9dc56252d0d506700533",
+      "summaryZh": "群众路线：收集多方意见、整合成可执行方案并带回真实使用者验证。"
+    },
+    "awesome-design-md/qiushi-skill/skills/overall-planning/SKILL.md": {
+      "domain": "planning",
+      "hash": "0df8dd10f8a6b4f37d7724e409470b78",
+      "summaryZh": "统筹兼顾：在多目标、多利益方与相互制约指标间做动态平衡。"
+    },
+    "awesome-design-md/qiushi-skill/skills/practice-cognition/SKILL.md": {
+      "domain": "research",
+      "hash": "832c860f55bcd5d1f715e1e7f6108c9e",
+      "summaryZh": "实践论：通过实践验证、试错迭代与复盘来升级认知。"
+    },
+    "awesome-design-md/qiushi-skill/skills/protracted-strategy/SKILL.md": {
+      "domain": "planning",
+      "hash": "20c560226d55eafb5907a5821bfc3a29",
+      "summaryZh": "持久战：目标长期、资源暂劣时的分阶段推进与战略耐心。"
+    },
+    "awesome-design-md/qiushi-skill/skills/spark-prairie-fire/SKILL.md": {
+      "domain": "planning",
+      "hash": "f92cb150f25064cb1cd52292c0bb5808",
+      "summaryZh": "星星之火：从零起步资源稀缺时找最小可行切入口、建立根据地。"
+    },
+    "awesome-design-md/qiushi-skill/skills/workflows/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "44143da0f64bdc53a842ea5e4ee3d769",
+      "summaryZh": "思想武器工作流：任务需多 skill 协作时提供标准化跨 skill 组合编排。"
     }
   }
 }

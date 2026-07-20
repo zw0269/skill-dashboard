@@ -80,6 +80,7 @@ node scanner.mjs
 |---|---|---|
 | `"SKILL.md"` | 扫描所有名为 `SKILL.md` 的文件 | 标准 Claude Code Skill |
 | `"DESIGN.md"` | 扫描所有名为 `DESIGN.md` 的文件，用父目录名作为显示名 | 品牌设计系统文档 |
+| `"SOUL.md"` | 扫描所有名为 `SOUL.md` 的文件，用父目录名作为显示名 | edict 六部三省风格 subagent |
 | `"*.md"` | 扫描目录下所有 `.md` 文件（排除 `excludeFiles` 指定的元文件） | agency-agents 风格扁平集合 |
 
 ### color 参考色板
@@ -92,13 +93,17 @@ node scanner.mjs
   agency-agents:      #22c55e  绿
   agency-agents-zh:   #14b8a6  蓝绿
   awesome-design:     #ef4444  红
-  harness:            #06b6d4  青
   tong-jincheng:      #a855f7  紫
-  edict:              #f97316  橙
+  edict:              #f97316  橙（agent，SOUL.md）
+  best-minds:         #3b82f6  蓝
+  qiushi-skill:       #06b6d4  青
+  custom-skills:      #84cc16  黄绿
+  superpowers:        #7c3aed  紫
 
-可用颜色：
-  #3b82f6  蓝   #84cc16  黄绿
-  #f43f5e  玫红  #8b5cf6  紫    #0ea5e9  天蓝
+可用颜色（2026-07-20 起，随删集合释放）：
+  #f43f5e  玫红（原 lobe-chat）
+  #9333ea / #c026d3  紫红（原 superpowers-agents/commands）
+  #8b5cf6  紫
 ```
 
 ### 目录结构规范
@@ -432,5 +437,7 @@ type SkillEntry = {
 | 日期 | 操作 | 操作者 |
 |---|---|---|
 | 2026-04-09 | 新增 `agency-agents-zh` 集合（中文版 agency-agents，蓝绿色 #14b8a6，scanRule: \*.md） | AI（Claude Sonnet 4.6） |
+| 2026-07-20 | 目录对账：删除 4 个已消失集合（`harness`/`Harness_Engineering`、`superpowers-agents`、`superpowers-commands`、`lobe-chat-agents`）；新增 `best-minds`（skill，#3b82f6）与 `edict`（agent，dir `edict/agents`，#f97316）。新增 `SOUL.md` scanRule（按父目录命名，用于 edict 六部三省 12 个 subagent）。全量重扫 → 887 条。13 个新条目已写入 `data/classification.json`。 | AI（Claude Opus 4.8） |
+| 2026-07-20 | 覆盖率复查（ultrathink）：发现 `awesome-design-md/qiushi-skill/skills` 的 11 个求是方法论 skill 未被任何集合覆盖，新增 `qiushi-skill` 集合（skill，#06b6d4）。重扫 → 898 条。11 个新条目已分类写入 `data/classification.json`。（`gstack/DESIGN.md` 为 gstack 站点单例设计文档，暂不收录。） | AI（Claude Opus 4.8） |
 
-*最后更新：2026-04-09 by AI（Claude Sonnet 4.6）*
+*最后更新：2026-07-20 by AI（Claude Opus 4.8）*

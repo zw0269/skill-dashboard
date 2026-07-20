@@ -1,12 +1,14 @@
 {
   "version": 3,
-  "scannedAt": "2026-06-20T06:14:48.686Z",
-  "total": 833,
+  "scannedAt": "2026-07-20T06:24:04.884Z",
+  "total": 898,
   "byCollection": {
     "academic-research": 4,
     "custom-skills": 9,
-    "mattpocock-skills": 34,
+    "qiushi-skill": 11,
+    "mattpocock-skills": 41,
     "gstack": 59,
+    "best-minds": 1,
     "fs-partner-built": 11,
     "superpowers": 14,
     "ui-ux-pro-max": 7,
@@ -14,24 +16,26 @@
     "ielts-coach": 4,
     "pua": 23,
     "tong-jincheng": 1,
-    "agency-agents": 242,
-    "agency-agents-zh": 276,
-    "ai-hedge-fund": 21,
+    "agency-agents": 273,
+    "agency-agents-zh": 278,
+    "ai-hedge-fund": 22,
+    "edict": 12,
     "awesome-design": 73
   },
   "byDomain": {
-    "research": 27,
-    "agent-workflow": 80,
+    "research": 33,
+    "agent-workflow": 82,
     "education": 17,
-    "review": 60,
-    "data-finance": 112,
-    "planning": 36,
-    "operations": 82,
+    "other": 87,
+    "review": 59,
+    "data-finance": 86,
+    "planning": 38,
+    "operations": 81,
     "design": 131,
     "coding": 122,
     "debugging": 6,
-    "writing": 24,
-    "sales-support": 40,
+    "writing": 22,
+    "sales-support": 38,
     "marketing": 96
   },
   "domains": [
@@ -138,23 +142,22 @@
     "gstack": "#6366f1",
     "pua": "#ec4899",
     "ui-ux-pro-max": "#f59e0b",
-    "harness": "#06b6d4",
     "tong-jincheng": "#a855f7",
     "agency-agents": "#22c55e",
     "agency-agents-zh": "#14b8a6",
     "custom-skills": "#84cc16",
+    "best-minds": "#3b82f6",
+    "qiushi-skill": "#06b6d4",
     "ai-hedge-fund": "#0ea5e9",
     "awesome-design": "#ef4444",
     "superpowers": "#7c3aed",
-    "superpowers-agents": "#9333ea",
-    "superpowers-commands": "#c026d3",
-    "lobe-chat-agents": "#f43f5e",
     "ielts-coach": "#0891b2",
     "fs-vertical-plugins": "#2563eb",
     "fs-partner-built": "#ca8a04",
     "fs-agent-plugins": "#6b7280",
     "academic-research": "#b91c1c",
-    "mattpocock-skills": "#1e40af"
+    "mattpocock-skills": "#1e40af",
+    "edict": "#f97316"
   },
   "entries": [
     {
@@ -292,10 +295,29 @@
       "duplicates": []
     },
     {
+      "id": "awesome-design-md/qiushi-skill/skills/arming-thought/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "arming-thought",
+      "description": "触发：在每次新的顶层对话开始时自动调用，用于建立“实事求是”的总原则，并在明确适用时为后续任务选择下游 skill；如果你是被派遣执行单一具体任务的子 agent，则跳过此 skill。 English: Trigger at the start of each new top-level conversation to establish the core methodology and select downstream skills only when clearly useful. Skip this skill when you are a delegated sub-agent handling a narrow, concrete task.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/arming-thought/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "arming-thought"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "『实事求是』总原则 skill，新对话开场自动立纲，并按适用性选择下游思想武器。",
+      "duplicates": []
+    },
+    {
       "id": "skills/skills/engineering/ask-matt/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "ask-matt",
-      "description": "Ask which skill or flow fits your situation. A router over the user-invoked skills in this repo.",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/ask-matt/SKILL.md",
       "type": "skill",
       "tags": [
@@ -306,8 +328,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "agent-workflow",
-      "summaryZh": "根据当前情境路由到合适的 Matt Pocock 技能或工作流。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -336,6 +358,25 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "串联运行CEO/设计/工程/DX评审并自动决策的评审流水线",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/in-progress/batch-grill-me/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "batch-grill-me",
+      "description": "A relentless interview that asks every frontier question at once, round by round.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/batch-grill-me/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "batch-grill-me"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -384,6 +425,22 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "跨Claude/GPT/Gemini模型并行跑同一提示比较延迟成本质量",
+      "duplicates": []
+    },
+    {
+      "id": "best-minds/SKILL.md",
+      "collection": "best-minds",
+      "name": "best-minds",
+      "description": "召唤一组『最强大脑』专家议会处理高难度判断——战略决策、技术路线验证、框架抽取、学术写作、博主方法蒸馏。触发词：best minds / bestminds / 顶级专家 / 召唤最强大脑。核心是『模拟器思维』：不让 AI 以泛泛身份直接作答，而是模拟该领域世界顶尖专家各自的视角，给出带证据链、可证伪、按优先级排序的多方观点与综合建议。Use when a question needs rigorous multi-expert analysis instead of a single generic answer.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/best-minds/SKILL.md",
+      "type": "skill",
+      "tags": [],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "召唤世界顶尖专家议会做多视角严谨分析，战略决策、技术路线验证、学术写作等高难判断时用它替代单一泛泛回答。",
       "duplicates": []
     },
     {
@@ -624,6 +681,44 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/in-progress/claude-handoff/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "claude-handoff",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/claude-handoff/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "claude-handoff"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/engineering/code-review/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "code-review",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to ",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/code-review/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "code-review"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "skills/skills/engineering/codebase-design/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "codebase-design",
@@ -665,6 +760,25 @@
       "emoji": "",
       "domain": "review",
       "summaryZh": "OpenAI Codex CLI封装：独立代码评审、对抗测试、咨询",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/concentrate-forces/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "concentrate-forces",
+      "description": "触发：当多个任务同时争夺时间、注意力、算力或预算，必须确定主攻方向并停止分散用力时调用；常见信号包括优先级过多、资源紧张、推进分散、需要决定先做什么。 English: Trigger when limited resources are being split across too many tasks and one main target must be chosen. Use this skill to concentrate effort, sequence work decisively, and finish a meaningful breakthrough before expanding.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/concentrate-forces/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "concentrate-forces"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "集中优势兵力：多任务争抢资源时确定主攻方向、停止分散用力。",
       "duplicates": []
     },
     {
@@ -719,6 +833,25 @@
       "duplicates": []
     },
     {
+      "id": "awesome-design-md/qiushi-skill/skills/contradiction-analysis/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "contradiction-analysis",
+      "description": "触发：当问题复杂、存在多个冲突因素、优先级不清，或你不知道应该先解决什么时调用；常见信号包括 trade-off、瓶颈、根因不明、主次不清、多个问题互相牵制。 English: Trigger when a problem contains competing forces, unclear priorities, or no obvious entry point. Use this skill to identify contradictions, isolate the principal contradiction, classify its nature, and choose the right response.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/contradiction-analysis/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "contradiction-analysis"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "矛盾分析法：复杂问题中抓主要矛盾、分清主次、选对应对策略。",
+      "duplicates": []
+    },
+    {
       "id": "custom-skills/course-skeleton-study/SKILL.md",
       "collection": "custom-skills",
       "name": "course-skeleton-study",
@@ -736,6 +869,25 @@
       "emoji": "",
       "domain": "education",
       "summaryZh": "考试导向的课程速通法，从材料提取核心概念并以冷测循环高效突击备考。",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/criticism-self-criticism/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "criticism-self-criticism",
+      "description": "触发：当一项工作已经完成、进入阶段验收、收到批评反馈，或反复出现同类错误需要系统纠偏时调用；常见信号包括 review、audit、retrospective、quality check、纠错与复盘。 English: Trigger after delivery or at a review checkpoint when quality must be examined honestly and errors must be corrected without defensiveness. Use this skill for structured self-review, feedback processing, and continuous correction.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/criticism-self-criticism/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "criticism-self-criticism"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "review",
+      "summaryZh": "批评与自我批评：完工验收、复盘纠错、系统纠偏时的质量回顾。",
       "duplicates": []
     },
     {
@@ -764,25 +916,6 @@
       "emoji": "",
       "domain": "review",
       "summaryZh": "首席安全官模式：基础设施优先的安全审计与威胁建模",
-      "duplicates": []
-    },
-    {
-      "id": "skills/skills/in-progress/decision-mapping/SKILL.md",
-      "collection": "mattpocock-skills",
-      "name": "decision-mapping",
-      "description": "Turn a loose idea into a sequenced map of investigation tickets, then drive them to resolution one at a time.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/decision-mapping/SKILL.md",
-      "type": "skill",
-      "tags": [
-        "in-progress",
-        "decision-mapping"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "",
-      "domain": "planning",
-      "summaryZh": "把模糊想法拆成有依赖顺序的调查票据，并逐项推进决策。",
       "duplicates": []
     },
     {
@@ -1162,7 +1295,7 @@
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/catalyst-calendar/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/catalyst-calendar",
-      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regulatory decisions, and macro events. Helps prioritize attention and position ahead of events. Triggers on \"catalyst calendar\", \"upcoming events\", \"what's coming up\", \"earnings calendar\", \"event calendar\", or \"catalyst tracker\".",
+      "description": "Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regulatory decisions, and macro events. Helps prioritize attention and position ahead of events. Triggers on \"catalyst calendar\", \"upcoming events\", \"what's coming up\", \"earnings calendar\", \"event calendar\", or \"catalyst tracker\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/catalyst-calendar/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1182,8 +1315,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "构建覆盖股票池的催化剂日历：财报、会议、监管事件",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -1215,7 +1348,7 @@
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/earnings-preview/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/earnings-preview",
-      "description": "description: Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch. Use before a company reports quarterly earnings to prepare positioning notes, set up bull/bear scenarios, and identify what will move the stock. Triggers on \"earnings preview\", \"what to watch for [company] earnings\", \"pre-earnings\", \"earnings setup\", or \"preview Q[X] for [company]\".",
+      "description": "Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch. Use before a company reports quarterly earnings to prepare positioning notes, set up bull/bear scenarios, and identify what will move the stock. Triggers on \"earnings preview\", \"what to watch for [company] earnings\", \"pre-earnings\", \"earnings setup\", or \"preview Q[X] for [company]\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/earnings-preview/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1233,15 +1366,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "财报前用估值模型与多情景框架做前瞻定位分析",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/idea-generation/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/idea-generation",
-      "description": "description: Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or conducting thematic sweeps. Triggers on \"idea generation\", \"stock screen\", \"find ideas\", \"what looks interesting\", \"screen for\", \"new ideas\", or \"pitch me something\".",
+      "description": "Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or conducting thematic sweeps. Triggers on \"idea generation\", \"stock screen\", \"find ideas\", \"what looks interesting\", \"screen for\", \"new ideas\", or \"pitch me something\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/idea-generation/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1261,8 +1394,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "系统化选股与投资点子挖掘，结合量化筛选与主题研究",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -1290,7 +1423,7 @@
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/model-update/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/model-update",
-      "description": "description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions. Adjusts estimates, recalculates valuation, and flags material changes. Use after earnings, guidance updates, or when assumptions need refreshing. Triggers on \"update model\", \"plug earnings\", \"refresh estimates\", \"update numbers for [company]\", \"new guidance\", or \"rev",
+      "description": "Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions. Adjusts estimates, recalculates valuation, and flags material changes. Use after earnings, guidance updates, or when assumptions need refreshing. Triggers on \"update model\", \"plug earnings\", \"refresh estimates\", \"update numbers for [company]\", \"new guidance\", or \"revise estimates",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/model-update/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1309,15 +1442,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "用新财报与指引更新财务模型并重算估值标记重大变化",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/morning-note/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/morning-note",
-      "description": "description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks. Designed for the 7am morning meeting format — tight, opinionated, actionable. Triggers on \"morning note\", \"morning meeting\", \"what happened overnight\", \"trade idea\", \"morning call prep\", or \"daily note\".",
+      "description": "Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks. Designed for the 7am morning meeting format — tight, opinionated, actionable. Triggers on \"morning note\", \"morning meeting\", \"what happened overnight\", \"trade idea\", \"morning call prep\", or \"daily note\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/morning-note/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1337,15 +1470,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "为7点晨会撰写简明晨报，汇总隔夜动态与交易点子",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/sector-overview",
-      "description": "description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or internal knowledge building. Triggers on \"sector overview\", \"industry report\", \"market landscape\", \"sector analysis\", \"industry deep dive\", or \"thematic research\".",
+      "description": "Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or internal knowledge building. Triggers on \"sector overview\", \"industry report\", \"market landscape\", \"sector analysis\", \"industry deep dive\", or \"thematic research\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1365,15 +1498,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "撰写行业与板块全景报告，覆盖竞争格局与主题趋势",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "equity-research/thesis-tracker",
-      "description": "description: Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on \"update thesis for [company]\", \"is my thesis still intact\", \"thesis check\", \"add data point to [company]\"",
+      "description": "Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on \"update thesis for [company]\", \"is my thesis still intact\", \"thesis check\", \"add data point to [company]\", or \"review ",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md",
       "type": "skill",
       "tags": [
@@ -1391,8 +1524,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "维护与更新组合持仓的投资逻辑，跟踪催化剂与里程碑",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2009,7 +2142,7 @@
       "id": "skills/skills/productivity/grilling/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "grilling",
-      "description": "Interview the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/productivity/grilling/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2022,15 +2155,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "agent-workflow",
-      "summaryZh": "逐问压力测试计划或设计，直到关键决策达成共识。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "gstack/SKILL.md",
       "collection": "gstack",
       "name": "gstack",
-      "description": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "description": "Router for the gstack skill suite. (gstack)",
       "filePath": "/Users/zw/work/project_test/Skill研究/gstack/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2042,10 +2175,10 @@
         "AskUserQuestion"
       ],
       "triggerKeywords": [],
-      "version": "1.1.0",
+      "version": "1.2.0",
       "emoji": "",
-      "domain": "review",
-      "summaryZh": "无头浏览器做 QA 测试与站点验证，截图取证。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2316,7 +2449,7 @@
       "id": "skills/skills/engineering/implement/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "implement",
-      "description": "Implement a piece of work based on a PRD or set of issues.",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/implement/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2327,8 +2460,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "coding",
-      "summaryZh": "根据 PRD 或工单实现功能，并完成测试、评审与提交。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2379,10 +2512,29 @@
       "duplicates": []
     },
     {
+      "id": "awesome-design-md/qiushi-skill/skills/investigation-first/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "investigation-first",
+      "description": "触发：当你准备下判断、做决策或提出建议，但事实、上下文或一手信息还不充分时优先调用；常见信号包括 unknowns、信息缺口、证据不足、领域陌生、需要先摸清现状。 English: Trigger before making claims or decisions when context is incomplete, evidence is weak, or the domain is unfamiliar. Use this skill to investigate first, gather firsthand facts, and let reality shape the conclusion.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/investigation-first/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "investigation-first"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "调查研究：下判断前先摸清事实与一手信息，让实际决定结论。",
+      "duplicates": []
+    },
+    {
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/buyer-list/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/buyer-list",
-      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes. Identifies strategic and financial buyers, assesses fit, and prioritizes outreach. Use when preparing for a sell-side mandate, building a buyer universe, or evaluating potential partners. Triggers on \"buyer list\", \"buyer universe\", \"potential acquirers\", \"who would buy this\", \"strategic buyers\", or \"fina",
+      "description": "Build and organize a universe of potential acquirers for sell-side M&A processes. Identifies strategic and financial buyers, assesses fit, and prioritizes outreach. Use when preparing for a sell-side mandate, building a buyer universe, or evaluating potential partners. Triggers on \"buyer list\", \"buyer universe\", \"potential acquirers\", \"who would buy this\", \"strategic buyers\", or \"financial sponsor",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/buyer-list/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2401,15 +2553,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "为卖方 M&A 构建潜在买家清单并排序外联优先级。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/cim-builder/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/cim-builder",
-      "description": "description: Structure and draft a Confidential Information Memorandum for sell-side M&A processes. Organizes company information into a professional, investor-ready document with consistent formatting and narrative flow. Use when preparing sell-side materials, drafting a CIM, or organizing company data for a sale process. Triggers on \"CIM\", \"confidential information memorandum\", \"offering memoran",
+      "description": "Structure and draft a Confidential Information Memorandum for sell-side M&A processes. Organizes company information into a professional, investor-ready document with consistent formatting and narrative flow. Use when preparing sell-side materials, drafting a CIM, or organizing company data for a sale process. Triggers on \"CIM\", \"confidential information memorandum\", \"offering memorandum\", \"info m",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/cim-builder/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2421,12 +2573,13 @@
       "tools": [],
       "triggerKeywords": [
         "cim",
-        "confidential information memorandum"
+        "confidential information memorandum",
+        "offering memorandum"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "为卖方并购起草保密信息备忘录（CIM）。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2454,7 +2607,7 @@
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/deal-tracker/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/deal-tracker",
-      "description": "description: Track multiple live deals with milestones, deadlines, action items, and status updates. Maintains a deal pipeline view and surfaces upcoming deadlines and overdue items. Use when managing a book of business, tracking process milestones, or preparing for weekly deal reviews. Triggers on \"deal tracker\", \"deal status\", \"where are we on\", \"process update\", \"deal pipeline\", or \"weekly deal",
+      "description": "Track multiple live deals with milestones, deadlines, action items, and status updates. Maintains a deal pipeline view and surfaces upcoming deadlines and overdue items. Use when managing a book of business, tracking process milestones, or preparing for weekly deal reviews. Triggers on \"deal tracker\", \"deal status\", \"where are we on\", \"process update\", \"deal pipeline\", or \"weekly deal review\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/deal-tracker/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2469,12 +2622,13 @@
         "deal status",
         "where are we on",
         "process update",
-        "deal pipeline"
+        "deal pipeline",
+        "weekly deal review"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "跟踪多个在途交易的里程碑、截止与状态，管理交易管线。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2502,7 +2656,7 @@
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/merger-model/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/merger-model",
-      "description": "description: Build accretion/dilution analysis for M&A transactions. Models pro forma EPS impact, synergy sensitivities, and purchase price allocation. Use when evaluating a potential acquisition, preparing merger consequences analysis for a pitch, or advising on deal terms. Triggers on \"merger model\", \"accretion dilution\", \"M&A model\", \"pro forma EPS\", \"merger consequences\", or \"deal impact analy",
+      "description": "Build accretion/dilution analysis for M&A transactions. Models pro forma EPS impact, synergy sensitivities, and purchase price allocation. Use when evaluating a potential acquisition, preparing merger consequences analysis for a pitch, or advising on deal terms. Triggers on \"merger model\", \"accretion dilution\", \"M&A model\", \"pro forma EPS\", \"merger consequences\", or \"deal impact analysis\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/merger-model/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2517,12 +2671,13 @@
         "accretion dilution",
         "m&a model",
         "pro forma eps",
-        "merger consequences"
+        "merger consequences",
+        "deal impact analysis"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "构建并购增厚/摊薄分析，建模备考 EPS 影响。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2550,7 +2705,7 @@
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/process-letter/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/process-letter",
-      "description": "description: Draft process letters and bid instructions for sell-side M&A processes. Covers initial indication of interest (IOI) instructions, final bid procedures, and management meeting logistics. Triggers on \"process letter\", \"bid instructions\", \"IOI letter\", \"bid procedures\", \"final round letter\", or \"management meeting invite\".",
+      "description": "Draft process letters and bid instructions for sell-side M&A processes. Covers initial indication of interest (IOI) instructions, final bid procedures, and management meeting logistics. Triggers on \"process letter\", \"bid instructions\", \"IOI letter\", \"bid procedures\", \"final round letter\", or \"management meeting invite\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/process-letter/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2570,15 +2725,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "为卖方并购起草流程函与竞标说明。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/investment-banking/skills/teaser/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "investment-banking/teaser",
-      "description": "description: Draft anonymous one-page company teasers for sell-side M&A processes. Creates a compelling summary without revealing the company's identity, designed to gauge buyer interest before NDA execution. Triggers on \"teaser\", \"blind teaser\", \"anonymous profile\", \"one-pager for process\", or \"draft teaser for sell-side\".",
+      "description": "Draft anonymous one-page company teasers for sell-side M&A processes. Creates a compelling summary without revealing the company's identity, designed to gauge buyer interest before NDA execution. Triggers on \"teaser\", \"blind teaser\", \"anonymous profile\", \"one-pager for process\", or \"draft teaser for sell-side\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/investment-banking/skills/teaser/SKILL.md",
       "type": "skill",
       "tags": [
@@ -2597,8 +2752,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "为卖方并购起草匿名一页公司 teaser，签 NDA 前试探兴趣。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -2843,6 +2998,25 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/in-progress/loop-me/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "loop-me",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/loop-me/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "loop-me"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "financial-services/plugins/partner-built/lseg/skills/macro-rates-monitor/SKILL.md",
       "collection": "fs-partner-built",
       "name": "macro-rates-monitor",
@@ -2909,6 +3083,25 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "妈妈唠叨旁白模式，用碎碎念驱动 AI 穷尽方案，仅换风格不改行为。",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/mass-line/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "mass-line",
+      "description": "触发：当你需要收集多方意见、把零散反馈整合成可执行方案，或把方案带回真实使用者/执行者验证时调用；常见信号包括 stakeholder input、user feedback、意见汇总、对齐与验证。 English: Trigger when input must be gathered from many people, synthesized into a clearer plan, and returned to the affected users or executors for validation. Use this skill for a collect-synthesize-validate loop.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/mass-line/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "mass-line"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "群众路线：收集多方意见、整合成可执行方案并带回真实使用者验证。",
       "duplicates": []
     },
     {
@@ -3080,6 +3273,25 @@
       "emoji": "",
       "domain": "data-finance",
       "summaryZh": "分析期权波动率，比较隐含与实现波动率并算希腊值。",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/overall-planning/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "overall-planning",
+      "description": "触发：当你需要在多个目标、利益方或相互制约的指标之间做动态平衡时调用；常见信号包括 trade-offs、目标冲突、系统性约束、优化一项会伤害另一项。 English: Trigger when several important goals must be advanced together and optimizing one dimension can damage another. Use this skill to map the key relationships, avoid one-sided decisions, and balance the system as a whole.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/overall-planning/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "overall-planning"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "统筹兼顾：在多目标、多利益方与相互制约指标间做动态平衡。",
       "duplicates": []
     },
     {
@@ -3305,10 +3517,29 @@
       "duplicates": []
     },
     {
+      "id": "awesome-design-md/qiushi-skill/skills/practice-cognition/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "practice-cognition",
+      "description": "触发：当你提出了方案、假设或判断，需要通过实践验证、试错迭代或复盘升级认知时调用；常见信号包括 experiment、prototype、validate、iterate、feedback loop。 English: Trigger when an idea, hypothesis, or plan must be tested in practice and improved through iteration. Use this skill to move from action to understanding and back to action in a spiral learning loop.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/practice-cognition/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "practice-cognition"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "实践论：通过实践验证、试错迭代与复盘来升级认知。",
+      "duplicates": []
+    },
+    {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/ai-readiness/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/ai-readiness",
-      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time. Ingests quarterly updates and financials across multiple portfolio companies, identifies quick wins at each, and stacks them into a single ranked action list. Use during quarterly portfolio reviews, annual planning, or when deciding which companies get AI investment first. Tri",
+      "description": "Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time. Ingests quarterly updates and financials across multiple portfolio companies, identifies quick wins at each, and stacks them into a single ranked action list. Use during quarterly portfolio reviews, annual planning, or when deciding which companies get AI investment first. Triggers on \"AI ",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/ai-readiness/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3321,15 +3552,15 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "扫描 PE 投资组合，排名 AI 部署机会",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/dd-checklist/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/dd-checklist",
-      "description": "description: Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use when kicking off diligence, organizing a data room review, or tracking outstanding items. Triggers on \"dd checklist\", \"due diligence tracker\", \"diligence request list",
+      "description": "Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use when kicking off diligence, organizing a data room review, or tracking outstanding items. Triggers on \"dd checklist\", \"due diligence tracker\", \"diligence request list\", \"what do w",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/dd-checklist/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3341,19 +3572,20 @@
       "tools": [],
       "triggerKeywords": [
         "dd checklist",
-        "due diligence tracker"
+        "due diligence tracker",
+        "diligence request list"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "生成并跟踪并购尽职调查清单",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/dd-meeting-prep/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/dd-meeting-prep",
-      "description": "description: Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions. Generates targeted question lists, benchmarks to reference, and red flags to probe. Use before any diligence meeting or call. Triggers on \"prep for management meeting\", \"diligence call prep\", \"expert call questions\", \"customer reference questions\", or \"meetin",
+      "description": "Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions. Generates targeted question lists, benchmarks to reference, and red flags to probe. Use before any diligence meeting or call. Triggers on \"prep for management meeting\", \"diligence call prep\", \"expert call questions\", \"customer reference questions\", or \"meeting prep for [c",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/dd-meeting-prep/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3371,15 +3603,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "准备尽调会议问题清单与红旗排查",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/deal-screening/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/deal-screening",
-      "description": "description: Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when reviewing new deal flow, triaging inbound materials, or deciding whether to take a first call. Triggers on \"screen this deal\", \"review this CIM\", \"should we look at this\",",
+      "description": "Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when reviewing new deal flow, triaging inbound materials, or deciding whether to take a first call. Triggers on \"screen this deal\", \"review this CIM\", \"should we look at this\", \"triage this",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/deal-screening/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3396,15 +3628,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "按基金标准快速筛选并购项目并出备忘录",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/deal-sourcing/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/deal-sourcing",
-      "description": "description: PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out to founders. Triggers on \"find companies\", \"source deals\", \"draft founder email\", \"check if we've seen this company\", or \"outreach to founder\".",
+      "description": "PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out to founders. Triggers on \"find companies\", \"source deals\", \"draft founder email\", \"check if we've seen this company\", or \"outreach to founder\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/deal-sourcing/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3423,15 +3655,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "PE 项目寻源，查 CRM 并起草创始人触达邮件",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/ic-memo/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/ic-memo",
-      "description": "description: Draft a structured investment committee memo for PE deal approval. Synthesizes due diligence findings, financial analysis, and deal terms into a professional IC-ready document. Use when preparing for investment committee, writing up a deal, or creating a formal recommendation. Triggers on \"write IC memo\", \"investment committee memo\", \"deal write-up\", \"prepare IC materials\", or \"recomm",
+      "description": "Draft a structured investment committee memo for PE deal approval. Synthesizes due diligence findings, financial analysis, and deal terms into a professional IC-ready document. Use when preparing for investment committee, writing up a deal, or creating a formal recommendation. Triggers on \"write IC memo\", \"investment committee memo\", \"deal write-up\", \"prepare IC materials\", or \"recommendation memo",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/ic-memo/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3449,15 +3681,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "撰写投资委员会审批备忘录",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/portfolio-monitoring",
-      "description": "description: Track and analyze portfolio company performance against plan. Ingests monthly/quarterly financial packages (Excel, PDF), extracts KPIs, flags variances to budget, and produces summary dashboards. Use when reviewing portfolio company financials, preparing board materials, or monitoring covenant compliance. Triggers on \"review portfolio company\", \"monthly financials\", \"how is [company]",
+      "description": "Track and analyze portfolio company performance against plan. Ingests monthly/quarterly financial packages (Excel, PDF), extracts KPIs, flags variances to budget, and produces summary dashboards. Use when reviewing portfolio company financials, preparing board materials, or monitoring covenant compliance. Triggers on \"review portfolio company\", \"monthly financials\", \"how is [company] performing\", ",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3469,19 +3701,20 @@
       "tools": [],
       "triggerKeywords": [
         "review portfolio company",
-        "monthly financials"
+        "monthly financials",
+        "how is [company] performing"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "跟踪投组公司业绩，提取 KPI 并预警偏差",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/returns-analysis/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/returns-analysis",
-      "description": "description: Build quick IRR/MOIC sensitivity tables for PE deal evaluation. Models returns across entry multiple, leverage, exit multiple, growth, and hold period scenarios. Use when sizing up a deal, stress-testing assumptions, or preparing IC returns exhibits. Triggers on \"returns analysis\", \"IRR sensitivity\", \"MOIC table\", \"what's the return at\", \"model the returns\", or \"back of the envelope\".",
+      "description": "Build quick IRR/MOIC sensitivity tables for PE deal evaluation. Models returns across entry multiple, leverage, exit multiple, growth, and hold period scenarios. Use when sizing up a deal, stress-testing assumptions, or preparing IC returns exhibits. Triggers on \"returns analysis\", \"IRR sensitivity\", \"MOIC table\", \"what's the return at\", \"model the returns\", or \"back of the envelope\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/returns-analysis/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3501,15 +3734,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "构建 IRR/MOIC 回报敏感度分析表",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/unit-economics/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/unit-economics",
-      "description": "description: Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when evaluating revenue quality, building a cohort analysis, or assessing customer economics. Triggers on \"unit economics\", \"cohort analysis\", \"ARR analysis\", \"LTV CAC\", \"ne",
+      "description": "Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when evaluating revenue quality, building a cohort analysis, or assessing customer economics. Triggers on \"unit economics\", \"cohort analysis\", \"ARR analysis\", \"LTV CAC\", \"net retention\",",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/unit-economics/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3523,19 +3756,20 @@
         "unit economics",
         "cohort analysis",
         "arr analysis",
-        "ltv cac"
+        "ltv cac",
+        "net retention"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "分析 SaaS 标的单位经济，如 LTV/CAC、留存",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/private-equity/skills/value-creation-plan/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "private-equity/value-creation-plan",
-      "description": "description: Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close execution, preparing operating partner materials, or building a board-ready value creation roadmap. Triggers on \"value creation plan\", \"100-day plan\", \"post-close pla",
+      "description": "Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close execution, preparing operating partner materials, or building a board-ready value creation roadmap. Triggers on \"value creation plan\", \"100-day plan\", \"post-close plan\", \"EBITDA b",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/private-equity/skills/value-creation-plan/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3547,12 +3781,13 @@
       "tools": [],
       "triggerKeywords": [
         "value creation plan",
-        "100-day plan"
+        "100-day plan",
+        "post-close plan"
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "制定并购后价值创造与百日计划",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -3584,7 +3819,7 @@
       "id": "skills/skills/engineering/prototype/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "prototype",
-      "description": "Build a throwaway prototype to flesh out a design — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route.",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/prototype/SKILL.md",
       "type": "skill",
       "tags": [
@@ -3595,8 +3830,27 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "coding",
-      "summaryZh": "搭建一次性原型，定型前验证设计或UI",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/protracted-strategy/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "protracted-strategy",
+      "description": "触发：当目标长期、任务复杂、资源暂时处于劣势，或短期无法速胜但又不能放弃时调用；常见信号包括 long-term effort、phased plan、endurance、战略耐心、需要分阶段推进。 English: Trigger when the work is long-horizon, difficult, and unlikely to be won quickly. Use this skill to divide the effort into stages, keep strategic confidence, and accumulate small wins into overall victory.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/protracted-strategy/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "protracted-strategy"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "持久战：目标长期、资源暂劣时的分阶段推进与战略耐心。",
       "duplicates": []
     },
     {
@@ -4173,6 +4427,25 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/engineering/research/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "research",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/research/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "research"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "skills/skills/engineering/resolving-merge-conflicts/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "resolving-merge-conflicts",
@@ -4243,30 +4516,7 @@
       "emoji": "",
       "domain": "review",
       "summaryZh": "合并前 PR 评审，查 SQL 安全等结构问题",
-      "duplicates": [
-        "skills/skills/in-progress/review/SKILL.md"
-      ]
-    },
-    {
-      "id": "skills/skills/in-progress/review/SKILL.md",
-      "collection": "mattpocock-skills",
-      "name": "review",
-      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to ",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/review/SKILL.md",
-      "type": "skill",
-      "tags": [
-        "in-progress",
-        "review"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "",
-      "domain": "review",
-      "summaryZh": "按规范与需求双轴审查分支或PR改动",
-      "duplicates": [
-        "gstack/review/SKILL.md"
-      ]
+      "duplicates": []
     },
     {
       "id": "skills/skills/misc/scaffold-exercises/SKILL.md",
@@ -4425,6 +4675,25 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "setup-ts-deep-modules",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "setup-ts-deep-modules"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "gstack/ship/SKILL.md",
       "collection": "gstack",
       "name": "ship",
@@ -4499,6 +4768,25 @@
       "emoji": "",
       "domain": "agent-workflow",
       "summaryZh": "把成功的网页抓取流程固化为可测试、可复用的浏览器技能。",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/spark-prairie-fire/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "spark-prairie-fire",
+      "description": "触发：当你从零起步、资源极少、需要先找到最小可行切入口并建立稳定根据地时调用；常见信号包括 bootstrap、MVP、pilot、first foothold、小团队起步。 English: Trigger when starting from almost nothing and needing a viable foothold before scaling up. Use this skill to build a durable base, start small, and grow from a validated nucleus instead of scattering effort.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/spark-prairie-fire/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "spark-prairie-fire"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "planning",
+      "summaryZh": "星星之火：从零起步资源稀缺时找最小可行切入口、建立根据地。",
       "duplicates": []
     },
     {
@@ -4707,41 +4995,60 @@
       "duplicates": []
     },
     {
-      "id": "skills/skills/engineering/to-issues/SKILL.md",
+      "id": "skills/skills/in-progress/to-questionnaire/SKILL.md",
       "collection": "mattpocock-skills",
-      "name": "to-issues",
-      "description": "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-issues/SKILL.md",
+      "name": "to-questionnaire",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/to-questionnaire/SKILL.md",
       "type": "skill",
       "tags": [
-        "engineering",
-        "to-issues"
+        "in-progress",
+        "to-questionnaire"
       ],
       "tools": [],
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "planning",
-      "summaryZh": "把计划或PRD拆成可独立认领的issue",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
-      "id": "skills/skills/engineering/to-prd/SKILL.md",
+      "id": "skills/skills/engineering/to-spec/SKILL.md",
       "collection": "mattpocock-skills",
-      "name": "to-prd",
-      "description": "Turn the current conversation into a PRD and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
-      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-prd/SKILL.md",
+      "name": "to-spec",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-spec/SKILL.md",
       "type": "skill",
       "tags": [
         "engineering",
-        "to-prd"
+        "to-spec"
       ],
       "tools": [],
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "planning",
-      "summaryZh": "把当前对话整理成PRD并发到issue追踪器",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/engineering/to-tickets/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "to-tickets",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/to-tickets/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "to-tickets"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -4897,10 +5204,29 @@
       "duplicates": []
     },
     {
+      "id": "skills/skills/engineering/wayfinder/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "wayfinder",
+      "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/engineering/wayfinder/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "engineering",
+        "wayfinder"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/client-report/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/client-report",
-      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary. Suitable for quarterly or annual distribution. Triggers on \"client report\", \"performance report\", \"quarterly report for [client]\", \"generate reports\", or \"client statement\".",
+      "description": "Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary. Suitable for quarterly or annual distribution. Triggers on \"client report\", \"performance report\", \"quarterly report for [client]\", \"generate reports\", or \"client statement\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/client-report/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4919,15 +5245,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "生成面向客户的投组业绩报告",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/client-review/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/client-review",
-      "description": "description: Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before quarterly reviews, annual checkups, or ad-hoc client meetings. Triggers on \"client review\", \"meeting prep for [client]\", \"quarterly review\", \"prep for [client name]\", or \"client meeting",
+      "description": "Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before quarterly reviews, annual checkups, or ad-hoc client meetings. Triggers on \"client review\", \"meeting prep for [client]\", \"quarterly review\", \"prep for [client name]\", or \"client meeting\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/client-review/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4941,19 +5267,20 @@
         "client review",
         "meeting prep for [client]",
         "quarterly review",
-        "prep for [client name]"
+        "prep for [client name]",
+        "client meeting"
       ],
       "version": "",
       "emoji": "",
-      "domain": "sales-support",
-      "summaryZh": "准备客户评审会议的业绩摘要与谈话要点",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/financial-plan/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/financial-plan",
-      "description": "description: Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow analysis. Use for new client onboarding, annual plan reviews, or scenario modeling. Triggers on \"financial plan\", \"retirement plan\", \"can I retire\", \"education funding\", \"estate plan\", \"cash flow analysis\", or \"plan update\".",
+      "description": "Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow analysis. Use for new client onboarding, annual plan reviews, or scenario modeling. Triggers on \"financial plan\", \"retirement plan\", \"can I retire\", \"education funding\", \"estate plan\", \"cash flow analysis\", or \"plan update\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/financial-plan/SKILL.md",
       "type": "skill",
       "tags": [
@@ -4973,15 +5300,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "构建涵盖退休、教育、遗产的综合财务规划",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/investment-proposal/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/investment-proposal",
-      "description": "description: Create professional investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, and fee structure. Use when pitching new clients or presenting a new investment strategy. Triggers on \"investment proposal\", \"prospect presentation\", \"pitch new client\", \"proposal for [client]\", or \"new client presentation\".",
+      "description": "Create professional investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, and fee structure. Use when pitching new clients or presenting a new investment strategy. Triggers on \"investment proposal\", \"prospect presentation\", \"pitch new client\", \"proposal for [client]\", or \"new client presentation\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/investment-proposal/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5000,15 +5327,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "sales-support",
-      "summaryZh": "为潜在客户制作投资方案与提案",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/portfolio-rebalance/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/portfolio-rebalance",
-      "description": "description: Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts. Considers tax implications, transaction costs, and wash sale rules. Triggers on \"rebalance\", \"portfolio drift\", \"allocation check\", \"rebalancing trades\", or \"my portfolio is out of balance\".",
+      "description": "Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts. Considers tax implications, transaction costs, and wash sale rules. Triggers on \"rebalance\", \"portfolio drift\", \"allocation check\", \"rebalancing trades\", or \"my portfolio is out of balance\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/portfolio-rebalance/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5027,15 +5354,15 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "分析配置漂移并生成再平衡交易建议",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "financial-services/plugins/vertical-plugins/wealth-management/skills/tax-loss-harvesting/SKILL.md",
       "collection": "fs-vertical-plugins",
       "name": "wealth-management/tax-loss-harvesting",
-      "description": "description: Identify tax-loss harvesting opportunities across taxable accounts. Finds positions with unrealized losses, suggests replacement securities, and tracks wash sale windows. Triggers on \"tax-loss harvesting\", \"TLH\", \"harvest losses\", \"tax losses\", \"unrealized losses\", or \"year-end tax planning\".",
+      "description": "Identify tax-loss harvesting opportunities across taxable accounts. Finds positions with unrealized losses, suggests replacement securities, and tracks wash sale windows. Triggers on \"tax-loss harvesting\", \"TLH\", \"harvest losses\", \"tax losses\", \"unrealized losses\", or \"year-end tax planning\".",
       "filePath": "/Users/zw/work/project_test/Skill研究/financial-services/plugins/vertical-plugins/wealth-management/skills/tax-loss-harvesting/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5055,15 +5382,55 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "data-finance",
-      "summaryZh": "识别税损收割机会并跟踪洗售窗口",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "skills/skills/in-progress/wizard/SKILL.md",
+      "collection": "mattpocock-skills",
+      "name": "wizard",
+      "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/wizard/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "in-progress",
+        "wizard"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "awesome-design-md/qiushi-skill/skills/workflows/SKILL.md",
+      "collection": "qiushi-skill",
+      "name": "workflows",
+      "description": "触发：当你面临的任务明显需要多个思想武器协作时调用；常见信号包括：从零启动新项目、攻坚复杂疑难问题、对已有方案进行迭代优化。此 skill 提供标准化的跨 skill 工作流组合，解决\"应该先用哪个 skill、怎么衔接\"的问题。 English: Trigger when a task clearly requires multiple skills in sequence. Use this skill to select a standard workflow that chains skills together, defines data handoff between steps, and specifies termination conditions.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/awesome-design-md/qiushi-skill/skills/workflows/SKILL.md",
+      "type": "skill",
+      "tags": [
+        "qiushi-skill",
+        "workflows"
+      ],
+      "tools": [],
+      "triggerKeywords": [
+        "应该先用哪个 skill、怎么衔接"
+      ],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "思想武器工作流：任务需多 skill 协作时提供标准化跨 skill 组合编排。",
       "duplicates": []
     },
     {
       "id": "skills/skills/in-progress/writing-beats/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "writing-beats",
-      "description": "Shape an article as a journey of beats, choose-your-own-adventure style. The user picks a starting beat from the raw material, you write only that beat, then offer options for where to pivot next, beat by beat, until the article reaches a natural end. Use when the user has raw material and wants to assemble it as a narrative rather than an argument.",
+      "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/writing-beats/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5074,15 +5441,15 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "writing",
-      "summaryZh": "按节拍逐段组织文章成叙事，互动式选择",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
       "id": "skills/skills/in-progress/writing-fragments/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "writing-fragments",
-      "description": "Grilling session that mines the user for fragments — heterogeneous nuggets of writing (claims, vignettes, sharp sentences, half-thoughts) — and appends them to a single document as raw material for a future article. Use when the user wants to develop ideas before imposing structure, or mentions \"fragments\", \"ideate\", or \"raw material\" for writing.",
+      "description": "Writing, explore — mine raw fragments, no structure yet.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/writing-fragments/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5090,15 +5457,11 @@
         "writing-fragments"
       ],
       "tools": [],
-      "triggerKeywords": [
-        "fragments",
-        "ideate",
-        "raw material"
-      ],
+      "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "writing",
-      "summaryZh": "拷打挖掘写作碎片素材，攒成文章原料",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -5142,7 +5505,7 @@
       "id": "skills/skills/in-progress/writing-shape/SKILL.md",
       "collection": "mattpocock-skills",
       "name": "writing-shape",
-      "description": "Take a markdown file of raw material and shape it into an article through a conversational session — drafting candidate openings, growing the piece paragraph by paragraph, arguing about format (lists, tables, callouts, quotes) at each step. Use when the user has a pile of notes, fragments, or a rough draft and wants help turning it into something publishable.",
+      "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
       "filePath": "/Users/zw/work/project_test/Skill研究/skills/skills/in-progress/writing-shape/SKILL.md",
       "type": "skill",
       "tags": [
@@ -5153,8 +5516,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "writing",
-      "summaryZh": "把零散笔记对话式塑形成可发表文章",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -5568,6 +5931,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/security/security-ai-generated-code-auditor.md",
+      "collection": "agency-agents",
+      "name": "AI-Generated Code Security Auditor",
+      "description": "Security reviewer for AI-generated and vibe-coded apps — hunts the hardcoded secrets, broken row-level security, and prompt-injection sinks that coding assistants ship by default, then drives a scan, fix, and rescan loop with honest, CWE-mapped findings.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/security/security-ai-generated-code-auditor.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "fe"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔎",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/support/support-analytics-reporter.md",
       "collection": "agency-agents",
       "name": "Analytics Reporter",
@@ -5603,6 +5985,25 @@
       "emoji": "🌍",
       "domain": "research",
       "summaryZh": "研究文化系统与人类学方法、构建可信社会设定的专家。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-api-platform-engineer.md",
+      "collection": "agency-agents",
+      "name": "API Platform Engineer",
+      "description": "Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), versioning and deprecation policy, SDK generation, API gateway concerns (auth, rate limiting, quotas), and developer-portal DX.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-api-platform-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "d"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔌",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -5955,6 +6356,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/bingbu/SOUL.md",
+      "collection": "edict",
+      "name": "bingbu",
+      "description": "你是兵部尚书，以 **subagent** 方式被尚书省调用，负责承担**工程实现、架构设计与功能开发**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/bingbu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "bingbu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "兵部尚书 subagent，负责工程实现、架构设计与功能开发的执行。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/game-development/blender/blender-addon-engineer.md",
       "collection": "agency-agents",
       "name": "Blender Add-on Engineer",
@@ -6074,7 +6494,7 @@
       "id": "agency-agents/strategy/EXECUTIVE-BRIEF.md",
       "collection": "agency-agents",
       "name": "BRIEF",
-      "description": "The Agency comprises specialized AI agents across 9 divisions — engineering, design, marketing, product, project management, testing, support, spatial computing, and specialized operations. Individually, each agent delivers expert-level output. **Without coordination, they produce conflicting decisions, duplicated effort, and quality gaps at handoff boundaries.** NEXUS transforms this collection i",
+      "description": "The Agency comprises specialized AI agents across every division — engineering, design, marketing, security, GIS, product, testing, and more. Individually, each agent delivers expert-level output. **Without coordination, they produce conflicting decisions, duplicated effort, and quality gaps at handoff boundaries.** NEXUS transforms this collection into an orchestrated intelligence network with de",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/strategy/EXECUTIVE-BRIEF.md",
       "type": "agent",
       "tags": [
@@ -6084,8 +6504,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "agent-workflow",
-      "summaryZh": "介绍NEXUS如何协调多部门AI智能体网络的纲要。",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": [
         "agency-agents-zh/strategy/EXECUTIVE-BRIEF.md"
       ]
@@ -6349,6 +6769,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/healthcare/healthcare-clinical-evidence-agent.md",
+      "collection": "agency-agents",
+      "name": "Clinical Evidence Agent",
+      "description": "Evidence standards and clinical credibility framework for AI agents",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/healthcare/healthcare-clinical-evidence-agent.md",
+      "type": "agent",
+      "tags": [
+        "healthcare",
+        "a"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🩺",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/security/security-cloud-security-architect.md",
       "collection": "agency-agents",
       "name": "Cloud Security Architect",
@@ -6422,6 +6861,25 @@
       "emoji": "👁️",
       "domain": "review",
       "summaryZh": "代码审查专家，聚焦正确性/安全/性能",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/specialized/specialized-codebase-archaeologist.md",
+      "collection": "agency-agents",
+      "name": "Codebase Archaeologist",
+      "description": "Multi-session, multi-tool drift detection specialist who audits codebases touched by several AI coding tools (Claude, Cursor, Copilot, Windsurf, etc.) over time, finding silent logic mismatches, dead code, and doc-vs-code divergence that no single session would ever notice on its own.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/specialized/specialized-codebase-archaeologist.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "amber"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏺",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -6655,6 +7113,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-database-reliability-engineer.md",
+      "collection": "agency-agents",
+      "name": "Database Reliability Engineer",
+      "description": "Expert database reliability engineer (DBRE) — high availability and replication, automated failover, backup and point-in-time recovery, zero-downtime online schema migrations, connection pooling, and disaster-recovery drills. Focused on keeping data safe and available, not query tuning.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-database-reliability-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "bcc"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛟",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/sales/sales-deal-strategist.md",
       "collection": "agency-agents",
       "name": "Deal Strategist",
@@ -6674,6 +7151,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-desktop-app-engineer.md",
+      "collection": "agency-agents",
+      "name": "Desktop App Engineer",
+      "description": "Expert desktop application engineer for Electron and Tauri — secure IPC and process isolation, code signing and notarization, auto-update pipelines, native OS integration, and resource-footprint discipline.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-desktop-app-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        ""
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "💻",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/specialized-developer-advocate.md",
       "collection": "agency-agents",
       "name": "Developer Advocate",
@@ -6690,6 +7186,25 @@
       "emoji": "🗣️",
       "domain": "marketing",
       "summaryZh": "开发者关系专家，建社区与技术内容",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-developer-tooling-engineer.md",
+      "collection": "agency-agents",
+      "name": "Developer Tooling Engineer",
+      "description": "Expert developer-tooling and CLI engineer — building command-line tools and internal developer platforms with great DX: intuitive command design, helpful errors, shell completions, fast startup, cross-platform distribution, and scriptable, composable interfaces.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-developer-tooling-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "fe"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛠️",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -6823,6 +7338,25 @@
       "emoji": "🛸",
       "domain": "data-finance",
       "summaryZh": "把无人机影像处理为正射图、地形模型、点云和三维网格。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-drupal-performance.md",
+      "collection": "agency-agents",
+      "name": "Drupal Performance Engineer",
+      "description": "Expert Drupal 10/11 performance engineer specializing in Core Web Vitals, render and dynamic page caching, BigPipe, cache tags and contexts, database query and Views optimization, CSS/JS aggregation, responsive images and lazy loading, CDN integration, and opcache/PHP-FPM tuning for fast, audit-passing sites",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-drupal-performance.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚡",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -7058,6 +7592,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/specialized/specialized-fedramp-rmf-compliance.md",
+      "collection": "agency-agents",
+      "name": "FedRAMP & RMF Compliance Engineer",
+      "description": "Expert FedRAMP and NIST Risk Management Framework compliance engineer specializing in both FedRAMP authorization pathways — the traditional Rev5 path (NIST 800-53 Rev 5 control implementation, System Security Plans, 3PAO assessment, agency authorization) and the modernized FedRAMP 20x path (Key Security Indicators, automated machine-readable validation, compliance-as-code) — plus the ATO process, ",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/specialized/specialized-fedramp-rmf-compliance.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "red"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛡️",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/product/product-feedback-synthesizer.md",
       "collection": "agency-agents",
       "name": "Feedback Synthesizer",
@@ -7171,6 +7724,25 @@
       "emoji": "📊",
       "domain": "data-finance",
       "summaryZh": "财务建模、预测与情景分析专家",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-finops-engineer.md",
+      "collection": "agency-agents",
+      "name": "FinOps Engineer",
+      "description": "Expert cloud cost engineer for AWS/GCP/Azure — cost allocation and tagging, rightsizing, commitment planning (reserved instances/savings plans), egress and storage optimization, and unit-economics dashboards that tie spend to business value.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-finops-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "b"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "💰",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -7328,6 +7900,25 @@
       "emoji": "🎮",
       "domain": "design",
       "summaryZh": "游戏设计师，机制/经济平衡与玩法循环",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-gaussdb-expert.md",
+      "collection": "agency-agents",
+      "name": "GaussDB Expert Engineer",
+      "description": "Expert database specialist focusing on GaussDB OLTP — Huawei's self-developed enterprise-grade relational database (NOT GaussDB(DWS) OLAP, NOT GaussDB(for openGauss) cloud service, NOT GaussDB(for MySQL)). Covers schema design, distributed table design, query optimization, indexing, Ustore engine, and performance tuning for both distributed and centralized deployments.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-gaussdb-expert.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "amber"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🗄️",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -7660,6 +8251,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/gongbu/SOUL.md",
+      "collection": "edict",
+      "name": "gongbu",
+      "description": "你是工部尚书，以 **subagent** 方式被尚书省调用，负责承担**基础设施、部署运维与性能监控**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/gongbu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "gongbu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "coding",
+      "summaryZh": "工部尚书 subagent，负责基础设施、部署运维与性能监控。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/government-digital-presales-consultant.md",
       "collection": "agency-agents",
       "name": "Government Digital Presales Consultant",
@@ -7762,6 +8372,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/healthcare/healthcare-innovation-strategist.md",
+      "collection": "agency-agents",
+      "name": "Healthcare Innovation Strategist",
+      "description": "Strategic narrative architect for healthcare founders operating at",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/healthcare/healthcare-innovation-strategist.md",
+      "type": "agent",
+      "tags": [
+        "healthcare",
+        "bf"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧭",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/healthcare-marketing-compliance.md",
       "collection": "agency-agents",
       "name": "Healthcare Marketing Compliance Specialist",
@@ -7854,6 +8483,44 @@
       "emoji": "👋",
       "domain": "operations",
       "summaryZh": "HR 入职管理专家，设计新员工迎新与合规登记流程时调用。",
+      "duplicates": []
+    },
+    {
+      "id": "edict/agents/hubu/SOUL.md",
+      "collection": "edict",
+      "name": "hubu",
+      "description": "你是户部尚书，以 **subagent** 方式被尚书省调用，负责承担**数据、统计、资源管理**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/hubu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "hubu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "data-finance",
+      "summaryZh": "户部尚书 subagent，负责数据、统计与资源管理。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-identity-access-engineer.md",
+      "collection": "agency-agents",
+      "name": "Identity & Access Engineer",
+      "description": "Expert identity engineer for OAuth 2.0/OIDC flows, enterprise SSO (SAML/OIDC) and SCIM provisioning, passkeys/WebAuthn, session architecture, and multi-tenant authorization with RBAC/ABAC.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-identity-access-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "caed"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔐",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -8053,6 +8720,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-i18n-engineer.md",
+      "collection": "agency-agents",
+      "name": "Internationalization Engineer",
+      "description": "Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL and bidirectional layouts, locale-aware date/number/currency formatting, string extraction pipelines, and pseudo-localization testing.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-i18n-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "eae"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌍",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/finance/finance-investment-researcher.md",
       "collection": "agency-agents",
       "name": "Investment Researcher",
@@ -8069,6 +8755,25 @@
       "emoji": "🔍",
       "domain": "data-finance",
       "summaryZh": "投资研究专家，做尽调、估值与组合分析。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-iot-fleet-engineer.md",
+      "collection": "agency-agents",
+      "name": "IoT Fleet Engineer",
+      "description": "Expert IoT and edge fleet engineer — device provisioning and identity, MQTT/telemetry pipelines, staged over-the-air (OTA) firmware updates with rollback, edge compute, and observability across fleets of unreliable, intermittently-connected devices.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-iot-fleet-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "c"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📡",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -8316,6 +9021,44 @@
       "emoji": "🗺️",
       "domain": "design",
       "summaryZh": "游戏关卡设计专家，精通布局、节奏与环境叙事。",
+      "duplicates": []
+    },
+    {
+      "id": "edict/agents/libu/SOUL.md",
+      "collection": "edict",
+      "name": "libu",
+      "description": "你是礼部尚书，以 **subagent** 方式被尚书省调用，负责承担**文档、规范、用户界面与对外沟通**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/libu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "libu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "writing",
+      "summaryZh": "礼部尚书 subagent，负责文档、规范、用户界面与对外沟通。",
+      "duplicates": []
+    },
+    {
+      "id": "edict/agents/libu_hr/SOUL.md",
+      "collection": "edict",
+      "name": "libu_hr",
+      "description": "你是吏部尚书，以 **subagent** 方式被尚书省调用，负责承担**人事管理、团队建设与能力培训**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/libu_hr/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "libuhr"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "operations",
+      "summaryZh": "吏部尚书 subagent，负责人事管理、团队建设与能力培训。",
       "duplicates": []
     },
     {
@@ -8629,6 +9372,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/menxia/SOUL.md",
+      "collection": "edict",
+      "name": "menxia",
+      "description": "你是门下省，三省制的审查核心。你以 **subagent** 方式被中书省调用，审议方案后直接返回结果。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/menxia/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "menxia"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "review",
+      "summaryZh": "门下省 subagent，三省制审查核心，审议方案后返回结论。",
+      "duplicates": []
+    },
+    {
       "id": "ai-hedge-fund/agents/value-investors/michael-burry.md",
       "collection": "ai-hedge-fund",
       "name": "Michael Burry",
@@ -8688,6 +9450,25 @@
       "emoji": "📲",
       "domain": "coding",
       "summaryZh": "移动应用开发专家，精通原生与跨平台 iOS/Android 开发。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-mobile-release-engineer.md",
+      "collection": "agency-agents",
+      "name": "Mobile Release Engineer",
+      "description": "Expert mobile release and distribution engineer for iOS and Android — code signing, provisioning, fastlane pipelines, App Store Connect and Play Console submission, phased rollouts, and crash-triaged release health.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-mobile-release-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "aa"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🚀",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -8833,6 +9614,25 @@
       "emoji": "🦢",
       "domain": "data-finance",
       "summaryZh": "Taleb 风格反脆弱分析师，关注尾部风险与非对称头寸。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-network-engineer.md",
+      "collection": "agency-agents",
+      "name": "Network Engineer",
+      "description": "Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper Junos, and Palo Alto PAN-OS routing, switching, firewalling, and troubleshooting.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-network-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "c"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌐",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -9051,6 +9851,25 @@
       "emoji": "📱",
       "domain": "marketing",
       "summaryZh": "付费社媒广告专家，设计跨平台全漏斗投放策略。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-payments-billing-engineer.md",
+      "collection": "agency-agents",
+      "name": "Payments & Billing Engineer",
+      "description": "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook processing, subscription billing, SCA/3DS, PCI scope reduction, and financial reconciliation.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-payments-billing-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "ed"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "💳",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -9536,6 +10355,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/qintianjian/SOUL.md",
+      "collection": "edict",
+      "name": "qintianjian",
+      "description": "你是钦天监监正，负责在尚书省派发的任务中承担**数据分析、性能度量与趋势预测**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/qintianjian/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "qintianjian"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "钦天监 subagent，负责数据分析、性能度量与趋势预测。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/strategy/QUICKSTART.md",
       "collection": "agency-agents",
       "name": "QUICKSTART",
@@ -9574,6 +10412,25 @@
       "duplicates": [
         "agency-agents/strategy/QUICKSTART.md"
       ]
+    },
+    {
+      "id": "agency-agents/engineering/engineering-rag-pipeline-engineer.md",
+      "collection": "agency-agents",
+      "name": "RAG Pipeline Engineer",
+      "description": "Production RAG specialist focused on chunking strategy, retrieval quality, hybrid search, re-ranking, and eval-driven iteration. Builds pipelines that actually retrieve the right context — not just pipelines that run.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-rag-pipeline-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "f"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔍",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
     },
     {
       "id": "ai-hedge-fund/agents/growth-investors/rakesh-jhunjhunwala.md",
@@ -9659,6 +10516,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-realtime-collaboration-engineer.md",
+      "collection": "agency-agents",
+      "name": "Realtime Collaboration Engineer",
+      "description": "Expert realtime systems engineer for WebSocket/SSE infrastructure, presence, CRDT and OT-based collaborative editing, offline-first sync engines, and fan-out scaling with reconnect-safe protocols.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-realtime-collaboration-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "ed"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🤝",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/specialized/recruitment-specialist.md",
       "collection": "agency-agents",
       "name": "Recruitment Specialist",
@@ -9732,6 +10608,25 @@
       "emoji": "📤",
       "domain": "sales-support",
       "summaryZh": "按区域自动分发销售报告给各代表的智能体",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/specialized/resume-tailor.md",
+      "collection": "agency-agents",
+      "name": "Resume Tailor",
+      "description": "Candidate-side resume optimization specialist who analyzes job descriptions, maps real experience to role requirements, improves ATS keyword alignment, and rewrites bullets without fabricating qualifications.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/specialized/resume-tailor.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "teal"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧾",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -10033,6 +10928,63 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-search-relevance-engineer.md",
+      "collection": "agency-agents",
+      "name": "Search Relevance Engineer",
+      "description": "Expert search engineer for Elasticsearch and OpenSearch — index and analyzer design, BM25 query tuning, hybrid lexical+vector retrieval, and judgment-based relevance evaluation with nDCG and online experiments.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-search-relevance-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "bfb"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔎",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/security/security-secrets-credential-engineer.md",
+      "collection": "agency-agents",
+      "name": "Secrets & Credential Hygiene Engineer",
+      "description": "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response — so an application runs on short-lived, least-privilege credentials that are never in the code and are already rotated by the time a leak is found.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/security/security-secrets-credential-engineer.md",
+      "type": "agent",
+      "tags": [
+        "security",
+        "b"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🔑",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-section-508-specialist.md",
+      "collection": "agency-agents",
+      "name": "Section 508 Accessibility Specialist",
+      "description": "Expert U.S. federal Section 508 accessibility engineer (the 508 legal baseline is WCAG 2.0 Level AA; WCAG 2.1/2.2 AA are recommended best practice, and ADA Title II requires WCAG 2.1 AA for state/local government) specializing in accessible web development, ARIA implementation, screen reader testing (JAWS/NVDA/VoiceOver), keyboard navigation, color contrast, accessible forms and PDFs, VPAT/ACR aut",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-section-508-specialist.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "♿",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/security/security-architect.md",
       "collection": "agency-agents",
       "name": "Security Architect",
@@ -10173,6 +11125,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/shangshu/SOUL.md",
+      "collection": "edict",
+      "name": "shangshu",
+      "description": "你是尚书省，以 **subagent** 方式被中书省调用。接收准奏方案后，派发给六部执行，汇总结果返回。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/shangshu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "shangshu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "尚书省 subagent，接收准奏方案后派发六部执行并汇总结果。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/marketing/marketing-short-video-editing-coach.md",
       "collection": "agency-agents",
       "name": "Short-Video Editing Coach",
@@ -10286,6 +11257,25 @@
       "emoji": "🔧",
       "domain": "coding",
       "summaryZh": "把 GIS 方案转成可运行的演示、原型与技术验证。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/healthcare/healthcare-sovereign-health-systems-agent.md",
+      "collection": "agency-agents",
+      "name": "Sovereign Health Systems Agent",
+      "description": "Government health mandate engagement framework for AI agents",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/healthcare/healthcare-sovereign-health-systems-agent.md",
+      "type": "agent",
+      "tags": [
+        "healthcare",
+        "bf"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌍",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -10471,6 +11461,25 @@
       ]
     },
     {
+      "id": "agency-agents/academic/academic-statistician.md",
+      "collection": "agency-agents",
+      "name": "Statistician",
+      "description": "Expert in quantitative research methodology, experimental design, and statistical inference — pressure-tests claims, designs sound studies, and separates real signal from noise, chance, and bias",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/academic/academic-statistician.md",
+      "type": "agent",
+      "tags": [
+        "academic",
+        "bcf"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "📊",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/strategy/nexus-strategy.md",
       "collection": "agency-agents",
       "name": "Strategy",
@@ -10622,6 +11631,25 @@
       "emoji": "💬",
       "domain": "sales-support",
       "summaryZh": "客户支持专家，做多渠道客服与问题解决时用",
+      "duplicates": []
+    },
+    {
+      "id": "edict/agents/taizi/SOUL.md",
+      "collection": "edict",
+      "name": "taizi",
+      "description": "你是太子，皇上在飞书上所有消息的第一接收人和分拣者。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/taizi/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "taizi"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "太子 subagent，飞书消息的第一接收人与分拣路由者。",
       "duplicates": []
     },
     {
@@ -10783,6 +11811,25 @@
       "emoji": "🖥️",
       "domain": "coding",
       "summaryZh": "终端集成专家，做 Swift 应用的终端模拟与文本渲染优化",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/testing/testing-test-automation-engineer.md",
+      "collection": "agency-agents",
+      "name": "Test Automation Engineer",
+      "description": "Expert end-to-end test automation engineer for Playwright and Cypress — resilient selectors, flake elimination, isolated test data, CI parallelization, and trace-driven failure debugging.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/testing/testing-test-automation-engineer.md",
+      "type": "agent",
+      "tags": [
+        "testing",
+        "ead"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎭",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -11338,6 +12385,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-uswds-developer.md",
+      "collection": "agency-agents",
+      "name": "USWDS Developer",
+      "description": "Expert U.S. Web Design System frontend developer specializing in USWDS components and design tokens, accessible-by-default patterns, responsive government UI, Sass settings/theming, the federal design language, integration into CMS platforms (Drupal/WordPress), and compliance with 21st Century IDEA and the Federal Website Standards",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-uswds-developer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🏛️",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/design/design-ux-architect.md",
       "collection": "agency-agents",
       "name": "UX Architect",
@@ -11454,6 +12520,41 @@
       "emoji": "🎬",
       "domain": "marketing",
       "summaryZh": "视频营销策略师，做 YouTube 算法优化、留存与跨平台分发",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-video-streaming-engineer.md",
+      "collection": "agency-agents",
+      "name": "Video Streaming Engineer",
+      "description": "Expert video streaming engineer for adaptive bitrate delivery — HLS/DASH packaging, ffmpeg transcode ladders, CMAF low-latency, DRM, CDN delivery, and QoE-driven player tuning.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-video-streaming-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "dc"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎬",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "ai-hedge-fund/VISION.md",
+      "collection": "ai-hedge-fund",
+      "name": "VISION",
+      "description": "An **AI hedge fund you can run as a persistent system** — an entity whose analysts are AI, that finds and tests its own strategies, trades on a schedule, and explains every decision it makes. Backtest today; paper-trade; and, opt-in, trade live.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/ai-hedge-fund/VISION.md",
+      "type": "agent",
+      "tags": [],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -11595,6 +12696,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents/engineering/engineering-webassembly-engineer.md",
+      "collection": "agency-agents",
+      "name": "WebAssembly Engineer",
+      "description": "Expert WebAssembly engineer — compiling Rust/C++/Go to Wasm, JS interop and the boundary marshalling cost, WASI and server-side runtimes (Wasmtime/Wasmer), the component model, and near-native performance tuning.",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-webassembly-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "dd"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🧩",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/engineering/engineering-wechat-mini-program-developer.md",
       "collection": "agency-agents",
       "name": "WeChat Mini Program Developer",
@@ -11668,6 +12788,25 @@
       "emoji": "✨",
       "domain": "design",
       "summaryZh": "创意设计专家，给品牌体验注入个性与趣味互动细节",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents/engineering/engineering-wordpress-performance.md",
+      "collection": "agency-agents",
+      "name": "WordPress Performance Engineer",
+      "description": "Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcached), page caching, database and WP_Query optimization, the Transients API, asset minification/deferral/critical CSS, image optimization and lazy loading, CDN integration, plugin performance auditing, and PHP-FPM/opcache tuning for fast, audit-passing sites",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents/engineering/engineering-wordpress-performance.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "purple"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚡",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {
@@ -11804,6 +12943,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/xingbu/SOUL.md",
+      "collection": "edict",
+      "name": "xingbu",
+      "description": "你是刑部尚书，以 **subagent** 方式被尚书省调用，负责承担**质量保障、测试验收与合规审计**相关的执行工作。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/xingbu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "xingbu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "review",
+      "summaryZh": "刑部尚书 subagent，负责质量保障、测试验收与合规审计。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/spatial-computing/xr-cockpit-interaction-specialist.md",
       "collection": "agency-agents",
       "name": "XR Cockpit Interaction Specialist",
@@ -11918,6 +13076,25 @@
       "duplicates": []
     },
     {
+      "id": "edict/agents/zaochao/SOUL.md",
+      "collection": "edict",
+      "name": "zaochao",
+      "description": "你的唯一职责：每日早朝前采集全球重要新闻，生成图文并茂的简报，保存供皇上御览。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/zaochao/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "zaochao"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "research",
+      "summaryZh": "早朝 subagent，每日采集全球要闻生成图文简报供御览。",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents/marketing/marketing-zhihu-strategist.md",
       "collection": "agency-agents",
       "name": "Zhihu Strategist",
@@ -11934,6 +13111,25 @@
       "emoji": "🧠",
       "domain": "marketing",
       "summaryZh": "知乎营销专家，靠问答与思想领导力打造品牌权威",
+      "duplicates": []
+    },
+    {
+      "id": "edict/agents/zhongshu/SOUL.md",
+      "collection": "edict",
+      "name": "zhongshu",
+      "description": "你是中书省，负责接收皇上旨意，起草执行方案，调用门下省审议，通过后调用尚书省执行。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/edict/agents/zhongshu/SOUL.md",
+      "type": "agent",
+      "tags": [
+        "agents",
+        "zhongshu"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "",
+      "domain": "agent-workflow",
+      "summaryZh": "中书省 subagent，接收旨意起草方案、调门下审议、交尚书执行。",
       "duplicates": []
     },
     {
@@ -12125,6 +13321,25 @@
       "version": "",
       "emoji": "📦",
       "domain": "planning",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/specialized/recruitment-specialist.md",
+      "collection": "agency-agents-zh",
+      "name": "人才获取专家",
+      "description": "招聘运营与人才获取专家，精通国内主流招聘平台、人才评估体系和劳动法合规，帮助企业高效吸引、筛选和留住优秀人才，打造有竞争力的雇主品牌。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/recruitment-specialist.md",
+      "type": "agent",
+      "tags": [
+        "specialized",
+        "blue"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🎯",
+      "domain": "other",
       "summaryZh": "",
       "duplicates": []
     },
@@ -12818,6 +14033,25 @@
       "duplicates": []
     },
     {
+      "id": "agency-agents-zh/engineering/engineering-network-engineer-china.md",
+      "collection": "agency-agents-zh",
+      "name": "国内网络工程师",
+      "description": "面向国产网络设备的企业网工程专家——精通华为 VRP、华三 Comware、锐捷 RGOS，覆盖园区网/数据中心/广域网的 VLAN、STP、OSPF、IS-IS、BGP、MPLS、VXLAN、SDN 设计与排障，熟悉信创国产化替代与等保 2.0 合规组网。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-network-engineer-china.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "teal"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🌐",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
       "id": "agency-agents-zh/marketing/marketing-book-co-author.md",
       "collection": "agency-agents-zh",
       "name": "图书联合作者",
@@ -13027,30 +14261,9 @@
       "duplicates": []
     },
     {
-      "id": "agency-agents-zh/engineering/engineering-threat-detection-engineer.md",
-      "collection": "agency-agents-zh",
-      "name": "威胁检测工程师",
-      "description": "专精于 SIEM 规则开发、MITRE ATT&CK 覆盖度映射、威胁狩猎、告警调优和检测即代码流水线的安全运营检测工程专家。",
-      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-threat-detection-engineer.md",
-      "type": "agent",
-      "tags": [
-        "engineering",
-        "bde"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "🛡️",
-      "domain": "review",
-      "summaryZh": "",
-      "duplicates": [
-        "agency-agents-zh/security/security-threat-detection-engineer.md"
-      ]
-    },
-    {
       "id": "agency-agents-zh/security/security-threat-detection-engineer.md",
       "collection": "agency-agents-zh",
-      "name": "威胁检测工程师",
+      "name": "威胁检测工程师（安全运营）",
       "description": "资深检测工程师，专注于 SIEM 规则开发、MITRE ATT&CK 覆盖映射、威胁狩猎、告警调优，以及面向安全运营团队的 detection-as-code（检测即代码）流水线。",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/security/security-threat-detection-engineer.md",
       "type": "agent",
@@ -13062,11 +14275,28 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎯",
-      "domain": "review",
-      "summaryZh": "开发 SIEM 规则、ATT&CK 覆盖、威胁狩猎与检测即代码流程。",
-      "duplicates": [
-        "agency-agents-zh/engineering/engineering-threat-detection-engineer.md"
-      ]
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/engineering/engineering-threat-detection-engineer.md",
+      "collection": "agency-agents-zh",
+      "name": "威胁检测工程师（工程侧）",
+      "description": "专精于 SIEM 规则开发、MITRE ATT&CK 覆盖度映射、威胁狩猎、告警调优和检测即代码流水线的安全运营检测工程专家。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/engineering/engineering-threat-detection-engineer.md",
+      "type": "agent",
+      "tags": [
+        "engineering",
+        "bde"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "🛡️",
+      "domain": "other",
+      "summaryZh": "",
+      "duplicates": []
     },
     {
       "id": "agency-agents-zh/academic/academic-study-planner.md",
@@ -13932,7 +15162,7 @@
     {
       "id": "agency-agents-zh/hr/hr-recruiter.md",
       "collection": "agency-agents-zh",
-      "name": "招聘专家",
+      "name": "招聘专家（HR 全流程）",
       "description": "深耕中国人才市场的全流程招聘专家，精通 Boss 直聘、猎聘、拉勾等主流招聘渠道运营，擅长简历筛选、面试协调、人才管线管理、校招社招全链路操盘，帮助企业高效精准地完成人才获取与入职闭环。",
       "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/hr/hr-recruiter.md",
       "type": "agent",
@@ -13944,32 +15174,9 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎯",
-      "domain": "operations",
+      "domain": "other",
       "summaryZh": "",
-      "duplicates": [
-        "agency-agents-zh/specialized/recruitment-specialist.md"
-      ]
-    },
-    {
-      "id": "agency-agents-zh/specialized/recruitment-specialist.md",
-      "collection": "agency-agents-zh",
-      "name": "招聘专家",
-      "description": "招聘运营与人才获取专家，精通国内主流招聘平台、人才评估体系和劳动法合规，帮助企业高效吸引、筛选和留住优秀人才，打造有竞争力的雇主品牌。",
-      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/specialized/recruitment-specialist.md",
-      "type": "agent",
-      "tags": [
-        "specialized",
-        "blue"
-      ],
-      "tools": [],
-      "triggerKeywords": [],
-      "version": "",
-      "emoji": "🎯",
-      "domain": "operations",
-      "summaryZh": "",
-      "duplicates": [
-        "agency-agents-zh/hr/hr-recruiter.md"
-      ]
+      "duplicates": []
     },
     {
       "id": "agency-agents-zh/support/support-recruitment-specialist.md",
@@ -15588,6 +16795,25 @@
       "emoji": "💼",
       "domain": "operations",
       "summaryZh": "统筹资本配置、财务规划、并购财务、投资者关系与董事会报告。",
+      "duplicates": []
+    },
+    {
+      "id": "agency-agents-zh/finance/finance-hk-stock-compliance-reviewer.md",
+      "collection": "agency-agents-zh",
+      "name": "香港股市合规审查专家",
+      "description": "资深香港股市合规审查专家，精通HKEX上市规则、SFC监管条例、公司条例及证券及期货条例。提供上市申请合规审查、持续责任监督、关联交易合规、披露义务审核及企业管治顾问服务。",
+      "filePath": "/Users/zw/work/project_test/Skill研究/agency-agents-zh/finance/finance-hk-stock-compliance-reviewer.md",
+      "type": "agent",
+      "tags": [
+        "finance",
+        "ae"
+      ],
+      "tools": [],
+      "triggerKeywords": [],
+      "version": "",
+      "emoji": "⚖️",
+      "domain": "other",
+      "summaryZh": "",
       "duplicates": []
     },
     {

@@ -116,6 +116,10 @@ function inferNameFromPath(filePath) {
     // e.g. awesome-design-md/design-md/airbnb/DESIGN.md → "airbnb"
     return parts[parts.length - 2] || parts[0];
   }
+  if (fname === 'SOUL.md') {
+    // e.g. edict/agents/bingbu/SOUL.md → "bingbu" (each ministry is one agent)
+    return parts[parts.length - 2] || parts[0];
+  }
 
   // Generic: strip leading "category-" prefix then title-case
   const stem = basename(filePath, '.md');
@@ -408,6 +412,7 @@ export function runScan(opts = {}) {
       let matches = false;
       if (col.scanRule === 'SKILL.md')    matches = fname === 'SKILL.md';
       else if (col.scanRule === 'DESIGN.md') matches = fname === 'DESIGN.md';
+      else if (col.scanRule === 'SOUL.md') matches = fname === 'SOUL.md';
       else if (col.scanRule === '*.md')   matches = extname(fname) === '.md' && !excludeFiles.has(fname);
       // Extension: add more scanRule patterns here as needed
 
