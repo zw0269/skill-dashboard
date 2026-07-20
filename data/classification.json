@@ -179,8 +179,8 @@
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/catalyst-calendar/SKILL.md": {
       "domain": "data-finance",
-      "hash": "a03d6cf21077883836afe91b0076c032",
-      "summaryZh": "构建覆盖股票池的催化剂日历：财报、会议、监管事件"
+      "hash": "6e36a9ad6234100010094270258d7708",
+      "summaryZh": "维护覆盖股票池的催化剂日历（财报、发布会、监管等），提前布局事件。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/earnings-analysis/SKILL.md": {
       "domain": "data-finance",
@@ -189,13 +189,13 @@
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/earnings-preview/SKILL.md": {
       "domain": "data-finance",
-      "hash": "b3b69caa3f7b421cff9386149e539c13",
-      "summaryZh": "财报前用估值模型与多情景框架做前瞻定位分析"
+      "hash": "3641da7c98d336317616ff2f5d235da9",
+      "summaryZh": "财报前分析：搭估值模型、设牛熊情景、列关注指标，为季报做准备。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/idea-generation/SKILL.md": {
       "domain": "data-finance",
-      "hash": "ee4571998dd94befb9c01ef752a6bb01",
-      "summaryZh": "系统化选股与投资点子挖掘，结合量化筛选与主题研究"
+      "hash": "696528103e03c1c0dea614c33621d036",
+      "summaryZh": "系统化选股与投资想法挖掘，跑量化筛选和主题研究找多空标的。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/initiating-coverage/SKILL.md": {
       "domain": "data-finance",
@@ -204,23 +204,23 @@
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/model-update/SKILL.md": {
       "domain": "data-finance",
-      "hash": "a24645adbe89a470a71cf70c1f7b5ef4",
-      "summaryZh": "用新财报与指引更新财务模型并重算估值标记重大变化"
+      "hash": "a4759873e70fc0d8b42292c43d7157e4",
+      "summaryZh": "用新数据（财报、指引、宏观）更新财务模型并重算估值。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/morning-note/SKILL.md": {
       "domain": "data-finance",
-      "hash": "882a4f1289b602bea71b77fbc90164a8",
-      "summaryZh": "为7点晨会撰写简明晨报，汇总隔夜动态与交易点子"
+      "hash": "d5437172149d1b90ee441480d75fff1f",
+      "summaryZh": "起草晨会纪要，汇总隔夜动态、交易想法和覆盖股要闻。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md": {
       "domain": "data-finance",
-      "hash": "de286492f4dae91a9f12bacdeaa58000",
-      "summaryZh": "撰写行业与板块全景报告，覆盖竞争格局与主题趋势"
+      "hash": "0489bfae246a5ac2d64b0f74bcd2f3a4",
+      "summaryZh": "撰写行业/板块全景研究报告，覆盖格局、竞争与主题趋势。"
     },
     "financial-services/plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md": {
       "domain": "data-finance",
-      "hash": "6ddb4300f24c48cf66817f17566f4fa3",
-      "summaryZh": "维护与更新组合持仓的投资逻辑，跟踪催化剂与里程碑"
+      "hash": "4c26f79ee66a34f122b22bcc64921096",
+      "summaryZh": "维护并更新持仓与观察标的的投资逻辑，跟踪催化剂与里程碑。"
     },
     "superpowers/executing-plans/SKILL.md": {
       "domain": "agent-workflow",
@@ -289,53 +289,53 @@
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/ai-readiness/SKILL.md": {
       "domain": "data-finance",
-      "hash": "aa458b5c8a50a9c3b52ebebd6233253f",
-      "summaryZh": "扫描 PE 投资组合，排名 AI 部署机会"
+      "hash": "9f78d56348d2b5008894e7fb0c464cec",
+      "summaryZh": "扫描投资组合各公司的高杠杆 AI 机会，排出运营伙伴的落地优先级。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/dd-checklist/SKILL.md": {
       "domain": "data-finance",
-      "hash": "0268c9d5fc7c9b653a3330465f2efad1",
-      "summaryZh": "生成并跟踪并购尽职调查清单"
+      "hash": "1f80d1f85a7925cbfc7cf842713789d9",
+      "summaryZh": "按目标公司行业与交易类型生成并跟踪尽调清单，含红旗升级。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/dd-meeting-prep/SKILL.md": {
       "domain": "data-finance",
-      "hash": "917ac90023b74f2fd89955f117573022",
-      "summaryZh": "准备尽调会议问题清单与红旗排查"
+      "hash": "44b43101024a31bd8322377cd3de49fe",
+      "summaryZh": "为尽调会议（管理层、专家、客户访谈）准备针对性问题清单与红旗。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/deal-screening/SKILL.md": {
       "domain": "data-finance",
-      "hash": "1a212a3f88b83532bb2933a93ea277ff",
-      "summaryZh": "按基金标准快速筛选并购项目并出备忘录"
+      "hash": "2a5082ace15d1868ac87c28a0bc40cd8",
+      "summaryZh": "用基金投资标准快速筛选入口交易（CIM/teaser），输出一页筛选备忘。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/deal-sourcing/SKILL.md": {
-      "domain": "data-finance",
-      "hash": "b012e6292bdc9b45be723e7a8c039924",
-      "summaryZh": "PE 项目寻源，查 CRM 并起草创始人触达邮件"
+      "domain": "sales-support",
+      "hash": "99bef194aa6cccd228540da7b87587b5",
+      "summaryZh": "PE 找项目：发掘目标公司、查 CRM 关系并起草个性化创始人触达邮件。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/ic-memo/SKILL.md": {
       "domain": "data-finance",
-      "hash": "a172df5d88eee34a547b243ec21cb4ef",
-      "summaryZh": "撰写投资委员会审批备忘录"
+      "hash": "df8386c4edd013d54d9a78c92fedcf8e",
+      "summaryZh": "起草结构化投委会（IC）备忘，综合尽调、财务与交易条款。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md": {
       "domain": "data-finance",
-      "hash": "ebfea3387b9452e3768f6b621263be0d",
-      "summaryZh": "跟踪投组公司业绩，提取 KPI 并预警偏差"
+      "hash": "0b339f6db0328b6743a4210c96b3e5f8",
+      "summaryZh": "跟踪组合公司经营 vs 预算，提取 KPI、标异常并出汇总看板。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/returns-analysis/SKILL.md": {
       "domain": "data-finance",
-      "hash": "6f8c318ac7d7e1520e705a20beaf2090",
-      "summaryZh": "构建 IRR/MOIC 回报敏感度分析表"
+      "hash": "1ac5aa93573458631b92d7bbb123c36f",
+      "summaryZh": "为 PE 交易搭 IRR/MOIC 敏感性表，跨入场/杠杆/退出等情景测算回报。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/unit-economics/SKILL.md": {
       "domain": "data-finance",
-      "hash": "a6ce509eebcaaa51bd1ddbf9b7afb967",
-      "summaryZh": "分析 SaaS 标的单位经济，如 LTV/CAC、留存"
+      "hash": "55e8b9069acf68cc5bb8cec2cd1e0a7b",
+      "summaryZh": "分析 PE 标的单位经济（LTV/CAC、净留存、回本期等），适合 SaaS/订阅。"
     },
     "financial-services/plugins/vertical-plugins/private-equity/skills/value-creation-plan/SKILL.md": {
       "domain": "data-finance",
-      "hash": "cc53f2867503dd467a720055b06e24ae",
-      "summaryZh": "制定并购后价值创造与百日计划"
+      "hash": "169c2f100bb383157e80d4d64f27ced4",
+      "summaryZh": "搭并购后价值创造计划，把收入/成本/运营杠杆映射到 EBITDA 桥。"
     },
     "pua/skills/pro/SKILL.md": {
       "domain": "agent-workflow",
@@ -534,33 +534,33 @@
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/client-report/SKILL.md": {
       "domain": "data-finance",
-      "hash": "ffaf7b40f554298f60e0b6586bbbf21d",
-      "summaryZh": "生成面向客户的投组业绩报告"
+      "hash": "1297fadbe0e7b3c1c5d1670742d30a80",
+      "summaryZh": "生成面向客户的业绩报告（收益、配置、市场点评），适合季度/年度分发。"
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/client-review/SKILL.md": {
-      "domain": "sales-support",
-      "hash": "a1139abfb640dfe49400b4552819992a",
-      "summaryZh": "准备客户评审会议的业绩摘要与谈话要点"
+      "domain": "data-finance",
+      "hash": "d61b67cf0c38d531908d95f6a4bb752c",
+      "summaryZh": "为客户回顾会准备业绩摘要、配置分析、谈话要点与待办。"
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/financial-plan/SKILL.md": {
       "domain": "data-finance",
-      "hash": "0d00ef8ac62de22a6c2db9a3c0902121",
-      "summaryZh": "构建涵盖退休、教育、遗产的综合财务规划"
+      "hash": "ab66f9b60fa9494932475f76ba636480",
+      "summaryZh": "搭建或更新综合理财规划（退休、教育金、遗产、现金流）。"
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/investment-proposal/SKILL.md": {
       "domain": "sales-support",
-      "hash": "8b573331bfdbb1131b847d997385e886",
-      "summaryZh": "为潜在客户制作投资方案与提案"
+      "hash": "1de14be1a4ab5114e65be26eece09f3c",
+      "summaryZh": "为潜在客户做投资建议书，讲方法、配置、预期与费率，用于新客户提案。"
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/portfolio-rebalance/SKILL.md": {
       "domain": "data-finance",
-      "hash": "5ea693e29f73e0ca2fc0f8af38c581dc",
-      "summaryZh": "分析配置漂移并生成再平衡交易建议"
+      "hash": "deb5fd418dda084406a8de47f4fca5b8",
+      "summaryZh": "分析组合配置漂移并生成再平衡交易建议，兼顾税务与洗售规则。"
     },
     "financial-services/plugins/vertical-plugins/wealth-management/skills/tax-loss-harvesting/SKILL.md": {
       "domain": "data-finance",
-      "hash": "ac1555fe69f370bf00fe333899492f99",
-      "summaryZh": "识别税损收割机会并跟踪洗售窗口"
+      "hash": "17338cb547b57d7666f0fa3114587c53",
+      "summaryZh": "在应税账户里找税务亏损收割机会，建议替代标的并跟踪洗售窗口。"
     },
     "superpowers/writing-plans/SKILL.md": {
       "domain": "agent-workflow",
@@ -769,8 +769,8 @@
     },
     "agency-agents/strategy/EXECUTIVE-BRIEF.md": {
       "domain": "agent-workflow",
-      "hash": "82cc6533d82444ef4fc498130a1cdab5",
-      "summaryZh": "介绍NEXUS如何协调多部门AI智能体网络的纲要。"
+      "hash": "301c26d1d3c175bbd9d46eec74ea1790",
+      "summaryZh": "Agency 总纲：说明各专业智能体如何协同分工，避免冲突与重复。"
     },
     "agency-agents-zh/strategy/EXECUTIVE-BRIEF.md": {
       "domain": "agent-workflow",
@@ -2174,8 +2174,8 @@
     },
     "agency-agents-zh/engineering/engineering-threat-detection-engineer.md": {
       "domain": "review",
-      "hash": "9090c77dc6e84ba8dda93a1d8a0e6157",
-      "summaryZh": ""
+      "hash": "4e5f509007d10c0cadb59b74579aa393",
+      "summaryZh": "安全运营检测工程专家，专精 SIEM 规则、ATT&CK 映射与检测即代码流水线。"
     },
     "agency-agents-zh/academic/academic-study-planner.md": {
       "domain": "education",
@@ -2379,13 +2379,13 @@
     },
     "agency-agents-zh/hr/hr-recruiter.md": {
       "domain": "operations",
-      "hash": "dacfe197d510770abedd19ca8287a3b7",
-      "summaryZh": ""
+      "hash": "689fcda2b4fe281d2ba18a59060b6dbb",
+      "summaryZh": "全流程招聘专家，精通 Boss/猎聘/拉勾渠道，操盘校招社招与入职闭环。"
     },
     "agency-agents-zh/specialized/recruitment-specialist.md": {
       "domain": "operations",
-      "hash": "c428624989279950a9b2c6959ddf20c6",
-      "summaryZh": ""
+      "hash": "a5844f38d27990347e33c02a1bad854b",
+      "summaryZh": "招聘运营与人才获取专家，精通国内招聘平台、评估体系与劳动法合规。"
     },
     "agency-agents-zh/support/support-recruitment-specialist.md": {
       "domain": "operations",
@@ -2543,9 +2543,9 @@
       "summaryZh": "评估外汇套息交易机会，结合即期、远期与利差波动率。"
     },
     "gstack/SKILL.md": {
-      "domain": "review",
-      "hash": "5666062ee83c0869460f2727c3f64a56",
-      "summaryZh": "无头浏览器做 QA 测试与站点验证，截图取证。"
+      "domain": "agent-workflow",
+      "hash": "bf9a4296b79a73a61301c20b9df0a6e2",
+      "summaryZh": "gstack 技能套件的路由入口，按需分发到具体子技能。"
     },
     "gstack/openclaw/skills/gstack-openclaw-ceo-review/SKILL.md": {
       "domain": "planning",
@@ -2609,13 +2609,13 @@
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/buyer-list/SKILL.md": {
       "domain": "data-finance",
-      "hash": "87404845017a4b2956c433ce3de9f7f7",
-      "summaryZh": "为卖方 M&A 构建潜在买家清单并排序外联优先级。"
+      "hash": "ac4021df5277df245c33c05476fd2c10",
+      "summaryZh": "为卖方并购搭建潜在收购方名单，评估契合度并排序触达优先级。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/cim-builder/SKILL.md": {
       "domain": "data-finance",
-      "hash": "cf7a543a1e0537a7545eaed0f63c118f",
-      "summaryZh": "为卖方并购起草保密信息备忘录（CIM）。"
+      "hash": "ce79a273dbe0ad0ec12820c124c5053e",
+      "summaryZh": "为卖方并购撰写保密信息备忘录（CIM），整理成投资人级文档。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/datapack-builder/SKILL.md": {
       "domain": "data-finance",
@@ -2624,8 +2624,8 @@
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/deal-tracker/SKILL.md": {
       "domain": "data-finance",
-      "hash": "7185eccd3f39e91f673f2de55cf94744",
-      "summaryZh": "跟踪多个在途交易的里程碑、截止与状态，管理交易管线。"
+      "hash": "2ca5c0e167a01078ba8458feac913af4",
+      "summaryZh": "跟踪多个在途并购项目的里程碑、截止日与待办，维护交易管线视图。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/strip-profile/SKILL.md": {
       "domain": "data-finance",
@@ -2634,8 +2634,8 @@
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/merger-model/SKILL.md": {
       "domain": "data-finance",
-      "hash": "bfe8c747a534d505ee5b3036b83b5324",
-      "summaryZh": "构建并购增厚/摊薄分析，建模备考 EPS 影响。"
+      "hash": "b25d40a1a0aef9d374284de531534bfe",
+      "summaryZh": "搭并购增厚/摊薄分析，测算备考 EPS、协同效应与购买价分摊。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/pitch-deck/SKILL.md": {
       "domain": "data-finance",
@@ -2644,13 +2644,13 @@
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/process-letter/SKILL.md": {
       "domain": "data-finance",
-      "hash": "2ee35dbe20a5572e92170b9b069aaeef",
-      "summaryZh": "为卖方并购起草流程函与竞标说明。"
+      "hash": "fe35a141aaac53db3e2ee6adc9d8740a",
+      "summaryZh": "起草卖方并购流程函与报价须知（IOI、最终报价程序等）。"
     },
     "financial-services/plugins/vertical-plugins/investment-banking/skills/teaser/SKILL.md": {
       "domain": "data-finance",
-      "hash": "ef2dde95b46af7b7eb704b446510760f",
-      "summaryZh": "为卖方并购起草匿名一页公司 teaser，签 NDA 前试探兴趣。"
+      "hash": "30528b5597eea41e659e655d550044b4",
+      "summaryZh": "起草匿名一页公司 teaser，在签 NDA 前试探买方兴趣。"
     },
     "custom-skills/karpathy-guideline-skills/SKILL.md": {
       "domain": "coding",
@@ -3389,8 +3389,8 @@
     },
     "skills/skills/engineering/prototype/SKILL.md": {
       "domain": "coding",
-      "hash": "27213ee061bddd18b0c59334476a5e2c",
-      "summaryZh": "搭建一次性原型，定型前验证设计或UI"
+      "hash": "46722bd5849c3766e08effaa2e4da268",
+      "summaryZh": "快速做一次性原型来验证设计或逻辑是否成立。"
     },
     "skills/skills/deprecated/qa/SKILL.md": {
       "domain": "review",
@@ -3449,18 +3449,18 @@
     },
     "skills/skills/in-progress/writing-beats/SKILL.md": {
       "domain": "writing",
-      "hash": "b1c4b3fcc74fa561119484dff7991202",
-      "summaryZh": "按节拍逐段组织文章成叙事，互动式选择"
+      "hash": "0f05a2260173893933c873beec290e62",
+      "summaryZh": "写作·打磨：把素材组织成一段段递进的节拍，用词先铺垫再展开。"
     },
     "skills/skills/in-progress/writing-fragments/SKILL.md": {
       "domain": "writing",
-      "hash": "415df1e419da49b5b1cf09eb3f1e5e36",
-      "summaryZh": "拷打挖掘写作碎片素材，攒成文章原料"
+      "hash": "cabeb0ce5c2c5c540b858cfece00ddeb",
+      "summaryZh": "写作·探索：先不搭结构，广挖原始片段素材。"
     },
     "skills/skills/in-progress/writing-shape/SKILL.md": {
       "domain": "writing",
-      "hash": "fd87c4e98cb904966b43e87cb1ae11bd",
-      "summaryZh": "把零散笔记对话式塑形成可发表文章"
+      "hash": "23f6af8092fd0a8de593b8dd5eedef3c",
+      "summaryZh": "写作·打磨：把素材逐段塑造成成文文章。"
     },
     "agency-agents-zh/engineering/engineering-mechanical-design-engineer.md": {
       "domain": "coding",
@@ -4144,8 +4144,8 @@
     },
     "agency-agents-zh/security/security-threat-detection-engineer.md": {
       "domain": "review",
-      "hash": "ce6fc9ee11ec9a7df99f744d14de4343",
-      "summaryZh": "开发 SIEM 规则、ATT&CK 覆盖、威胁狩猎与检测即代码流程。"
+      "hash": "155785ceb58c7be0bcd99ede106418cc",
+      "summaryZh": "检测工程师，做 SIEM 规则、ATT&CK 覆盖映射、威胁狩猎与告警调优。"
     },
     "agency-agents-zh/security/security-architect.md": {
       "domain": "review",
@@ -4239,8 +4239,8 @@
     },
     "skills/skills/engineering/ask-matt/SKILL.md": {
       "domain": "agent-workflow",
-      "summaryZh": "根据当前情境路由到合适的 Matt Pocock 技能或工作流。",
-      "hash": "d4e952097de0d27181583d9684d92538"
+      "hash": "1f356d204b3f6ccbabb197163badc6a9",
+      "summaryZh": "技能路由器，不确定该用仓库里哪个技能或流程时问它。"
     },
     "skills/skills/engineering/codebase-design/SKILL.md": {
       "domain": "coding",
@@ -4263,14 +4263,14 @@
       "hash": "4fc3ca547d67094f5271d7ca0d12a9d1"
     },
     "skills/skills/productivity/grilling/SKILL.md": {
-      "domain": "agent-workflow",
-      "summaryZh": "逐问压力测试计划或设计，直到关键决策达成共识。",
-      "hash": "663946c16de9285f030de83d733254cf"
+      "domain": "planning",
+      "hash": "386f335b0c3e9bece7e8abc0a2223ce6",
+      "summaryZh": "针对计划/决策/想法对你连环追问，想压测思路时用。"
     },
     "skills/skills/engineering/implement/SKILL.md": {
       "domain": "coding",
-      "summaryZh": "根据 PRD 或工单实现功能，并完成测试、评审与提交。",
-      "hash": "5f4818f35131d9d5ff0957272b8b07d7"
+      "hash": "76cc2c89b252bedff7ba962a46ca0135",
+      "summaryZh": "按规格或工单实现一块具体工作。"
     },
     "skills/skills/engineering/resolving-merge-conflicts/SKILL.md": {
       "domain": "coding",
@@ -4401,6 +4401,231 @@
       "domain": "agent-workflow",
       "hash": "44143da0f64bdc53a842ea5e4ee3d769",
       "summaryZh": "思想武器工作流：任务需多 skill 协作时提供标准化跨 skill 组合编排。"
+    },
+    "skills/skills/in-progress/batch-grill-me/SKILL.md": {
+      "domain": "planning",
+      "hash": "4f6ad0e22710d6b1fb559eed4800b323",
+      "summaryZh": "高强度批量追问式访谈，一轮轮把关键问题一次问透，用来压测想法。"
+    },
+    "skills/skills/in-progress/claude-handoff/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "d412fe4340f03849214c86bccc8b7304",
+      "summaryZh": "把当前对话交接给后台新智能体接手续跑，需换上下文时用。"
+    },
+    "skills/skills/engineering/code-review/SKILL.md": {
+      "domain": "review",
+      "hash": "95a7b43539b90c5d645cff1db06301c3",
+      "summaryZh": "从规范与需求两个维度审查指定基点以来的代码改动。"
+    },
+    "skills/skills/in-progress/loop-me/SKILL.md": {
+      "domain": "planning",
+      "hash": "e6ed86e0c44f0f7879ac4d7f861da023",
+      "summaryZh": "就你想搭的工作流反复追问规格，用来把需求问清楚。"
+    },
+    "skills/skills/engineering/research/SKILL.md": {
+      "domain": "research",
+      "hash": "2dff7d5f7aaa8ede0e11217f2bdc113b",
+      "summaryZh": "对照高可信一手资料做调研，并把结论写成仓库内 Markdown。"
+    },
+    "skills/skills/in-progress/setup-ts-deep-modules/SKILL.md": {
+      "domain": "coding",
+      "hash": "9060a2428e68567e1b4fccfdf7f95539",
+      "summaryZh": "给 TS 仓接入 dependency-cruiser，把每个包做成隐藏实现的深模块。"
+    },
+    "skills/skills/in-progress/to-questionnaire/SKILL.md": {
+      "domain": "planning",
+      "hash": "c4431562b549c48e5d7c25e24274a0b6",
+      "summaryZh": "把你答不全的决策转成问卷交给别人填。"
+    },
+    "skills/skills/engineering/to-spec/SKILL.md": {
+      "domain": "planning",
+      "hash": "e0b626200982e4a66ae296551ea117fa",
+      "summaryZh": "把当前对话综合成规格并发布到项目 issue 追踪器。"
+    },
+    "skills/skills/engineering/to-tickets/SKILL.md": {
+      "domain": "planning",
+      "hash": "5ad570cb2e36d6b83d819d4b419aa7f3",
+      "summaryZh": "把计划/规格/对话拆成带阻塞依赖的一颗颗工单。"
+    },
+    "skills/skills/engineering/wayfinder/SKILL.md": {
+      "domain": "planning",
+      "hash": "0f7f4a0eca1069fee9fc4cecb771111c",
+      "summaryZh": "把超出单次会话容量的大工作拆成决策工单地图，逐个攻克。"
+    },
+    "skills/skills/in-progress/wizard/SKILL.md": {
+      "domain": "coding",
+      "hash": "9f7d455e17716326c9675f2e4e90d925",
+      "summaryZh": "生成交互式 bash 向导，带人一步步走完手动配置流程。"
+    },
+    "agency-agents/security/security-ai-generated-code-auditor.md": {
+      "domain": "review",
+      "hash": "9530ab79cee7a85b1d72a3ac54f72fc2",
+      "summaryZh": "AI 生成代码安全审计员，揪硬编码密钥/越权/提示注入，驱动扫-修-复扫闭环。"
+    },
+    "agency-agents/engineering/engineering-api-platform-engineer.md": {
+      "domain": "coding",
+      "hash": "cbe2dbc3f5b2436cb1612a5efe5df7ca",
+      "summaryZh": "对外 API 平台工程师，做契约先行设计、版本与弃用策略、SDK 生成与网关。"
+    },
+    "agency-agents/healthcare/healthcare-clinical-evidence-agent.md": {
+      "domain": "research",
+      "hash": "91ef050ce03caf016940b3e6c89c9ee3",
+      "summaryZh": "临床证据标准与可信度框架，为医疗类 AI 提供循证依据规范。"
+    },
+    "agency-agents/specialized/specialized-codebase-archaeologist.md": {
+      "domain": "review",
+      "hash": "17236ffe603123490b004587e55f6655",
+      "summaryZh": "跨会话/跨工具漂移侦测，审计被多款 AI 编码工具改过的代码，找隐性错配与死代码。"
+    },
+    "agency-agents/engineering/engineering-database-reliability-engineer.md": {
+      "domain": "coding",
+      "hash": "d4ab5620ae161991a460ce9a36aaa0cd",
+      "summaryZh": "数据库可靠性工程师（DBRE），管高可用、复制、故障切换、备份与在线迁移。"
+    },
+    "agency-agents/engineering/engineering-desktop-app-engineer.md": {
+      "domain": "coding",
+      "hash": "05048947452fd35803a6690b1a0ab5ac",
+      "summaryZh": "桌面应用工程师（Electron/Tauri），管安全 IPC、签名公证与自动更新。"
+    },
+    "agency-agents/engineering/engineering-developer-tooling-engineer.md": {
+      "domain": "coding",
+      "hash": "f81b43e7cdc3f2738e00e5a1948599a6",
+      "summaryZh": "开发者工具/CLI 工程师，打造好用的命令行工具与内部研发平台。"
+    },
+    "agency-agents/engineering/engineering-drupal-performance.md": {
+      "domain": "coding",
+      "hash": "aa3b4974c2b42f3abef4a2ddcc3ac805",
+      "summaryZh": "Drupal 10/11 性能工程师，优化核心 Web 指标、缓存、查询与 CDN。"
+    },
+    "agency-agents/specialized/specialized-fedramp-rmf-compliance.md": {
+      "domain": "operations",
+      "hash": "eb4d8101a910f285b4b67bac88b41abc",
+      "summaryZh": "FedRAMP 与 NIST RMF 合规工程师，负责联邦授权路径、SSP 与 3PAO 评估。"
+    },
+    "agency-agents/engineering/engineering-finops-engineer.md": {
+      "domain": "operations",
+      "hash": "635f17b12d0939df8bd39927b80f3564",
+      "summaryZh": "云成本工程师（AWS/GCP/Azure），做成本分摊、rightsizing 与单位经济看板。"
+    },
+    "agency-agents/engineering/engineering-gaussdb-expert.md": {
+      "domain": "coding",
+      "hash": "f9f7ab403ec92e9386d332b223e4ec2a",
+      "summaryZh": "GaussDB OLTP 数据库专家，做华为企业级库的表设计、查询与分布式优化。"
+    },
+    "agency-agents/healthcare/healthcare-innovation-strategist.md": {
+      "domain": "marketing",
+      "hash": "83abd0df5e1dec1224e0a2b8a4a9d35a",
+      "summaryZh": "医疗创始人的战略叙事架构师，帮助搭建定位与故事线。"
+    },
+    "agency-agents/engineering/engineering-identity-access-engineer.md": {
+      "domain": "coding",
+      "hash": "b2af75520b5076ee0f1e68dadd001ff0",
+      "summaryZh": "身份与访问工程师，做 OAuth/OIDC、企业 SSO/SCIM、passkey 与多租户授权。"
+    },
+    "agency-agents/engineering/engineering-i18n-engineer.md": {
+      "domain": "coding",
+      "hash": "f92dc621873aa13dddf38baf5266a0e1",
+      "summaryZh": "国际化工程师，做 ICU 消息格式、CLDR 复数、RTL 布局与本地化流水线。"
+    },
+    "agency-agents/engineering/engineering-iot-fleet-engineer.md": {
+      "domain": "coding",
+      "hash": "204d1a5555c69340c0c48932f0ba9041",
+      "summaryZh": "IoT/边缘设备群工程师，管设备接入、遥测管道、OTA 升级与可观测。"
+    },
+    "agency-agents/engineering/engineering-mobile-release-engineer.md": {
+      "domain": "coding",
+      "hash": "620c896ca972206e5a29fda2c9d70e74",
+      "summaryZh": "移动发布工程师（iOS/Android），管签名、fastlane、商店提审与灰度发布。"
+    },
+    "agency-agents/engineering/engineering-network-engineer.md": {
+      "domain": "coding",
+      "hash": "9f0bf56fecad3bfd0a8041b4149b0ef9",
+      "summaryZh": "网络工程师，精通 Cisco/Juniper/Palo Alto 路由交换、防火墙与排障。"
+    },
+    "agency-agents/engineering/engineering-payments-billing-engineer.md": {
+      "domain": "coding",
+      "hash": "36f56d1822499c024b91047e9eabd4ed",
+      "summaryZh": "支付与计费工程师，做 PSP 接入、幂等支付、订阅计费、SCA/3DS 与对账。"
+    },
+    "agency-agents/engineering/engineering-rag-pipeline-engineer.md": {
+      "domain": "coding",
+      "hash": "29baadba101b40d3f7057552b12d05ac",
+      "summaryZh": "生产级 RAG 工程师，做分块、检索质量、混合检索、重排与评测驱动迭代。"
+    },
+    "agency-agents/engineering/engineering-realtime-collaboration-engineer.md": {
+      "domain": "coding",
+      "hash": "f241fd66e456e40359e791db6e8f36cf",
+      "summaryZh": "实时协作工程师，做 WebSocket/SSE、在线状态、CRDT/OT 协同编辑与离线同步。"
+    },
+    "agency-agents/specialized/resume-tailor.md": {
+      "domain": "writing",
+      "hash": "5a8e7fcff719d6f9e8bfee323183a403",
+      "summaryZh": "求职者简历优化专家，按 JD 对齐经历与 ATS 关键词、改写要点且不虚构。"
+    },
+    "agency-agents/engineering/engineering-search-relevance-engineer.md": {
+      "domain": "coding",
+      "hash": "5759cac92ea61f4756c37b0c207d873e",
+      "summaryZh": "搜索相关性工程师，做 ES/OpenSearch 索引分析、BM25 调优与混合检索。"
+    },
+    "agency-agents/security/security-secrets-credential-engineer.md": {
+      "domain": "review",
+      "hash": "df1528b8551ce99d0c490c9ce191d7e9",
+      "summaryZh": "密钥与凭据卫生工程师，管检测、防泄、金库、轮换与泄露响应全生命周期。"
+    },
+    "agency-agents/engineering/engineering-section-508-specialist.md": {
+      "domain": "coding",
+      "hash": "7f33d1113511f7357b1f2ee0ce35b755",
+      "summaryZh": "美国 508 无障碍工程师，按 WCAG 做可访问 Web 开发与 ARIA 适配。"
+    },
+    "agency-agents/healthcare/healthcare-sovereign-health-systems-agent.md": {
+      "domain": "operations",
+      "hash": "604a0dcad3b663b868aa7603a1918321",
+      "summaryZh": "主权医疗系统对接框架，面向政府医疗授权的合作与接洽策略。"
+    },
+    "agency-agents/academic/academic-statistician.md": {
+      "domain": "research",
+      "hash": "766ba82d559b1b9559dbfb3bf93de07d",
+      "summaryZh": "统计学家，做实验设计与统计推断，压测论断、区分真信号与噪声偏差。"
+    },
+    "agency-agents/testing/testing-test-automation-engineer.md": {
+      "domain": "review",
+      "hash": "de43508b381a804b3455215dedf55827",
+      "summaryZh": "端到端测试自动化工程师（Playwright/Cypress），治 flaky、隔离数据、CI 并行。"
+    },
+    "agency-agents/engineering/engineering-uswds-developer.md": {
+      "domain": "coding",
+      "hash": "c800969e47d92c04beae1f092fad5065",
+      "summaryZh": "USWDS 前端开发者，用美国政府设计系统组件与设计令牌做无障碍政务界面。"
+    },
+    "agency-agents/engineering/engineering-video-streaming-engineer.md": {
+      "domain": "coding",
+      "hash": "22311d680b4e6186bef884d98ad0ee66",
+      "summaryZh": "视频流工程师，做自适应码率、HLS/DASH 封装、ffmpeg 转码与 DRM/CDN。"
+    },
+    "ai-hedge-fund/VISION.md": {
+      "domain": "data-finance",
+      "hash": "5d442ace388d2c3920f4f626e3cdd8d1",
+      "summaryZh": "AI 对冲基金愿景：可持续运行、自主找并测策略、按计划交易并解释每个决策。"
+    },
+    "agency-agents/engineering/engineering-webassembly-engineer.md": {
+      "domain": "coding",
+      "hash": "1f257a70462506a3975658e108280a9b",
+      "summaryZh": "WebAssembly 工程师，把 Rust/C++/Go 编到 Wasm，做 JS 互操作与 WASI 运行时。"
+    },
+    "agency-agents/engineering/engineering-wordpress-performance.md": {
+      "domain": "coding",
+      "hash": "54a4030befaf02b5b6cb16cbdd0c37c3",
+      "summaryZh": "WordPress 性能工程师，优化核心 Web 指标、对象/页面缓存、WP_Query 与 CDN。"
+    },
+    "agency-agents-zh/engineering/engineering-network-engineer-china.md": {
+      "domain": "coding",
+      "hash": "586b123183e1c3a001d41d283a62ea4d",
+      "summaryZh": "国产网络设备企业网工程专家（华为/华三/锐捷），做园区/数据中心/广域网设计与排障。"
+    },
+    "agency-agents-zh/finance/finance-hk-stock-compliance-reviewer.md": {
+      "domain": "operations",
+      "hash": "52969306434f12f96848b96c4e94d753",
+      "summaryZh": "港股合规审查专家，精通 HKEX 上市规则与 SFC 条例，做上市/持续披露/关联交易合规。"
     }
   }
 }

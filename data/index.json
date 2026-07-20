@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "scannedAt": "2026-07-20T06:24:04.884Z",
+  "scannedAt": "2026-07-20T06:45:43.871Z",
   "total": 898,
   "byCollection": {
     "academic-research": 4,
@@ -23,20 +23,19 @@
     "awesome-design": 73
   },
   "byDomain": {
-    "research": 33,
-    "agent-workflow": 82,
+    "research": 36,
+    "agent-workflow": 86,
     "education": 17,
-    "other": 87,
-    "review": 59,
-    "data-finance": 86,
-    "planning": 38,
-    "operations": 81,
+    "planning": 45,
+    "review": 66,
+    "data-finance": 114,
+    "operations": 87,
     "design": 131,
-    "coding": 122,
+    "coding": 147,
     "debugging": 6,
-    "writing": 22,
-    "sales-support": 38,
-    "marketing": 96
+    "writing": 26,
+    "sales-support": 40,
+    "marketing": 97
   },
   "domains": [
     {
@@ -328,8 +327,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "agent-workflow",
+      "summaryZh": "技能路由器，不确定该用仓库里哪个技能或流程时问它。",
       "duplicates": []
     },
     {
@@ -375,8 +374,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "高强度批量追问式访谈，一轮轮把关键问题一次问透，用来压测想法。",
       "duplicates": []
     },
     {
@@ -695,8 +694,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "agent-workflow",
+      "summaryZh": "把当前对话交接给后台新智能体接手续跑，需换上下文时用。",
       "duplicates": []
     },
     {
@@ -714,8 +713,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "从规范与需求两个维度审查指定基点以来的代码改动。",
       "duplicates": []
     },
     {
@@ -1315,8 +1314,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "维护覆盖股票池的催化剂日历（财报、发布会、监管等），提前布局事件。",
       "duplicates": []
     },
     {
@@ -1366,8 +1365,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "财报前分析：搭估值模型、设牛熊情景、列关注指标，为季报做准备。",
       "duplicates": []
     },
     {
@@ -1394,8 +1393,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "系统化选股与投资想法挖掘，跑量化筛选和主题研究找多空标的。",
       "duplicates": []
     },
     {
@@ -1442,8 +1441,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "用新数据（财报、指引、宏观）更新财务模型并重算估值。",
       "duplicates": []
     },
     {
@@ -1470,8 +1469,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "起草晨会纪要，汇总隔夜动态、交易想法和覆盖股要闻。",
       "duplicates": []
     },
     {
@@ -1498,8 +1497,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "撰写行业/板块全景研究报告，覆盖格局、竞争与主题趋势。",
       "duplicates": []
     },
     {
@@ -1524,8 +1523,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "维护并更新持仓与观察标的的投资逻辑，跟踪催化剂与里程碑。",
       "duplicates": []
     },
     {
@@ -2155,8 +2154,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "针对计划/决策/想法对你连环追问，想压测思路时用。",
       "duplicates": []
     },
     {
@@ -2177,8 +2176,8 @@
       "triggerKeywords": [],
       "version": "1.2.0",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "agent-workflow",
+      "summaryZh": "gstack 技能套件的路由入口，按需分发到具体子技能。",
       "duplicates": []
     },
     {
@@ -2460,8 +2459,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "按规格或工单实现一块具体工作。",
       "duplicates": []
     },
     {
@@ -2553,8 +2552,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "为卖方并购搭建潜在收购方名单，评估契合度并排序触达优先级。",
       "duplicates": []
     },
     {
@@ -2578,8 +2577,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "为卖方并购撰写保密信息备忘录（CIM），整理成投资人级文档。",
       "duplicates": []
     },
     {
@@ -2627,8 +2626,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "跟踪多个在途并购项目的里程碑、截止日与待办，维护交易管线视图。",
       "duplicates": []
     },
     {
@@ -2676,8 +2675,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "搭并购增厚/摊薄分析，测算备考 EPS、协同效应与购买价分摊。",
       "duplicates": []
     },
     {
@@ -2725,8 +2724,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "起草卖方并购流程函与报价须知（IOI、最终报价程序等）。",
       "duplicates": []
     },
     {
@@ -2752,8 +2751,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "起草匿名一页公司 teaser，在签 NDA 前试探买方兴趣。",
       "duplicates": []
     },
     {
@@ -3012,8 +3011,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "就你想搭的工作流反复追问规格，用来把需求问清楚。",
       "duplicates": []
     },
     {
@@ -3552,8 +3551,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "扫描投资组合各公司的高杠杆 AI 机会，排出运营伙伴的落地优先级。",
       "duplicates": []
     },
     {
@@ -3577,8 +3576,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "按目标公司行业与交易类型生成并跟踪尽调清单，含红旗升级。",
       "duplicates": []
     },
     {
@@ -3603,8 +3602,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "为尽调会议（管理层、专家、客户访谈）准备针对性问题清单与红旗。",
       "duplicates": []
     },
     {
@@ -3628,8 +3627,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "用基金投资标准快速筛选入口交易（CIM/teaser），输出一页筛选备忘。",
       "duplicates": []
     },
     {
@@ -3655,8 +3654,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "sales-support",
+      "summaryZh": "PE 找项目：发掘目标公司、查 CRM 关系并起草个性化创始人触达邮件。",
       "duplicates": []
     },
     {
@@ -3681,8 +3680,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "起草结构化投委会（IC）备忘，综合尽调、财务与交易条款。",
       "duplicates": []
     },
     {
@@ -3706,8 +3705,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "跟踪组合公司经营 vs 预算，提取 KPI、标异常并出汇总看板。",
       "duplicates": []
     },
     {
@@ -3734,8 +3733,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "为 PE 交易搭 IRR/MOIC 敏感性表，跨入场/杠杆/退出等情景测算回报。",
       "duplicates": []
     },
     {
@@ -3761,8 +3760,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "分析 PE 标的单位经济（LTV/CAC、净留存、回本期等），适合 SaaS/订阅。",
       "duplicates": []
     },
     {
@@ -3786,8 +3785,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "搭并购后价值创造计划，把收入/成本/运营杠杆映射到 EBITDA 桥。",
       "duplicates": []
     },
     {
@@ -3830,8 +3829,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "快速做一次性原型来验证设计或逻辑是否成立。",
       "duplicates": []
     },
     {
@@ -4441,8 +4440,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "research",
+      "summaryZh": "对照高可信一手资料做调研，并把结论写成仓库内 Markdown。",
       "duplicates": []
     },
     {
@@ -4689,8 +4688,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "给 TS 仓接入 dependency-cruiser，把每个包做成隐藏实现的深模块。",
       "duplicates": []
     },
     {
@@ -5009,8 +5008,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "把你答不全的决策转成问卷交给别人填。",
       "duplicates": []
     },
     {
@@ -5028,8 +5027,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "把当前对话综合成规格并发布到项目 issue 追踪器。",
       "duplicates": []
     },
     {
@@ -5047,8 +5046,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "把计划/规格/对话拆成带阻塞依赖的一颗颗工单。",
       "duplicates": []
     },
     {
@@ -5218,8 +5217,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "planning",
+      "summaryZh": "把超出单次会话容量的大工作拆成决策工单地图，逐个攻克。",
       "duplicates": []
     },
     {
@@ -5245,8 +5244,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "生成面向客户的业绩报告（收益、配置、市场点评），适合季度/年度分发。",
       "duplicates": []
     },
     {
@@ -5272,8 +5271,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "为客户回顾会准备业绩摘要、配置分析、谈话要点与待办。",
       "duplicates": []
     },
     {
@@ -5300,8 +5299,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "搭建或更新综合理财规划（退休、教育金、遗产、现金流）。",
       "duplicates": []
     },
     {
@@ -5327,8 +5326,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "sales-support",
+      "summaryZh": "为潜在客户做投资建议书，讲方法、配置、预期与费率，用于新客户提案。",
       "duplicates": []
     },
     {
@@ -5354,8 +5353,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "分析组合配置漂移并生成再平衡交易建议，兼顾税务与洗售规则。",
       "duplicates": []
     },
     {
@@ -5382,8 +5381,8 @@
       ],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "在应税账户里找税务亏损收割机会，建议替代标的并跟踪洗售窗口。",
       "duplicates": []
     },
     {
@@ -5401,8 +5400,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "生成交互式 bash 向导，带人一步步走完手动配置流程。",
       "duplicates": []
     },
     {
@@ -5441,8 +5440,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "writing",
+      "summaryZh": "写作·打磨：把素材组织成一段段递进的节拍，用词先铺垫再展开。",
       "duplicates": []
     },
     {
@@ -5460,8 +5459,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "writing",
+      "summaryZh": "写作·探索：先不搭结构，广挖原始片段素材。",
       "duplicates": []
     },
     {
@@ -5516,8 +5515,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "writing",
+      "summaryZh": "写作·打磨：把素材逐段塑造成成文文章。",
       "duplicates": []
     },
     {
@@ -5945,8 +5944,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔎",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "AI 生成代码安全审计员，揪硬编码密钥/越权/提示注入，驱动扫-修-复扫闭环。",
       "duplicates": []
     },
     {
@@ -6002,8 +6001,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔌",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "对外 API 平台工程师，做契约先行设计、版本与弃用策略、SDK 生成与网关。",
       "duplicates": []
     },
     {
@@ -6504,8 +6503,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "agent-workflow",
+      "summaryZh": "Agency 总纲：说明各专业智能体如何协同分工，避免冲突与重复。",
       "duplicates": [
         "agency-agents-zh/strategy/EXECUTIVE-BRIEF.md"
       ]
@@ -6783,8 +6782,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🩺",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "research",
+      "summaryZh": "临床证据标准与可信度框架，为医疗类 AI 提供循证依据规范。",
       "duplicates": []
     },
     {
@@ -6878,8 +6877,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🏺",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "跨会话/跨工具漂移侦测，审计被多款 AI 编码工具改过的代码，找隐性错配与死代码。",
       "duplicates": []
     },
     {
@@ -7127,8 +7126,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🛟",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "数据库可靠性工程师（DBRE），管高可用、复制、故障切换、备份与在线迁移。",
       "duplicates": []
     },
     {
@@ -7165,8 +7164,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "💻",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "桌面应用工程师（Electron/Tauri），管安全 IPC、签名公证与自动更新。",
       "duplicates": []
     },
     {
@@ -7203,8 +7202,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🛠️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "开发者工具/CLI 工程师，打造好用的命令行工具与内部研发平台。",
       "duplicates": []
     },
     {
@@ -7355,8 +7354,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "⚡",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "Drupal 10/11 性能工程师，优化核心 Web 指标、缓存、查询与 CDN。",
       "duplicates": []
     },
     {
@@ -7606,8 +7605,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🛡️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "FedRAMP 与 NIST RMF 合规工程师，负责联邦授权路径、SSP 与 3PAO 评估。",
       "duplicates": []
     },
     {
@@ -7741,8 +7740,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "💰",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "云成本工程师（AWS/GCP/Azure），做成本分摊、rightsizing 与单位经济看板。",
       "duplicates": []
     },
     {
@@ -7917,8 +7916,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🗄️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "GaussDB OLTP 数据库专家，做华为企业级库的表设计、查询与分布式优化。",
       "duplicates": []
     },
     {
@@ -8386,8 +8385,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🧭",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "marketing",
+      "summaryZh": "医疗创始人的战略叙事架构师，帮助搭建定位与故事线。",
       "duplicates": []
     },
     {
@@ -8519,8 +8518,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔐",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "身份与访问工程师，做 OAuth/OIDC、企业 SSO/SCIM、passkey 与多租户授权。",
       "duplicates": []
     },
     {
@@ -8734,8 +8733,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🌍",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "国际化工程师，做 ICU 消息格式、CLDR 复数、RTL 布局与本地化流水线。",
       "duplicates": []
     },
     {
@@ -8772,8 +8771,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "📡",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "IoT/边缘设备群工程师，管设备接入、遥测管道、OTA 升级与可观测。",
       "duplicates": []
     },
     {
@@ -9467,8 +9466,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🚀",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "移动发布工程师（iOS/Android），管签名、fastlane、商店提审与灰度发布。",
       "duplicates": []
     },
     {
@@ -9631,8 +9630,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🌐",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "网络工程师，精通 Cisco/Juniper/Palo Alto 路由交换、防火墙与排障。",
       "duplicates": []
     },
     {
@@ -9868,8 +9867,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "💳",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "支付与计费工程师，做 PSP 接入、幂等支付、订阅计费、SCA/3DS 与对账。",
       "duplicates": []
     },
     {
@@ -10428,8 +10427,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔍",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "生产级 RAG 工程师，做分块、检索质量、混合检索、重排与评测驱动迭代。",
       "duplicates": []
     },
     {
@@ -10530,8 +10529,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🤝",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "实时协作工程师，做 WebSocket/SSE、在线状态、CRDT/OT 协同编辑与离线同步。",
       "duplicates": []
     },
     {
@@ -10625,8 +10624,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🧾",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "writing",
+      "summaryZh": "求职者简历优化专家，按 JD 对齐经历与 ATS 关键词、改写要点且不虚构。",
       "duplicates": []
     },
     {
@@ -10942,8 +10941,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔎",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "搜索相关性工程师，做 ES/OpenSearch 索引分析、BM25 调优与混合检索。",
       "duplicates": []
     },
     {
@@ -10961,8 +10960,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🔑",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "密钥与凭据卫生工程师，管检测、防泄、金库、轮换与泄露响应全生命周期。",
       "duplicates": []
     },
     {
@@ -10980,8 +10979,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "♿",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "美国 508 无障碍工程师，按 WCAG 做可访问 Web 开发与 ARIA 适配。",
       "duplicates": []
     },
     {
@@ -11274,8 +11273,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🌍",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "主权医疗系统对接框架，面向政府医疗授权的合作与接洽策略。",
       "duplicates": []
     },
     {
@@ -11475,8 +11474,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "📊",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "research",
+      "summaryZh": "统计学家，做实验设计与统计推断，压测论断、区分真信号与噪声偏差。",
       "duplicates": []
     },
     {
@@ -11828,8 +11827,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎭",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "端到端测试自动化工程师（Playwright/Cypress），治 flaky、隔离数据、CI 并行。",
       "duplicates": []
     },
     {
@@ -12399,8 +12398,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🏛️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "USWDS 前端开发者，用美国政府设计系统组件与设计令牌做无障碍政务界面。",
       "duplicates": []
     },
     {
@@ -12537,8 +12536,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎬",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "视频流工程师，做自适应码率、HLS/DASH 封装、ffmpeg 转码与 DRM/CDN。",
       "duplicates": []
     },
     {
@@ -12553,8 +12552,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "data-finance",
+      "summaryZh": "AI 对冲基金愿景：可持续运行、自主找并测策略、按计划交易并解释每个决策。",
       "duplicates": []
     },
     {
@@ -12710,8 +12709,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🧩",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "WebAssembly 工程师，把 Rust/C++/Go 编到 Wasm，做 JS 互操作与 WASI 运行时。",
       "duplicates": []
     },
     {
@@ -12805,8 +12804,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "⚡",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "WordPress 性能工程师，优化核心 Web 指标、对象/页面缓存、WP_Query 与 CDN。",
       "duplicates": []
     },
     {
@@ -13339,8 +13338,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎯",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "招聘运营与人才获取专家，精通国内招聘平台、评估体系与劳动法合规。",
       "duplicates": []
     },
     {
@@ -14047,8 +14046,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🌐",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "coding",
+      "summaryZh": "国产网络设备企业网工程专家（华为/华三/锐捷），做园区/数据中心/广域网设计与排障。",
       "duplicates": []
     },
     {
@@ -14275,8 +14274,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎯",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "检测工程师，做 SIEM 规则、ATT&CK 覆盖映射、威胁狩猎与告警调优。",
       "duplicates": []
     },
     {
@@ -14294,8 +14293,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🛡️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "review",
+      "summaryZh": "安全运营检测工程专家，专精 SIEM 规则、ATT&CK 映射与检测即代码流水线。",
       "duplicates": []
     },
     {
@@ -15174,8 +15173,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "🎯",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "全流程招聘专家，精通 Boss/猎聘/拉勾渠道，操盘校招社招与入职闭环。",
       "duplicates": []
     },
     {
@@ -16812,8 +16811,8 @@
       "triggerKeywords": [],
       "version": "",
       "emoji": "⚖️",
-      "domain": "other",
-      "summaryZh": "",
+      "domain": "operations",
+      "summaryZh": "港股合规审查专家，精通 HKEX 上市规则与 SFC 条例，做上市/持续披露/关联交易合规。",
       "duplicates": []
     },
     {
