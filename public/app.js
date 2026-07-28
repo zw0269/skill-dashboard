@@ -32,7 +32,14 @@ function inline(text) {
   text = text.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
   text = text.replace(/\*\*(.+?)\*\*/g,     '<strong>$1</strong>');
   text = text.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
-  text = text.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+  // A `#hex` inside prose gets a swatch too — the older DESIGN.md files (kraken,
+  // spotify, tesla…) carry no frontmatter and name their colors only this way.
+  text = text.replace(/`([^`\n]+)`/g, (_, c) => {
+    const col = cssColor(c);
+    return col
+      ? `<code class="code-color"><span class="token-chip" style="background:${col}"></span>${c}</code>`
+      : `<code>${c}</code>`;
+  });
   text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
     '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
   return text;
@@ -139,6 +146,184 @@ function renderMd(raw) {
   if (inTable) html += '</tbody></table>\n';
   closeList();
   return html;
+}
+
+// ── Frontmatter → design tokens ──────────────────────────────────────────────
+// DESIGN.md carries its entire design system as nested YAML frontmatter — Notion's
+// runs 444 lines before the prose even starts. renderMd() used to spill that raw
+// into the drawer as one <p> per line. Parse it instead: colors become swatches,
+// everything else compact token rows.
+
+/** Split "---\n<yaml>\n---\n<body>" → { fm, body }. */
+function splitFrontmatter(raw) {
+  const s = raw.startsWith('﻿') ? raw.slice(1) : raw;
+  if (!s.startsWith('---')) return { fm: '', body: s };
+  const end = s.indexOf('\n---', 3);
+  if (end === -1) return { fm: '', body: s };
+  return { fm: s.slice(4, end).trimEnd(), body: s.slice(end + 4).replace(/^\n/, '') };
+}
+
+/**
+ * Unwrap one scalar: honour quotes, then drop a trailing ` # comment`
+ * (nintendo-2001 annotates every color that way). A bare `#e60012` is a
+ * value, not a comment — only a whitespace-preceded hash starts one, and
+ * anything inside quotes is literal.
+ */
+function scalarValue(val) {
+  const q = val[0];
+  if (q === '"' || q === "'") {
+    const close = val.indexOf(q, 1);
+    return close > 0 ? val.slice(1, close) : val.slice(1);
+  }
+  const cut = val.search(/\s#/);
+  return (cut >= 0 ? val.slice(0, cut) : val).trim();
+}
+
+/**
+ * Indentation-based YAML subset: nested maps (which lib/frontmatter.mjs
+ * deliberately skips), block scalars, inline + block lists.
+ * @param {string} yamlStr
+ * @returns {Record<string, any>}
+ */
+function parseTokens(yamlStr) {
+  const lines = yamlStr.split('\n');
+  const root  = {};
+  const stack = [{ indent: -1, node: root }];
+  let i = 0;
+
+  while (i < lines.length) {
+    const raw = lines[i];
+    if (!raw.trim() || raw.trim().startsWith('#')) { i++; continue; }
+
+    const indent = raw.length - raw.trimStart().length;
+    const m = raw.trim().match(/^([A-Za-z0-9_.\-]+)\s*:\s*(.*)$/);
+    if (!m) { i++; continue; }
+
+    while (stack.length > 1 && indent <= stack[stack.length - 1].indent) stack.pop();
+    const parent = stack[stack.length - 1].node;
+    const key = m[1];
+    const val = m[2].trim();
+
+    // Block scalar (| or >): swallow the more-indented lines as one string.
+    if (val === '|' || val === '>') {
+      const buf = [];
+      i++;
+      while (i < lines.length) {
+        const bl = lines[i];
+        if (bl.trim() && (bl.length - bl.trimStart().length) <= indent) break;
+        buf.push(bl.trim());
+        i++;
+      }
+      parent[key] = buf.join(' ').trim();
+      continue;
+    }
+
+    // Inline array
+    if (val.startsWith('[')) {
+      const close = val.lastIndexOf(']');
+      const inner = close > 0 ? val.slice(1, close) : val.slice(1);
+      parent[key] = inner
+        ? inner.split(',').map(s => s.trim().replace(/^['"]|['"]$/g, '')).filter(Boolean)
+        : [];
+      i++; continue;
+    }
+
+    // Empty value → block list or nested map
+    if (val === '') {
+      let j = i + 1;
+      while (j < lines.length && !lines[j].trim()) j++;
+      if (j < lines.length && /^\s*-\s+/.test(lines[j])) {
+        const items = [];
+        i = j;
+        while (i < lines.length && /^\s*-\s+/.test(lines[i])) {
+          items.push(scalarValue(lines[i].replace(/^\s*-\s+/, '').trim()));
+          i++;
+        }
+        parent[key] = items;
+        continue;
+      }
+      const child = {};
+      parent[key] = child;
+      stack.push({ indent, node: child });
+      i++; continue;
+    }
+
+    parent[key] = scalarValue(val);
+    i++;
+  }
+  return root;
+}
+
+/**
+ * Return `v` if it is a color literal safe to drop into a style attribute,
+ * else ''. Deliberately strict — the char class inside rgb()/hsl() forbids
+ * quotes, semicolons and parens, so nothing can escape the declaration.
+ */
+function cssColor(v) {
+  if (typeof v !== 'string') return '';
+  const s = v.trim();
+  if (/^#(?:[0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(s)) return s;
+  if (/^(?:rgba?|hsla?)\([0-9a-z%.,\s/]+\)$/i.test(s)) return s;
+  return '';
+}
+
+// Already surfaced in the drawer title / meta badges / gloss — don't repeat.
+const TOKEN_SKIP = new Set(['name', 'description', 'version']);
+
+function tokenRows(leaves) {
+  const rows = Object.entries(leaves).map(([k, v]) => {
+    const val  = Array.isArray(v) ? v.join(' · ') : String(v);
+    const col  = cssColor(val);
+    const chip = col ? `<span class="token-chip" style="background:${col}"></span>` : '';
+    return `<div class="token-row">
+      <span class="token-key">${esc(k)}</span>
+      <span class="token-val">${chip}<code>${esc(val)}</code></span>
+    </div>`;
+  }).join('');
+  return `<div class="token-rows">${rows}</div>`;
+}
+
+/** Render one group: its scalar leaves, then any nested sub-maps. */
+function tokenGroup(obj) {
+  const leaves = {}, subs = {};
+  for (const [k, v] of Object.entries(obj)) {
+    if (v && typeof v === 'object' && !Array.isArray(v)) subs[k] = v;
+    else leaves[k] = v;
+  }
+  let html = Object.keys(leaves).length ? tokenRows(leaves) : '';
+  for (const [k, v] of Object.entries(subs)) {
+    html += `<div class="token-sub">
+      <div class="token-sub-title">${esc(k)}</div>
+      ${tokenGroup(v)}
+    </div>`;
+  }
+  return html;
+}
+
+/** Parsed frontmatter → HTML. Returns '' when there's nothing worth showing. */
+function renderTokens(data) {
+  const keys = Object.keys(data).filter(k => !TOKEN_SKIP.has(k));
+  if (!keys.length) return '';
+
+  const flat   = keys.filter(k => !data[k] || typeof data[k] !== 'object' || Array.isArray(data[k]));
+  const groups = keys.filter(k => data[k] && typeof data[k] === 'object' && !Array.isArray(data[k]));
+
+  let html = '<div class="tokens">';
+  if (flat.length) {
+    const leaves = {};
+    for (const k of flat) leaves[k] = data[k];
+    html += `<section class="token-group">
+      <div class="token-group-title">元信息</div>
+      ${tokenRows(leaves)}
+    </section>`;
+  }
+  for (const g of groups) {
+    html += `<section class="token-group">
+      <div class="token-group-title">${esc(g)}</div>
+      ${tokenGroup(data[g])}
+    </section>`;
+  }
+  return html + '</div>';
 }
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -856,7 +1041,14 @@ async function openDrawer(id) {
       ctxBtn.addEventListener('click', () => copyAndFlash('btn-copy-context', json.content));
     }
 
-    let bodyHtml = glossHtml + `<div class="md">${renderMd(json.content)}</div>`;
+    const { fm, body: mdBody } = splitFrontmatter(json.content);
+    const fmData = fm ? parseTokens(fm) : {};
+    // A non-empty frontmatter block that parses to zero keys means our YAML
+    // subset didn't understand it — show it verbatim rather than drop it.
+    const fmHtml = (fm && !Object.keys(fmData).length)
+      ? `<pre class="token-raw"><code>${esc(fm)}</code></pre>`
+      : renderTokens(fmData);
+    let bodyHtml = glossHtml + fmHtml + `<div class="md">${renderMd(mdBody)}</div>`;
 
     // Similar / duplicate skills
     if (entry.duplicates?.length) {

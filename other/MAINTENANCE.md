@@ -235,6 +235,24 @@ awesome-design-md/
 - 显示名取 **父目录名**（品牌文件夹名），而非文件名
 - 无需 frontmatter，描述从正文首段提取
 
+两种并存的写法（74 个品牌都要能显示）：
+
+| 写法 | 品牌数 | 设计 token 在哪 | 抽屉如何呈现 |
+|---|---|---|---|
+| 带 frontmatter | 64 | 嵌套 YAML frontmatter（notion 有 442 行） | `renderTokens()` 渲成色卡 + 键值网格 |
+| 纯正文 | 10 | 正文里的行内 `` `#121212` `` | `inline()` 给行内 hex 加小色块 |
+
+**注意事项**（都踩过）：
+
+- frontmatter 值允许尾随注释：`primary: "#e60012"   # Nintendo Red`。
+  解析必须先认引号再切 ` #`，否则值变成 `#e60012"   # Nintendo Red` 且色卡消失
+  （nintendo-2001 整份文件都是这个写法）。见 app.js `scalarValue()`。
+- 只有 `app.js` 的 `parseTokens()` 支持嵌套 map；`lib/frontmatter.mjs` 故意不支持
+  （扫描器只需要 name/description/version）。两者不要混用。
+- 品牌目录名若撞上 `skipDirs`（`cursor`、`docs`、`examples`…），
+  walk() 会靠 `isContentDir` 豁免；**不要**为此从 `skipDirs` 删词，
+  那会让别的集合把编辑器配置目录扫进来。
+
 ---
 
 ## 6. 系统架构
@@ -440,4 +458,6 @@ type SkillEntry = {
 | 2026-07-20 | 目录对账：删除 4 个已消失集合（`harness`/`Harness_Engineering`、`superpowers-agents`、`superpowers-commands`、`lobe-chat-agents`）；新增 `best-minds`（skill，#3b82f6）与 `edict`（agent，dir `edict/agents`，#f97316）。新增 `SOUL.md` scanRule（按父目录命名，用于 edict 六部三省 12 个 subagent）。全量重扫 → 887 条。13 个新条目已写入 `data/classification.json`。 | AI（Claude Opus 4.8） |
 | 2026-07-20 | 覆盖率复查（ultrathink）：发现 `awesome-design-md/qiushi-skill/skills` 的 11 个求是方法论 skill 未被任何集合覆盖，新增 `qiushi-skill` 集合（skill，#06b6d4）。重扫 → 898 条。11 个新条目已分类写入 `data/classification.json`。（`gstack/DESIGN.md` 为 gstack 站点单例设计文档，暂不收录。） | AI（Claude Opus 4.8） |
 
-*最后更新：2026-07-20 by AI（Claude Opus 4.8）*
+| 2026-07-28 | 修「awesome-design 很多样式不显示」。四处独立缺陷：① `walk()` 用 `skipDirs` 名字硬裁目录，把品牌 `cursor/` 当编辑器配置目录砍掉 → 加 `isContentDir` 豁免（74 个品牌齐了），并在扫描末尾对每个集合做覆盖率告警；② 抽屉把 442 行 YAML frontmatter 当正文平铺 → 新增 `parseTokens()/renderTokens()`，色卡 + 键值网格，正文从第 1 行开始；③ 调用处误把 YAML **字符串**传给 `renderTokens()`（本会按字符炸成上千行）→ 改传解析结果，解析不出来时原样 `<pre>` 兜底；④ 尾随注释 `"#e60012"  # Nintendo Red` 未剥离 → `scalarValue()`。另给正文行内 `` `#hex` `` 加色块，覆盖 10 个无 frontmatter 的老格式品牌。重扫 → 904 条，6 个新条目已分类，未分类 0。全量核验：904/904 无异常，3177 个色块无一越出 style 属性。 | AI（Claude Opus 5） |
+
+*最后更新：2026-07-28 by AI（Claude Opus 5）*

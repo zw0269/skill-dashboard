@@ -255,24 +255,57 @@ function parseEntry(filePath, col, skipDirs) {
 
 /**
  * Recursively walk a directory, calling visitor(filePath) for each file.
+ *
+ * skipDirs is a blunt name match applied at every depth, so a legitimate
+ * content folder sharing a name with a tooling folder gets pruned silently
+ * (this ate the `cursor` brand under design-md). isContentDir grants a
+ * reprieve: a directory that directly holds the collection's target file is
+ * content, not tooling, and is always walked.
+ *
  * @param {string}   dir
  * @param {Set<string>} skipSet - dir names to skip
  * @param {(f:string)=>void} visitor
+ * @param {(d:string)=>boolean} isContentDir - reprieve predicate
  */
-function walk(dir, skipSet, visitor) {
+function walk(dir, skipSet, visitor, isContentDir = () => false) {
   let entries;
   try { entries = readdirSync(dir, { withFileTypes: true }); }
   catch { return; }
 
   for (const entry of entries) {
-    if (skipSet.has(entry.name)) continue;
     const full = join(dir, entry.name);
     if (entry.isDirectory()) {
-      walk(full, skipSet, visitor);
+      if (skipSet.has(entry.name) && !isContentDir(full)) continue;
+      walk(full, skipSet, visitor, isContentDir);
     } else if (entry.isFile()) {
+      if (skipSet.has(entry.name)) continue;
       visitor(full);
     }
   }
+}
+
+/**
+ * Independently count files named `targetFile`, ignoring the configured
+ * skipDirs entirely. Used as a post-scan coverage check so a pruned or
+ * unparseable file can never vanish without a warning.
+ * @param {string} dir
+ * @param {string} targetFile
+ * @returns {number}
+ */
+function countTargets(dir, targetFile) {
+  const HARD_SKIP = new Set(['node_modules', '.git']);
+  let count = 0;
+  const recurse = (d) => {
+    let entries;
+    try { entries = readdirSync(d, { withFileTypes: true }); }
+    catch { return; }
+    for (const entry of entries) {
+      if (entry.isFile() && entry.name === targetFile) { count++; continue; }
+      if (entry.isDirectory() && !HARD_SKIP.has(entry.name)) recurse(join(d, entry.name));
+    }
+  };
+  recurse(dir);
+  return count;
 }
 
 // ── Cross-collection content dedupe ────────────────────────────────────────
@@ -395,6 +428,7 @@ export function runScan(opts = {}) {
   const collectionMap = new Map(config.collections.map(c => [c.id, c]));
   const entries  = [];
   const seenPath = new Set();
+  const coverageTargets = new Map(); // col.id → { colDir, targetFile }
 
   for (const col of config.collections) {
     const colDir = resolve(SKILL_ROOT, col.dir);
@@ -404,6 +438,16 @@ export function runScan(opts = {}) {
     }
 
     const excludeFiles = new Set(col.excludeFiles || []);
+
+    // Fixed-filename scanRules identify a content directory unambiguously, so a
+    // folder holding one is exempt from skipDirs. '*.md' collections get no
+    // reprieve — there, docs/ and tests/ really are noise.
+    const targetFile = ['SKILL.md', 'DESIGN.md', 'SOUL.md'].includes(col.scanRule)
+      ? col.scanRule
+      : null;
+    const isContentDir = targetFile
+      ? (d) => existsSync(join(d, targetFile))
+      : () => false;
 
     walk(colDir, skipSet, (filePath) => {
       const fname = basename(filePath);
@@ -439,7 +483,9 @@ export function runScan(opts = {}) {
 
       const entry = parseEntry(filePath, col, config.skipDirs || []);
       if (entry) entries.push(entry);
-    });
+    }, isContentDir);
+
+    if (targetFile) coverageTargets.set(col.id, { colDir, targetFile });
   }
 
   // For incremental: merge unchanged entries from previous index
@@ -537,6 +583,22 @@ export function runScan(opts = {}) {
   console.log('  ── by domain ──');
   for (const [dom, count] of Object.entries(byDomain).sort((a, b) => b[1] - a[1])) {
     console.log(`  ${dom}: ${count}`);
+  }
+
+  // ── Coverage check ────────────────────────────────────────────────────
+  // Count target files on disk independently of skipDirs/dedupe. Any gap means
+  // an entry was pruned or failed to parse — surface it instead of shipping a
+  // quietly incomplete index.
+  const dedupedCols = new Set(
+    (config.dedupeGroups || []).flatMap(g => g.collections || [])
+  );
+  for (const [colId, { colDir, targetFile }] of coverageTargets) {
+    if (dedupedCols.has(colId)) continue; // dedupe intentionally drops copies
+    const onDisk = countTargets(colDir, targetFile);
+    const indexed = byCollection[colId] || 0;
+    if (onDisk !== indexed) {
+      console.warn(`  [warn] ${colId}: ${onDisk} ${targetFile} on disk but ${indexed} indexed (${onDisk - indexed} missing)`);
+    }
   }
   console.log();
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-20T06:14:26.178Z",
+  "generatedAt": "2026-07-28T00:57:29.409Z",
   "byId": {
     "custom-skills/ai-init-instructions-v1/SKILL.md": {
       "domain": "agent-workflow",
@@ -4626,6 +4626,36 @@
       "domain": "operations",
       "hash": "52969306434f12f96848b96c4e94d753",
       "summaryZh": "港股合规审查专家，精通 HKEX 上市规则与 SFC 条例，做上市/持续披露/关联交易合规。"
+    },
+    "custom-skills/ai-init-instructions-v4/SKILL.md": {
+      "domain": "agent-workflow",
+      "hash": "04421bb9ee72fd2d847a64cf17a07618",
+      "summaryZh": "AI 协作执行规范 V5.0，用机械闸门和最少人力检查约束不可靠代理。"
+    },
+    "custom-skills/chat-harvest/SKILL.md": {
+      "domain": "writing",
+      "hash": "7ae673294e3d1d0ceafe9974d470a591",
+      "summaryZh": "对话收尾时提炼可复用方法与知识点，输出可直接存入 PKM 的 Markdown。"
+    },
+    "custom-skills/humanizer/SKILL.md": {
+      "domain": "writing",
+      "hash": "8158ed899c7c367d7cae6d8b733b689e",
+      "summaryZh": "去除文本里的 AI 写作痕迹，按维基百科的 AI 文风特征清单逐项修正。"
+    },
+    "custom-skills/Obsidian初始化指令_v2/SKILL.md": {
+      "domain": "writing",
+      "hash": "6e95bbe436a55ac170534734d7c90710",
+      "summaryZh": "Obsidian 知识库协作指令 v2，规定只读区保护、禁捏造与移动前确认。"
+    },
+    "custom-skills/认知训练系统/SKILL.md": {
+      "domain": "education",
+      "hash": "1252f660a7586b3f8c256fa70255a456",
+      "summaryZh": "认知操作者训练法，用建模—找错—修正的循环迭代自己的思维模型。"
+    },
+    "awesome-design-md/design-md/cursor/DESIGN.md": {
+      "domain": "design",
+      "hash": "1f0e42ebee40d57b8e1b799718b6046e",
+      "summaryZh": "Cursor 网站设计规范，暖米色编辑感画布配近黑墨色的开发者工具风。"
     }
   }
 }
